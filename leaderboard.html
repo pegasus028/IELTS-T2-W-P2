@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>IELTS 11-Variable Matrix · Live Leaderboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{
+    --ink:#1a1410; --paper:#f4ead7; --gold:#c8961e; --gold-deep:#a8780f;
+    --green:#2f7d52; --red:#b8442f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{font-family:'Space Mono',monospace;background:var(--ink);color:var(--paper);overflow:hidden;
+       background-image:radial-gradient(circle at 15% 15%,rgba(200,150,30,.18),transparent 45%),
+                        radial-gradient(circle at 85% 85%,rgba(47,125,82,.14),transparent 45%);}
+  .stage{height:100vh;display:flex;flex-direction:column;padding:22px 40px}
+  header{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
+  .title .kicker{font-size:13px;letter-spacing:.4em;text-transform:uppercase;color:var(--gold)}
+  .title h1{font-family:'Fraunces',serif;font-weight:900;font-size:40px;line-height:.98;margin-top:4px}
+  .title h1 em{font-style:italic;color:var(--gold)}
+  .title .sub{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin-top:8px}
+
+  .timerbox{text-align:right}
+  .timerbox .lab{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+  .timerbox .clock{font-family:'Fraunces',serif;font-weight:900;font-size:72px;line-height:.9}
+  .clock.warn{color:var(--gold)}
+  .clock.danger{color:var(--red);animation:pulse .9s infinite}
+  @keyframes pulse{50%{opacity:.45}}
+
+  .chartwrap{flex:1;margin-top:14px;position:relative;min-height:0}
+  .empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+         font-family:'Fraunces',serif;font-size:30px;color:var(--gold);opacity:.6;text-align:center}
+
+  .controls{display:flex;gap:12px;align-items:center;margin-top:12px;flex-wrap:wrap}
+  .controls input{font-family:'Space Mono',monospace;width:70px;font-size:16px;padding:8px;border:2px solid var(--gold);
+                  border-radius:8px;background:transparent;color:var(--paper);text-align:center}
+  .controls button{font-family:'Fraunces',serif;font-weight:900;font-size:15px;padding:9px 18px;border:2px solid var(--gold);
+                   border-radius:9px;background:var(--gold);color:var(--ink);cursor:pointer}
+  .controls button.ghost{background:transparent;color:var(--gold)}
+  .controls .spacer{flex:1}
+  .status{font-size:12px;letter-spacing:.15em;color:var(--gold);text-transform:uppercase}
+  .leader{font-size:12px;letter-spacing:.12em;color:var(--paper);text-transform:uppercase;opacity:.8}
+</style>
+</head>
+<body>
+<div class="stage">
+  <header>
+    <div class="title">
+      <div class="kicker">Satriwithaya · Live</div>
+      <h1>The 11-Variable Matrix: <em>Live Arena</em></h1>
+      <div class="sub">Core Topic · Facet A · Mechanism A · Example A · Nuance A · Facet B · Mechanism B · Example B · Nuance B · Synthesis · Rationale</div>
+    </div>
+    <div class="timerbox">
+      <div class="lab">Time Remaining</div>
+      <div class="clock" id="clock">--:--</div>
+    </div>
+  </header>
+
+  <div class="chartwrap">
+    <canvas id="chart"></canvas>
+    <div class="empty" id="empty">Waiting for teams to join…</div>
+  </div>
+
+  <div class="controls">
+    <input type="number" id="mins" value="10" min="1" max="60" />
+    <button id="startBtn">Start Round</button>
+    <button class="ghost" id="stopBtn">Stop</button>
+    <button class="ghost" id="resetBtn">Reset</button>
+    <div class="spacer"></div>
+    <div class="leader" id="leader"></div>
+    <div class="status" id="status">Polling every 3s</div>
+  </div>
+</div>
+
+<script>
+/* Same deployed Google Apps Script Web App URL as index.html */
+const API_URL = "https://script.google.com/macros/s/AKfycbxFyjmyRRH9DrFS7seWIfYyw6lPzxx9eosrPnYKxMd8PWke91c4eJU1B-YSCk0lSHMAPA/exec";
+
+/* ---------- Network ---------- */
+async function api(method, body, params){
+  if(!API_URL || API_URL.indexOf("PASTE_")===0) throw new Error("no-api");
+  let url = API_URL;
+  if(params) url += (url.indexOf('?')>-1?'&':'?') + params;
+  const opts={method,redirect:'follow'};
+  if(method==='POST'){opts.headers={'Content-Type':'text/plain;charset=utf-8'};opts.body=JSON.stringify(body);}
+  const r=await fetch(url,opts); return r.json();
+}
+
+/* ---------- Chart ---------- */
+const ctx = document.getElementById('chart').getContext('2d');
+const COLORS = ['#c8961e','#2f7d52','#b8442f','#7a5cc4','#2f6d9e','#c46a1e','#5a8f3a','#a83f6a',
+                '#3a8f8a','#9e7a2f','#6a4fb0','#2f9e6d','#b04f3a','#4f6ab0','#8f5a2f'];
+const chart = new Chart(ctx, {
+  type:'bar',
+  data:{labels:[],datasets:[{label:'Score',data:[],backgroundColor:[],borderColor:'#1a1410',borderWidth:2,borderRadius:8}]},
+  options:{
+    indexAxis:'y', animation:{duration:600,easing:'easeOutQuart'},
+    responsive:true, maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{enabled:false}},
+    scales:{
+      x:{beginAtZero:true,grid:{color:'rgba(244,234,215,.12)'},ticks:{color:'#f4ead7',font:{family:'Space Mono',size:14}}},
+      y:{grid:{display:false},ticks:{color:'#f4ead7',font:{family:'Fraunces',weight:'900',size:20}}}
+    }
+  }
+});
+
+function renderBoard(teams){
+  const empty=document.getElementById('empty');
+  if(!teams.length){ empty.style.display='flex'; chart.data.labels=[]; chart.data.datasets[0].data=[]; chart.update();
+                     document.getElementById('leader').textContent=''; return; }
+  empty.style.display='none';
+  const sorted=[...teams].sort((a,b)=>b.score-a.score);
+  const top=sorted.slice(0,15);
+  chart.data.labels = top.map((t,i)=> (i===0?'👑 ':'')+t.team);
+  chart.data.datasets[0].data = top.map(t=>t.score);
+  chart.data.datasets[0].backgroundColor = top.map((_,i)=>COLORS[i%COLORS.length]);
+  chart.update();
+  document.getElementById('leader').textContent = 'Leader · '+sorted[0].team+' · '+sorted[0].score+' pts';
+}
+
+/* ---------- Timer (absolute-timestamp, survives refresh) ---------- */
+let expirationMs=0, running=false;
+function renderClock(){
+  const clock=document.getElementById('clock');
+  if(!running || !expirationMs){ clock.textContent='--:--'; clock.className='clock'; return; }
+  const rem=Math.max(0, expirationMs - Date.now());
+  const s=Math.floor(rem/1000), m=Math.floor(s/60), ss=String(s%60).padStart(2,'0');
+  clock.textContent = m+':'+ss;
+  clock.className = 'clock' + (s<30?' danger':s<60?' warn':'');
+}
+setInterval(renderClock,250);
+
+/* ---------- Polling every 3s ---------- */
+async function poll(){
+  try{
+    const r=await api('GET',null,'action=leaderboard');
+    if(r && r.ok){
+      renderBoard(r.teams||[]);
+      if(r.timer){ expirationMs=r.timer.expirationMs||0; running=!!r.timer.running; }
+      document.getElementById('status').textContent='Live · '+((r.teams&&r.teams.length)||0)+' teams';
+    }
+  }catch(e){
+    document.getElementById('status').textContent='Set API_URL in leaderboard.html';
+  }
+}
+poll(); setInterval(poll,3000);
+
+/* ---------- Teacher controls ---------- */
+document.getElementById('startBtn').onclick=async()=>{
+  const m=parseInt(document.getElementById('mins').value)||10;
+  try{ await api('POST',{action:'start',minutes:m}); poll(); }catch(e){ alert('Set API_URL first.'); }
+};
+document.getElementById('stopBtn').onclick=async()=>{
+  try{ await api('POST',{action:'stop'}); poll(); }catch(e){ alert('Set API_URL first.'); }
+};
+document.getElementById('resetBtn').onclick=async()=>{
+  if(!confirm('Reset all scores and timer?')) return;
+  try{ await api('POST',{action:'reset'}); poll(); }catch(e){ alert('Set API_URL first.'); }
+};
+</script>
+</body>
+</html>

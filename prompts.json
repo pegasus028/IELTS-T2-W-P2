@@ -1,0 +1,2440 @@
+[
+ {
+  "id": "p1",
+  "type": "Discuss both views",
+  "promptText": "Some argue governments should ban private cars in city centres to reduce pollution. Others believe individuals should have the right to drive wherever they wish. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The systemic regulation of urban automotive transport.",
+    "distractors": [
+     "Whether private cars are actively damaging the global environment.",
+     "The most effective ways to convince people to use public transport.",
+     "How modern cities can be redesigned to eliminate traffic jams."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The necessity of mitigating vehicular environmental degradation.",
+    "distractors": [
+     "Governments should immediately ban all cars from city centers.",
+     "The importance of building wider roads to reduce traffic congestion.",
+     "Ensuring that pedestrians and cyclists have safer downtown areas."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By drastically reducing localized tailpipe emissions in densely populated zones.",
+    "distractors": [
+     "By making it illegal to own a car if you live in a city center.",
+     "Through the invention of completely zero-emission electric vehicles.",
+     "By forcing citizens to walk or cycle to their places of work."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Implementing comprehensive bans on private combustion engines in downtown districts.",
+    "distractors": [
+     "Cities completely destroying roads to plant more trees and parks.",
+     "Governments providing free bicycles to every citizen.",
+     "Police arresting anyone who drives a car near a city center."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "An outright ban ignores the logistical realities of commuters lacking viable public transit alternatives.",
+    "distractors": [
+     "Banning cars means that people will just buy more motorcycles instead.",
+     "Pollution is mostly caused by factories, so banning cars will not help at all.",
+     "City centers are too crowded anyway, so a ban is actually a perfect solution."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The preservation of individualized freedom of movement.",
+    "distractors": [
+     "People should be allowed to drive because cars are expensive to buy.",
+     "The legal right to cause pollution if you pay taxes.",
+     "Ensuring that the automotive manufacturing industry remains profitable."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "Safeguarding the autonomy of citizens to navigate urban spaces without state restriction.",
+    "distractors": [
+     "Allowing drivers to ignore environmental laws if they are in a hurry.",
+     "Giving people the right to park their cars anywhere they want for free.",
+     "Protecting the ability of citizens to avoid walking at all costs."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Allowing private vehicle owners unrestricted access to city centers via road networks.",
+    "distractors": [
+     "Building massive multi-story car parks on every city block.",
+     "Removing all public transport so people are forced to drive.",
+     "Citizens driving large trucks through pedestrian-only zones."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Unchecked vehicular freedom invariably leads to compounding gridlock and toxic air quality.",
+    "distractors": [
+     "Driving a car is usually much slower than taking a subway train.",
+     "People who drive everywhere usually suffer from poor physical health.",
+     "Private cars are too expensive for most people to afford anyway."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Municipalities must invest heavily in mass transit infrastructure while gradually phasing out high-emission vehicles.",
+    "distractors": [
+     "Governments should just ban cars and let citizens figure out how to travel.",
+     "People should have total freedom to drive, and pollution should be ignored.",
+     "Cities should build better roads so that everyone can drive electric cars at the same time."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Sustainable urban planning must balance ecological preservation with the practical mobility needs of the populace.",
+    "distractors": [
+     "Because taking the bus is always cheaper than paying for petrol.",
+     "Since cars are the only true cause of global warming in the modern world.",
+     "Because individuals will always refuse to give up their cars no matter what."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p2",
+  "type": "Discuss both views",
+  "promptText": "Some say governments should fund only university science degrees because they are the most useful. Others believe public money should continue to support arts subjects. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The strategic allocation of state funding in higher education.",
+    "distractors": [
+     "Whether science subjects are more difficult to learn than arts subjects.",
+     "The increasing cost of university tuition for modern students.",
+     "How universities should force students to choose their future careers."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The prioritization of STEM fields to drive technological and economic advancement.",
+    "distractors": [
+     "Governments should completely ban universities from teaching the arts.",
+     "The belief that science is the only subject that requires intelligence.",
+     "Ensuring that all students become doctors or engineers."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By channeling resources into disciplines that directly yield measurable industrial innovations.",
+    "distractors": [
+     "By making sure arts students have to pay double for their education.",
+     "Through forcing science graduates to work for the government.",
+     "By only building laboratories and destroying university libraries."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Fully subsidizing degrees in medical research, software engineering, and applied physics.",
+    "distractors": [
+     "Giving free money to anyone who owns a computer.",
+     "Only allowing science students to live in university dormitories.",
+     "Making mathematics a mandatory subject for everyone in the world."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "An exclusive focus on technical skills neglects the critical thinking and ethical frameworks required to govern innovation.",
+    "distractors": [
+     "Science degrees are too hard, so most students will just drop out anyway.",
+     "Scientists don't make as much money as businessmen, so funding them is a waste.",
+     "There are already too many scientists in the world, so we don't need more."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The continued financial support of the humanities and creative arts.",
+    "distractors": [
+     "Forcing science students to take poetry classes to graduate.",
+     "The belief that art is the only thing that makes life worth living.",
+     "Paying artists a government salary just to paint pictures."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "Fostering cultural preservation, advanced communication, and sociopolitical analysis.",
+    "distractors": [
+     "Making sure everyone learns how to play a musical instrument.",
+     "Allowing students to study easy subjects so they don't get stressed.",
+     "Ensuring that museums have enough paintings to display to tourists."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Providing public grants for academic programs in history, literature, and sociology.",
+    "distractors": [
+     "Giving free concert tickets to university students.",
+     "Building massive statues in every major city center.",
+     "Forcing every citizen to read historical novels."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Unrestricted funding for esoteric arts degrees can result in a workforce misaligned with immediate economic demands.",
+    "distractors": [
+     "Arts students are usually lazy and do not want to find real jobs.",
+     "Studying history is useless because the past cannot be changed.",
+     "Nobody actually likes reading literature anymore because of the internet."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "The state must predominantly subsidize high-yield STEM sectors while preserving targeted funding for the humanities to maintain societal balance.",
+    "distractors": [
+     "Governments should let students study whatever they want for free.",
+     "Science and arts should be combined into one single university degree.",
+     "Universities should be closed, and students should just learn on the job."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "A resilient society requires both the technological capacity to progress and the cultural intelligence to navigate that progress ethically.",
+    "distractors": [
+     "Because scientists need artists to draw diagrams for their research papers.",
+     "Since art is fun, but science is what actually pays the bills.",
+     "Because governments have infinite money and should just pay for everything."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p3",
+  "type": "Discuss both views",
+  "promptText": "Some believe prisons exist strictly to punish those who break the law. Others argue they should concentrate entirely on reforming offenders. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The fundamental purpose and methodology of the penal system.",
+    "distractors": [
+     "Whether the death penalty is an effective deterrent against crime.",
+     "How to reduce the cost of feeding and housing prisoners.",
+     "The specific reasons why people decide to commit violent crimes."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The prioritization of punitive measures for legal transgressions.",
+    "distractors": [
+     "The belief that all criminals should be locked up forever.",
+     "Making sure that prisons are as uncomfortable as physically possible.",
+     "Allowing victims to decide how criminals should be punished."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By depriving offenders of their liberty as a direct consequence of their actions, thereby establishing a societal deterrent.",
+    "distractors": [
+     "By physically hurting criminals so they learn a lesson.",
+     "Through forcing prisoners to work for free to pay back the government.",
+     "By publicly humiliating offenders on television to scare others."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Enforcing mandatory, long-term custodial sentences for severe or repeat offenses.",
+    "distractors": [
+     "Putting criminals in dark solitary confinement for their entire lives.",
+     "Making prisoners sleep on the floor without any blankets.",
+     "Banning all criminals from ever seeing their families again."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "A strictly punitive model often yields high recidivism rates, as inmates are released without the skills to integrate into society.",
+    "distractors": [
+     "Punishment is bad because it makes criminals feel sad.",
+     "Prisons cost too much money, so we should just let people go free.",
+     "If you punish someone too much, they will just escape from prison."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The prioritization of rehabilitation and psychological reform.",
+    "distractors": [
+     "The idea that criminals are just victims of society and did nothing wrong.",
+     "Turning prisons into luxury hotels so criminals feel relaxed.",
+     "Releasing criminals immediately if they say they are sorry."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "Equipping inmates with vocational training and behavioral therapy to address the root causes of criminality.",
+    "distractors": [
+     "Giving prisoners a lot of money so they don't have to steal anymore.",
+     "Forcing criminals to take medicine that changes their personality.",
+     "Teaching inmates how to play sports so they are too tired to commit crimes."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Implementing comprehensive in-prison education programs and substance abuse counseling.",
+    "distractors": [
+     "Letting prisoners go home on the weekends to see their friends.",
+     "Hiring criminals to work as police officers after they are released.",
+     "Providing every inmate with a free university degree in art."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "An exclusively rehabilitative approach may fail to deliver justice to victims and can undermine the deterrent effect of the law.",
+    "distractors": [
+     "Therapy doesn't work on criminals because they are all evil by nature.",
+     "Rehabilitation is too boring, so prisoners won't pay attention.",
+     "If prisons are too nice, people will commit crimes just to get free education."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "The penal system must balance the deprivation of liberty with mandatory, structured rehabilitation programs.",
+    "distractors": [
+     "Prisons should be abolished and replaced with mandatory therapy sessions.",
+     "Criminals should be punished first, and if they survive, rehabilitated.",
+     "Society should focus on stopping crime before it happens, so prisons are unnecessary."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Protecting society requires both the immediate containment of threats and the systemic reduction of future reoffending.",
+    "distractors": [
+     "Because keeping people in prison forever is simply too expensive for taxpayers.",
+     "Since every single criminal can be easily cured with enough counseling.",
+     "Because punishment is illegal under international human rights law."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p4",
+  "type": "Discuss both views",
+  "promptText": "Many believe that working from home benefits employees and companies alike. Others think it isolates staff and lowers overall productivity. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The systemic shift toward decentralized, remote working models.",
+    "distractors": [
+     "Whether employees are lazier when they are not in the office.",
+     "How to use video conferencing software effectively.",
+     "The cost of renting office space in modern cities."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The mutual benefits of remote work for both the individual and the organization.",
+    "distractors": [
+     "The belief that everyone should work from their bed.",
+     "Companies saving money by not paying for employee electricity.",
+     "Employees refusing to ever wear formal clothes again."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By eliminating commute times and overhead costs, thereby increasing autonomy and financial efficiency.",
+    "distractors": [
+     "By allowing workers to sleep during the day and work at night.",
+     "Through firing managers because employees can manage themselves.",
+     "By forcing employees to buy their own computers and desks."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Firms adopting fully distributed teams, resulting in reduced real estate expenses and improved employee retention.",
+    "distractors": [
+     "People working from coffee shops and getting distracted.",
+     "Companies giving employees free internet at home.",
+     "Workers watching television while answering emails."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Unstructured remote environments can blur the boundary between professional and personal life, leading to digital burnout.",
+    "distractors": [
+     "Working from home means people will eat too much food.",
+     "Companies will eventually run out of money if they don't have offices.",
+     "Employees will forget how to talk to real human beings."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The detrimental impact on collaborative synergy and psychological well-being.",
+    "distractors": [
+     "The fact that remote work is completely impossible for every job.",
+     "Managers needing to watch employees at all times to ensure they work.",
+     "The belief that offices are the only place humans can survive."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By eroding organic interpersonal interactions and fragmenting team cohesion.",
+    "distractors": [
+     "By making people's internet connections break constantly.",
+     "Through employees purposefully ignoring their bosses' phone calls.",
+     "By causing workers to become physically weaker from lack of movement."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Project delays caused by asynchronous communication hurdles and rising reports of professional isolation.",
+    "distractors": [
+     "People forgetting to turn on their webcams during meetings.",
+     "Employees taking too many breaks to walk their dogs.",
+     "Companies going bankrupt because nobody is doing any work."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Productivity drops are often a symptom of poor digital management strategies rather than an inherent flaw of remote work itself.",
+    "distractors": [
+     "Isolation is actually good because it means people don't argue.",
+     "Offices are too noisy anyway, so a drop in productivity is worth it.",
+     "Only older people struggle with remote work, so it will fix itself over time."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Corporations should implement hybrid models that leverage the flexibility of remote work alongside the collaborative benefits of targeted in-person interactions.",
+    "distractors": [
+     "Companies should ban remote work entirely to save their businesses.",
+     "Everyone should work from home forever and offices should be destroyed.",
+     "Employees should be allowed to decide every morning if they want to work or not."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "A hybridized approach maximizes operational efficiency while safeguarding the psychological health and innovative capacity of the workforce.",
+    "distractors": [
+     "Because employees will quit if they are forced to go to the office every day.",
+     "Since hybrid work means companies only have to pay half the rent.",
+     "Because it is physically impossible to work from home five days a week."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p5",
+  "type": "Discuss both views",
+  "promptText": "Some parents firmly restrict their children's screen time to protect healthy development. Others insist digital devices are essential for modern learning and should not be limited. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The regulation of pediatric exposure to digital technology.",
+    "distractors": [
+     "Whether children should be allowed to own their own smartphones.",
+     "How to stop teenagers from using social media.",
+     "The danger of playing violent video games at a young age."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The necessity of imposing firm limitations to safeguard physiological and cognitive growth.",
+    "distractors": [
+     "Parents confiscating all electronic devices until children are adults.",
+     "The belief that technology is inherently evil and destroys brains.",
+     "Forcing children to read books instead of watching television."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By preventing sedentary behaviors and mitigating the risks of digital overstimulation on developing attention spans.",
+    "distractors": [
+     "By ensuring children do their chores instead of playing games.",
+     "Through stopping children from talking to strangers online.",
+     "By making sure children do not ruin their eyesight permanently."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Strict parental policies that ban tablet usage during weekdays to promote outdoor physical play.",
+    "distractors": [
+     "Parents deleting all the apps on a child's phone.",
+     "Schools banning computers in the classroom completely.",
+     "Families moving to the countryside to avoid Wi-Fi signals."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Overly draconian restrictions can result in digital illiteracy, isolating children from peer networks and modern educational tools.",
+    "distractors": [
+     "Children will just secretly use their friends' phones anyway.",
+     "Restricting screen time makes children hate their parents.",
+     "Without screens, children will be too bored to learn anything."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The integration of unrestricted digital access as a cornerstone of contemporary education.",
+    "distractors": [
+     "Letting children play video games for twelve hours a day.",
+     "The belief that screens can replace human teachers completely.",
+     "Using tablets as a way to keep children quiet and out of the way."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "Equipping youth with intuitive technological fluency and democratized access to global information networks.",
+    "distractors": [
+     "Teaching children how to become professional video game players.",
+     "Allowing kids to learn everything from YouTube instead of school.",
+     "Making sure children know how to fix computers if they break."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Immersive educational software that teaches complex coding or linguistic skills through gamified interaction.",
+    "distractors": [
+     "Children scrolling through social media feeds for educational purposes.",
+     "Using a calculator app to cheat on math homework.",
+     "Watching cartoons that occasionally teach the alphabet."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Unmediated access frequently devolves into passive consumption of low-quality entertainment rather than active intellectual engagement.",
+    "distractors": [
+     "Digital learning is bad because tablets run out of battery.",
+     "Children will break expensive devices if they use them too much.",
+     "Screens emit radiation that physically harms the user's brain."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Caregivers must pivot from quantitative time limits to qualitative curation, actively mediating high-yield digital engagement while ensuring adequate offline physical development.",
+    "distractors": [
+     "Parents should allow screens on weekends but ban them on weekdays.",
+     "Children should only be allowed to use computers at school, never at home.",
+     "Technology should be unrestricted until a child's grades start dropping."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Preparing youth for a digitized future requires leveraging the utility of technology without succumbing to the detriments of digital dependency.",
+    "distractors": [
+     "Because parents need a break and screens are a good babysitter.",
+     "Since technology is the only way to get a job in the future.",
+     "Because children will naturally get bored of screens eventually."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p6",
+  "type": "Discuss both views",
+  "promptText": "Some think international tourism strengthens the local economy. Others argue it erodes local cultures and harms the natural environment. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The socioeconomic and ecological ramifications of international tourism.",
+    "distractors": [
+     "Whether local cultures are worth preserving in the modern world.",
+     "How individual travellers can behave more responsibly when abroad.",
+     "The remarkably rapid expansion of the global airline industry."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The economic revitalisation generated by foreign visitor expenditure.",
+    "distractors": [
+     "Tourism creates plenty of new jobs for ordinary local residents.",
+     "Every nation should hurry to build far more luxury hotels.",
+     "Holidaymakers spend generously on souvenirs and small keepsakes."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By channelling external capital into local service industries and public infrastructure.",
+    "distractors": [
+     "By ensuring that hotels and restaurants remain fully booked all year.",
+     "By forcing residents to abandon farming and work in hotels instead.",
+     "Through governments printing extra money for popular tourist regions."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Coastal regions financing schools and clinics through visitor levies and hospitality employment.",
+    "distractors": [
+     "Souvenir shops selling handmade crafts to passing tourists.",
+     "Tourists taking photographs of famous historical monuments.",
+     "Airlines adding extra flights during the summer holiday season."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Tourist revenue is frequently repatriated by foreign-owned operators, leaving host communities with a fraction of the declared profit.",
+    "distractors": [
+     "Tourism income is seasonal, so workers earn nothing for half the year.",
+     "Tourists are often rude and show no respect for local people.",
+     "Hotels are far too expensive for local families ever to visit."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The erosion of indigenous culture and the degradation of fragile ecosystems.",
+    "distractors": [
+     "The considerable pollution generated by long-haul air travel.",
+     "The belief that foreigners should be banned from sacred sites.",
+     "Local people gradually coming to resent every visitor they see."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By commodifying authentic traditions into staged performances while overburdening finite natural resources.",
+    "distractors": [
+     "By encouraging local people to abandon their traditional languages.",
+     "By making residents jealous of comparatively wealthy foreign visitors.",
+     "Through tourists deliberately damaging ancient historical buildings."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Reef systems bleached by unregulated diving traffic and heritage quarters converted into souvenir arcades.",
+    "distractors": [
+     "Traditional dances performed nightly in hotel lobbies for guests.",
+     "Tourists dropping litter on the beach throughout the summer.",
+     "Restaurants adding foreign dishes to their traditional menus."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Visitor demand often supplies the very funding and political incentive required to conserve the sites and habitats said to be at risk.",
+    "distractors": [
+     "Cultural change would occur anyway through television and the internet.",
+     "Local people are strong enough to protect their own traditions.",
+     "Environmental damage is mostly caused by industry, not by tourists."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "States should pursue capacity-limited tourism that reinvests visitor revenue directly into cultural preservation and habitat protection.",
+    "distractors": [
+     "Governments should promote domestic tourism instead of international tourism.",
+     "Countries should close their borders to tourists until the damage is repaired.",
+     "Tourists should go wherever they wish provided they spend enough money."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Prosperity derived from a destination's distinctiveness is self-defeating unless the assets that generate it are themselves protected.",
+    "distractors": [
+     "Because tourism is the largest single industry in many developing countries.",
+     "Since tourists will simply stop visiting once a country becomes polluted.",
+     "Because governments can always be trusted to spend tourist taxes wisely."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p7",
+  "type": "Discuss both views",
+  "promptText": "Some argue that government spending on space is wasteful and should be redirected to problems on Earth. Others believe space research delivers vital technological progress. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The justification of public expenditure on extraterrestrial exploration.",
+    "distractors": [
+     "Whether humanity will ever succeed in colonising another planet.",
+     "The engineering processes by which modern spacecraft are designed.",
+     "The statistical likelihood that intelligent alien life truly exists."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The redirection of aerospace budgets toward terrestrial humanitarian priorities.",
+    "distractors": [
+     "The claim that exploring the cosmos is simply far too expensive.",
+     "The belief that human beings were never meant to leave their planet.",
+     "Ensuring that astronauts are not exposed to unnecessary danger."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By reallocating finite public capital to immediate crises such as poverty, healthcare and food security.",
+    "distractors": [
+     "By cancelling rocket launches that pollute the upper atmosphere.",
+     "By taxing private space companies until they are forced to close.",
+     "Through compelling scientists to work on medicine instead."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "National budgets diverting orbital programme funding into subsidised housing and disease eradication schemes.",
+    "distractors": [
+     "Governments choosing to spend money on hospitals rather than telescopes.",
+     "Charities asking billionaires to stop launching their own rockets.",
+     "Schools teaching children that space travel is a waste of money."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Space budgets constitute a marginal fraction of national expenditure, so their abolition would scarcely resolve entrenched social problems.",
+    "distractors": [
+     "Poverty is caused by corruption rather than a shortage of money.",
+     "Rockets are exciting, so people would be disappointed if they stopped.",
+     "Scientists would simply lose their jobs and claim state benefits."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The technological dividend yielded by sustained astronautical research.",
+    "distractors": [
+     "The necessity of locating a second habitable planet for our species.",
+     "The prestigious careers that space programmes create for astronauts.",
+     "The genuine fascination of studying distant stars and galaxies."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By compelling innovation under extreme constraints, generating technologies that subsequently migrate into civilian use.",
+    "distractors": [
+     "By allowing scientists to observe the Earth's weather systems from orbit.",
+     "By proving that one nation is more advanced than its rivals.",
+     "Through inspiring schoolchildren to study science at university."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Satellite navigation, water-purification systems and medical imaging derived directly from orbital research programmes.",
+    "distractors": [
+     "Weather satellites that warn coastal towns about approaching storms.",
+     "Photographs of Earth that make people care more about the planet.",
+     "Freeze-dried food that is now sold in ordinary supermarkets."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Comparable innovations could plausibly be pursued through targeted terrestrial research at considerably lower cost.",
+    "distractors": [
+     "Many space technologies take decades to reach ordinary consumers.",
+     "Most members of the public do not understand how satellites work.",
+     "Private companies now do this work, so governments need not."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Governments should sustain a modest, outcome-driven space programme oriented toward Earth observation while the preponderance of public funds addresses immediate social need.",
+    "distractors": [
+     "Space funding should be cut in half and handed to hospitals.",
+     "All space exploration should be left entirely to private billionaires.",
+     "Countries should suspend space research until poverty is eliminated."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Long-horizon scientific capacity and immediate humanitarian obligation are complementary rather than competing claims on the public purse.",
+    "distractors": [
+     "Because technology developed in space eventually makes life on Earth cheaper.",
+     "Since no government has ever had enough money to fund everything.",
+     "Because poverty will always exist however much money is spent on it."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p8",
+  "type": "Discuss both views",
+  "promptText": "Some think heavy taxes should be imposed on fast food to improve public health. Others believe people should be entirely free to choose what they eat. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The legitimacy of fiscal intervention in individual dietary choice.",
+    "distractors": [
+     "The tangled causes of rising obesity in developed nations.",
+     "The many ways in which processed food damages the human body.",
+     "The mechanics of how a government actually collects tax revenue."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The imposition of punitive taxation to improve population health.",
+    "distractors": [
+     "The belief that fast food directly causes obesity and heart disease.",
+     "The idea that fast-food restaurants ought to be banned outright.",
+     "The state's need for extra revenue to fund its overstretched hospitals."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By raising the marginal cost of nutritionally deficient products until consumption patterns measurably shift.",
+    "distractors": [
+     "By making junk food so expensive that the restaurants close down.",
+     "By requiring citizens to eat only the vegetables doctors prescribe.",
+     "Through printing frightening warnings on every burger wrapper."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Sugar levies on carbonated drinks that have measurably reduced consumption and prompted industrial reformulation.",
+    "distractors": [
+     "Governments adding a small tax to every fast-food meal sold.",
+     "Restaurants voluntarily making their standard portion sizes smaller.",
+     "Schools removing all the vending machines from their corridors."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Such levies are inherently regressive, extracting a disproportionate share of income from the households least able to substitute.",
+    "distractors": [
+     "Wealthy consumers will simply absorb the tax and change nothing.",
+     "People will just drive to another country to buy cheap food.",
+     "Taxes have never once stopped anybody from eating badly."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The preservation of personal autonomy over consumption.",
+    "distractors": [
+     "The argument that healthy food is priced beyond poorer households.",
+     "The view that fast food is delicious and ought to be enjoyed.",
+     "The claim that adults deeply resent being told what to do."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By restricting the state to informing rather than coercing, thereby preserving the individual's authority over their own body.",
+    "distractors": [
+     "By allowing people to eat whatever they like without being judged.",
+     "By ensuring that government cannot interfere in private business.",
+     "Through letting the free market decide what people ought to eat."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Transparent nutritional labelling and public education campaigns that inform choice without penalising it.",
+    "distractors": [
+     "Supermarkets displaying the calorie content beside each price.",
+     "Doctors advising their patients to eat less fried food.",
+     "Advertisements showing professional athletes eating salad."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Genuine autonomy presupposes an informed chooser, yet dietary preference is aggressively conditioned from childhood by industrial marketing.",
+    "distractors": [
+     "Poorer consumers often have no affordable healthy alternative nearby.",
+     "A great many people do not read nutritional labels at all.",
+     "Children cannot be expected to make sensible food choices."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "States should levy targeted duties on the most demonstrably harmful ingredients while subsidising nutritious alternatives, so that choice is redirected rather than merely penalised.",
+    "distractors": [
+     "Governments should tax junk food heavily and give the money to hospitals.",
+     "People should be left entirely free to eat whatever they wish.",
+     "Fast-food restaurants should be limited to one per town."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Freedom of choice is meaningful only where a genuine alternative is affordable and accessible, which the market alone has failed to supply.",
+    "distractors": [
+     "Because a healthier population costs the state far less in the long run.",
+     "Since taxation is really the only tool a government possesses.",
+     "Because people will always eat badly whatever the government does."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p9",
+  "type": "Discuss both views",
+  "promptText": "Some believe printed newspapers will be completely replaced by online news. Others argue that print media will always keep a valued place in society. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The viability of print journalism within a digitised information ecology.",
+    "distractors": [
+     "Whether reading on paper is more pleasant than reading on a screen.",
+     "The growing problem of misinformation circulating on the internet.",
+     "The process by which journalists research and publish a story."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The wholesale displacement of physical newspapers by digital platforms.",
+    "distractors": [
+     "The fact that online news is faster and cheaper to distribute.",
+     "The environmental damage caused by printing millions of pages daily.",
+     "The view that only older readers still buy a printed paper."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By collapsing distribution costs to near zero while enabling continuous, algorithmically personalised updating.",
+    "distractors": [
+     "By allowing readers to access any story instantly on a phone.",
+     "By putting every printing company permanently out of business.",
+     "Through obliging journalists to write shorter and simpler articles."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Established mastheads discontinuing weekday print runs and migrating entirely to subscription platforms.",
+    "distractors": [
+     "Readers checking the headlines on their phones during the commute.",
+     "Newspapers setting up accounts on the major social media sites.",
+     "Websites publishing breaking news within minutes of an event."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Digital migration has severed the revenue model that funded investigative reporting, yielding a proliferation of platforms and a scarcity of original journalism.",
+    "distractors": [
+     "Not everybody owns a smartphone or has reliable internet access.",
+     "Screens are tiring to read from for long periods of time.",
+     "A website can be hacked, whereas a printed paper cannot."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The enduring civic and material value of the printed edition.",
+    "distractors": [
+     "The preference of older readers for a paper they can hold.",
+     "The belief that print outlets happen to employ better journalists.",
+     "The fact that electricity supplies occasionally fail without warning."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By imposing editorial finitude, offering a curated edition that establishes shared civic priorities rather than infinitely personalised feeds.",
+    "distractors": [
+     "By giving readers a physical object they can keep and reread.",
+     "By ensuring that news is printed slowly and therefore carefully.",
+     "Through employing people in printing works and delivery rounds."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Weekend long-form editions and regional titles that sustain local accountability reporting no aggregator replicates.",
+    "distractors": [
+     "Households that still take a paper delivered every morning.",
+     "Libraries keeping bound archives of very old newspapers.",
+     "Commuters reading free papers handed out at railway stations."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "The economics of print are contracting irreversibly, and affection for the form cannot by itself finance the journalism it carries.",
+    "distractors": [
+     "Print circulation figures have fallen every year for two decades.",
+     "Young people have simply never acquired the habit of buying papers.",
+     "Paper is made from trees, which is harmful to the environment."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Print will persist as a curated, premium and local format rather than a mass daily one, with digital platforms assuming the function of immediate reporting.",
+    "distractors": [
+     "Newspapers should publish online midweek and in print at weekends.",
+     "Governments should subsidise printed newspapers to keep them alive.",
+     "Print will disappear altogether within the next ten years."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "What society must preserve is the funded practice of journalism itself, not the medium that historically happened to carry it.",
+    "distractors": [
+     "Because readers of every generation deserve a format that suits them.",
+     "Since the internet simply cannot be trusted to tell the truth.",
+     "Because printed newspapers have existed for several hundred years."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p10",
+  "type": "Discuss both views",
+  "promptText": "Some think testing medical products on animals is justified because it saves human lives. Others argue it is cruel and needless now that modern alternatives exist. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The ethical defensibility of animal experimentation in pharmaceutical development.",
+    "distractors": [
+     "The much broader question of animal rights and the prevention of cruelty.",
+     "The separate practice of testing cosmetics and make-up on animals.",
+     "The general process by which new medical treatments are invented."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The indispensability of animal models to therapeutic advancement.",
+    "distractors": [
+     "The principle that a human life must outweigh an animal's.",
+     "The claim that animals do not experience pain as people do.",
+     "The fact that scientists have relied on the practice for centuries."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By permitting observation of a compound's effect within a complete living system before any human exposure.",
+    "distractors": [
+     "By allowing scientists to discover dangerous side effects early on.",
+     "By giving researchers a cheap and convenient supply of subjects.",
+     "Through satisfying the legal requirements laid down by regulators."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Vaccine and oncology programmes validated in mammalian models prior to clinical trial authorisation.",
+    "distractors": [
+     "New drugs being given to mice before they are given to people.",
+     "Laboratories keeping rats and rabbits in secure, licensed facilities.",
+     "Scientists in white coats conducting experiments every single day."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Physiological divergence between species means a substantial proportion of compounds proven safe in animals subsequently fail or harm in human trials.",
+    "distractors": [
+     "Animal testing is expensive and considerably slows medical research.",
+     "A great many people find the practice distressing to think about.",
+     "Some laboratories have been shown to treat their animals badly."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The obsolescence of animal trials given contemporary alternatives.",
+    "distractors": [
+     "The straightforward cruelty of experimenting on living creatures.",
+     "The suggestion that prisoners would make more suitable subjects.",
+     "The fact that campaigners have protested about this for many years."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By substituting human-derived tissue cultures, organ-on-chip systems and computational modelling that replicate human physiology more faithfully.",
+    "distractors": [
+     "By using computers to predict whether a drug is likely to work.",
+     "By simply testing new medicines on paid human volunteers instead.",
+     "Through prohibiting laboratories from keeping animals at all."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Regulatory acceptance of in-vitro human cell assays and computational toxicology in place of mandatory animal batteries.",
+    "distractors": [
+     "Scientists growing human cells in dishes for their experiments.",
+     "Companies advertising their products as certified cruelty-free.",
+     "Universities closing down their old animal laboratories."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "These technologies remain unable to model systemic interactions across an entire organism, so complete substitution is not yet scientifically available.",
+    "distractors": [
+     "The newer alternatives are still extremely expensive to develop.",
+     "Not every country has agreed to adopt these modern methods.",
+     "Older scientists are reluctant to change how they have always worked."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Regulators should mandate validated alternatives wherever they exist and confine animal use to the narrow class of systemic questions no current technology can answer.",
+    "distractors": [
+     "Animal testing should be permitted only for serious diseases like cancer.",
+     "All animal experimentation should be outlawed immediately worldwide.",
+     "Scientists should simply be trusted to decide the matter themselves."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "An ethical research framework minimises suffering to the least quantity the current state of science genuinely requires, and revises that threshold as the science advances.",
+    "distractors": [
+     "Because human health must always take priority over animal welfare.",
+     "Since modern computers can now simulate very nearly anything.",
+     "Because the public will not tolerate cruelty in the modern era."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p11",
+  "type": "Discuss both views",
+  "promptText": "Some argue that competitive sport teaches children discipline and resilience. Others believe competition breeds needless stress and that youth sport should simply be fun. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The role of competition in the athletic development of children.",
+    "distractors": [
+     "The physical health benefits that young people derive from sport.",
+     "How best to coach a gifted child toward a professional career.",
+     "The funding that schools set aside for their sports teams."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The cultivation of discipline and psychological resilience through structured competition.",
+    "distractors": [
+     "Children must learn how to cope with both winning and losing.",
+     "The view that sport usefully keeps children out of trouble.",
+     "The fact that playing games makes a child's body stronger."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By exposing children to consequential failure within a supervised environment, thereby building tolerance of setback and delayed reward.",
+    "distractors": [
+     "By teaching children that they must always try to win.",
+     "By keeping young people physically active for several hours weekly.",
+     "Through selecting the most talented children for special training."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Structured school leagues in which regular losses are followed by coaching, review and measurable improvement.",
+    "distractors": [
+     "Children playing football against another school on Saturday.",
+     "Schools awarding medals to the fastest runners on sports day.",
+     "Teams practising after class three or four times a week."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Resilience develops only where failure is reframed constructively; in results-driven cultures the same exposure produces avoidance rather than persistence.",
+    "distractors": [
+     "Competitive sport frequently leaves children with physical injuries.",
+     "Not every child is naturally good at playing sport.",
+     "Some children would simply rather stay indoors and read."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The psychological burden imposed by premature competitive pressure.",
+    "distractors": [
+     "The anxiety that children feel before an important match.",
+     "In truth, children do not much care whether they win or lose.",
+     "Over-competitive parents ruin the atmosphere at youth events."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By tethering a child's self-worth to comparative ranking at a developmental stage when identity is still forming.",
+    "distractors": [
+     "By making children nervous and unable to sleep before games.",
+     "By causing arguments between parents on the touchline.",
+     "Through obliging children to train when they would rather play."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Elevated dropout rates among adolescents in early-selection sporting systems, correlated with performance anxiety.",
+    "distractors": [
+     "Children crying when their team loses an important final.",
+     "Young athletes being shouted at by their coaches.",
+     "Pupils pretending to be ill to avoid a games lesson."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "The distress is generally traceable to adult conduct and selection design rather than to competition as an inherent principle.",
+    "distractors": [
+     "Stress is a normal part of life that children must experience.",
+     "Children forget about losing very quickly and move on.",
+     "Some children genuinely thrive under competitive pressure."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Youth sport should retain competition while restructuring it around mastery and participation, so that improvement rather than ranking determines success.",
+    "distractors": [
+     "Children should play competitively at school but only for fun at home.",
+     "All scores and league tables should be abolished in youth sport.",
+     "Only naturally gifted children should be entered into competitions."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "The formative value of sport resides in how competition is framed and mediated by adults, not in its presence or absence.",
+    "distractors": [
+     "Because children need to be prepared for a competitive adult world.",
+     "Since sport is meant to be enjoyable rather than stressful.",
+     "Because parents and coaches rarely understand what children want."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p12",
+  "type": "Discuss both views",
+  "promptText": "Some believe advertising aimed at children should be banned outright. Others argue it teaches them about the marketplace and how to make choices. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The regulation of commercial marketing directed at minors.",
+    "distractors": [
+     "The harm that television commercials can do to young viewers.",
+     "The methods that large toy companies use to design their products.",
+     "The sheer sum of money that children spend on toys each year."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The prohibition of all commercial messaging targeted at the young.",
+    "distractors": [
+     "Advertisements pressure children into craving unhealthy junk food.",
+     "Parents ought simply to mute the television when commercials appear.",
+     "Advertising makes children behave in noticeably worse ways."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By removing persuasive material from an audience that cannot yet recognise persuasive intent.",
+    "distractors": [
+     "By stopping children from seeing adverts for sweets and toys.",
+     "By reducing the profits of companies that target young viewers.",
+     "Through obliging broadcasters to show educational programmes instead."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Statutory bans on commercial broadcasting during children's programming, as enforced in several Nordic jurisdictions.",
+    "distractors": [
+     "Television channels choosing not to advertise sweets before bedtime.",
+     "Parents refusing to buy any product their child sees advertised.",
+     "Schools teaching pupils that advertisements often exaggerate."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Prohibition confined to broadcast media is readily circumvented by influencer content and in-game promotion, where commercial intent is far less visible.",
+    "distractors": [
+     "Children will simply see the same adverts on their parents' television.",
+     "Companies would lose money and might have to dismiss staff.",
+     "Toy shops would find it much harder to sell their products."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The instructive function of advertising in developing commercial literacy.",
+    "distractors": [
+     "Children genuinely enjoy watching a clever and funny advert.",
+     "A ban on advertising would wreck the entire toy-making industry.",
+     "Children are sharp enough to see through a misleading advert."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By furnishing early, low-stakes encounters with persuasion that a mediating adult can use to build critical scepticism.",
+    "distractors": [
+     "By showing children which products are currently available to buy.",
+     "By teaching young people that money must be earned before spending.",
+     "Through entertaining children between their favourite programmes."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Media-literacy curricula that dissect real campaigns so pupils learn to identify persuasive technique.",
+    "distractors": [
+     "Children comparing the prices of two similar toys in a shop.",
+     "Families discussing what to buy from a supermarket catalogue.",
+     "Pupils designing their own advertisement in an art lesson."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Developmental research indicates that children below roughly eight cannot reliably distinguish advertising from content, so the instructive argument collapses for the youngest cohort.",
+    "distractors": [
+     "Most parents are far too busy to discuss adverts with their children.",
+     "Children pay little attention to advertisements in any case.",
+     "Some advertisements are genuinely informative and truthful."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Advertising should be prohibited outright for the youngest age bands and permitted for older children only alongside mandatory media-literacy instruction.",
+    "distractors": [
+     "Advertising to children should be allowed but strictly limited in quantity.",
+     "All advertising aimed at anyone under eighteen should be banned.",
+     "Parents alone should decide what advertising their children may see."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Regulation should track cognitive capacity rather than a single arbitrary threshold, since the harm depends entirely on whether persuasive intent can be recognised.",
+    "distractors": [
+     "Because children are the most vulnerable members of any society.",
+     "Since companies will always find a way around whatever rules exist.",
+     "Because advertising is an unavoidable feature of modern life."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p13",
+  "type": "Discuss both views",
+  "promptText": "Some think it is acceptable for minority languages to disappear if it makes global communication easier. Others believe governments should spend money to keep them alive. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The preservation of endangered languages against the pressure of global linguistic convergence.",
+    "distractors": [
+     "The importance of everybody learning to speak fluent English.",
+     "The way in which spoken languages naturally change over centuries.",
+     "The difficulty translators face when handling a rare language."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The acceptance of linguistic consolidation in the interest of communicative efficiency.",
+    "distractors": [
+     "Ideally, every person on Earth would share a single language.",
+     "Minority languages are, frankly, too difficult for outsiders to learn.",
+     "English is plainly the finest language for the world to adopt."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By lowering the transactional costs of trade, scholarship and diplomacy that translation and mutual incomprehension impose.",
+    "distractors": [
+     "By allowing people from different countries to talk to each other.",
+     "By making it unnecessary for schools to teach foreign languages.",
+     "Through encouraging young people to abandon their local dialect."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "The adoption of a single working language in international scientific publishing and aviation control.",
+    "distractors": [
+     "Businesspeople from different countries conducting meetings in English.",
+     "Tourists managing to order food anywhere in the world.",
+     "Universities offering their degree courses in English."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Linguistic loss is rarely a neutral efficiency gain; it typically accompanies the political marginalisation of the communities who speak the vanishing tongue.",
+    "distractors": [
+     "People would find the world a much less interesting place.",
+     "Translation software already solves most communication problems.",
+     "Older speakers would be upset to hear their language disappear."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The public funding of revitalisation programmes for endangered tongues.",
+    "distractors": [
+     "A minority language carries irreplaceable cultural memory within it.",
+     "People should at least keep speaking their mother tongue at home.",
+     "Schools would do well to teach as many as five separate languages."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By restoring intergenerational transmission through education, broadcasting and official status, which alone arrests decline.",
+    "distractors": [
+     "By recording elderly speakers before their language dies out.",
+     "By paying communities to continue using their traditional language.",
+     "Through printing dictionaries and grammars for rare languages."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Immersion schooling and statutory broadcasting quotas that returned Welsh and Māori to daily use among young speakers.",
+    "distractors": [
+     "Museums holding exhibitions about vanishing minority cultures.",
+     "Universities employing linguists to study unusual languages.",
+     "Governments printing official forms in two different languages."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Revitalisation succeeds only where the language retains economic and social utility; state funding alone cannot manufacture speakers.",
+    "distractors": [
+     "Such programmes are extremely expensive for taxpayers to sustain.",
+     "Young people would rather learn a language that is widely spoken.",
+     "There are simply too many endangered languages to save them all."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "States should fund revitalisation where a speaker community actively seeks it, while promoting bilingualism rather than treating global and local languages as rivals.",
+    "distractors": [
+     "Governments should save minority languages but teach English in schools.",
+     "Public money should be spent only on languages with many speakers.",
+     "Every language should be recorded and then allowed to disappear."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Linguistic diversity and communicative reach are not mutually exclusive, since individual bilingualism secures both simultaneously.",
+    "distractors": [
+     "Because a language is the single most important part of a culture.",
+     "Since the world is becoming more globalised with every passing year.",
+     "Because governments have a duty to protect all minority groups."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p14",
+  "type": "Discuss both views",
+  "promptText": "Some argue children should study only their own country's history to foster national pride. Others believe world history matters more for understanding global affairs. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The appropriate scope of the historical curriculum in compulsory education.",
+    "distractors": [
+     "The basic case for teaching any history to children at all.",
+     "Practical techniques for making history lessons more engaging.",
+     "Whether the facts printed in history textbooks can be trusted."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The confinement of historical study to the national past.",
+    "distractors": [
+     "Children ought to know the names of their country's leaders.",
+     "World history is far too complicated for young minds to grasp.",
+     "Schools simply lack the hours to cover everything that happened."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By constructing a shared civic narrative that anchors identity and situates pupils within their own institutions.",
+    "distractors": [
+     "By teaching children to feel proud of the country they live in.",
+     "By ensuring pupils can recite the important dates of their nation.",
+     "Through celebrating national heroes in every classroom."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Curricula built around the constitutional and social development of the home nation as a foundation for citizenship.",
+    "distractors": [
+     "Schools organising trips to national monuments and battlefields.",
+     "Pupils learning the words of their country's national anthem.",
+     "History lessons focusing on the achievements of famous leaders."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "A purely national syllabus tends toward the selective and celebratory, producing citizens poorly equipped to interpret the country's conduct abroad.",
+    "distractors": [
+     "National history tends to be biased and full of falsehoods.",
+     "Children would find it boring to study only one country.",
+     "Pupils might grow up disliking people from other nations."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The prioritisation of global historical literacy.",
+    "distractors": [
+     "Understanding world events requires knowledge of the wider past.",
+     "World history is enjoyable because it introduces exotic cultures.",
+     "Pupils need world history mainly because it appears in exams."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By equipping pupils with comparative frameworks that render contemporary conflict, migration and trade intelligible.",
+    "distractors": [
+     "By teaching children about wars that happened in other countries.",
+     "By showing pupils that every nation has an interesting past.",
+     "Through making young people more tolerant of foreign cultures."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Thematic units on empire, decolonisation and industrialisation that explain the origins of present geopolitical alignments.",
+    "distractors": [
+     "Lessons covering the two world wars in considerable detail.",
+     "Pupils studying ancient Egypt, Greece and Rome in sequence.",
+     "Classes comparing the customs of several distant countries."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "A sweeping global survey risks superficiality, leaving pupils with fragmentary impressions and no secure grounding in any single context.",
+    "distractors": [
+     "There is far too much world history to fit into a school timetable.",
+     "Teachers are rarely trained to teach the history of other nations.",
+     "Children may lose interest in the country where they actually live."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Schools should teach national history as a case study embedded within global processes, so that local events are examined through international causes and consequences.",
+    "distractors": [
+     "Children should study national history first and world history later.",
+     "Half the timetable should cover the nation and half the world.",
+     "Pupils should choose for themselves which history they prefer."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Historical understanding depends on causation across borders, so a curriculum divided by geography misrepresents how the past actually operated.",
+    "distractors": [
+     "Because children must be proud of their country and open to others.",
+     "Since globalisation means every nation now affects every other.",
+     "Because history teachers should have the freedom to choose topics."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p15",
+  "type": "Discuss both views",
+  "promptText": "Some think the government should bear the full cost of housing and caring for the elderly. Others believe families should take sole responsibility for their older relatives. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The allocation of responsibility for the care of an ageing population.",
+    "distractors": [
+     "Ways to improve the day-to-day quality of an older person's life.",
+     "The various medical conditions that tend to accompany old age.",
+     "The steeply climbing cost of running modern nursing homes."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The assumption of elderly care as a collective obligation of the state.",
+    "distractors": [
+     "The elderly have paid taxes all their lives and have earned this help.",
+     "New nursing homes ought to be built in every single town.",
+     "Older citizens deserve to receive their medicines free of charge."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By pooling longevity risk across the whole population so that no household is bankrupted by the accident of a long illness.",
+    "distractors": [
+     "By using tax revenue to pay for nursing homes and carers.",
+     "By ensuring that no elderly person is ever left living alone.",
+     "Through employing thousands of professional care workers."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Universal long-term care insurance systems funded through general contribution, as operated in Japan and parts of Scandinavia.",
+    "distractors": [
+     "Governments paying a weekly pension to everybody over sixty-five.",
+     "State-run care homes offering places to anyone who applies.",
+     "Councils sending nurses to visit elderly people at home."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Fully institutionalised provision risks substituting professional supervision for familial relationship, producing material security alongside social isolation.",
+    "distractors": [
+     "Such a system would be extraordinarily expensive for taxpayers.",
+     "Care homes are often understaffed and of poor quality.",
+     "Families might visit less often if the state does everything."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The location of caring responsibility exclusively within the family.",
+    "distractors": [
+     "Families really ought to visit their grandparents far more often.",
+     "The government is far too short of money to fund elderly care.",
+     "Most older people would rather stay on in their own homes."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By preserving continuity of relationship and reciprocal obligation across generations within the household.",
+    "distractors": [
+     "By keeping older relatives at home instead of in an institution.",
+     "By saving the government an enormous amount of public money.",
+     "Through teaching children to respect and look after their elders."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Multigenerational households in which adult children provide daily care alongside paid employment.",
+    "distractors": [
+     "Grandparents living close enough to see their families regularly.",
+     "Relatives taking turns to visit an elderly parent each weekend.",
+     "Families arranging for a private nurse to call at the house."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Sole familial responsibility falls disproportionately on women and on families without the income or geography to absorb it, entrenching inequality.",
+    "distractors": [
+     "Many adult children live and work in a different city entirely.",
+     "Looking after an elderly relative is physically exhausting work.",
+     "Some families simply do not get on well with one another."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "The state should guarantee the clinical and financial floor of elderly care while structuring support, respite and leave so that families can sustain the relational element.",
+    "distractors": [
+     "Families should provide care and the government should pay for it.",
+     "Wealthy families should pay while the state supports poorer ones.",
+     "Elderly people should be encouraged to save for their own care."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Dignified ageing requires both the material security only collective provision can guarantee and the continuity of relationship only families can supply.",
+    "distractors": [
+     "Because populations everywhere are ageing faster than ever before.",
+     "Since governments have a moral duty to protect their weakest citizens.",
+     "Because families have always looked after their own relatives."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p16",
+  "type": "Discuss both views",
+  "promptText": "Some argue that genetically modified crops are essential to feed a growing population. Others believe they carry serious, unknown dangers to human health and ecosystems. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The role of genetic modification in securing the global food supply.",
+    "distractors": [
+     "The wider ambition of finally putting an end to world hunger.",
+     "The scientific method used to alter the genetic code of a plant.",
+     "The economics that shape the global farming business today."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The necessity of engineered crops for feeding an expanding population.",
+    "distractors": [
+     "Modified crops simply grow a good deal faster than normal ones.",
+     "Engineered food actually tastes better than the organic kind.",
+     "Farmers stand to earn more money by planting modified seed."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By conferring drought tolerance and pest resistance that raise yield per hectare on land already under cultivation.",
+    "distractors": [
+     "By allowing farmers to harvest their crops far more quickly.",
+     "By making food cheaper in the supermarkets of wealthy nations.",
+     "Through reducing the number of workers a large farm requires."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Vitamin-fortified and saline-tolerant staples cultivated in regions where conventional varieties repeatedly fail.",
+    "distractors": [
+     "Farmers planting modified maize that resists common insects.",
+     "Supermarkets stocking larger and more uniform vegetables.",
+     "Laboratories developing new seed varieties every year."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Contemporary hunger stems predominantly from distribution failure and poverty rather than absolute scarcity, so yield alone cannot resolve it.",
+    "distractors": [
+     "Modified seed is patented and therefore costly for poor farmers.",
+     "Not every country has agreed to permit modified crops.",
+     "Consumers in wealthy countries often refuse to buy such food."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The unquantified risk posed to human health and ecological systems.",
+    "distractors": [
+     "Organic produce is unquestionably healthier than modified food.",
+     "Modified seed is priced beyond the reach of the poorest farmers.",
+     "Tampering with food is unnatural and, to many, morally wrong."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By introducing novel genetic material into open systems where cross-pollination and long-term effects cannot be recalled or contained.",
+    "distractors": [
+     "By producing food that may cause unknown illnesses in people.",
+     "By allowing a few large corporations to control the seed supply.",
+     "Through encouraging farmers to abandon their traditional varieties."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Herbicide-tolerant varieties whose adoption has driven resistant weed populations and narrowed regional crop diversity.",
+    "distractors": [
+     "Modified pollen drifting into neighbouring organic fields.",
+     "Consumers reporting allergies after eating processed foods.",
+     "Wild plants growing near farms beginning to look different."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Selective breeding has altered crop genomes for millennia, so the objection concerns the pace and ownership of modification rather than the principle.",
+    "distractors": [
+     "No study has ever proved that modified food harms human health.",
+     "Conventional farming also damages the natural environment.",
+     "Testing procedures for new crops are already very strict."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Governments should authorise engineered crops under independent long-term monitoring and open licensing, while addressing distribution and poverty as the primary determinants of hunger.",
+    "distractors": [
+     "Modified crops should be permitted only in countries facing famine.",
+     "All genetic modification of food should be halted until it is proven safe.",
+     "Farmers should be free to plant whatever seed they consider best."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "A technology's risk profile is determined by the regulatory and commercial structure around it, not by the act of modification itself.",
+    "distractors": [
+     "Because the world's population is growing faster than its food supply.",
+     "Since scientists cannot possibly predict every long-term consequence.",
+     "Because consumers have a right to know what is in their food."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p17",
+  "type": "Discuss both views",
+  "promptText": "Some think public libraries are no longer needed because information is available online. Others believe they play a vital role as community spaces and sources of physical resources. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The continuing function of public libraries in a digitally connected society.",
+    "distractors": [
+     "The steady fall in the number of physical books people read.",
+     "How to research information accurately using online sources.",
+     "The way local councils fund their various public buildings."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The redundancy of the physical library given universal digital access.",
+    "distractors": [
+     "Buying books online now works out cheaper than borrowing them.",
+     "Libraries have grown too noisy and crowded to be pleasant.",
+     "Hardly anybody still knows how to read a physical book."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By making catalogues, archives and reference works instantly retrievable without the constraint of premises or opening hours.",
+    "distractors": [
+     "By allowing anybody to look up any fact on a mobile phone.",
+     "By saving councils the expense of maintaining old buildings.",
+     "Through letting readers download books instead of borrowing them."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Digitised national archives and open-access repositories consulted remotely by researchers who never enter a reading room.",
+    "distractors": [
+     "Students searching the internet instead of visiting the library.",
+     "Readers buying electronic books to read on a tablet.",
+     "Universities putting their reading lists online for students."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Digital sufficiency presupposes connectivity, devices and search literacy, none of which is evenly distributed across a population.",
+    "distractors": [
+     "Reading from a screen for long periods is tiring on the eyes.",
+     "Because the web spreads false news, printed sources are safer.",
+     "Some rare books have never been digitised by anyone."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The library's role as shared civic infrastructure and guaranteed public space.",
+    "distractors": [
+     "Libraries remain essential because reading paper is easier on the eyes.",
+     "Libraries at least provide steady employment for trained librarians.",
+     "Old buildings should be preserved because they are attractive."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By supplying a non-commercial, unsurveilled space with expert mediation and equipment that low-income users cannot obtain privately.",
+    "distractors": [
+     "By lending books free of charge to anybody who wants them.",
+     "By giving people a quiet place in which they can study.",
+     "Through employing librarians who know where every book is."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Branches functioning as job-search centres, language-class venues and the sole reliable internet access for households without broadband.",
+    "distractors": [
+     "Libraries running story sessions for young children on Saturdays.",
+     "People sitting and reading newspapers in the reading room.",
+     "Book clubs meeting in the library once a month."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "The civic argument justifies the institution rather than its historical form, and libraries that have not restructured around it continue to lose users.",
+    "distractors": [
+     "Many libraries have already been closed by their local councils.",
+     "Younger people rarely visit the library building at all.",
+     "Council budgets are far too small to maintain every branch."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Libraries should be refunded explicitly as community infrastructure and digital-access providers rather than as book repositories, retaining lending as one service among several.",
+    "distractors": [
+     "Libraries should keep their books but also install more computers.",
+     "Public libraries should be closed and the money spent on internet access.",
+     "Every town should retain its library exactly as it has always been."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Universal access to information depends on the physical and human infrastructure that makes digital resources usable, not merely on their existence.",
+    "distractors": [
+     "Because reading books is fundamental to an educated society.",
+     "Since the internet cannot be relied upon to tell the truth.",
+     "Because libraries have served communities for many generations."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p18",
+  "type": "Discuss both views",
+  "promptText": "Some argue that personal lifestyle changes are the best way to fight climate change. Others believe only large-scale government action and corporate regulation can work. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The level at which intervention against climate change is most effective.",
+    "distractors": [
+     "The chief causes and consequences of a warming planet.",
+     "Practical methods for recycling household waste properly.",
+     "The worldwide shift toward cleaner, renewable sources of energy."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The primacy of individual behavioural change in reducing emissions.",
+    "distractors": [
+     "People ought to switch to electric cars to cut their pollution.",
+     "Everyone should turn vegetarian if the planet is to be saved.",
+     "Individuals caused the problem, so individuals must resolve it."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By aggregating household demand signals that redirect commercial supply and normalise low-carbon behaviour socially.",
+    "distractors": [
+     "By reducing the amount of energy each household consumes.",
+     "By making people feel personally responsible for the planet.",
+     "Through encouraging families to recycle far more of their waste."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Consumer demand shifts that have made plant-based ranges and domestic solar installation commercially mainstream.",
+    "distractors": [
+     "Households switching off lights and turning down the heating.",
+     "People choosing to cycle to work instead of driving.",
+     "Families buying reusable bags instead of plastic ones."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Individual footprints are largely determined by infrastructure the individual does not control, and the framing itself was promoted to deflect regulatory pressure.",
+    "distractors": [
+     "Most people are simply too busy to change their daily habits.",
+     "Poorer households cannot afford electric cars or solar panels.",
+     "One person's actions make almost no difference to the climate."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The necessity of statutory regulation and structural reform.",
+    "distractors": [
+     "Governments should invest in building vast solar-panel farms.",
+     "Greedy corporations are the true villains destroying the Earth.",
+     "Ordinary people are, frankly, too lazy to change their habits."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By repricing emissions and rebuilding energy and transport systems, thereby altering the default option available to every household.",
+    "distractors": [
+     "By passing laws that force companies to pollute much less.",
+     "By fining corporations that release too much carbon dioxide.",
+     "Through spending public money on renewable energy projects."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Carbon pricing, grid decarbonisation and efficiency standards that lowered national emissions irrespective of individual intention.",
+    "distractors": [
+     "Governments signing international agreements on climate change.",
+     "Countries banning the sale of new petrol cars after a set date.",
+     "Ministers giving speeches about the dangers of global warming."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Regulation of this magnitude is politically unsustainable without the public consent that visible individual commitment helps to generate.",
+    "distractors": [
+     "Governments frequently change and abandon their predecessors' policies.",
+     "Large corporations lobby politicians to weaken environmental laws.",
+     "International agreements are rarely enforced with any seriousness."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Structural regulation must carry the decisive share of decarbonisation, with individual action valued chiefly as the constituency that makes such regulation politically viable.",
+    "distractors": [
+     "Governments and individuals should each do half of the work required.",
+     "Citizens should change their habits and then demand better laws.",
+     "Only corporations should be held responsible for climate change."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Emissions are governed by the systems within which choices are made, so durable reduction requires changing the system while retaining the public mandate to do so.",
+    "distractors": [
+     "Because climate change is the most urgent problem humanity faces.",
+     "Since individuals alone can never reduce emissions quickly enough.",
+     "Because governments have far more money than ordinary citizens."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p19",
+  "type": "Discuss both views",
+  "promptText": "Some believe new buildings should be designed in a traditional style to blend with historic surroundings. Others argue that bold, modern architecture should always be encouraged. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The design principles that should govern new construction in established urban settings.",
+    "distractors": [
+     "The separate task of preserving genuinely old, historic buildings.",
+     "How sustainable and eco-friendly new construction can be made.",
+     "Ways to relieve the housing shortage gripping large cities."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The obligation of new development to harmonise with its historic context.",
+    "distractors": [
+     "Old-fashioned buildings are simply better looking than modern ones.",
+     "Modern architecture is, to many eyes, ugly and rather depressing.",
+     "Tourists come only to admire the old-fashioned buildings anyway."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By maintaining the material, scale and rhythm of a streetscape so that its accumulated coherence is not fractured.",
+    "distractors": [
+     "By ensuring new buildings look similar to the ones beside them.",
+     "By using traditional bricks and stone rather than glass and steel.",
+     "Through preventing architects from designing anything unusual."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Conservation-area codes that regulate height, frontage and materials while permitting contemporary interior planning.",
+    "distractors": [
+     "New houses in a historic town built in an old-fashioned style.",
+     "Councils refusing permission for a tall tower near a cathedral.",
+     "Developers copying the design of nearby period buildings."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Strict stylistic imitation produces pastiche that flattens the historical record, since every celebrated quarter was itself an accumulation of successive contemporary styles.",
+    "distractors": [
+     "Building in the traditional style has grown extremely expensive.",
+     "Traditional designs are poorly suited to modern family living.",
+     "Few craftsmen today still know how to work in the old methods."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The encouragement of unambiguously contemporary architectural expression.",
+    "distractors": [
+     "Modern towers rise higher and so accommodate many more people.",
+     "Every old building should be cleared away to make room for the new.",
+     "Architects deserve the freedom to design whatever they wish."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By allowing each generation to register its own technical capacity and social priorities in the built fabric of the city.",
+    "distractors": [
+     "By producing buildings that look striking and attract attention.",
+     "By using new materials that were unavailable in previous centuries.",
+     "Through giving cities a reputation for being modern and dynamic."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Assertively contemporary civic and cultural buildings inserted into historic centres that have become defining landmarks.",
+    "distractors": [
+     "Glass office towers built in the business district of a city.",
+     "Museums designed in unusual and eye-catching shapes.",
+     "New apartment blocks constructed on the edge of town."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Novelty pursued without regard to context frequently produces buildings that are individually admired and collectively corrosive to the streets around them.",
+    "distractors": [
+     "Modern buildings often age badly and look dated within decades.",
+     "Many residents dislike the appearance of contemporary architecture.",
+     "Bold designs are usually far more expensive to construct."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Planning should govern scale, material and street relationship while leaving stylistic expression free, so that new work is legibly of its own time yet contextually disciplined.",
+    "distractors": [
+     "Historic districts should be traditional and new districts modern.",
+     "Architects should be required to submit designs to a public vote.",
+     "Each city should choose one architectural style and enforce it."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "A city's value lies in the legible accumulation of successive periods, which neither imitation nor unconstrained novelty is capable of producing.",
+    "distractors": [
+     "Because beauty is subjective and everybody's taste is different.",
+     "Since historic buildings attract tourists and generate revenue.",
+     "Because architecture should always reflect the age it was built in."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p20",
+  "type": "Discuss both views",
+  "promptText": "Some argue that raising the minimum wage cuts poverty and strengthens the economy. Others believe it drives businesses to raise prices and shed jobs. Discuss both views and give your own opinion.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The economic consequences of statutory increases to the wage floor.",
+    "distractors": [
+     "The steadily widening gulf in wealth between the richest and the poorest.",
+     "Tactics for negotiating a better salary with one's employer.",
+     "The punishing cost of living that city dwellers now endure."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The alleviation of poverty and stimulation of demand through higher mandated pay.",
+    "distractors": [
+     "Poorer workers deserve to earn more simply in order to get by.",
+     "Everyone, ideally, would be paid exactly the same wage.",
+     "The state should simply hand money out to all its citizens."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By transferring income to households with a high propensity to spend, which circulates locally and reduces reliance on state subsidy.",
+    "distractors": [
+     "By giving low-paid workers more money at the end of each month.",
+     "By forcing profitable companies to share their earnings fairly.",
+     "Through making employers value their staff more highly."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Jurisdictions where phased statutory increases raised household income and in-work benefit dependency fell without measurable job loss.",
+    "distractors": [
+     "Workers on the minimum wage receiving a pay rise each April.",
+     "Shop staff being able to afford their rent more comfortably.",
+     "Companies advertising jobs at above the legal minimum."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "The effect is contingent on the increase remaining proportionate to local productivity; beyond that threshold the gains are absorbed by prices.",
+    "distractors": [
+     "Some employers will simply reduce their workers' hours instead.",
+     "Higher wages do not help those who have no job at all.",
+     "Prices in the shops may rise to cover the additional cost."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The inflationary and employment-suppressing effect of mandated pay increases.",
+    "distractors": [
+     "Small firms cannot afford to pay their workers any more.",
+     "The poor will only squander whatever extra they are given.",
+     "Minimum-wage jobs were only ever meant for teenagers anyway."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By raising the marginal cost of labour above its productive value, prompting firms to reduce hours, raise prices or substitute automation.",
+    "distractors": [
+     "By making it too expensive for small businesses to hire anybody.",
+     "By forcing shops to charge their customers considerably more.",
+     "Through encouraging companies to move their operations abroad."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Labour-intensive sectors responding to sharp statutory rises with reduced rostered hours and accelerated self-service adoption.",
+    "distractors": [
+     "Small shops closing down because they cannot pay their staff.",
+     "Restaurants putting their menu prices up after a wage increase.",
+     "Factories buying machines to do the work of several workers."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Employers in concentrated local labour markets hold wage-setting power, so moderate statutory floors can raise pay without the predicted displacement.",
+    "distractors": [
+     "Businesses often exaggerate the harm that wage rises will cause.",
+     "Companies have raised prices for many other reasons besides wages.",
+     "Automation would have replaced those jobs in any case."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Governments should set the floor by independent assessment of regional productivity and raise it in predictable increments, so that pay rises without exceeding what local employers can absorb.",
+    "distractors": [
+     "The minimum wage should rise, but only slowly and by a little.",
+     "Wages should be left entirely to negotiation between employer and worker.",
+     "The state should top up low wages rather than raise the minimum."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Whether a wage floor relieves poverty or destroys employment depends on its calibration to local economic conditions, not on the policy in principle.",
+    "distractors": [
+     "Because every worker deserves to earn enough to live decently.",
+     "Since businesses will always resist paying their staff more.",
+     "Because inflation makes any wage increase worthless within a year."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p21",
+  "type": "Agree or disagree",
+  "promptText": "All children should study a foreign language in school, starting in the earliest grades. To what extent do you agree or disagree with this statement?",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The mandating of foreign language acquisition in early childhood education.",
+    "distractors": [
+     "Whether learning a second language is genuinely useful in adult life.",
+     "The most effective classroom methods for teaching vocabulary to children.",
+     "The dominance of English as the world's principal second language."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The necessity of preserving foundational native language skills.",
+    "distractors": [
+     "Young children should master reading and writing before anything else.",
+     "The belief that small children cannot concentrate on two languages.",
+     "Ensuring that every pupil achieves a good grade in their own language."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By ensuring young learners establish robust cognitive frameworks in a single language before additional systems are layered upon them.",
+    "distractors": [
+     "By giving children more time to practise their reading and spelling.",
+     "By preventing pupils from becoming confused between two grammars.",
+     "Through allowing teachers to concentrate on one subject at a time."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Educational models that delay intensive foreign language instruction until native literacy benchmarks are secured.",
+    "distractors": [
+     "Schools teaching a foreign language for only one hour each week.",
+     "Parents speaking exclusively their own language at home.",
+     "Countries that begin foreign language lessons in secondary school."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Postponing bilingualism actively guarantees missing the period of highest natural phonetic absorption.",
+    "distractors": [
+     "Older pupils often find learning a new language rather boring.",
+     "Teenagers already have too many other subjects to study.",
+     "Children who start late may never speak with perfect grammar."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The exploitation of the critical window of childhood neuroplasticity.",
+    "distractors": [
+     "Young children are able to learn languages much more easily.",
+     "The view that early learners will secure better jobs in future.",
+     "Making school more enjoyable by introducing a foreign culture."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By capitalising on the brain's innate capacity for effortless phonological and grammatical acquisition before that faculty diminishes.",
+    "distractors": [
+     "By starting lessons early so that children have more years to practise.",
+     "By making children more interested in other countries and cultures.",
+     "Through employing native speakers to teach in primary schools."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Highly successful bilingual immersion programmes in which infants acquire a second language through ordinary play and instruction.",
+    "distractors": [
+     "Primary schools introducing weekly French or Mandarin lessons.",
+     "Children watching cartoons in a foreign language at home.",
+     "Families moving abroad so their children become bilingual."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Poorly designed early language programmes can induce academic anxiety and produce superficial competence in both languages.",
+    "distractors": [
+     "Primary teachers are seldom qualified to teach a foreign language.",
+     "Schools may not have enough hours in the timetable.",
+     "Some parents object to their children learning another language."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Policymakers must introduce foreign languages in the earliest grades through play-based immersion while simultaneously safeguarding intensive native-language literacy.",
+    "distractors": [
+     "Foreign languages should be taught early, but only for a short period each week.",
+     "Children should master their own language first and begin a second at eleven.",
+     "Each family should decide when their own child begins a foreign language."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Optimal cognitive development requires the neurological benefits of early bilingualism without sacrificing the structural grounding of a mother tongue.",
+    "distractors": [
+     "Because children who speak two languages will find better employment.",
+     "Since the world is now globalised and everyone must communicate.",
+     "Because young children learn far more quickly than adults do."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p22",
+  "type": "Advantages & disadvantages",
+  "promptText": "Children today spend more time watching television than they did in the past. Describe some of the advantages and disadvantages of television for children.",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The escalating consumption of broadcast media by adolescents.",
+    "distractors": [
+     "Whether television is more harmful to children than the internet.",
+     "The techniques broadcasters use to hold a young viewer's attention.",
+     "The declining amount of time children now spend reading books."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The educational potential of high-quality programming.",
+    "distractors": [
+     "Television can teach children a great many interesting facts.",
+     "The belief that documentaries are better than cartoons.",
+     "Ensuring that children watch only programmes made for their age."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By democratising access to global knowledge and diverse cultural narratives.",
+    "distractors": [
+     "By showing children pictures of places they will never visit.",
+     "By keeping young viewers quietly occupied for several hours.",
+     "Through helping children improve their listening and vocabulary."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Exposing developing minds to advanced scientific documentaries and historical broadcasts.",
+    "distractors": [
+     "Children watching educational cartoons that teach the alphabet.",
+     "Families sitting together to watch the evening news.",
+     "Schools showing films to classes on a Friday afternoon."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "This passive consumption inherently limits active physical engagement and real-world problem-solving.",
+    "distractors": [
+     "Not every television programme is genuinely educational.",
+     "Children may struggle to remember what they have watched.",
+     "Some documentaries are far too difficult for young viewers."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The detrimental impact on physical and social development.",
+    "distractors": [
+     "Watching too much television is bad for a child's eyesight.",
+     "The idea that children should be playing outdoors instead.",
+     "Parents using the television as a convenient babysitter."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By catalysing sedentary behaviours and reducing organic interpersonal communication.",
+    "distractors": [
+     "By keeping children sitting indoors for hours every evening.",
+     "By exposing young viewers to violent and unsuitable scenes.",
+     "Through preventing families from talking during mealtimes."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "Rising rates of childhood obesity and delayed social skills in highly digitised households.",
+    "distractors": [
+     "Children who watch television instead of playing with friends.",
+     "Young people copying the behaviour they see on screen.",
+     "Pupils arriving at school tired after watching late-night programmes."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Television is merely a tool, and these negative impacts are largely determined by a lack of parental mediation rather than the medium itself.",
+    "distractors": [
+     "Children would simply find another sedentary activity instead.",
+     "Obesity is caused mainly by diet rather than by television.",
+     "Modern programmes are far better made than those of the past."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "While the educational potential of television offers real value, it must be carefully managed with strict parental oversight to mitigate the risks of unregulated, sedentary screen time.",
+    "distractors": [
+     "Children should be permitted to watch only educational programmes.",
+     "Television should be limited to one hour on every school day.",
+     "Parents should remove the television from the home altogether."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "Optimal human development requires a balance between rapid digital cognitive stimulation and essential physical and social maturation.",
+    "distractors": [
+     "Because television has both good and bad effects on young children.",
+     "Since parents are ultimately responsible for how their children behave.",
+     "Because children will always want to watch their favourite programmes."
+    ]
+   }
+  ]
+ },
+ {
+  "id": "p23",
+  "type": "Agree or disagree",
+  "promptText": "Everybody should be allowed admission to university or college programs regardless of their level of academic ability. To what extent do you agree or disagree with this statement?",
+  "phases": [
+   {
+    "phaseName": "1: Core Topic",
+    "correct": "The democratisation of tertiary education admissions.",
+    "distractors": [
+     "Whether a university degree is still worth the money it costs.",
+     "The examinations that schools use to assess academic ability.",
+     "The overcrowding of universities in rapidly developing nations."
+    ]
+   },
+   {
+    "phaseName": "2: Facet A",
+    "correct": "The necessity of preserving elite academic standards.",
+    "distractors": [
+     "Only clever students should be allowed to attend university.",
+     "The view that examinations are the fairest way to select students.",
+     "Ensuring that universities maintain their international reputation."
+    ]
+   },
+   {
+    "phaseName": "3: Mechanism A",
+    "correct": "By ensuring that specialised programmes are populated exclusively by cohorts capable of handling rigorous, advanced-level coursework.",
+    "distractors": [
+     "By turning away applicants whose examination grades are too low.",
+     "By keeping class sizes small enough for proper teaching.",
+     "Through requiring every candidate to sit an entrance examination."
+    ]
+   },
+   {
+    "phaseName": "4: Example A",
+    "correct": "Highly selective admissions processes at top-tier research institutions.",
+    "distractors": [
+     "Universities asking applicants for high grades in three subjects.",
+     "Medical schools interviewing candidates before offering places.",
+     "Colleges rejecting most of the students who apply to them."
+    ]
+   },
+   {
+    "phaseName": "5: Nuance A",
+    "correct": "Rigid enforcement of this perspective frequently perpetuates socioeconomic disparities, since early academic performance is closely tied to financial privilege.",
+    "distractors": [
+     "Some capable students perform badly on the day of the examination.",
+     "Universities may reject applicants who would have worked hard.",
+     "Entrance tests do not measure a student's creativity or character."
+    ]
+   },
+   {
+    "phaseName": "6: Facet B",
+    "correct": "The dismantling of systemic socioeconomic barriers.",
+    "distractors": [
+     "Everybody deserves the chance to study at a university.",
+     "The belief that education is a fundamental human right.",
+     "Allowing older people to return to study later in life."
+    ]
+   },
+   {
+    "phaseName": "7: Mechanism B",
+    "correct": "By facilitating upward social mobility and equitable access to specialised knowledge.",
+    "distractors": [
+     "By giving poorer students the same opportunities as wealthy ones.",
+     "By increasing the number of graduates a country produces.",
+     "Through removing the entrance examinations that exclude applicants."
+    ]
+   },
+   {
+    "phaseName": "8: Example B",
+    "correct": "The widespread success of open-enrolment community college systems in North America.",
+    "distractors": [
+     "Universities reserving a number of places for disadvantaged pupils.",
+     "Governments offering scholarships to students from poor families.",
+     "Colleges accepting mature students without formal qualifications."
+    ]
+   },
+   {
+    "phaseName": "9: Nuance B",
+    "correct": "Unmitigated adherence to this model often triggers the dilution of academic rigour and the overextension of university resources.",
+    "distractors": [
+     "Universities would need far more lecturers and larger buildings.",
+     "Some admitted students would drop out within the first year.",
+     "A degree becomes less valuable when everybody possesses one."
+    ]
+   },
+   {
+    "phaseName": "10: Synthesized Position",
+    "correct": "Policymakers must leverage the accessibility of open enrolment for foundational tertiary programmes while simultaneously deploying rigorous standards for advanced research institutions.",
+    "distractors": [
+     "Universities should accept everybody but expel those who fail their examinations.",
+     "Entry requirements should be lowered slightly for disadvantaged applicants.",
+     "Every applicant should be admitted and charged according to their grades."
+    ]
+   },
+   {
+    "phaseName": "11: Rationale",
+    "correct": "A sustainable and equitable education system must balance broad societal uplift with the preservation of cutting-edge academic excellence.",
+    "distractors": [
+     "Because every young person deserves an equal chance in life.",
+     "Since countries need as many well-qualified graduates as possible.",
+     "Because universities cannot survive without charging tuition fees."
+    ]
+   }
+  ]
+ }
+]

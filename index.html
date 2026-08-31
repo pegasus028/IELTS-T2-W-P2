@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+<title>IELTS · The 11-Variable Matrix</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  /* ============ THEME TOKENS (light) ============ */
+  :root{
+    --bg:#f4ead7; --bg-2:#ede0c8; --ink:#1a1410;
+    --text:#1a1410; --text-soft:#4a3f30;
+    --card:#ede0c8; --card-line:#1a1410;
+    --input-bg:#f4ead7;
+    --gold:#c8961e; --gold-deep:#8f6608;
+    --green:#2f7d52; --green-soft:#d6ead7;
+    --red:#b8442f; --red-soft:#f0d3cb;
+    --trap:#d1490f; --trap-soft:#ffdcc7; --trap-ink:#6d2705;
+    --amber:#8a5a00; --amber-soft:#fbeccb;
+    --prompt-bg:#1a1410; --prompt-text:#f4ead7; --prompt-label:#e0ac2f;
+    --shadow:rgba(26,20,16,.18); --hard:#1a1410;
+    --slot-bg:#f9f2e2; --slot-line:#c8961e;
+  }
+  /* ============ THEME TOKENS (dark) ============ */
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#141110; --bg-2:#211c18; --ink:#f2e9d8;
+      --text:#f2e9d8; --text-soft:#bfae93;
+      --card:#211c18; --card-line:#4a3f30;
+      --input-bg:#171310;
+      --gold:#e0ac2f; --gold-deep:#e6bb54;
+      --green:#3f9c68; --green-soft:#17301f;
+      --red:#d4593f; --red-soft:#361611;
+      --trap:#e2651f; --trap-soft:#3a1c07; --trap-ink:#ffc79b;
+      --amber:#e0ac2f; --amber-soft:#33270e;
+      --prompt-bg:#2b241d; --prompt-text:#f7f0e2; --prompt-label:#e6bb54;
+      --shadow:rgba(0,0,0,.55); --hard:#000;
+      --slot-bg:#191512; --slot-line:#6d5620;
+    }
+  }
+  :root[data-theme="dark"]{
+      --bg:#141110; --bg-2:#211c18; --ink:#f2e9d8;
+      --text:#f2e9d8; --text-soft:#bfae93;
+      --card:#211c18; --card-line:#4a3f30;
+      --input-bg:#171310;
+      --gold:#e0ac2f; --gold-deep:#e6bb54;
+      --green:#3f9c68; --green-soft:#17301f;
+      --red:#d4593f; --red-soft:#361611;
+      --trap:#e2651f; --trap-soft:#3a1c07; --trap-ink:#ffc79b;
+      --amber:#e0ac2f; --amber-soft:#33270e;
+      --prompt-bg:#2b241d; --prompt-text:#f7f0e2; --prompt-label:#e6bb54;
+      --shadow:rgba(0,0,0,.55); --hard:#000;
+      --slot-bg:#191512; --slot-line:#6d5620;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  html,body{height:100%}
+  body{
+    font-family:'Space Mono',monospace;background:var(--bg);color:var(--text);
+    background-image:radial-gradient(circle at 12% 18%,rgba(200,150,30,.10),transparent 40%),
+                     radial-gradient(circle at 88% 82%,rgba(47,125,82,.08),transparent 42%);
+    min-height:100%;display:flex;flex-direction:column;
+    padding-bottom:env(safe-area-inset-bottom);
+  }
+  .wrap{width:100%;max-width:560px;margin:0 auto;padding:16px 16px 32px;flex:1;display:flex;flex-direction:column}
+  header{text-align:center;margin:6px 0 16px;position:relative}
+  .kicker{font-size:11px;letter-spacing:.30em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
+  h1{font-family:'Fraunces',serif;font-weight:900;font-size:29px;line-height:.98;margin-top:4px;color:var(--text)}
+  h1 em{font-style:italic;color:var(--gold-deep)}
+  .bar-deco{height:5px;width:60px;background:var(--gold);margin:12px auto 0;border-radius:3px}
+  .themeBtn{position:absolute;top:0;right:0;background:transparent;border:2px solid var(--card-line);
+            color:var(--text);border-radius:8px;width:34px;height:34px;font-size:15px;cursor:pointer;line-height:1}
+
+  .card{background:var(--card);border:2px solid var(--card-line);border-radius:14px;
+        box-shadow:6px 6px 0 var(--shadow);padding:20px}
+  .card + .card{margin-top:14px}
+
+  label{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:8px;color:var(--gold-deep)}
+  input[type=text],select{width:100%;font-family:'Space Mono',monospace;font-size:16px;padding:13px 14px;
+        border:2px solid var(--card-line);border-radius:9px;background:var(--input-bg);color:var(--text)}
+  input[type=text]:focus,select:focus{outline:none;box-shadow:3px 3px 0 var(--gold)}
+  .row{display:flex;gap:10px}
+  .row > div{flex:1}
+
+  .btn{display:block;width:100%;font-family:'Fraunces',serif;font-weight:900;font-size:18px;
+       padding:15px;border:2px solid var(--hard);border-radius:11px;background:var(--gold);color:#1a1410;
+       cursor:pointer;box-shadow:4px 4px 0 var(--hard);transition:transform .08s,box-shadow .08s;margin-top:14px}
+  .btn:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--hard)}
+  .btn.ghost{background:transparent;color:var(--text);border-color:var(--card-line);box-shadow:4px 4px 0 var(--shadow)}
+  .btn:disabled{opacity:.6;cursor:default}
+  .hint{font-size:11px;color:var(--text-soft);line-height:1.5;margin-top:10px;text-align:center}
+
+  /* ---- Game meta bar ---- */
+  .meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:13px;gap:8px;flex-wrap:wrap}
+  .pill{background:var(--prompt-bg);color:var(--prompt-text);padding:5px 11px;border-radius:20px;font-weight:700;font-size:12px;letter-spacing:.06em;white-space:nowrap}
+  .scorepill{background:var(--green);color:#fff}
+  .streakpill{background:var(--gold);color:#1a1410;display:none}
+  .streakpill.on{display:inline-block}
+
+  /* ---- Sticky prompt (theme-aware) ---- */
+  .prompt-box{
+    background:var(--prompt-bg);color:var(--prompt-text);border-radius:12px;
+    border:2px solid var(--card-line);
+    padding:13px 15px;margin-bottom:12px;
+    max-height:132px;overflow-y:auto;-webkit-overflow-scrolling:touch;
+    position:sticky;top:8px;z-index:5;
+  }
+  .prompt-box .plabel{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--prompt-label);
+       font-weight:700;margin-bottom:6px;display:flex;justify-content:space-between;gap:10px}
+  .prompt-box .ptype{color:var(--prompt-label);opacity:.85;letter-spacing:.1em}
+  .prompt-box .ptext{font-family:'Fraunces',serif;font-size:15px;line-height:1.55;font-weight:400;color:var(--prompt-text)}
+
+  /* ---- Round progress: 11 dots ---- */
+  .progress{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;gap:8px;flex-wrap:wrap}
+  .promptCount{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;white-space:nowrap}
+  .dots{display:flex;gap:4px}
+  .dot{width:16px;height:6px;border-radius:6px;background:var(--bg);border:1.5px solid var(--card-line);transition:background .2s}
+  .dot.done{background:var(--green);border-color:var(--green)}
+  .dot.half{background:var(--amber);border-color:var(--amber)}
+  .dot.miss{background:var(--red);border-color:var(--red)}
+  .dot.cur{background:var(--gold);border-color:var(--gold)}
+
+  /* ---- Speed bar ---- */
+  .speed-track{height:10px;border:2px solid var(--card-line);border-radius:20px;background:var(--bg);overflow:hidden;margin-bottom:6px}
+  .speed-fill{height:100%;width:100%;background:var(--green);transition:width .25s linear, background .25s linear;border-radius:20px}
+  .speed-fill.mid{background:var(--gold)}
+  .speed-fill.low{background:var(--red)}
+  .speed-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);text-align:right;margin-bottom:12px;height:12px;font-weight:700}
+
+  /* ---- Phase ---- */
+  .phase-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px;gap:10px}
+  .phase-tag{font-family:'Fraunces',serif;font-weight:900;font-size:21px;color:var(--gold-deep)}
+  .phase-count{font-size:11px;letter-spacing:.12em;color:var(--gold-deep);text-transform:uppercase;white-space:nowrap}
+  .phase-q{font-family:'Space Mono',monospace;font-size:12.5px;color:var(--text-soft);margin-bottom:10px;line-height:1.5}
+  .slot{background:var(--slot-bg);border-left:4px solid var(--slot-line);border-radius:0 8px 8px 0;
+        padding:9px 12px;margin-bottom:14px;font-size:11.5px;line-height:1.6;color:var(--text-soft)}
+  .slot b{color:var(--gold-deep);font-weight:700}
+  .slot .slab{display:block;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px;font-weight:700}
+
+  .opts{display:grid;grid-template-columns:1fr;gap:10px}
+  .opt{
+    display:flex;align-items:flex-start;gap:9px;width:100%;
+    font-family:'Space Mono',monospace;font-size:14px;line-height:1.45;padding:13px 14px;
+    border:2px solid var(--card-line);border-radius:10px;background:var(--input-bg);
+    cursor:pointer;text-align:left;transition:transform .1s, background .12s;
+    color:var(--text);
+  }
+  .opt .kbd{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;
+       border:1.5px solid currentColor;border-radius:5px;font-size:11px;font-weight:700;flex:0 0 auto;opacity:.65;margin-top:1px}
+  .opt:active{transform:scale(.99)}
+  @media (hover:hover){.opt:not(:disabled):hover{border-color:var(--gold)}}
+  .opt.right{background:var(--green);color:#fff;border-color:var(--green)}
+  .opt.wrong{background:var(--red);color:#fff;border-color:var(--red)}
+  .opt.trap{background:var(--trap);color:#fff;border-color:var(--trap)}
+  .opt.spent{opacity:.45}
+  .opt.dim{opacity:.5}
+  .opt:disabled{cursor:default}
+
+  .feedback{margin-top:16px;padding:14px;border-radius:10px;font-size:13.5px;line-height:1.6;display:none;color:var(--text)}
+  .feedback.show{display:block}
+  .feedback.good{background:var(--green-soft);border:2px solid var(--green)}
+  .feedback.half{background:var(--amber-soft);border:2px solid var(--amber)}
+  .feedback.bad{background:var(--red-soft);border:2px solid var(--red)}
+  .feedback.retry{background:var(--amber-soft);border:2px solid var(--amber)}
+  .feedback.trap{background:var(--trap-soft);border:2px solid var(--trap);color:var(--trap-ink)}
+  .feedback strong{font-weight:700}
+  .corr{font-weight:700;color:var(--gold-deep)}
+
+  .hide{display:none!important}
+  .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(160%);
+         background:var(--prompt-bg);color:var(--prompt-text);padding:12px 20px;border-radius:30px;font-size:13px;
+         transition:transform .3s;z-index:50;max-width:90%;text-align:center;font-weight:700;border:2px solid var(--card-line)}
+  .toast.show{transform:translateX(-50%) translateY(0)}
+  .toast.streak{background:var(--gold);color:#1a1410}
+  .toast.speed{background:var(--green);color:#fff}
+
+  .done{text-align:center;padding:22px 6px}
+  .done h2{font-family:'Fraunces',serif;font-size:28px;margin-bottom:6px}
+  .done .big{font-family:'Fraunces',serif;font-size:58px;color:var(--gold-deep);font-weight:900;margin:6px 0}
+  .done .sub{font-size:13px;color:var(--text-soft);line-height:1.7}
+  .best{font-size:12px;color:var(--gold-deep);font-weight:700;margin-top:8px;letter-spacing:.1em;text-transform:uppercase}
+  .breakdown{text-align:left;margin:16px 0 4px;font-size:12px;line-height:1.9;color:var(--text-soft);
+             border-top:2px dashed var(--card-line);border-bottom:2px dashed var(--card-line);padding:10px 0}
+  .breakdown span{float:right;font-weight:700;color:var(--text)}
+  footer{text-align:center;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);margin-top:18px;opacity:.75}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <button class="themeBtn" id="themeBtn" title="Toggle light / dark">◐</button>
+    <div class="kicker">Satriwithaya · English Program</div>
+    <h1>The 11-Variable <em>Matrix</em></h1>
+    <div class="bar-deco"></div>
+  </header>
+
+  <!-- ============ JOIN / MODE SELECT ============ -->
+  <section id="join" class="card">
+    <label for="teamName">Team Name / Player Name</label>
+    <input type="text" id="teamName" placeholder="e.g. The Thesis Statements" maxlength="28" autocomplete="off" />
+
+    <div class="row" style="margin-top:14px">
+      <div>
+        <label for="cfgPrompts">Prompts / round</label>
+        <select id="cfgPrompts">
+          <option value="1">1 · ~4 min</option>
+          <option value="2" selected>2 · ~9 min</option>
+          <option value="3">3 · ~13 min</option>
+          <option value="5">5 · ~22 min</option>
+          <option value="0">All 23</option>
+        </select>
+      </div>
+      <div>
+        <label for="cfgSeconds">Seconds / phase</label>
+        <select id="cfgSeconds">
+          <option value="20">20 s</option>
+          <option value="25" selected>25 s</option>
+          <option value="30">30 s</option>
+          <option value="45">45 s</option>
+          <option value="0">No timer</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="btn" id="arenaBtn">Enter Live Arena</button>
+    <button class="btn ghost" id="soloBtn">Solo Practice Mode</button>
+    <p class="hint">Live Arena posts your score to the class leaderboard.<br>Solo Practice saves your best score on this device only.</p>
+  </section>
+
+  <!-- ============ GAME ============ -->
+  <section id="game" class="card hide">
+    <div class="meta">
+      <span class="pill" id="teamPill">—</span>
+      <span class="pill streakpill" id="streakPill">🔥 0</span>
+      <span class="pill scorepill" id="scorePill">0 pts</span>
+    </div>
+
+    <div class="prompt-box" id="promptBox">
+      <div class="plabel"><span>The Prompt</span><span class="ptype" id="promptType"></span></div>
+      <div class="ptext" id="promptText">—</div>
+    </div>
+
+    <div class="progress">
+      <span class="promptCount" id="promptCount">Prompt 1 / 2</span>
+      <span class="dots" id="dots"></span>
+    </div>
+
+    <div class="speed-track" id="speedTrack"><div class="speed-fill" id="speedFill"></div></div>
+    <div class="speed-label" id="speedLabel">⚡ Speed bonus active</div>
+
+    <div class="phase-head">
+      <span class="phase-tag" id="phaseTag">—</span>
+      <span class="phase-count" id="phaseCount">Variable 1 / 11</span>
+    </div>
+    <div class="phase-q" id="phaseQ">Choose the option that best fits this variable.</div>
+    <div class="slot" id="slotBox"><span class="slab">Template slot</span><span id="slotText"></span></div>
+
+    <div class="opts" id="opts"></div>
+
+    <div class="feedback" id="feedback"></div>
+    <button class="btn ghost hide" id="nextBtn">Next →</button>
+  </section>
+
+  <!-- ============ DONE ============ -->
+  <section id="done" class="card hide">
+    <div class="done">
+      <h2>Round Complete!</h2>
+      <div class="big" id="finalScore">0</div>
+      <div class="breakdown" id="breakdown"></div>
+      <p class="sub" id="finalSummary"></p>
+      <div class="best" id="bestLine"></div>
+      <button class="btn ghost" id="againBtn">Play Again</button>
+      <button class="btn ghost" id="menuBtn">Change Settings</button>
+    </div>
+  </section>
+
+  <footer id="connNote">Connecting…</footer>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ==================== CONFIG ==================== */
+/* Deployed Google Apps Script Web App URL (same as leaderboard.html) */
+const API_URL = "https://script.google.com/macros/s/AKfycbxFyjmyRRH9DrFS7seWIfYyw6lPzxx9eosrPnYKxMd8PWke91c4eJU1B-YSCk0lSHMAPA/exec";
+
+/* External question bank (11-variable schema) */
+const PROMPTS_URL = "prompts.json";
+
+/* Scoring constants */
+const BASE_POINTS   = 10;
+const SPEED_BONUS   = 5;   // first attempt only, answered while bar > 50%
+const SECOND_TRY_POINTS = 5;   // exactly half of BASE_POINTS
+const PHASES_PER_PROMPT = 11;
+
+/* The 11 variables: label, the question asked, and the template sentence slot */
+const VARIABLES = [
+  {q:"Which option best identifies the CORE TOPIC — the overarching phenomenon, as a nominalised noun phrase?",
+   slot:"The ongoing discourse surrounding <b>[Core Topic]</b> frequently highlights its multifaceted implications."},
+  {q:"Which option best states FACET A — the first major aspect, effect or argument?",
+   slot:"While significant attention is often directed toward <b>[Facet A]</b>, a comprehensive understanding requires equal examination of [Facet B]."},
+  {q:"Which option best describes MECHANISM A — how Facet A actually operates in the real world?",
+   slot:"This dynamic operates primarily by <b>[Mechanism A]</b>."},
+  {q:"Which option is the best EXAMPLE A — a specific, concrete instance of Facet A?",
+   slot:"Such a trajectory frequently manifests in real-world scenarios, such as <b>[Example A]</b>."},
+  {q:"Which option best states NUANCE A — the mitigating factor proving Facet A is not an absolute rule?",
+   slot:"Yet, viewing this element in a vacuum overlooks critical context; indeed, <b>[Nuance A]</b>."},
+  {q:"Which option best states FACET B — the second major aspect, effect or argument?",
+   slot:"Equally significant is the phenomenon's relationship to <b>[Facet B]</b>."},
+  {q:"Which option best describes MECHANISM B — how Facet B operates or functions?",
+   slot:"This aspect is deeply tied to <b>[Mechanism B]</b>."},
+  {q:"Which option is the best EXAMPLE B — a specific, concrete instance of Facet B?",
+   slot:"…which ultimately leads to outcomes like <b>[Example B]</b>."},
+  {q:"Which option best states NUANCE B — the mitigating factor proving Facet B is not an absolute rule?",
+   slot:"It must be weighed against the reality that <b>[Nuance B]</b>."},
+  {q:"Which option is the best SYNTHESIZED POSITION — the middle-ground reality combining the truths of both facets?",
+   slot:"A more accurate evaluation recognizes that <b>[Synthesized Position]</b>."},
+  {q:"Which option is the best RATIONALE — the foundational reason this synthesis is the most accurate path forward?",
+   slot:"This perspective is ultimately the most valid because <b>[Rationale]</b>."}
+];
+
+/* Offline fallback (one prompt) if prompts.json cannot be fetched */
+const FALLBACK_PROMPTS = [{
+  id:"demo1", type:"Discuss both views",
+  promptText:"Some argue governments should ban private cars in city centres to reduce pollution. Others believe individuals should have the right to drive wherever they wish. Discuss both views and give your own opinion.",
+  phases:[
+   {phaseName:"1: Core Topic",correct:"The systemic regulation of urban automotive transport.",distractors:["Whether private cars are actively damaging the global environment.","The most effective ways to convince people to use public transport.","How modern cities can be redesigned to eliminate traffic jams."]},
+   {phaseName:"2: Facet A",correct:"The necessity of mitigating vehicular environmental degradation.",distractors:["Governments should immediately ban all cars from city centres.","The importance of building wider roads to reduce congestion.","Ensuring that pedestrians and cyclists have safer downtown areas."]},
+   {phaseName:"3: Mechanism A",correct:"By drastically reducing localized tailpipe emissions in densely populated zones.",distractors:["By making it illegal to own a car if you live in a city centre.","Through the invention of completely zero-emission electric vehicles.","By forcing citizens to walk or cycle to their places of work."]},
+   {phaseName:"4: Example A",correct:"Implementing comprehensive bans on private combustion engines in downtown districts.",distractors:["Cities destroying roads to plant more trees and parks.","Governments providing free bicycles to every citizen.","Police arresting anyone who drives near a city centre."]},
+   {phaseName:"5: Nuance A",correct:"An outright ban ignores the logistical realities of commuters lacking viable public transit alternatives.",distractors:["Banning cars means people will just buy more motorcycles instead.","Pollution is mostly caused by factories, so a ban will not help.","City centres are too crowded anyway, so a ban is a perfect solution."]},
+   {phaseName:"6: Facet B",correct:"The preservation of individualized freedom of movement.",distractors:["People should be allowed to drive because cars are expensive to buy.","The legal right to cause pollution if you pay your taxes.","Ensuring that the automotive industry remains profitable."]},
+   {phaseName:"7: Mechanism B",correct:"Safeguarding the autonomy of citizens to navigate urban spaces without state restriction.",distractors:["Allowing drivers to ignore environmental laws if they are in a hurry.","Giving people the right to park anywhere they want for free.","Protecting the ability of citizens to avoid walking at all costs."]},
+   {phaseName:"8: Example B",correct:"Allowing private vehicle owners unrestricted access to city centres via road networks.",distractors:["Building massive multi-storey car parks on every city block.","Removing all public transport so people are forced to drive.","Citizens driving large trucks through pedestrian-only zones."]},
+   {phaseName:"9: Nuance B",correct:"Unchecked vehicular freedom invariably leads to compounding gridlock and toxic air quality.",distractors:["Driving a car is usually much slower than taking a subway train.","People who drive everywhere usually suffer from poor health.","Private cars are too expensive for most people to afford anyway."]},
+   {phaseName:"10: Synthesized Position",correct:"Municipalities must invest heavily in mass transit infrastructure while gradually phasing out high-emission vehicles.",distractors:["Governments should ban cars and let citizens figure out how to travel.","People should have total freedom to drive, and pollution ignored.","Cities should build better roads so everyone can drive electric cars."]},
+   {phaseName:"11: Rationale",correct:"Sustainable urban planning must balance ecological preservation with the practical mobility needs of the populace.",distractors:["Because taking the bus is always cheaper than paying for petrol.","Since cars are the only true cause of global warming today.","Because individuals will always refuse to give up their cars."]}
+  ]
+}];
+
+/* ==================== STATE ==================== */
+let team="";
+let score=0;
+let allPrompts=[];      // full loaded bank
+let prompts=[];         // this round's selection
+let pIdx=0, phaseIdx=0;
+let currentStreak=0, bestStreak=0;
+let offline=true;       // true = no network writes (Solo Practice, or API unreachable)
+let soloMode=false;
+let phaseSeconds=25, promptsPerRound=2;
+
+/* --- per-phase state, all reset inside renderPhase() --- */
+let hasAnswered=false;      // phase fully resolved; Next is showing
+let isSecondTry=false;      // first attempt was wrong; one more try live
+let lockInput=false;        // hard guard against double-click / re-entry
+let currentOptions=[];
+let correctText="", trapText="";
+let optButtons=[];
+let deadOptions=[];         // option texts already spent this phase
+
+/* --- tallies --- */
+let phasesSeen=0, firstTryCorrect=0, secondTryCorrect=0, missed=0;
+let phaseResults=new Array(PHASES_PER_PROMPT).fill(null);   // 'full' | 'half' | 'miss'
+
+/* speed bar */
+let speedRAF=null, phaseStart=0, timeoutTimer=null;
+
+const $ = id => document.getElementById(id);
+
+/* ==================== THEME ==================== */
+(function initTheme(){
+  let saved=null; try{ saved=localStorage.getItem('m11_theme'); }catch(e){}
+  if(saved) document.documentElement.setAttribute('data-theme',saved);
+})();
+$('themeBtn').onclick=()=>{
+  const cur=document.documentElement.getAttribute('data-theme');
+  const sysDark=window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const next = cur ? (cur==='dark'?'light':'dark') : (sysDark?'light':'dark');
+  document.documentElement.setAttribute('data-theme',next);
+  try{ localStorage.setItem('m11_theme',next); }catch(e){}
+};
+
+/* ==================== NETWORK ==================== */
+async function api(method, body, params){
+  if(!API_URL || API_URL.indexOf("PASTE_")===0) throw new Error("no-api");
+  let url = API_URL;
+  if(params) url += (url.indexOf('?')>-1?'&':'?') + params;
+  const opts = { method, redirect:'follow' };
+  if(method==='POST'){ opts.headers={'Content-Type':'text/plain;charset=utf-8'}; opts.body=JSON.stringify(body); }
+  const res = await fetch(url, opts);
+  return res.json();
+}
+
+async function loadPrompts(){
+  try{
+    const res = await fetch(PROMPTS_URL, {cache:"no-store"});
+    if(!res.ok) throw new Error("http "+res.status);
+    const data = await res.json();
+    if(!Array.isArray(data) || !data.length) throw new Error("empty");
+    allPrompts = data.filter(p=>p && Array.isArray(p.phases) && p.phases.length===PHASES_PER_PROMPT);
+    if(!allPrompts.length) throw new Error("no valid prompts");
+    return true;
+  }catch(e){
+    allPrompts = FALLBACK_PROMPTS.slice();
+    return false;
+  }
+}
+
+/* ==================== ROUND SETUP ==================== */
+function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+
+function prepareRound(){
+  prompts = shuffle(allPrompts.slice());
+  if(promptsPerRound>0 && prompts.length>promptsPerRound) prompts = prompts.slice(0,promptsPerRound);
+  phasesSeen=0; firstTryCorrect=0; secondTryCorrect=0; missed=0;
+}
+function resetRoundState(){
+  pIdx=0; phaseIdx=0; score=0; currentStreak=0; bestStreak=0;
+  phasesSeen=0; firstTryCorrect=0; secondTryCorrect=0; missed=0;
+  phaseResults=new Array(PHASES_PER_PROMPT).fill(null);
+}
+
+/* ==================== RENDER ==================== */
+function renderPhase(){
+  /* --- ANTI-CHEAT: every per-phase flag is re-initialised here, nowhere else --- */
+  hasAnswered=false;
+  isSecondTry=false;
+  lockInput=false;
+  deadOptions=[];
+
+  const p  = prompts[pIdx];
+  const ph = p.phases[phaseIdx];
+  const v  = VARIABLES[phaseIdx];
+
+  $('promptText').textContent = p.promptText;
+  $('promptType').textContent = p.type || '';
+  $('promptBox').scrollTop = 0;
+
+  const parts = String(ph.phaseName).split(':');
+  $('phaseTag').textContent  = parts.length>1 ? parts.slice(1).join(':').trim() : ph.phaseName;
+  $('phaseCount').textContent = 'Variable '+(phaseIdx+1)+' / '+PHASES_PER_PROMPT;
+  $('phaseQ').textContent = v.q;
+  $('slotText').innerHTML = v.slot;
+
+  $('promptCount').textContent = 'Prompt '+(pIdx+1)+' / '+prompts.length;
+  renderDots();
+
+  correctText = ph.correct;
+  trapText    = ph.distractors[0];              // distractors[0] is always the near-miss TRAP
+  currentOptions = shuffle([ph.correct, ...ph.distractors]);
+  buildOpts(currentOptions);
+
+  $('feedback').className='feedback'; $('feedback').innerHTML='';
+  $('nextBtn').classList.add('hide');
+  $('nextBtn').textContent='Next →';
+  $('scorePill').textContent = score+' pts';
+  updateStreakPill();
+
+  startSpeedBar();
+}
+
+function renderDots(){
+  const c=$('dots'); c.innerHTML='';
+  for(let i=0;i<PHASES_PER_PROMPT;i++){
+    const d=document.createElement('span'); d.className='dot';
+    if(i<phaseIdx){
+      const r=phaseResults[i];
+      d.classList.add(r==='full'?'done':r==='half'?'half':'miss');
+    } else if(i===phaseIdx) d.classList.add('cur');
+    c.appendChild(d);
+  }
+}
+
+function buildOpts(opts){
+  const c = $('opts'); c.innerHTML=''; optButtons=[];
+  opts.forEach((o,i)=>{
+    const b=document.createElement('button');
+    b.className='opt'; b.type='button';
+    const kbd=document.createElement('span'); kbd.className='kbd'; kbd.textContent=(i+1);
+    const txt=document.createElement('span'); txt.textContent=o;
+    b.appendChild(kbd); b.appendChild(txt);
+    b.addEventListener('click',()=>selectAnswer(o,b));
+    c.appendChild(b); optButtons.push(b);
+  });
+}
+
+function updateStreakPill(){
+  const pill=$('streakPill');
+  if(currentStreak>=2){ pill.classList.add('on'); pill.textContent='🔥 '+currentStreak; }
+  else pill.classList.remove('on');
+}
+
+/* ==================== SPEED BAR ==================== */
+function startSpeedBar(){
+  cancelAnimationFrame(speedRAF);
+  clearTimeout(timeoutTimer);
+  const fill=$('speedFill'), sl=$('speedLabel');
+  if(phaseSeconds<=0){                     // "No timer" mode
+    $('speedTrack').classList.add('hide');
+    sl.textContent='No time limit'; sl.style.color='var(--text-soft)';
+    phaseStart=performance.now();
+    return;
+  }
+  $('speedTrack').classList.remove('hide');
+  phaseStart = performance.now();
+  fill.className='speed-fill'; fill.style.width='100%';
+  timeoutTimer = setTimeout(()=>{ if(!hasAnswered) selectAnswer(null,null); }, phaseSeconds*1000);
+  const step = ()=>{
+    const elapsed=(performance.now()-phaseStart)/1000;
+    const pct=Math.max(0, 1 - elapsed/phaseSeconds);
+    fill.style.width=(pct*100)+'%';
+    fill.className='speed-fill'+(pct<=0.25?' low':pct<=0.5?' mid':'');
+    if(!hasAnswered){
+      if(isSecondTry){ sl.textContent='Second try — half points'; sl.style.color='var(--amber)'; }
+      else if(pct>0.5){ sl.textContent='⚡ Speed bonus active'; sl.style.color='var(--green)'; }
+      else if(pct>0){ sl.textContent='Speed bonus lost'; sl.style.color='var(--gold-deep)'; }
+      else { sl.textContent="Time's up!"; sl.style.color='var(--red)'; }
+    }
+    if(pct>0 && !hasAnswered) speedRAF=requestAnimationFrame(step);
+  };
+  step();
+}
+function speedPct(){
+  if(phaseSeconds<=0) return 1;
+  return Math.max(0, 1 - (performance.now()-phaseStart)/1000/phaseSeconds);
+}
+
+/* ==================== ANSWER / SECOND-TRY STATE MACHINE ==================== */
+async function selectAnswer(choice, btn){
+  /* --- guards: phase already resolved, input locked mid-await, or option already spent --- */
+  if(hasAnswered || lockInput) return;
+  if(choice!==null && deadOptions.indexOf(choice)>-1) return;
+  lockInput=true;
+
+  const isTimeout = (choice===null);
+  const isCorrect = (choice===correctText);
+  const isTrap    = (!isCorrect && !isTimeout && choice===trapText);
+  const stillFast = speedPct()>0.5;
+  const fb=$('feedback');
+
+  /* ---------- BRANCH 1: first attempt, WRONG, and a retry is still possible ---------- */
+  if(!isCorrect && !isTimeout && !isSecondTry){
+    isSecondTry=true;
+    currentStreak=0;
+    updateStreakPill();
+    deadOptions.push(choice);
+    if(btn){ btn.classList.add(isTrap?'trap':'wrong'); btn.disabled=true; }
+    fb.className='feedback show '+(isTrap?'trap':'retry');
+    fb.innerHTML = (isTrap
+        ? '<strong>🚨 TRAP TRIGGERED!</strong> That option is plausible but sits in the wrong slot of the matrix.<br>'
+        : '<strong>Incorrect.</strong> ')
+      + 'You have <strong>one more try for half points</strong> — re-read the variable definition above.';
+    /* correct answer NOT revealed; Next NOT shown; remaining options stay live */
+    lockInput=false;
+    return;
+  }
+
+  /* ---------- BRANCH 2: phase resolves now (correct, timeout, or second wrong) ---------- */
+  hasAnswered=true;
+  cancelAnimationFrame(speedRAF);
+  clearTimeout(timeoutTimer);
+  phasesSeen++;
+
+  let gained=0, streakBonus=0, speedBonus=0, result='miss';
+
+  if(isCorrect && !isSecondTry){
+    /* first-attempt correct: full points + bonuses */
+    result='full'; firstTryCorrect++;
+    gained = BASE_POINTS;
+    currentStreak++; bestStreak=Math.max(bestStreak,currentStreak);
+    if(currentStreak===2) streakBonus=2; else if(currentStreak>=3) streakBonus=5;
+    if(stillFast) speedBonus=SPEED_BONUS;
+    gained += streakBonus + speedBonus;
+  } else if(isCorrect && isSecondTry){
+    /* second-attempt correct: exactly half base, no speed bonus, streak stays 0 */
+    result='half'; secondTryCorrect++;
+    gained = SECOND_TRY_POINTS;
+    currentStreak=0;
+  } else {
+    /* second wrong, or timeout: nothing */
+    result='miss'; missed++;
+    gained = 0;
+    currentStreak=0;
+    if(!isTimeout && choice) deadOptions.push(choice);
+  }
+
+  phaseResults[phaseIdx]=result;
+
+  /* lock the board */
+  optButtons.forEach(b=>b.disabled=true);
+
+  /* send to backend (server authoritative when online) */
+  if(!offline){
+    try{
+      const r = await api('POST', {action:'score', team, promptId:prompts[pIdx].id, phase:phaseIdx,
+                                   correct:(result!=='miss'), gained, streak:currentStreak});
+      if(r && typeof r.score==='number') score=r.score; else score+=gained;
+    }catch(e){ score+=gained; }
+  }else{
+    score+=gained;
+  }
+
+  /* paint the options */
+  optButtons.forEach((b,i)=>{
+    const o=currentOptions[i];
+    if(o===correctText){ b.classList.remove('dim'); b.classList.add('right'); }
+    else if(o===choice && isTrap) b.classList.add('trap');
+    else if(o===choice && !isCorrect) b.classList.add('wrong');
+    else if(deadOptions.indexOf(o)>-1) b.classList.add('spent');
+    else b.classList.add('dim');
+  });
+
+  /* feedback */
+  if(result==='full'){
+    fb.className='feedback show good';
+    let msg='<strong>✓ Correct!</strong> +'+BASE_POINTS+' points';
+    if(speedBonus) msg+=' · +'+speedBonus+' speed';
+    if(streakBonus) msg+=' · +'+streakBonus+' streak';
+    fb.innerHTML=msg+'.';
+    if(streakBonus) toast('🔥 '+currentStreak+' in a row! +'+streakBonus+' bonus','streak');
+    else if(speedBonus) toast('⚡ Speed bonus! +'+speedBonus,'speed');
+  }else if(result==='half'){
+    fb.className='feedback show half';
+    fb.innerHTML='<strong>✓ Correct on the second try.</strong> +'+SECOND_TRY_POINTS+' points (half). No speed bonus, streak reset.';
+  }else if(isTimeout){
+    fb.className='feedback show bad';
+    fb.innerHTML="<strong>⏱ Time's up!</strong> No answer given.<br>Correct answer → <span class=\"corr\">"+correctText+'</span>';
+  }else{
+    fb.className='feedback show bad';
+    fb.innerHTML='<strong>✗ Not quite.</strong> Second try used.<br>Correct answer → <span class="corr">'+correctText+'</span>';
+  }
+
+  renderDots();
+  $('scorePill').textContent = score+' pts';
+  updateStreakPill();
+  $('nextBtn').classList.remove('hide');
+  if(pIdx>=prompts.length-1 && phaseIdx>=PHASES_PER_PROMPT-1) $('nextBtn').textContent='Finish ✦';
+  $('nextBtn').focus();
+  lockInput=false;
+}
+
+/* ==================== FLOW ==================== */
+function next(){
+  if(!hasAnswered) return;                     // cannot skip an unresolved phase
+  if(phaseIdx<PHASES_PER_PROMPT-1){ phaseIdx++; }
+  else if(pIdx<prompts.length-1){ pIdx++; phaseIdx=0; phaseResults=new Array(PHASES_PER_PROMPT).fill(null); }
+  else { finish(); return; }
+  renderPhase();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function finish(){
+  cancelAnimationFrame(speedRAF); clearTimeout(timeoutTimer);
+  $('game').classList.add('hide'); $('done').classList.remove('hide');
+  $('finalScore').textContent = score;
+  $('breakdown').innerHTML =
+      'First-try correct <span>'+firstTryCorrect+'</span><br>'+
+      'Second-try correct <span>'+secondTryCorrect+'</span><br>'+
+      'Missed <span>'+missed+'</span><br>'+
+      'Variables attempted <span>'+phasesSeen+'</span>';
+  $('finalSummary').innerHTML = 'Best streak '+bestStreak+'.'+
+      (soloMode ? '' : '<br>Watch the live leaderboard!');
+  /* Solo Practice: persist personal best on this device */
+  if(soloMode){
+    let best=0;
+    try{
+      best=parseInt(localStorage.getItem('m11_best')||'0',10)||0;
+      if(score>best){ best=score; localStorage.setItem('m11_best',String(score)); }
+    }catch(e){}
+    $('bestLine').textContent = (score>=best?'New personal best: ':'Personal best: ')+best+' pts';
+  } else $('bestLine').textContent='';
+}
+
+/* ==================== UI ==================== */
+function toast(msg, kind){
+  const t=$('toast'); t.textContent=msg;
+  t.className='toast show'+(kind?' '+kind:'');
+  clearTimeout(t._h); t._h=setTimeout(()=>t.className='toast'+(kind?' '+kind:''),2200);
+}
+
+function readConfig(){
+  promptsPerRound = parseInt($('cfgPrompts').value,10);
+  phaseSeconds    = parseInt($('cfgSeconds').value,10);
+  try{
+    localStorage.setItem('m11_cfgP',$('cfgPrompts').value);
+    localStorage.setItem('m11_cfgS',$('cfgSeconds').value);
+  }catch(e){}
+}
+
+async function startGame(solo){
+  const name=$('teamName').value.trim();
+  if(name.length<2){ toast('Enter a team or player name.'); $('teamName').focus(); return; }
+  team=name; soloMode=solo;
+  try{ localStorage.setItem('m11_team',team); }catch(e){}
+  readConfig();
+
+  $('arenaBtn').disabled=true; $('soloBtn').disabled=true;
+  const label = solo ? $('soloBtn') : $('arenaBtn');
+  const original = label.textContent; label.textContent='Loading…';
+
+  const bankOk = await loadPrompts();
+  prepareRound();
+
+  if(solo){
+    offline=true;
+    $('connNote').textContent = bankOk ? 'Solo Practice · scores saved on this device' : 'Solo Practice · offline demo bank';
+  }else{
+    offline = (!API_URL || API_URL.indexOf("PASTE_")===0);
+    if(!offline){
+      try{ await api('POST',{action:'register',team}); $('connNote').textContent='Live · synced to leaderboard'; }
+      catch(e){ offline=true; $('connNote').textContent='Leaderboard unreachable · playing offline'; }
+    }else{
+      $('connNote').textContent='Leaderboard not linked (set API_URL)';
+    }
+    if(!bankOk) $('connNote').textContent += ' · offline demo bank';
+  }
+
+  label.textContent=original;
+  $('arenaBtn').disabled=false; $('soloBtn').disabled=false;
+  $('teamPill').textContent=team;
+  $('join').classList.add('hide'); $('done').classList.add('hide'); $('game').classList.remove('hide');
+  resetRoundState();
+  renderPhase();
+}
+
+/* ==================== EVENTS ==================== */
+try{
+  const last=localStorage.getItem('m11_team'); if(last) $('teamName').value=last;
+  const cp=localStorage.getItem('m11_cfgP'); if(cp) $('cfgPrompts').value=cp;
+  const cs=localStorage.getItem('m11_cfgS'); if(cs) $('cfgSeconds').value=cs;
+}catch(e){}
+$('connNote').textContent='Ready';
+
+$('arenaBtn').onclick = ()=>startGame(false);
+$('soloBtn').onclick  = ()=>startGame(true);
+$('teamName').addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); $('arenaBtn').click(); }});
+$('nextBtn').onclick = next;
+
+$('againBtn').onclick = async ()=>{
+  prepareRound();
+  $('done').classList.add('hide'); $('game').classList.remove('hide');
+  resetRoundState();
+  if(!offline){ try{ await api('POST',{action:'register',team}); }catch(e){} }
+  renderPhase();
+};
+$('menuBtn').onclick = ()=>{
+  $('done').classList.add('hide'); $('game').classList.add('hide'); $('join').classList.remove('hide');
+};
+
+/* Keyboard: 1-4 to answer, Enter/Space to advance */
+document.addEventListener('keydown', e=>{
+  if($('game').classList.contains('hide')) return;
+  if(!hasAnswered && ['1','2','3','4'].includes(e.key)){
+    const i=+e.key-1;
+    if(optButtons[i] && !optButtons[i].disabled){ e.preventDefault(); optButtons[i].click(); }
+  }else if(hasAnswered && (e.key==='Enter'||e.key===' ')){
+    e.preventDefault(); next();
+  }
+});
+</script>
+</body>
+</html>
