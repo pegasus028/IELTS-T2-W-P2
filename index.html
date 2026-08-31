@@ -139,6 +139,27 @@
   .slot b{color:var(--gold-deep);font-weight:700}
   .slot .slab{display:block;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px;font-weight:700}
 
+
+  /* ---- variable definition card ---- */
+  .def{border:2px solid var(--card-line);border-radius:10px;padding:9px 11px;margin-bottom:10px;background:var(--slot-bg)}
+  .defrow{display:flex;gap:8px;align-items:flex-start;font-size:11.5px;line-height:1.5;color:var(--text)}
+  .defrow + .defrow{margin-top:6px}
+  .dtag{flex:0 0 auto;font-size:9px;font-weight:700;letter-spacing:.12em;padding:2px 6px;border-radius:4px;margin-top:1px}
+  .dtag.ok{background:var(--green);color:#fff}
+  .dtag.no{background:var(--red);color:#fff}
+
+  /* ---- running matrix of solved variables ---- */
+  .matrixToggle{width:100%;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.14em;
+      text-transform:uppercase;font-weight:700;color:var(--gold-deep);background:transparent;
+      border:2px dashed var(--card-line);border-radius:9px;padding:7px;cursor:pointer;margin-bottom:10px;text-align:left}
+  .matrix{border:2px solid var(--card-line);border-radius:10px;padding:4px 11px;margin-bottom:10px;background:var(--slot-bg)}
+  .matrix .mrow{display:flex;gap:9px;font-size:11px;line-height:1.5;padding:6px 0;border-bottom:1px dashed var(--card-line)}
+  .matrix .mrow:last-child{border-bottom:0}
+  .matrix .mk{flex:0 0 82px;color:var(--gold-deep);font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase}
+  .matrix .mv{flex:1;color:var(--text)}
+
+  /* ---- an option removed by the second-try narrowing ---- */
+  .opt.gone{opacity:.32;text-decoration:line-through;border-style:dashed}
   .opts{display:grid;grid-template-columns:1fr;gap:10px}
   .opt{
     display:flex;align-items:flex-start;gap:9px;width:100%;
@@ -247,6 +268,9 @@
       <span class="dots" id="dots"></span>
     </div>
 
+    <button class="matrixToggle hide" id="matrixToggle" type="button">▸ Your matrix so far <span id="matrixCount">0</span>/11</button>
+    <div class="matrix hide" id="matrixBox"></div>
+
     <div class="speed-track" id="speedTrack"><div class="speed-fill" id="speedFill"></div></div>
     <div class="speed-label" id="speedLabel">⚡ Speed bonus active</div>
 
@@ -255,6 +279,10 @@
       <span class="phase-count" id="phaseCount">Variable 1 / 11</span>
     </div>
     <div class="phase-q" id="phaseQ">Choose the option that best fits this variable.</div>
+    <div class="def" id="defBox">
+      <div class="defrow"><span class="dtag ok">IS</span><span id="defIs"></span></div>
+      <div class="defrow"><span class="dtag no">NOT</span><span id="defNot"></span></div>
+    </div>
     <div class="slot" id="slotBox"><span class="slab">Template slot</span><span id="slotText"></span></div>
 
     <div class="opts" id="opts"></div>
@@ -284,7 +312,7 @@
 <script>
 /* ==================== CONFIG ==================== */
 /* Deployed Google Apps Script Web App URL (same as leaderboard.html) */
-const API_URL = "https://script.google.com/macros/s/AKfycbxFyjmyRRH9DrFS7seWIfYyw6lPzxx9eosrPnYKxMd8PWke91c4eJU1B-YSCk0lSHMAPA/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbzGABREt_p3nYJfFeiMg03yXKQr6G4tWYM8fhe9M5Af23NwhAitTfxCoOmmwi7hT6Ji/exec";
 
 /* External question bank (11-variable schema) */
 const PROMPTS_URL = "prompts.json";
@@ -298,26 +326,48 @@ const PHASES_PER_PROMPT = 11;
 /* The 11 variables: label, the question asked, and the template sentence slot */
 const VARIABLES = [
   {q:"Which option best identifies the CORE TOPIC — the overarching phenomenon, as a nominalised noun phrase?",
+   is:"The whole phenomenon under debate, written as a nominalised noun phrase.",
+   not:"Not one side of the argument, and not a sub-issue the prompt only touches.",
    slot:"The ongoing discourse surrounding <b>[Core Topic]</b> frequently highlights its multifaceted implications."},
   {q:"Which option best states FACET A — the first major aspect, effect or argument?",
+   is:"The first major aspect, effect or argument.",
+   not:"Not how it works (that is the Mechanism) and not a concrete case (that is the Example).",
    slot:"While significant attention is often directed toward <b>[Facet A]</b>, a comprehensive understanding requires equal examination of [Facet B]."},
   {q:"Which option best describes MECHANISM A — how Facet A actually operates in the real world?",
+   is:"How Facet A actually operates or functions.",
+   not:"Not the aspect itself, and not a specific real-world case of it.",
    slot:"This dynamic operates primarily by <b>[Mechanism A]</b>."},
   {q:"Which option is the best EXAMPLE A — a specific, concrete instance of Facet A?",
+   is:"One specific, concrete instance of Facet A.",
+   not:"Not the general principle, and not an aim or a pledge — something that actually happens.",
    slot:"Such a trajectory frequently manifests in real-world scenarios, such as <b>[Example A]</b>."},
   {q:"Which option best states NUANCE A — the mitigating factor proving Facet A is not an absolute rule?",
+   is:"A mitigating factor showing Facet A is not an absolute rule.",
+   not:"It must limit FACET A. A limitation of Facet B belongs at variable 9.",
    slot:"Yet, viewing this element in a vacuum overlooks critical context; indeed, <b>[Nuance A]</b>."},
   {q:"Which option best states FACET B — the second major aspect, effect or argument?",
+   is:"The second major aspect, effect or argument.",
+   not:"Not a restatement of Facet A, and not the mechanism behind it.",
    slot:"Equally significant is the phenomenon's relationship to <b>[Facet B]</b>."},
   {q:"Which option best describes MECHANISM B — how Facet B operates or functions?",
+   is:"How Facet B actually operates or functions.",
+   not:"Not the aspect itself, and not a specific real-world case of it.",
    slot:"This aspect is deeply tied to <b>[Mechanism B]</b>."},
   {q:"Which option is the best EXAMPLE B — a specific, concrete instance of Facet B?",
+   is:"One specific, concrete instance of Facet B.",
+   not:"Not the general principle — something concrete enough to point at.",
    slot:"…which ultimately leads to outcomes like <b>[Example B]</b>."},
   {q:"Which option best states NUANCE B — the mitigating factor proving Facet B is not an absolute rule?",
+   is:"A mitigating factor showing Facet B is not an absolute rule.",
+   not:"It must limit FACET B. A limitation of Facet A belongs at variable 5.",
    slot:"It must be weighed against the reality that <b>[Nuance B]</b>."},
   {q:"Which option is the best SYNTHESIZED POSITION — the middle-ground reality combining the truths of both facets?",
+   is:"The middle-ground reality that holds the truth of both facets together.",
+   not:"Not a restatement of one side, and not a vague call for balance.",
    slot:"A more accurate evaluation recognizes that <b>[Synthesized Position]</b>."},
   {q:"Which option is the best RATIONALE — the foundational reason this synthesis is the most accurate path forward?",
+   is:"The underlying reason the synthesis is the most accurate path forward.",
+   not:"Not a repeat of the position itself — the reason it is right.",
    slot:"This perspective is ultimately the most valid because <b>[Rationale]</b>."}
 ];
 
@@ -442,7 +492,10 @@ function renderPhase(){
   $('phaseTag').textContent  = parts.length>1 ? parts.slice(1).join(':').trim() : ph.phaseName;
   $('phaseCount').textContent = 'Variable '+(phaseIdx+1)+' / '+PHASES_PER_PROMPT;
   $('phaseQ').textContent = v.q;
+  $('defIs').textContent  = v.is;
+  $('defNot').textContent = v.not;
   $('slotText').innerHTML = v.slot;
+  renderMatrix();
 
   $('promptCount').textContent = 'Prompt '+(pIdx+1)+' / '+prompts.length;
   renderDots();
@@ -491,6 +544,30 @@ function updateStreakPill(){
   if(currentStreak>=2){ pill.classList.add('on'); pill.textContent='🔥 '+currentStreak; }
   else pill.classList.remove('on');
 }
+
+
+/* ---- Running matrix: the variables already settled for THIS prompt ----
+   By the time a student reaches Nuance A they should be reasoning from their own
+   Core Topic, Facet A, Mechanism A and Example A rather than from the prompt alone. */
+let matrixOpen=false;
+function renderMatrix(){
+  const box=$('matrixBox'), tog=$('matrixToggle');
+  const p=prompts[pIdx];
+  if(phaseIdx===0){ box.classList.add('hide'); tog.classList.add('hide'); return; }
+  tog.classList.remove('hide');
+  $('matrixCount').textContent = phaseIdx+'/11';
+  box.innerHTML = p.phases.slice(0,phaseIdx).map(ph=>{
+    const label=String(ph.phaseName).split(':').slice(1).join(':').trim();
+    return '<div class="mrow"><span class="mk">'+label+'</span><span class="mv">'+
+           ph.correct.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))+'</span></div>';
+  }).join('');
+  box.classList.toggle('hide', !matrixOpen);
+  tog.textContent='';
+  tog.append(document.createTextNode((matrixOpen?'▾':'▸')+' Your matrix so far '));
+  const c=document.createElement('span'); c.id='matrixCount'; c.textContent=phaseIdx+'/11';
+  tog.appendChild(c);
+}
+$('matrixToggle').onclick=()=>{ matrixOpen=!matrixOpen; renderMatrix(); };
 
 /* ==================== SPEED BAR ==================== */
 function startSpeedBar(){
@@ -568,6 +645,20 @@ async function selectAnswer(choice, btn){
     updateStreakPill();
     deadOptions.push(choice);
     if(btn){ btn.classList.add(isTrap?'trap':'wrong'); btn.disabled=true; }
+
+    /* Narrow the field: strike out one more wrong option so the second try is at worst a
+       50/50. A plain distractor goes first, so that the near-miss stays on the board and
+       the final decision is still the one worth learning. */
+    let eliminated=null;
+    const stillWrong = currentOptions.filter(o=>o!==correctText && deadOptions.indexOf(o)<0);
+    const plain = stillWrong.filter(o=>o!==trapText);
+    eliminated = plain.length ? plain[Math.floor(Math.random()*plain.length)]
+               : (stillWrong.length>1 ? stillWrong[Math.floor(Math.random()*stillWrong.length)] : null);
+    if(eliminated){
+      deadOptions.push(eliminated);
+      const i=currentOptions.indexOf(eliminated);
+      if(optButtons[i]){ optButtons[i].classList.add('gone'); optButtons[i].disabled=true; }
+    }
     const belongs = slotOf(choice);
     fb.className='feedback show '+(isTrap?'trap':'retry');
     fb.innerHTML = (isTrap
@@ -578,7 +669,8 @@ async function selectAnswer(choice, btn){
             String(prompts[pIdx].phases[phaseIdx].phaseName).split(':').slice(1).join(':').trim()+
             '</strong>. The statement is true — it is in the wrong slot.<br>'
           : 'That option is plausible, but it does not do the job this variable requires.<br>')
-      + 'You have <strong>one more try for half points</strong> — re-read the template slot above.';
+      + 'One more try for <strong>half points</strong>'
+      + (eliminated ? ' — and one more wrong option has been struck out for you.' : ' — re-read the IS / NOT test above.');
     /* correct answer NOT revealed; Next NOT shown; remaining options stay live */
     lockInput=false;
     return;
@@ -622,7 +714,8 @@ async function selectAnswer(choice, btn){
   if(!offline){
     try{
       const r = await api('POST', {action:'score', team, promptId:prompts[pIdx].id, phase:phaseIdx,
-                                   correct:(result!=='miss'), gained, streak:currentStreak});
+                                   correct:(result!=='miss'), result, gained,
+                                   streak:currentStreak, bestStreak});
       if(r && typeof r.score==='number') score=r.score; else score+=gained;
     }catch(e){ score+=gained; }
   }else{
@@ -635,7 +728,7 @@ async function selectAnswer(choice, btn){
     if(o===correctText){ b.classList.remove('dim'); b.classList.add('right'); }
     else if(o===choice && isTrap) b.classList.add('trap');
     else if(o===choice && !isCorrect) b.classList.add('wrong');
-    else if(deadOptions.indexOf(o)>-1) b.classList.add('spent');
+    else if(deadOptions.indexOf(o)>-1 && !b.classList.contains('gone')) b.classList.add('spent');
     else b.classList.add('dim');
   });
 
