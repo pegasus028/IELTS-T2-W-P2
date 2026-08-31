@@ -198,7 +198,7 @@
 
   <!-- ============ JOIN / MODE SELECT ============ -->
   <section id="join" class="card">
-    <label for="teamName">Team Name / Player Name</label>
+    <label for="teamName">Team Name <span style="text-transform:none;letter-spacing:0;font-weight:400">(required for Live Arena, optional for Solo)</span></label>
     <input type="text" id="teamName" placeholder="e.g. The Thesis Statements" maxlength="28" autocomplete="off" />
 
     <div class="row" style="margin-top:14px">
@@ -226,7 +226,7 @@
 
     <button class="btn" id="arenaBtn">Enter Live Arena</button>
     <button class="btn ghost" id="soloBtn">Solo Practice Mode</button>
-    <p class="hint">Live Arena posts your score to the class leaderboard.<br>Solo Practice saves your best score on this device only.</p>
+    <p class="hint">Live Arena posts your score to the class leaderboard and needs a team name.<br>Solo Practice starts straight away and saves your best score on this device.</p>
   </section>
 
   <!-- ============ GAME ============ -->
@@ -527,6 +527,27 @@ function speedPct(){
   return Math.max(0, 1 - (performance.now()-phaseStart)/1000/phaseSeconds);
 }
 
+
+/* ---- Slot detection: if a wrong choice is really another variable's answer, name it ----
+   Many traps are deliberately the correct answer of a mirrored or adjacent variable
+   (the Nuance B offered as the Nuance A, a Mechanism offered as a Facet). Telling the
+   student which slot it belongs to is the whole lesson, so we detect it at run time. */
+const STOP = new Set(['the','a','an','of','to','and','or','in','on','by','for','that','this',
+  'is','are','be','as','with','which','it','its','their','from','than','while','so','not','at']);
+function toks(s){ return new Set(String(s).toLowerCase().replace(/[^a-z\s]/g,' ').split(/\s+/)
+                 .filter(w=>w.length>2 && !STOP.has(w))); }
+function dice(a,b){ let hit=0; a.forEach(w=>{ if(b.has(w)) hit++; });
+                    return (a.size+b.size) ? (2*hit)/(a.size+b.size) : 0; }
+function slotOf(choice){
+  const p=prompts[pIdx], t=toks(choice); let best=-1, score=0;
+  for(let i=0;i<PHASES_PER_PROMPT;i++){
+    if(i===phaseIdx) continue;
+    const s=dice(t, toks(p.phases[i].correct));
+    if(s>score){ score=s; best=i; }
+  }
+  return score>=0.55 ? String(p.phases[best].phaseName).split(':').slice(1).join(':').trim() : null;
+}
+
 /* ==================== ANSWER / SECOND-TRY STATE MACHINE ==================== */
 async function selectAnswer(choice, btn){
   /* --- guards: phase already resolved, input locked mid-await, or option already spent --- */
@@ -547,11 +568,17 @@ async function selectAnswer(choice, btn){
     updateStreakPill();
     deadOptions.push(choice);
     if(btn){ btn.classList.add(isTrap?'trap':'wrong'); btn.disabled=true; }
+    const belongs = slotOf(choice);
     fb.className='feedback show '+(isTrap?'trap':'retry');
     fb.innerHTML = (isTrap
-        ? '<strong>🚨 TRAP TRIGGERED!</strong> That option is plausible but sits in the wrong slot of the matrix.<br>'
+        ? '<strong>🚨 TRAP TRIGGERED!</strong> '
         : '<strong>Incorrect.</strong> ')
-      + 'You have <strong>one more try for half points</strong> — re-read the variable definition above.';
+      + (belongs
+          ? 'That is the <strong>'+belongs+'</strong> of this prompt, not the <strong>'+
+            String(prompts[pIdx].phases[phaseIdx].phaseName).split(':').slice(1).join(':').trim()+
+            '</strong>. The statement is true — it is in the wrong slot.<br>'
+          : 'That option is plausible, but it does not do the job this variable requires.<br>')
+      + 'You have <strong>one more try for half points</strong> — re-read the template slot above.';
     /* correct answer NOT revealed; Next NOT shown; remaining options stay live */
     lockInput=false;
     return;
@@ -628,8 +655,11 @@ async function selectAnswer(choice, btn){
     fb.className='feedback show bad';
     fb.innerHTML="<strong>⏱ Time's up!</strong> No answer given.<br>Correct answer → <span class=\"corr\">"+correctText+'</span>';
   }else{
+    const belongs2 = choice ? slotOf(choice) : null;
     fb.className='feedback show bad';
-    fb.innerHTML='<strong>✗ Not quite.</strong> Second try used.<br>Correct answer → <span class="corr">'+correctText+'</span>';
+    fb.innerHTML='<strong>✗ Not quite.</strong>'+
+      (belongs2 ? ' That belongs in the <strong>'+belongs2+'</strong> slot.' : ' Second try used.')+
+      '<br>Correct answer → <span class="corr">'+correctText+'</span>';
   }
 
   renderDots();
@@ -691,9 +721,12 @@ function readConfig(){
 
 async function startGame(solo){
   const name=$('teamName').value.trim();
-  if(name.length<2){ toast('Enter a team or player name.'); $('teamName').focus(); return; }
-  team=name; soloMode=solo;
-  try{ localStorage.setItem('m11_team',team); }catch(e){}
+  if(!solo && name.length<2){                       // a name is required for the Live Arena only
+    toast('Enter a team name to join the Arena.'); $('teamName').focus(); return;
+  }
+  team = name.length>=2 ? name : 'Solo Practice';   // Solo Practice needs no name
+  soloMode=solo;
+  if(name.length>=2){ try{ localStorage.setItem('m11_team',team); }catch(e){} }
   readConfig();
 
   $('arenaBtn').disabled=true; $('soloBtn').disabled=true;
@@ -735,7 +768,7 @@ $('connNote').textContent='Ready';
 
 $('arenaBtn').onclick = ()=>startGame(false);
 $('soloBtn').onclick  = ()=>startGame(true);
-$('teamName').addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); $('arenaBtn').click(); }});
+$('teamName').addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); ($('teamName').value.trim().length>=2?$('arenaBtn'):$('soloBtn')).click(); }});
 $('nextBtn').onclick = next;
 
 $('againBtn').onclick = async ()=>{
