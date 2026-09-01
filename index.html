@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
-<title>IELTS · The 11-Variable Matrix</title>
+<title>Professional Vocab Mastery Arena</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -66,8 +66,8 @@
   }
   .wrap{width:100%;max-width:560px;margin:0 auto;padding:16px 16px 32px;flex:1;display:flex;flex-direction:column}
   header{text-align:center;margin:6px 0 16px;position:relative}
-  .kicker{font-size:11px;letter-spacing:.30em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
-  h1{font-family:'Fraunces',serif;font-weight:900;font-size:29px;line-height:.98;margin-top:4px;color:var(--text)}
+  .kicker{font-size:11px;letter-spacing:.30em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;padding:0 42px}
+  h1{font-family:'Fraunces',serif;font-weight:900;font-size:29px;line-height:1.04;margin-top:4px;color:var(--text);padding:0 42px}
   h1 em{font-style:italic;color:var(--gold-deep)}
   .bar-deco{height:5px;width:60px;background:var(--gold);margin:12px auto 0;border-radius:3px}
   .tagline{font-size:10.5px;letter-spacing:.1em;color:var(--text-soft);margin-top:9px}
@@ -82,7 +82,7 @@
   input[type=text],select{width:100%;font-family:'Space Mono',monospace;font-size:16px;padding:13px 14px;
         border:2px solid var(--card-line);border-radius:9px;background:var(--input-bg);color:var(--text)}
   input[type=text]:focus,select:focus{outline:none;box-shadow:3px 3px 0 var(--gold)}
-  .row{display:flex;gap:10px}
+  .row{display:flex;gap:10px;align-items:flex-end}
   .row > div{flex:1}
 
   .btn{display:block;width:100%;font-family:'Fraunces',serif;font-weight:900;font-size:18px;
@@ -93,32 +93,45 @@
   .btn:disabled{opacity:.6;cursor:default}
   .hint{font-size:11px;color:var(--text-soft);line-height:1.5;margin-top:10px;text-align:center}
 
+  /* ---- level selector ---- */
+  .levelPick{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+  .lvl{font-family:'Space Mono',monospace;text-align:left;cursor:pointer;padding:10px 10px;
+       border:2px solid var(--card-line);border-radius:10px;background:var(--input-bg);color:var(--text);
+       display:flex;flex-direction:column;gap:2px;transition:border-color .12s, box-shadow .12s}
+  .lvl .lname{font-family:'Fraunces',serif;font-weight:900;font-size:16px;line-height:1.1}
+  .lvl .lband{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
+  .lvl.on{border-color:var(--gold);box-shadow:3px 3px 0 var(--gold)}
+  .lvl.on .lname{color:var(--gold-deep)}
+
   /* ---- Game meta bar ---- */
-  .meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:13px;gap:8px;flex-wrap:wrap}
-  .pill{background:var(--prompt-bg);color:var(--prompt-text);padding:5px 11px;border-radius:20px;font-weight:700;font-size:12px;letter-spacing:.06em;white-space:nowrap}
+  .meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:13px;gap:6px;flex-wrap:wrap;row-gap:6px}
+  .pill{background:var(--prompt-bg);color:var(--prompt-text);padding:4px 9px;border-radius:20px;font-weight:700;font-size:11px;letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:46%}
   .scorepill{background:var(--green);color:#fff}
+  .levelPill{background:var(--gold);color:#1a1410}
   .streakpill{background:var(--gold);color:#1a1410;display:none}
   .streakpill.on{display:inline-block}
 
-  /* ---- Sticky prompt (theme-aware) ---- */
+  /* ---- Sticky word plate ---- */
   .prompt-box{
     background:var(--prompt-bg);color:var(--prompt-text);border-radius:12px;
     border:2px solid var(--card-line);
     padding:13px 15px;margin-bottom:12px;
-    max-height:132px;overflow-y:auto;-webkit-overflow-scrolling:touch;
     position:sticky;top:8px;z-index:5;
+    box-shadow:0 6px 14px var(--shadow);
   }
   .prompt-box .plabel{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--prompt-label);
        font-weight:700;margin-bottom:6px;display:flex;justify-content:space-between;gap:10px}
   .prompt-box .ptype{color:var(--prompt-label);opacity:.85;letter-spacing:.1em}
-  .prompt-box .ptext{font-family:'Fraunces',serif;font-size:15px;line-height:1.55;font-weight:400;color:var(--prompt-text)}
+  .prompt-box .pword{font-family:'Fraunces',serif;font-size:26px;line-height:1.1;font-weight:900;color:var(--prompt-text)}
+  .prompt-box .pword.masked{letter-spacing:.12em;color:var(--prompt-label);opacity:.85}
+  .prompt-box .ppos{font-size:11px;color:var(--prompt-label);opacity:.9;margin-top:3px;letter-spacing:.08em}
 
-  /* ---- Round progress: 11 dots ---- */
+  /* ---- Round progress dots ---- */
   .progress{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;gap:8px;flex-wrap:wrap}
   .promptCount{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;white-space:nowrap}
-  .dots{display:flex;gap:4px}
-  .dot{width:16px;height:6px;border-radius:6px;background:var(--bg);border:1.5px solid var(--card-line);transition:background .2s}
-  .dot.done{background:var(--green);border-color:var(--green)}
+  .dots{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end;align-items:center;row-gap:4px}
+  .dot{width:14px;height:6px;flex:0 0 auto;border-radius:6px;background:var(--bg);border:1.5px solid var(--card-line);transition:background .2s}
+  .dot.dfull{background:var(--green);border-color:var(--green)}
   .dot.half{background:var(--amber);border-color:var(--amber)}
   .dot.miss{background:var(--red);border-color:var(--red)}
   .dot.cur{background:var(--gold);border-color:var(--gold)}
@@ -130,49 +143,15 @@
   .speed-fill.low{background:var(--red)}
   .speed-label{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);text-align:right;margin-bottom:12px;height:12px;font-weight:700}
 
-  /* ---- Phase ---- */
+  /* ---- Question ---- */
   .phase-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:6px;gap:10px}
-  .phase-tag{font-family:'Fraunces',serif;font-weight:900;font-size:21px;color:var(--gold-deep)}
+  .phase-tag{font-family:'Fraunces',serif;font-weight:900;font-size:20px;color:var(--gold-deep)}
   .phase-count{font-size:11px;letter-spacing:.12em;color:var(--gold-deep);text-transform:uppercase;white-space:nowrap}
-  .phase-q{font-family:'Space Mono',monospace;font-size:12.5px;color:var(--text-soft);margin-bottom:10px;line-height:1.5}
-  .slot{background:var(--slot-bg);border-left:4px solid var(--slot-line);border-radius:0 8px 8px 0;
-        padding:9px 12px;margin-bottom:14px;font-size:11.5px;line-height:1.6;color:var(--text-soft)}
-  .slot b{color:var(--gold-deep);font-weight:700}
-  .slot .slab{display:block;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px;font-weight:700}
+  .phase-q{font-family:'Space Mono',monospace;font-size:12.5px;color:var(--prompt-text);line-height:1.6;
+           margin-top:9px;padding-top:9px;border-top:1px dashed rgba(224,172,47,.45);
+           max-height:96px;overflow-y:auto;-webkit-overflow-scrolling:touch}
+  .phase-q b{color:var(--prompt-label)}
 
-
-
-  /* ---- level selector ---- */
-  .levelPick{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .lvl{font-family:'Space Mono',monospace;text-align:left;cursor:pointer;padding:11px 12px;
-       border:2px solid var(--card-line);border-radius:10px;background:var(--input-bg);color:var(--text);
-       display:flex;flex-direction:column;gap:2px;transition:border-color .12s, box-shadow .12s}
-  .lvl .lname{font-family:'Fraunces',serif;font-weight:900;font-size:17px;line-height:1.1}
-  .lvl .lband{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
-  .lvl .ldesc{font-size:10.5px;line-height:1.4;color:var(--text-soft);margin-top:3px}
-  .lvl.on{border-color:var(--gold);box-shadow:3px 3px 0 var(--gold)}
-  .lvl.on .lname{color:var(--gold-deep)}
-  .levelPill{background:var(--gold);color:#1a1410}
-  /* ---- variable definition card ---- */
-  .def{border:2px solid var(--card-line);border-radius:10px;padding:9px 11px;margin-bottom:10px;background:var(--slot-bg)}
-  .defrow{display:flex;gap:8px;align-items:flex-start;font-size:11.5px;line-height:1.5;color:var(--text)}
-  .defrow + .defrow{margin-top:6px}
-  .dtag{flex:0 0 auto;font-size:9px;font-weight:700;letter-spacing:.12em;padding:2px 6px;border-radius:4px;margin-top:1px}
-  .dtag.ok{background:var(--green);color:#fff}
-  .dtag.no{background:var(--red);color:#fff}
-
-  /* ---- running matrix of solved variables ---- */
-  .matrixToggle{width:100%;font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.14em;
-      text-transform:uppercase;font-weight:700;color:var(--gold-deep);background:transparent;
-      border:2px dashed var(--card-line);border-radius:9px;padding:7px;cursor:pointer;margin-bottom:10px;text-align:left}
-  .matrix{border:2px solid var(--card-line);border-radius:10px;padding:4px 11px;margin-bottom:10px;background:var(--slot-bg)}
-  .matrix .mrow{display:flex;gap:9px;font-size:11px;line-height:1.5;padding:6px 0;border-bottom:1px dashed var(--card-line)}
-  .matrix .mrow:last-child{border-bottom:0}
-  .matrix .mk{flex:0 0 82px;color:var(--gold-deep);font-weight:700;font-size:10px;letter-spacing:.06em;text-transform:uppercase}
-  .matrix .mv{flex:1;color:var(--text)}
-
-  /* ---- an option removed by the second-try narrowing ---- */
-  .opt.gone{opacity:.32;text-decoration:line-through;border-style:dashed}
   .opts{display:grid;grid-template-columns:1fr;gap:10px}
   .opt{
     display:flex;align-items:flex-start;gap:9px;width:100%;
@@ -190,6 +169,7 @@
   .opt.trap{background:var(--trap);color:#fff;border-color:var(--trap)}
   .opt.spent{opacity:.45}
   .opt.dim{opacity:.5}
+  .opt.gone{opacity:.32;text-decoration:line-through;border-style:dashed}
   .opt:disabled{cursor:default}
 
   .feedback{margin-top:16px;padding:14px;border-radius:10px;font-size:13.5px;line-height:1.6;display:none;color:var(--text)}
@@ -199,8 +179,17 @@
   .feedback.bad{background:var(--red-soft);border:2px solid var(--red)}
   .feedback.retry{background:var(--amber-soft);border:2px solid var(--amber)}
   .feedback.trap{background:var(--trap-soft);border:2px solid var(--trap);color:var(--trap-ink)}
-  .feedback strong{font-weight:700}
   .corr{font-weight:700;color:var(--gold-deep)}
+
+  /* ---- Word card, shown once the question resolves ---- */
+  .wordcard{display:none;margin-top:12px;border:2px solid var(--card-line);border-radius:10px;
+            background:var(--slot-bg);border-left:5px solid var(--slot-line);padding:11px 13px}
+  .wordcard.show{display:block}
+  .wordcard .wcw{font-family:'Fraunces',serif;font-weight:900;font-size:19px;color:var(--gold-deep)}
+  .wordcard .wcp{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-soft);margin:2px 0 7px}
+  .wordcard .wcn{font-size:12px;line-height:1.6;color:var(--text)}
+  .wordcard .wce{font-size:12px;line-height:1.6;color:var(--text-soft);font-style:italic;margin-top:6px}
+  .wordcard .wcl{display:block;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:3px;font-weight:700}
 
   .hide{display:none!important}
   .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(160%);
@@ -218,6 +207,12 @@
   .breakdown{text-align:left;margin:16px 0 4px;font-size:12px;line-height:1.9;color:var(--text-soft);
              border-top:2px dashed var(--card-line);border-bottom:2px dashed var(--card-line);padding:10px 0}
   .breakdown span{float:right;font-weight:700;color:var(--text)}
+  .review{text-align:left;margin-top:14px}
+  .review h3{font-family:'Fraunces',serif;font-size:16px;color:var(--gold-deep);margin-bottom:8px}
+  .rw{border:2px solid var(--card-line);border-radius:9px;background:var(--slot-bg);padding:9px 11px;margin-bottom:8px}
+  .rw .rww{font-family:'Fraunces',serif;font-weight:900;font-size:15px;color:var(--gold-deep)}
+  .rw .rwn{font-size:11.5px;line-height:1.55;color:var(--text);margin-top:3px}
+  .rw .rwe{font-size:11.5px;line-height:1.55;color:var(--text-soft);font-style:italic;margin-top:4px}
   footer{text-align:center;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);margin-top:18px;opacity:.75}
 </style>
 </head>
@@ -226,45 +221,49 @@
   <header>
     <button class="themeBtn" id="themeBtn" title="Toggle light / dark">◐</button>
     <div class="kicker">Satriwithaya · English Program</div>
-    <h1>The 11-Variable <em>Matrix</em></h1>
+    <h1>Professional Vocab <em>Arena</em></h1>
     <div class="bar-deco"></div>
-    <div class="tagline" id="tagline"></div>
+    <div class="tagline" id="tagline">Master the words your profession actually uses</div>
   </header>
 
   <!-- ============ JOIN / MODE SELECT ============ -->
   <section id="join" class="card">
     <label for="teamName">Team Name <span style="text-transform:none;letter-spacing:0;font-weight:400">(required for Live Arena, optional for Solo)</span></label>
-    <input type="text" id="teamName" placeholder="e.g. The Thesis Statements" maxlength="28" autocomplete="off" />
+    <input type="text" id="teamName" placeholder="e.g. The Cross-Examiners" maxlength="28" autocomplete="off" />
+
+    <label style="margin-top:16px" for="cfgProf">Profession</label>
+    <select id="cfgProf"></select>
 
     <label style="margin-top:16px">Level</label>
     <div class="levelPick" id="levelPick">
       <button type="button" class="lvl" data-level="b2">
-        <span class="lname">CEFR B2</span><span class="lband">IELTS Band 7</span>
-        <span class="ldesc">Clear, everyday academic English</span>
+        <span class="lname">B2</span><span class="lband">IELTS 6.5–7</span>
       </button>
-      <button type="button" class="lvl on" data-level="c1">
-        <span class="lname">CEFR C1</span><span class="lband">IELTS Band 8</span>
-        <span class="ldesc">Dense, formal academic English</span>
+      <button type="button" class="lvl" data-level="c1">
+        <span class="lname">C1</span><span class="lband">IELTS 7.5–8</span>
+      </button>
+      <button type="button" class="lvl on" data-level="all">
+        <span class="lname">Both</span><span class="lband">Full range</span>
       </button>
     </div>
 
     <div class="row" style="margin-top:14px">
       <div>
-        <label for="cfgPrompts">Prompts / round</label>
-        <select id="cfgPrompts">
-          <option value="1">1 · ~4 min</option>
-          <option value="2" selected>2 · ~9 min</option>
-          <option value="3">3 · ~13 min</option>
-          <option value="5">5 · ~22 min</option>
-          <option value="0">All 23</option>
+        <label for="cfgCount">Questions</label>
+        <select id="cfgCount">
+          <option value="8">8 · ~3 min</option>
+          <option value="12" selected>12 · ~5 min</option>
+          <option value="20">20 · ~8 min</option>
+          <option value="30">30 · ~12 min</option>
+          <option value="0">All available</option>
         </select>
       </div>
       <div>
-        <label for="cfgSeconds">Seconds / phase</label>
+        <label for="cfgSeconds">Timer</label>
         <select id="cfgSeconds">
-          <option value="20">20 s</option>
-          <option value="25" selected>25 s</option>
-          <option value="30">30 s</option>
+          <option value="15">15 s</option>
+          <option value="20" selected>20 s</option>
+          <option value="25">25 s</option>
           <option value="45">45 s</option>
           <option value="0">No timer</option>
         </select>
@@ -280,41 +279,36 @@
   <section id="game" class="card hide">
     <div class="meta">
       <span class="pill" id="teamPill">—</span>
-      <span class="pill levelPill" id="levelPill">C1</span>
+      <span class="pill levelPill" id="profPill">—</span>
       <span class="pill streakpill" id="streakPill">🔥 0</span>
       <span class="pill scorepill" id="scorePill">0 pts</span>
     </div>
 
     <div class="prompt-box" id="promptBox">
-      <div class="plabel"><span>The Prompt</span><span class="ptype" id="promptType"></span></div>
-      <div class="ptext" id="promptText">—</div>
+      <div class="plabel"><span id="promptType">The Word</span><span class="ptype" id="phaseCount">B2</span></div>
+      <div class="pword" id="promptWord">—</div>
+      <div class="ppos" id="promptPos"></div>
+      <div class="phase-q" id="phaseQ">—</div>
     </div>
 
     <div class="progress">
-      <span class="promptCount" id="promptCount">Prompt 1 / 2</span>
+      <span class="promptCount" id="promptCount">Question 1 / 12</span>
       <span class="dots" id="dots"></span>
     </div>
-
-    <button class="matrixToggle hide" id="matrixToggle" type="button">▸ <span id="matrixCount">0</span>/11</button>
-    <div class="matrix hide" id="matrixBox"></div>
 
     <div class="speed-track" id="speedTrack"><div class="speed-fill" id="speedFill"></div></div>
     <div class="speed-label" id="speedLabel">⚡ Speed bonus active</div>
 
-    <div class="phase-head">
-      <span class="phase-tag" id="phaseTag">—</span>
-      <span class="phase-count" id="phaseCount">Variable 1 / 11</span>
-    </div>
-    <div class="phase-q" id="phaseQ">Choose the option that best fits this variable.</div>
-    <div class="def" id="defBox">
-      <div class="defrow"><span class="dtag ok">IS</span><span id="defIs"></span></div>
-      <div class="defrow"><span class="dtag no">NOT</span><span id="defNot"></span></div>
-    </div>
-    <div class="slot" id="slotBox"><span class="slab">Template slot</span><span id="slotText"></span></div>
-
     <div class="opts" id="opts"></div>
 
     <div class="feedback" id="feedback"></div>
+    <div class="wordcard" id="wordCard">
+      <span class="wcl">Word card</span>
+      <div class="wcw" id="wcWord"></div>
+      <div class="wcp" id="wcPos"></div>
+      <div class="wcn" id="wcNote"></div>
+      <div class="wce" id="wcEx"></div>
+    </div>
     <button class="btn ghost hide" id="nextBtn">Next →</button>
   </section>
 
@@ -326,6 +320,11 @@
       <div class="breakdown" id="breakdown"></div>
       <p class="sub" id="finalSummary"></p>
       <div class="best" id="bestLine"></div>
+      <div class="review hide" id="reviewBox">
+        <h3 id="reviewTitle">Words to take away</h3>
+        <div id="reviewList"></div>
+        <button class="btn" id="drillBtn">Drill these words again</button>
+      </div>
       <button class="btn ghost" id="againBtn">Play Again</button>
       <button class="btn ghost" id="menuBtn">Change Settings</button>
     </div>
@@ -336,228 +335,76 @@
 
 <div class="toast" id="toast"></div>
 
+<script src="prompts.js" onerror="window.__bankScriptFailed=true"></script>
 <script>
 /* ==================== CONFIG ==================== */
 /* Deployed Google Apps Script Web App URL (same as leaderboard.html) */
-const API_URL = "https://script.google.com/macros/s/AKfycbzGABREt_p3nYJfFeiMg03yXKQr6G4tWYM8fhe9M5Af23NwhAitTfxCoOmmwi7hT6Ji/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbyMeyqoXbAM-5Ao_x5EYrr3e5S18LbSVsTF95cMXoAsjWJYbxZasRgFVcTfVDmGvPwf/exec";
 
-/* The question banks live beside this file: prompts.json (C1) and prompts-b2.json (B2). */
+/* The bank ships twice: prompts.js (works from file:// too) and prompts.json
+   (fetched when the page is served over http). Either one is enough. */
+const BANK_URL = "prompts.json";
 
-/* Scoring constants */
-const BASE_POINTS   = 10;
-const SPEED_BONUS   = 5;   // first attempt only, answered while bar > 50%
+/* Scoring constants — see the spec's scoring matrix */
+const BASE_POINTS       = 10;
+const SPEED_BONUS       = 5;   // first attempt only, answered while the bar is above 50%
 const SECOND_TRY_POINTS = 5;   // exactly half of BASE_POINTS
-const PHASES_PER_PROMPT = 11;
+const STREAK_2          = 2;
+const STREAK_3          = 5;
 
-/* ============================================================
-   LEVELS
-   Two parallel banks over the same 23 IELTS prompts. Only the OPTIONS and the
-   on-screen English change with level; the prompt itself is a real exam question
-   and is never simplified.
-   ============================================================ */
-const LEVELS = {
-  b2: {
-    id:'b2', label:'CEFR B2 · Band 7', short:'B2 · Band 7',
-    file:'prompts-b2.json',
-    tagline:'Build the 11 parts of a Band 7 essay plan',
-    vars:[
-      {q:"Which option gives the CORE TOPIC — the whole subject the essay is about?",
-       is:"The whole subject under discussion, written as a noun phrase.",
-       not:"Not one side of the argument, and not a small detail from the prompt.",
-       slot:"People often discuss <b>[Core Topic]</b>."},
-      {q:"Which option gives FACET A — the first main idea or argument?",
-       is:"The first main idea, effect or argument.",
-       not:"Not how it works, and not a real example of it.",
-       slot:"One important side of this issue is <b>[Facet A]</b>."},
-      {q:"Which option gives MECHANISM A — how Facet A works in real life?",
-       is:"How Facet A actually works.",
-       not:"Not the idea itself, and not a real case of it.",
-       slot:"This works by <b>[Mechanism A]</b>."},
-      {q:"Which option gives EXAMPLE A — one real, specific case of Facet A?",
-       is:"One real, specific case of Facet A.",
-       not:"Not the general idea, and not a plan or a promise for the future.",
-       slot:"For example, <b>[Example A]</b>."},
-      {q:"Which option gives NUANCE A — a reason Facet A is not always true?",
-       is:"A reason why Facet A is not true in every case.",
-       not:"It must limit FACET A. A limit on Facet B belongs in box 9.",
-       slot:"However, <b>[Nuance A]</b>."},
-      {q:"Which option gives FACET B — the second main idea or argument?",
-       is:"The second main idea, effect or argument.",
-       not:"Not a repeat of Facet A, and not how it works.",
-       slot:"On the other side, there is <b>[Facet B]</b>."},
-      {q:"Which option gives MECHANISM B — how Facet B works in real life?",
-       is:"How Facet B actually works.",
-       not:"Not the idea itself, and not a real case of it.",
-       slot:"This side works by <b>[Mechanism B]</b>."},
-      {q:"Which option gives EXAMPLE B — one real, specific case of Facet B?",
-       is:"One real, specific case of Facet B.",
-       not:"Not the general idea — something you could point at.",
-       slot:"This can lead to <b>[Example B]</b>."},
-      {q:"Which option gives NUANCE B — a reason Facet B is not always true?",
-       is:"A reason why Facet B is not true in every case.",
-       not:"It must limit FACET B. A limit on Facet A belongs in box 5.",
-       slot:"Even so, <b>[Nuance B]</b>."},
-      {q:"Which option gives the BALANCED POSITION — the view that keeps what is true in both sides?",
-       is:"A balanced view that keeps what is true in both sides.",
-       not:"Not one side repeated, and not a vague 'both are important'.",
-       slot:"I believe that <b>[Balanced Position]</b>."},
-      {q:"Which option gives the REASON — why the balanced position is the best answer?",
-       is:"The reason the balanced position is the best answer.",
-       not:"Not the position again — the thinking behind it.",
-       slot:"This is the best approach because <b>[Reason]</b>."}
-    ],
-    ui:{
-      retryLead:   'Not right. ',
-      trapLead:    'Careful — that one is a trap. ',
-      wrongSlot:   (b,c)=>'That is the <strong>'+b+'</strong> of this prompt, not the <strong>'+c+
-                          '</strong>. The sentence is true, but it belongs in a different box.<br>',
-      noSlot:      'It looks reasonable, but it does not do the job this box needs.<br>',
-      retryTail:   (cut)=>'Try once more for <strong>half points</strong>'+
-                          (cut?' — one wrong option has been crossed out to help you.':' — check the IS / NOT box again.'),
-      good:        '✓ Correct!',
-      half:        '✓ Correct on your second try.',
-      halfTail:    ' points (half). No speed bonus this time.',
-      miss:        '✗ Not quite.',
-      answerLead:  'The answer was → ',
-      matrix:      'Your plan so far ',
-      speedOn:     '⚡ Speed bonus available',
-      speedLost:   'No speed bonus now',
-      speedOver:   'Time is up · answers still count',
-      noTimer:     'No time limit',
-      second:      'Second try · half points',
-      doneTitle:   'Round finished!',
-      bdFirst:'Right first time', bdSecond:'Right on second try', bdMiss:'Missed', bdSeen:'Boxes attempted'
-    }
-  },
-  c1: {
-    id:'c1', label:'CEFR C1 · Band 8', short:'C1 · Band 8',
-    file:'prompts.json',
-    tagline:'Deconstruct a prompt into the Band 8 matrix',
-    vars:[
-      {q:"Which option best identifies the CORE TOPIC — the overarching phenomenon, as a nominalised noun phrase?",
-       is:"The whole phenomenon under debate, written as a nominalised noun phrase.",
-       not:"Not one side of the argument, and not a sub-issue the prompt only touches.",
-       slot:"The ongoing discourse surrounding <b>[Core Topic]</b> frequently highlights its multifaceted implications."},
-      {q:"Which option best states FACET A — the first major aspect, effect or argument?",
-       is:"The first major aspect, effect or argument.",
-       not:"Not how it works (that is the Mechanism) and not a concrete case (that is the Example).",
-       slot:"While significant attention is often directed toward <b>[Facet A]</b>, a comprehensive understanding requires equal examination of [Facet B]."},
-      {q:"Which option best describes MECHANISM A — how Facet A actually operates in the real world?",
-       is:"How Facet A actually operates or functions.",
-       not:"Not the aspect itself, and not a specific real-world case of it.",
-       slot:"This dynamic operates primarily by <b>[Mechanism A]</b>."},
-      {q:"Which option is the best EXAMPLE A — a specific, concrete instance of Facet A?",
-       is:"One specific, concrete instance of Facet A.",
-       not:"Not the general principle, and not an aim or a pledge — something that actually happens.",
-       slot:"Such a trajectory frequently manifests in real-world scenarios, such as <b>[Example A]</b>."},
-      {q:"Which option best states NUANCE A — the mitigating factor proving Facet A is not an absolute rule?",
-       is:"A mitigating factor showing Facet A is not an absolute rule.",
-       not:"It must limit FACET A. A limitation of Facet B belongs at variable 9.",
-       slot:"Yet, viewing this element in a vacuum overlooks critical context; indeed, <b>[Nuance A]</b>."},
-      {q:"Which option best states FACET B — the second major aspect, effect or argument?",
-       is:"The second major aspect, effect or argument.",
-       not:"Not a restatement of Facet A, and not the mechanism behind it.",
-       slot:"Equally significant is the phenomenon's relationship to <b>[Facet B]</b>."},
-      {q:"Which option best describes MECHANISM B — how Facet B operates or functions?",
-       is:"How Facet B actually operates or functions.",
-       not:"Not the aspect itself, and not a specific real-world case of it.",
-       slot:"This aspect is deeply tied to <b>[Mechanism B]</b>."},
-      {q:"Which option is the best EXAMPLE B — a specific, concrete instance of Facet B?",
-       is:"One specific, concrete instance of Facet B.",
-       not:"Not the general principle — something concrete enough to point at.",
-       slot:"…which ultimately leads to outcomes like <b>[Example B]</b>."},
-      {q:"Which option best states NUANCE B — the mitigating factor proving Facet B is not an absolute rule?",
-       is:"A mitigating factor showing Facet B is not an absolute rule.",
-       not:"It must limit FACET B. A limitation of Facet A belongs at variable 5.",
-       slot:"It must be weighed against the reality that <b>[Nuance B]</b>."},
-      {q:"Which option is the best SYNTHESIZED POSITION — the middle-ground reality combining the truths of both facets?",
-       is:"The middle-ground reality that holds the truth of both facets together.",
-       not:"Not a restatement of one side, and not a vague call for balance.",
-       slot:"A more accurate evaluation recognizes that <b>[Synthesized Position]</b>."},
-      {q:"Which option is the best RATIONALE — the foundational reason this synthesis is the most accurate path forward?",
-       is:"The underlying reason the synthesis is the most accurate path forward.",
-       not:"Not a repeat of the position itself — the reason it is right.",
-       slot:"This perspective is ultimately the most valid because <b>[Rationale]</b>."}
-    ],
-    ui:{
-      retryLead:   'Incorrect. ',
-      trapLead:    '🚨 TRAP TRIGGERED! ',
-      wrongSlot:   (b,c)=>'That is the <strong>'+b+'</strong> of this prompt, not the <strong>'+c+
-                          '</strong>. The statement is true — it is in the wrong slot.<br>',
-      noSlot:      'That option is plausible, but it does not do the job this variable requires.<br>',
-      retryTail:   (cut)=>'One more try for <strong>half points</strong>'+
-                          (cut?' — and one more wrong option has been struck out for you.':' — re-read the IS / NOT test above.'),
-      good:        '✓ Correct!',
-      half:        '✓ Correct on the second try.',
-      halfTail:    ' points (half). No speed bonus, streak reset.',
-      miss:        '✗ Not quite.',
-      answerLead:  'Correct answer → ',
-      matrix:      'Your matrix so far ',
-      speedOn:     '⚡ Speed bonus active',
-      speedLost:   'Speed bonus lost',
-      speedOver:   'Time is up · answers still score, without the bonus',
-      noTimer:     'No time limit',
-      second:      'Second try — half points',
-      doneTitle:   'Round Complete!',
-      bdFirst:'First-try correct', bdSecond:'Second-try correct', bdMiss:'Missed', bdSeen:'Variables attempted'
-    }
-  }
-};
-let LEVEL = LEVELS.c1;               // set from the landing screen
-let VARIABLES = LEVEL.vars;
-let UI = LEVEL.ui;
+/* Anti-pattern rule from the spec: the correct option must be the character-count
+   maximum in exactly this share of the questions a student sees.
+   Two mechanisms enforce it. First, every item's four options are written inside one
+   length band (no option differs from another by enough to be spotted across the room),
+   so length carries no signal in the first place. Second, each item is tagged at load
+   with `longest` — whether its correct option happens to be the character-count maximum —
+   and the round builder fills exactly this quota from the tagged pool. */
+const LONGEST_TARGET = 0.25;
 
-/* Offline fallback (one prompt) if prompts.json cannot be fetched */
-const FALLBACK_PROMPTS = [{
-  id:"demo1", type:"Discuss both views",
-  promptText:"Some argue governments should ban private cars in city centres to reduce pollution. Others believe individuals should have the right to drive wherever they wish. Discuss both views and give your own opinion.",
-  phases:[
-   {phaseName:"1: Core Topic",correct:"The systemic regulation of urban automotive transport.",distractors:["Whether private cars are actively damaging the global environment.","The most effective ways to convince people to use public transport.","How modern cities can be redesigned to eliminate traffic jams."]},
-   {phaseName:"2: Facet A",correct:"The necessity of mitigating vehicular environmental degradation.",distractors:["Governments should immediately ban all cars from city centres.","The importance of building wider roads to reduce congestion.","Ensuring that pedestrians and cyclists have safer downtown areas."]},
-   {phaseName:"3: Mechanism A",correct:"By drastically reducing localized tailpipe emissions in densely populated zones.",distractors:["By making it illegal to own a car if you live in a city centre.","Through the invention of completely zero-emission electric vehicles.","By forcing citizens to walk or cycle to their places of work."]},
-   {phaseName:"4: Example A",correct:"Implementing comprehensive bans on private combustion engines in downtown districts.",distractors:["Cities destroying roads to plant more trees and parks.","Governments providing free bicycles to every citizen.","Police arresting anyone who drives near a city centre."]},
-   {phaseName:"5: Nuance A",correct:"An outright ban ignores the logistical realities of commuters lacking viable public transit alternatives.",distractors:["Banning cars means people will just buy more motorcycles instead.","Pollution is mostly caused by factories, so a ban will not help.","City centres are too crowded anyway, so a ban is a perfect solution."]},
-   {phaseName:"6: Facet B",correct:"The preservation of individualized freedom of movement.",distractors:["People should be allowed to drive because cars are expensive to buy.","The legal right to cause pollution if you pay your taxes.","Ensuring that the automotive industry remains profitable."]},
-   {phaseName:"7: Mechanism B",correct:"Safeguarding the autonomy of citizens to navigate urban spaces without state restriction.",distractors:["Allowing drivers to ignore environmental laws if they are in a hurry.","Giving people the right to park anywhere they want for free.","Protecting the ability of citizens to avoid walking at all costs."]},
-   {phaseName:"8: Example B",correct:"Allowing private vehicle owners unrestricted access to city centres via road networks.",distractors:["Building massive multi-storey car parks on every city block.","Removing all public transport so people are forced to drive.","Citizens driving large trucks through pedestrian-only zones."]},
-   {phaseName:"9: Nuance B",correct:"Unchecked vehicular freedom invariably leads to compounding gridlock and toxic air quality.",distractors:["Driving a car is usually much slower than taking a subway train.","People who drive everywhere usually suffer from poor health.","Private cars are too expensive for most people to afford anyway."]},
-   {phaseName:"10: Synthesized Position",correct:"Municipalities must invest heavily in mass transit infrastructure while gradually phasing out high-emission vehicles.",distractors:["Governments should ban cars and let citizens figure out how to travel.","People should have total freedom to drive, and pollution ignored.","Cities should build better roads so everyone can drive electric cars."]},
-   {phaseName:"11: Rationale",correct:"Sustainable urban planning must balance ecological preservation with the practical mobility needs of the populace.",distractors:["Because taking the bus is always cheaper than paying for petrol.","Since cars are the only true cause of global warming today.","Because individuals will always refuse to give up their cars."]}
-  ]
-}];
+/* Offline demo bank, used only if neither prompts.js nor prompts.json can be read. */
+const FALLBACK_BANK = [{profession:"Law",icon:"⚖️",items:[
+  {id:"demo_1",word:"Litigation",pos:"noun",level:"B2",type:"Meaning",
+   question:"Which option best defines the legal concept of litigation?",
+   correct:"The formal process of taking legal action in a court",
+   distractors:["An informal agreement reached privately between two disputing parties outside of a courtroom",
+                "The process of drafting a new legislative bill to be presented to the national assembly",
+                "A preliminary investigation conducted by law enforcement officers prior to a formal arrest"],
+   note:"Litigation is the court process itself, not the dispute and not the settlement.",
+   example:"The firm has been in litigation with its former supplier for eighteen months."},
+  {id:"demo_2",word:"Culpable",pos:"adjective",level:"B2",type:"Synonym",
+   question:"Identify the best B2 synonym for 'Culpable'.",
+   correct:"Guilty",
+   distractors:["Completely innocent of all charges","Legally protected from prosecution","Accused without sufficient evidence"],
+   note:"Culpable means deserving blame; it is stronger than merely 'involved'.",
+   example:"The inquiry found the contractor culpable for the collapse of the walkway."}
+]}];
 
 /* ==================== STATE ==================== */
-let team="";
-let score=0;
-let allPrompts=[];      // full loaded bank
-let prompts=[];         // this round's selection
-let pIdx=0, phaseIdx=0;
+let team="", soloMode=false, offline=true;
+let bank=[];                 // [{profession, icon, items:[...]}]
+let profession="Mixed", levelFilter="all";
+let round=[], qIdx=0, score=0;
+let questionsPerRound=12, phaseSeconds=20;
 let currentStreak=0, bestStreak=0;
-let offline=true;       // true = no network writes (Solo Practice, or API unreachable)
-let soloMode=false;
-let phaseSeconds=25, promptsPerRound=2;
+let asked=0, firstTryCorrect=0, secondTryCorrect=0, missed=0;
+let results=[];              // 'full' | 'half' | 'miss', parallel to round
+let missedItems=[];          // items answered wrong at least once, for the review card
+let drillQueue=null;         // set when the student replays their missed words
 
-/* --- per-phase state, all reset inside renderPhase() --- */
-let hasAnswered=false;      // phase fully resolved; Next is showing
-let isSecondTry=false;      // first attempt was wrong; one more try live
-let lockInput=false;        // hard guard against double-click / re-entry
-let currentOptions=[];
-let correctText="", trapText="";
-let optButtons=[];
-let deadOptions=[];         // option texts already spent this phase
-
-/* --- tallies --- */
-let phasesSeen=0, firstTryCorrect=0, secondTryCorrect=0, missed=0;
-let phaseResults=new Array(PHASES_PER_PROMPT).fill(null);   // 'full' | 'half' | 'miss'
+/* --- per-question state, all reset inside renderQuestion() --- */
+let hasAnswered=false, isSecondTry=false, lockInput=false;
+let currentOptions=[], correctText="", trapText="";
+let optButtons=[], deadOptions=[];
 
 /* speed bar */
 let speedRAF=null, phaseStart=0;
 
 const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 /* ==================== THEME ==================== */
 (function initTheme(){
-  let saved=null; try{ saved=localStorage.getItem('m11_theme'); }catch(e){}
+  let saved=null; try{ saved=localStorage.getItem('pv_theme'); }catch(e){}
   if(saved) document.documentElement.setAttribute('data-theme',saved);
 })();
 $('themeBtn').onclick=()=>{
@@ -565,22 +412,8 @@ $('themeBtn').onclick=()=>{
   const sysDark=window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
   const next = cur ? (cur==='dark'?'light':'dark') : (sysDark?'light':'dark');
   document.documentElement.setAttribute('data-theme',next);
-  try{ localStorage.setItem('m11_theme',next); }catch(e){}
+  try{ localStorage.setItem('pv_theme',next); }catch(e){}
 };
-
-
-/* ---- level selection ---- */
-function setLevel(id){
-  LEVEL = LEVELS[id] || LEVELS.c1;
-  VARIABLES = LEVEL.vars; UI = LEVEL.ui;
-  document.querySelectorAll('#levelPick .lvl').forEach(b=>b.classList.toggle('on', b.dataset.level===LEVEL.id));
-  $('levelPill').textContent = LEVEL.short;
-  $('tagline').textContent = LEVEL.tagline;
-  try{ localStorage.setItem('m11_level', LEVEL.id); }catch(e){}
-}
-document.querySelectorAll('#levelPick .lvl').forEach(b=>{
-  b.onclick=()=>{ setLevel(b.dataset.level); allPrompts=[]; };   // force a reload of the other bank
-});
 
 /* ==================== NETWORK ==================== */
 async function api(method, body, params){
@@ -593,92 +426,116 @@ async function api(method, body, params){
   return res.json();
 }
 
-async function loadPrompts(){
+function validBank(d){
+  return Array.isArray(d) && d.length && d.every(p=>p && Array.isArray(p.items) && p.items.length &&
+         p.items.every(i=>i.word && i.correct && Array.isArray(i.distractors) && i.distractors.length===3));
+}
+
+async function loadBank(){
+  if(validBank(window.VOCAB_BANK)){ bank=window.VOCAB_BANK; return 'script'; }
   try{
-    const res = await fetch(LEVEL.file, {cache:"no-store"});
+    const res=await fetch(BANK_URL,{cache:"no-store"});
     if(!res.ok) throw new Error("http "+res.status);
-    const data = await res.json();
-    if(!Array.isArray(data) || !data.length) throw new Error("empty");
-    allPrompts = data.filter(p=>p && Array.isArray(p.phases) && p.phases.length===PHASES_PER_PROMPT);
-    if(!allPrompts.length) throw new Error("no valid prompts");
-    return true;
+    const data=await res.json();
+    if(!validBank(data)) throw new Error("bad bank");
+    bank=data; return 'fetch';
   }catch(e){
-    /* Offline demo: the single fallback prompt is C1 wording, so only offer it at C1. */
-    allPrompts = FALLBACK_PROMPTS.slice();
-    return false;
+    bank=FALLBACK_BANK; return 'fallback';
   }
 }
 
 /* ==================== ROUND SETUP ==================== */
 function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
 
-function prepareRound(){
-  prompts = shuffle(allPrompts.slice());
-  if(promptsPerRound>0 && prompts.length>promptsPerRound) prompts = prompts.slice(0,promptsPerRound);
-  phasesSeen=0; firstTryCorrect=0; secondTryCorrect=0; missed=0;
+function poolFor(prof, lvl){
+  let items=[];
+  bank.forEach(p=>{
+    if(prof!=='Mixed' && p.profession!==prof) return;
+    p.items.forEach(i=>{ if(lvl==='all' || String(i.level).toLowerCase()===lvl) items.push(Object.assign({profession:p.profession, icon:p.icon}, i)); });
+  });
+  return items;
 }
-function resetRoundState(){
-  pIdx=0; phaseIdx=0; score=0; currentStreak=0; bestStreak=0;
-  phasesSeen=0; firstTryCorrect=0; secondTryCorrect=0; missed=0;
-  phaseResults=new Array(PHASES_PER_PROMPT).fill(null);
+
+/* Build the round and enforce the 25% longest-correct rule.
+   Quota selection is skipped when it would distort sampling — if the pool of
+   longest-correct items is not at least twice the quota, the same few items would
+   appear in every round, which is a worse pattern than the one being fixed. */
+function isLongest(i){
+  if(typeof i.longest==='boolean') return i.longest;
+  const L=[i.correct].concat(i.distractors).map(o=>o.length);
+  return i.correct.length===Math.max.apply(null,L);
+}
+function buildRound(items){
+  const pool=shuffle(items.slice());
+  const n = (questionsPerRound>0 && pool.length>questionsPerRound) ? questionsPerRound : pool.length;
+  if(n>=pool.length) return pool;
+  const yes=pool.filter(isLongest), no=pool.filter(i=>!isLongest(i));
+  const want=Math.round(n*LONGEST_TARGET);
+  if(yes.length < want*2 || no.length < n-want) return pool.slice(0,n);
+  return shuffle(yes.slice(0,want).concat(no.slice(0,n-want)));
+}
+
+function prepareRound(){
+  const pool = drillQueue && drillQueue.length ? drillQueue.slice() : poolFor(profession, levelFilter);
+  round = buildRound(pool);
+  drillQueue = null;
+  qIdx=0; score=0; currentStreak=0; bestStreak=0;
+  asked=0; firstTryCorrect=0; secondTryCorrect=0; missed=0;
+  results=new Array(round.length).fill(null);
+  missedItems=[];
 }
 
 /* ==================== RENDER ==================== */
-function renderPhase(){
-  /* --- ANTI-CHEAT: every per-phase flag is re-initialised here, nowhere else --- */
-  hasAnswered=false;
-  isSecondTry=false;
-  lockInput=false;
-  deadOptions=[];
+function renderQuestion(){
+  /* every per-question flag is re-initialised here, nowhere else */
+  hasAnswered=false; isSecondTry=false; lockInput=false; deadOptions=[];
 
-  const p  = prompts[pIdx];
-  const ph = p.phases[phaseIdx];
-  const v  = VARIABLES[phaseIdx];
+  const it = round[qIdx];
+  correctText = it.correct;
+  trapText    = it.distractors[0];              // distractors[0] is always the near-miss TRAP
 
-  $('promptText').textContent = p.promptText;
-  $('promptType').textContent = p.type || '';
-  $('promptBox').scrollTop = 0;
-
-  const parts = String(ph.phaseName).split(':');
-  $('phaseTag').textContent  = parts.length>1 ? parts.slice(1).join(':').trim() : ph.phaseName;
-  $('phaseCount').textContent = 'Variable '+(phaseIdx+1)+' / '+PHASES_PER_PROMPT;
-  $('phaseQ').textContent = v.q;
-  $('defIs').textContent  = v.is;
-  $('defNot').textContent = v.not;
-  $('slotText').innerHTML = v.slot;
-  renderMatrix();
-
-  $('promptCount').textContent = 'Prompt '+(pIdx+1)+' / '+prompts.length;
+  /* Where the answer IS the headword, showing the word on the plate would hand the
+     question away, so it stays hidden until the question resolves. A gap-fill whose
+     answer is some other word ("Semantics is the study of ___") needs no mask — its
+     sentence names the headword anyway. */
+  const gapFill = (it.type === 'Fill in the blank') &&
+                  it.correct.trim().toLowerCase() === String(it.word).trim().toLowerCase();
+  $('promptWord').textContent = gapFill ? '· · · · ·' : it.word;
+  $('promptWord').classList.toggle('masked', gapFill);
+  $('promptPos').textContent  = gapFill ? 'Which word fills the gap?'
+                                        : [it.pos, it.profession].filter(Boolean).join(' · ');
+  $('promptType').textContent = (it.type || 'The Word').toUpperCase();
+  $('phaseCount').textContent = 'CEFR '+(it.level||'');
+  $('phaseQ').innerHTML       = esc(it.question).replace(/_{3,}/g,'<b>________</b>');
+  $('promptBox').scrollTop=0;
+  $('phaseQ').scrollTop=0;
+  $('promptCount').textContent= 'Question '+(qIdx+1)+' / '+round.length;
   renderDots();
 
-  correctText = ph.correct;
-  trapText    = ph.distractors[0];              // distractors[0] is always the near-miss TRAP
-  currentOptions = shuffle([ph.correct, ...ph.distractors]);
+  currentOptions = shuffle([correctText, ...it.distractors]);
   buildOpts(currentOptions);
 
   $('feedback').className='feedback'; $('feedback').innerHTML='';
+  $('wordCard').className='wordcard';
   $('nextBtn').classList.add('hide');
   $('nextBtn').textContent='Next →';
   $('scorePill').textContent = score+' pts';
   updateStreakPill();
-
   startSpeedBar();
 }
 
 function renderDots(){
   const c=$('dots'); c.innerHTML='';
-  for(let i=0;i<PHASES_PER_PROMPT;i++){
+  for(let i=0;i<round.length;i++){
     const d=document.createElement('span'); d.className='dot';
-    if(i<phaseIdx){
-      const r=phaseResults[i];
-      d.classList.add(r==='full'?'done':r==='half'?'half':'miss');
-    } else if(i===phaseIdx) d.classList.add('cur');
+    if(i<qIdx){ const r=results[i]; d.classList.add(r==='full'?'dfull':r==='half'?'half':'miss'); }
+    else if(i===qIdx) d.classList.add('cur');
     c.appendChild(d);
   }
 }
 
 function buildOpts(opts){
-  const c = $('opts'); c.innerHTML=''; optButtons=[];
+  const c=$('opts'); c.innerHTML=''; optButtons=[];
   opts.forEach((o,i)=>{
     const b=document.createElement('button');
     b.className='opt'; b.type='button';
@@ -696,176 +553,128 @@ function updateStreakPill(){
   else pill.classList.remove('on');
 }
 
-
-/* ---- Running matrix: the variables already settled for THIS prompt ----
-   By the time a student reaches Nuance A they should be reasoning from their own
-   Core Topic, Facet A, Mechanism A and Example A rather than from the prompt alone. */
-let matrixOpen=false;
-function renderMatrix(){
-  const box=$('matrixBox'), tog=$('matrixToggle');
-  const p=prompts[pIdx];
-  if(phaseIdx===0){ box.classList.add('hide'); tog.classList.add('hide'); return; }
-  tog.classList.remove('hide');
-  $('matrixCount').textContent = phaseIdx+'/11';
-  box.innerHTML = p.phases.slice(0,phaseIdx).map(ph=>{
-    const label=String(ph.phaseName).split(':').slice(1).join(':').trim();
-    return '<div class="mrow"><span class="mk">'+label+'</span><span class="mv">'+
-           ph.correct.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))+'</span></div>';
-  }).join('');
-  box.classList.toggle('hide', !matrixOpen);
-  tog.textContent='';
-  tog.append(document.createTextNode((matrixOpen?'▾':'▸')+' '+UI.matrix));
-  const c=document.createElement('span'); c.id='matrixCount'; c.textContent=phaseIdx+'/11';
-  tog.appendChild(c);
+function showWordCard(it){
+  $('promptWord').textContent=it.word;                 // reveal a masked gap-fill headword
+  $('promptWord').classList.remove('masked');
+  $('promptPos').textContent=[it.pos, it.profession].filter(Boolean).join(' · ');
+  $('wcWord').textContent=it.word;
+  $('wcPos').textContent=[it.pos, 'CEFR '+it.level, it.profession].filter(Boolean).join(' · ');
+  $('wcNote').textContent=it.note||'';
+  $('wcEx').textContent=it.example?'“'+it.example+'”':'';
+  $('wordCard').className='wordcard show';
 }
-$('matrixToggle').onclick=()=>{ matrixOpen=!matrixOpen; renderMatrix(); };
 
 /* ==================== SPEED BAR ==================== */
 function startSpeedBar(){
   cancelAnimationFrame(speedRAF);
   const fill=$('speedFill'), sl=$('speedLabel');
-  if(phaseSeconds<=0){                     // "No timer" mode
+  if(phaseSeconds<=0){
     $('speedTrack').classList.add('hide');
-    sl.textContent=UI.noTimer; sl.style.color='var(--text-soft)';
-    phaseStart=performance.now();
-    return;
+    sl.textContent='No time limit'; sl.style.color='var(--text-soft)';
+    phaseStart=performance.now(); return;
   }
   $('speedTrack').classList.remove('hide');
-  phaseStart = performance.now();
+  phaseStart=performance.now();
   fill.className='speed-fill'; fill.style.width='100%';
   /* The clock governs the BONUS only. It never answers for the student and never
-     reveals the answer: when it reaches zero the phase stays open and a correct
-     answer still scores the base points. */
-  const step = ()=>{
+     reveals the answer: at zero the question stays open and a correct answer still
+     scores the base points. */
+  const step=()=>{
     const elapsed=(performance.now()-phaseStart)/1000;
-    const pct=Math.max(0, 1 - elapsed/phaseSeconds);
+    const pct=Math.max(0, 1-elapsed/phaseSeconds);
     fill.style.width=(pct*100)+'%';
-    fill.className='speed-fill'+(pct<=0?' low':pct<=0.25?' low':pct<=0.5?' mid':'');
+    fill.className='speed-fill'+(pct<=0.25?' low':pct<=0.5?' mid':'');
     if(!hasAnswered){
-      if(isSecondTry){ sl.textContent=UI.second; sl.style.color='var(--amber)'; }
-      else if(pct>0.5){ sl.textContent=UI.speedOn; sl.style.color='var(--green)'; }
-      else if(pct>0){ sl.textContent=UI.speedLost; sl.style.color='var(--gold-deep)'; }
-      else { sl.textContent=UI.speedOver; sl.style.color='var(--text-soft)'; }
+      if(isSecondTry){ sl.textContent='Second try · half points'; sl.style.color='var(--amber)'; }
+      else if(pct>0.5){ sl.textContent='⚡ Speed bonus active'; sl.style.color='var(--green)'; }
+      else if(pct>0){ sl.textContent='Speed bonus lost'; sl.style.color='var(--gold-deep)'; }
+      else { sl.textContent='Time is up · answers still score'; sl.style.color='var(--text-soft)'; }
+      speedRAF=requestAnimationFrame(step);
     }
-    if(!hasAnswered) speedRAF=requestAnimationFrame(step);   // keeps running past zero
   };
   step();
 }
 function speedPct(){
   if(phaseSeconds<=0) return 1;
-  return Math.max(0, 1 - (performance.now()-phaseStart)/1000/phaseSeconds);
-}
-
-
-/* ---- Slot detection: if a wrong choice is really another variable's answer, name it ----
-   Many traps are deliberately the correct answer of a mirrored or adjacent variable
-   (the Nuance B offered as the Nuance A, a Mechanism offered as a Facet). Telling the
-   student which slot it belongs to is the whole lesson, so we detect it at run time. */
-const STOP = new Set(['the','a','an','of','to','and','or','in','on','by','for','that','this',
-  'is','are','be','as','with','which','it','its','their','from','than','while','so','not','at']);
-function toks(s){ return new Set(String(s).toLowerCase().replace(/[^a-z\s]/g,' ').split(/\s+/)
-                 .filter(w=>w.length>2 && !STOP.has(w))); }
-function dice(a,b){ let hit=0; a.forEach(w=>{ if(b.has(w)) hit++; });
-                    return (a.size+b.size) ? (2*hit)/(a.size+b.size) : 0; }
-function slotOf(choice){
-  const p=prompts[pIdx], t=toks(choice); let best=-1, score=0;
-  for(let i=0;i<PHASES_PER_PROMPT;i++){
-    if(i===phaseIdx) continue;
-    const s=dice(t, toks(p.phases[i].correct));
-    if(s>score){ score=s; best=i; }
-  }
-  return score>=0.55 ? String(p.phases[best].phaseName).split(':').slice(1).join(':').trim() : null;
+  return Math.max(0, 1-(performance.now()-phaseStart)/1000/phaseSeconds);
 }
 
 /* ==================== ANSWER / SECOND-TRY STATE MACHINE ==================== */
 async function selectAnswer(choice, btn){
-  /* --- guards: phase already resolved, input locked mid-await, or option already spent --- */
   if(hasAnswered || lockInput) return;
   if(deadOptions.indexOf(choice)>-1) return;
   lockInput=true;
 
+  const it        = round[qIdx];
   const isCorrect = (choice===correctText);
   const isTrap    = (!isCorrect && choice===trapText);
   const stillFast = speedPct()>0.5;
   const fb=$('feedback');
 
-  /* ---------- BRANCH 1: first attempt, WRONG, and a retry is still possible ---------- */
+  /* ---------- BRANCH 1: first attempt wrong — one retry for half points ---------- */
   if(!isCorrect && !isSecondTry){
-    isSecondTry=true;
-    currentStreak=0;
-    updateStreakPill();
+    isSecondTry=true; currentStreak=0; updateStreakPill();
     deadOptions.push(choice);
     if(btn){ btn.classList.add(isTrap?'trap':'wrong'); btn.disabled=true; }
 
-    /* Narrow the field: strike out one more wrong option so the second try is at worst a
-       50/50. A plain distractor goes first, so that the near-miss stays on the board and
-       the final decision is still the one worth learning. */
-    let eliminated=null;
-    const stillWrong = currentOptions.filter(o=>o!==correctText && deadOptions.indexOf(o)<0);
-    const plain = stillWrong.filter(o=>o!==trapText);
-    eliminated = plain.length ? plain[Math.floor(Math.random()*plain.length)]
-               : (stillWrong.length>1 ? stillWrong[Math.floor(Math.random()*stillWrong.length)] : null);
+    /* Narrow the field: strike out one more wrong option so the second try is at worst
+       a 50/50. A plain distractor goes first, so the near-miss trap stays on the board
+       and the decision worth learning is still the one the student has to make. */
+    const stillWrong=currentOptions.filter(o=>o!==correctText && deadOptions.indexOf(o)<0);
+    const plain=stillWrong.filter(o=>o!==trapText);
+    const eliminated = plain.length ? plain[Math.floor(Math.random()*plain.length)]
+                     : (stillWrong.length>1 ? stillWrong[Math.floor(Math.random()*stillWrong.length)] : null);
     if(eliminated){
       deadOptions.push(eliminated);
       const i=currentOptions.indexOf(eliminated);
       if(optButtons[i]){ optButtons[i].classList.add('gone'); optButtons[i].disabled=true; }
     }
-    const belongs = slotOf(choice);
-    const here = String(prompts[pIdx].phases[phaseIdx].phaseName).split(':').slice(1).join(':').trim();
     fb.className='feedback show '+(isTrap?'trap':'retry');
-    fb.innerHTML = '<strong>'+(isTrap ? UI.trapLead : UI.retryLead)+'</strong>'
-      + (belongs ? UI.wrongSlot(belongs, here) : UI.noSlot)
-      + UI.retryTail(!!eliminated);
-    /* correct answer NOT revealed; Next NOT shown; remaining options stay live */
+    fb.innerHTML='<strong>'+(isTrap?'🚨 Trap triggered! ':'Not right. ')+'</strong>'+
+      (isTrap ? 'That option is deliberately close to the answer — check it against the exact sense of <strong>'+esc(it.word)+'</strong>.<br>'
+              : 'That option is plausible English, but it is not what <strong>'+esc(it.word)+'</strong> means here.<br>')+
+      'One more try for <strong>half points</strong>'+(eliminated?' — one wrong option has been struck out for you.':'.');
     lockInput=false;
     return;
   }
 
-  /* ---------- BRANCH 2: phase resolves now (correct, timeout, or second wrong) ---------- */
+  /* ---------- BRANCH 2: the question resolves now ---------- */
   hasAnswered=true;
   cancelAnimationFrame(speedRAF);
-  phasesSeen++;
+  asked++;
 
   let gained=0, streakBonus=0, speedBonus=0, result='miss';
 
   if(isCorrect && !isSecondTry){
-    /* first-attempt correct: full points + bonuses */
     result='full'; firstTryCorrect++;
-    gained = BASE_POINTS;
+    gained=BASE_POINTS;
     currentStreak++; bestStreak=Math.max(bestStreak,currentStreak);
-    if(currentStreak===2) streakBonus=2; else if(currentStreak>=3) streakBonus=5;
+    if(currentStreak===2) streakBonus=STREAK_2; else if(currentStreak>=3) streakBonus=STREAK_3;
     if(stillFast) speedBonus=SPEED_BONUS;
-    gained += streakBonus + speedBonus;
+    gained+=streakBonus+speedBonus;
   } else if(isCorrect && isSecondTry){
-    /* second-attempt correct: exactly half base, no speed bonus, streak stays 0 */
     result='half'; secondTryCorrect++;
-    gained = SECOND_TRY_POINTS;
-    currentStreak=0;
+    gained=SECOND_TRY_POINTS; currentStreak=0;
+    if(missedItems.indexOf(it)<0) missedItems.push(it);
   } else {
-    /* second wrong answer: nothing */
-    result='miss'; missed++;
-    gained = 0;
-    currentStreak=0;
+    result='miss'; missed++; gained=0; currentStreak=0;
     if(choice) deadOptions.push(choice);
+    if(missedItems.indexOf(it)<0) missedItems.push(it);
   }
 
-  phaseResults[phaseIdx]=result;
-
-  /* lock the board */
+  results[qIdx]=result;
   optButtons.forEach(b=>b.disabled=true);
 
-  /* send to backend (server authoritative when online) */
+  /* send to the backend (server authoritative when online) */
   if(!offline){
     try{
-      const r = await api('POST', {action:'score', team, level:LEVEL.short,
-                                   promptId:prompts[pIdx].id, phase:phaseIdx,
-                                   correct:(result!=='miss'), result, gained,
-                                   streak:currentStreak, bestStreak});
+      const r=await api('POST',{action:'score', team, profession:it.profession, level:it.level,
+                                word:it.word, type:it.type, id:it.id,
+                                correct:(result!=='miss'), result, gained,
+                                streak:currentStreak, bestStreak});
       if(r && typeof r.score==='number') score=r.score; else score+=gained;
     }catch(e){ score+=gained; }
-  }else{
-    score+=gained;
-  }
+  } else score+=gained;
 
   /* paint the options */
   optButtons.forEach((b,i)=>{
@@ -877,66 +686,74 @@ async function selectAnswer(choice, btn){
     else b.classList.add('dim');
   });
 
-  /* feedback */
   if(result==='full'){
     fb.className='feedback show good';
-    let msg='<strong>'+UI.good+'</strong> +'+BASE_POINTS+' points';
+    let msg='<strong>✓ Correct!</strong> +'+BASE_POINTS+' points';
     if(speedBonus) msg+=' · +'+speedBonus+' speed';
     if(streakBonus) msg+=' · +'+streakBonus+' streak';
     fb.innerHTML=msg+'.';
     if(streakBonus) toast('🔥 '+currentStreak+' in a row! +'+streakBonus+' bonus','streak');
     else if(speedBonus) toast('⚡ Speed bonus! +'+speedBonus,'speed');
-  }else if(result==='half'){
+  } else if(result==='half'){
     fb.className='feedback show half';
-    fb.innerHTML='<strong>'+UI.half+'</strong> +'+SECOND_TRY_POINTS+UI.halfTail;
-  }else{
-    const belongs2 = choice ? slotOf(choice) : null;
+    fb.innerHTML='<strong>✓ Correct on the second try.</strong> +'+SECOND_TRY_POINTS+' points (half). No speed bonus, streak reset.';
+  } else {
     fb.className='feedback show bad';
-    fb.innerHTML='<strong>'+UI.miss+'</strong>'+
-      (belongs2 ? ' That belongs in the <strong>'+belongs2+'</strong> box.' : '')+
-      '<br>'+UI.answerLead+'<span class="corr">'+correctText+'</span>';
+    fb.innerHTML='<strong>✗ Not quite.</strong><br>Correct answer → <span class="corr">'+esc(correctText)+'</span>';
   }
 
+  showWordCard(it);
   renderDots();
-  $('scorePill').textContent = score+' pts';
+  $('scorePill').textContent=score+' pts';
   updateStreakPill();
   $('nextBtn').classList.remove('hide');
-  if(pIdx>=prompts.length-1 && phaseIdx>=PHASES_PER_PROMPT-1) $('nextBtn').textContent='Finish ✦';
+  if(qIdx>=round.length-1) $('nextBtn').textContent='Finish ✦';
   $('nextBtn').focus();
   lockInput=false;
 }
 
 /* ==================== FLOW ==================== */
 function next(){
-  if(!hasAnswered) return;                     // cannot skip an unresolved phase
-  if(phaseIdx<PHASES_PER_PROMPT-1){ phaseIdx++; }
-  else if(pIdx<prompts.length-1){ pIdx++; phaseIdx=0; phaseResults=new Array(PHASES_PER_PROMPT).fill(null); }
-  else { finish(); return; }
-  renderPhase();
-  window.scrollTo({top:0,behavior:'smooth'});
+  if(!hasAnswered) return;
+  if(qIdx<round.length-1){ qIdx++; renderQuestion(); window.scrollTo({top:0,behavior:'smooth'}); }
+  else finish();
 }
 
 function finish(){
   cancelAnimationFrame(speedRAF);
   $('game').classList.add('hide'); $('done').classList.remove('hide');
-  $('finalScore').textContent = score;
-  $('doneTitle').textContent = UI.doneTitle;
-  $('breakdown').innerHTML =
-      UI.bdFirst +' <span>'+firstTryCorrect+'</span><br>'+
-      UI.bdSecond+' <span>'+secondTryCorrect+'</span><br>'+
-      UI.bdMiss  +' <span>'+missed+'</span><br>'+
-      UI.bdSeen  +' <span>'+phasesSeen+'</span>';
-  $('finalSummary').innerHTML = 'Best streak '+bestStreak+'.'+
-      (soloMode ? '' : '<br>Watch the live leaderboard!');
-  /* Solo Practice: persist personal best on this device */
+  $('finalScore').textContent=score;
+  const acc = asked ? Math.round(firstTryCorrect/asked*100) : 0;
+  $('breakdown').innerHTML=
+      'First-try correct <span>'+firstTryCorrect+'</span><br>'+
+      'Rescued on second try <span>'+secondTryCorrect+'</span><br>'+
+      'Missed <span>'+missed+'</span><br>'+
+      'Questions attempted <span>'+asked+'</span><br>'+
+      'First-try accuracy <span>'+acc+'%</span>';
+  $('finalSummary').innerHTML='Best streak '+bestStreak+'.'+(soloMode?'':'<br>Watch the live leaderboard!');
+
   if(soloMode){
     let best=0;
     try{
-      best=parseInt(localStorage.getItem('m11_best')||'0',10)||0;
-      if(score>best){ best=score; localStorage.setItem('m11_best',String(score)); }
+      const key='pv_best_'+profession;
+      best=parseInt(localStorage.getItem(key)||'0',10)||0;
+      if(score>best){ best=score; localStorage.setItem(key,String(score)); }
     }catch(e){}
-    $('bestLine').textContent = (score>=best?'New personal best: ':'Personal best: ')+best+' pts';
+    $('bestLine').textContent=(score>=best?'New personal best: ':'Personal best: ')+best+' pts';
   } else $('bestLine').textContent='';
+
+  /* Word review: every word the student got wrong at least once, with its card. */
+  if(missedItems.length){
+    $('reviewBox').classList.remove('hide');
+    $('reviewTitle').textContent='Words to take away ('+missedItems.length+')';
+    $('reviewList').innerHTML=missedItems.map(it=>
+      '<div class="rw"><div class="rww">'+esc(it.word)+' <span style="font-size:10px;letter-spacing:.14em;color:var(--text-soft)">'+esc(it.pos)+' · '+esc(it.level)+'</span></div>'+
+      '<div class="rwn">'+esc(it.correct)+'</div>'+
+      '<div class="rwn">'+esc(it.note||'')+'</div>'+
+      (it.example?'<div class="rwe">“'+esc(it.example)+'”</div>':'')+'</div>').join('');
+  } else {
+    $('reviewBox').classList.add('hide');
+  }
 }
 
 /* ==================== UI ==================== */
@@ -947,79 +764,108 @@ function toast(msg, kind){
 }
 
 function readConfig(){
-  promptsPerRound = parseInt($('cfgPrompts').value,10);
+  profession      = $('cfgProf').value;
+  questionsPerRound = parseInt($('cfgCount').value,10);
   phaseSeconds    = parseInt($('cfgSeconds').value,10);
   try{
-    localStorage.setItem('m11_cfgP',$('cfgPrompts').value);
-    localStorage.setItem('m11_cfgS',$('cfgSeconds').value);
+    localStorage.setItem('pv_prof',profession);
+    localStorage.setItem('pv_count',$('cfgCount').value);
+    localStorage.setItem('pv_secs',$('cfgSeconds').value);
   }catch(e){}
+}
+
+function setLevel(id){
+  levelFilter=id;
+  document.querySelectorAll('#levelPick .lvl').forEach(b=>b.classList.toggle('on', b.dataset.level===id));
+  try{ localStorage.setItem('pv_level',id); }catch(e){}
+}
+document.querySelectorAll('#levelPick .lvl').forEach(b=>{ b.onclick=()=>setLevel(b.dataset.level); });
+
+function fillProfessions(){
+  const sel=$('cfgProf');
+  const saved=(()=>{ try{ return localStorage.getItem('pv_prof'); }catch(e){ return null; } })();
+  sel.innerHTML='<option value="Mixed">🎲 Mixed — all professions</option>'+
+    bank.map(p=>'<option value="'+esc(p.profession)+'">'+(p.icon?p.icon+' ':'')+esc(p.profession)+' ('+p.items.length+')</option>').join('');
+  if(saved && [...sel.options].some(o=>o.value===saved)) sel.value=saved;
 }
 
 async function startGame(solo){
   const name=$('teamName').value.trim();
-  if(!solo && name.length<2){                       // a name is required for the Live Arena only
-    toast('Enter a team name to join the Arena.'); $('teamName').focus(); return;
-  }
-  team = name.length>=2 ? name : 'Solo Practice';   // Solo Practice needs no name
+  if(!solo && name.length<2){ toast('Enter a team name to join the Arena.'); $('teamName').focus(); return; }
+  team = name.length>=2 ? name : 'Solo Practice';
   soloMode=solo;
-  if(name.length>=2){ try{ localStorage.setItem('m11_team',team); }catch(e){} }
+  if(name.length>=2){ try{ localStorage.setItem('pv_team',team); }catch(e){} }
   readConfig();
 
   $('arenaBtn').disabled=true; $('soloBtn').disabled=true;
   const label = solo ? $('soloBtn') : $('arenaBtn');
-  const original = label.textContent; label.textContent='Loading…';
+  const original=label.textContent; label.textContent='Loading…';
 
-  const bankOk = await loadPrompts();
-  prepareRound();
+  const src = bank.length ? 'cached' : await loadBank();
+  if(!bank.length) bank=FALLBACK_BANK;
+  if(!$('cfgProf').options.length){ fillProfessions(); readConfig(); }
+
+  const pool=poolFor(profession, levelFilter);
+  if(!pool.length){
+    toast('No questions for that combination — try "Both" levels.');
+    label.textContent=original; $('arenaBtn').disabled=false; $('soloBtn').disabled=false; return;
+  }
 
   if(solo){
     offline=true;
-    $('connNote').textContent = bankOk ? 'Solo Practice · scores saved on this device' : 'Solo Practice · offline demo bank';
-  }else{
+    $('connNote').textContent = src==='fallback' ? 'Solo Practice · offline demo bank'
+                                                : 'Solo Practice · scores saved on this device';
+  } else {
     offline = (!API_URL || API_URL.indexOf("PASTE_")===0);
     if(!offline){
-      try{ await api('POST',{action:'register',team,level:LEVEL.short}); $('connNote').textContent='Live · synced to leaderboard'; }
+      try{ await api('POST',{action:'register',team,profession,level:levelFilter.toUpperCase()});
+           $('connNote').textContent='Live · synced to leaderboard'; }
       catch(e){ offline=true; $('connNote').textContent='Leaderboard unreachable · playing offline'; }
-    }else{
-      $('connNote').textContent='Leaderboard not linked (set API_URL)';
-    }
-    if(!bankOk) $('connNote').textContent += ' · offline demo bank';
+    } else $('connNote').textContent='Leaderboard not linked (set API_URL)';
+    if(src==='fallback') $('connNote').textContent+=' · offline demo bank';
   }
 
   label.textContent=original;
   $('arenaBtn').disabled=false; $('soloBtn').disabled=false;
   $('teamPill').textContent=team;
+  $('profPill').textContent=(profession==='Mixed'?'Mixed':profession)+' · '+(levelFilter==='all'?'B2+C1':levelFilter.toUpperCase());
   $('join').classList.add('hide'); $('done').classList.add('hide'); $('game').classList.remove('hide');
-  resetRoundState();
-  renderPhase();
+  prepareRound();
+  renderQuestion();
 }
 
 /* ==================== EVENTS ==================== */
-try{
-  const lv=localStorage.getItem('m11_level'); if(lv && LEVELS[lv]) setLevel(lv); else setLevel('c1');
-}catch(e){ setLevel('c1'); }
-try{
-  const last=localStorage.getItem('m11_team'); if(last) $('teamName').value=last;
-  const cp=localStorage.getItem('m11_cfgP'); if(cp) $('cfgPrompts').value=cp;
-  const cs=localStorage.getItem('m11_cfgS'); if(cs) $('cfgSeconds').value=cs;
-}catch(e){}
-$('connNote').textContent='Ready';
+(async function boot(){
+  const src=await loadBank();
+  fillProfessions();
+  try{
+    const lv=localStorage.getItem('pv_level'); setLevel(lv==='b2'||lv==='c1'?lv:'all');
+    const last=localStorage.getItem('pv_team'); if(last) $('teamName').value=last;
+    const c=localStorage.getItem('pv_count'); if(c) $('cfgCount').value=c;
+    const s=localStorage.getItem('pv_secs'); if(s) $('cfgSeconds').value=s;
+  }catch(e){ setLevel('all'); }
+  const total=bank.reduce((a,p)=>a+p.items.length,0);
+  $('connNote').textContent = src==='fallback' ? 'Offline demo bank ('+total+' words)'
+                                               : 'Ready · '+total+' words across '+bank.length+' professions';
+})();
 
-$('arenaBtn').onclick = ()=>startGame(false);
-$('soloBtn').onclick  = ()=>startGame(true);
+$('arenaBtn').onclick=()=>startGame(false);
+$('soloBtn').onclick =()=>startGame(true);
 $('teamName').addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); ($('teamName').value.trim().length>=2?$('arenaBtn'):$('soloBtn')).click(); }});
-$('nextBtn').onclick = next;
+$('nextBtn').onclick=next;
 
-$('againBtn').onclick = async ()=>{
-  prepareRound();
+$('againBtn').onclick=async()=>{
   $('done').classList.add('hide'); $('game').classList.remove('hide');
-  resetRoundState();
-  if(!offline){ try{ await api('POST',{action:'register',team,level:LEVEL.short}); }catch(e){} }
-  renderPhase();
+  if(!offline){ try{ await api('POST',{action:'register',team,profession,level:levelFilter.toUpperCase()}); }catch(e){} }
+  prepareRound(); renderQuestion(); window.scrollTo({top:0,behavior:'smooth'});
 };
-$('menuBtn').onclick = ()=>{
-  $('done').classList.add('hide'); $('game').classList.add('hide'); $('join').classList.remove('hide');
+$('drillBtn').onclick=async()=>{
+  if(!missedItems.length) return;
+  drillQueue=missedItems.slice();
+  $('done').classList.add('hide'); $('game').classList.remove('hide');
+  prepareRound(); renderQuestion(); window.scrollTo({top:0,behavior:'smooth'});
 };
+$('menuBtn').onclick=()=>{ $('done').classList.add('hide'); $('game').classList.add('hide'); $('join').classList.remove('hide'); };
 
 /* Keyboard: 1-4 to answer, Enter/Space to advance */
 document.addEventListener('keydown', e=>{
@@ -1027,9 +873,7 @@ document.addEventListener('keydown', e=>{
   if(!hasAnswered && ['1','2','3','4'].includes(e.key)){
     const i=+e.key-1;
     if(optButtons[i] && !optButtons[i].disabled){ e.preventDefault(); optButtons[i].click(); }
-  }else if(hasAnswered && (e.key==='Enter'||e.key===' ')){
-    e.preventDefault(); next();
-  }
+  } else if(hasAnswered && (e.key==='Enter'||e.key===' ')){ e.preventDefault(); next(); }
 });
 </script>
 </body>

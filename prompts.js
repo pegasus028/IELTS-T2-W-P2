@@ -1,4 +1,6 @@
-[
+/* Same data as prompts.json, wrapped so the app also works when opened
+   directly from disk (file://), where fetch() is blocked by the browser. */
+window.VOCAB_BANK = [
 {
 "profession": "Law",
 "icon": "⚖️",
@@ -3611,4 +3613,4 @@
 }
 ]
 }
-]
+];
