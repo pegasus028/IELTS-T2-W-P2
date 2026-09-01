@@ -244,6 +244,7 @@ async function api(method, body, params){
 /* The backend may or may not report per-team stats; show only what actually arrives. */
 function metaLine(t){
   const bits=[];
+  if(t.level)      bits.push(t.level);
   if(t.asked)      bits.push((t.accuracy||0)+'% first-try');
   if(t.asked)      bits.push(t.asked+' of 11');
   if(t.bestStreak) bits.push('🔥'+t.bestStreak);
@@ -401,7 +402,7 @@ function renderBoard(teams){
 
   document.getElementById('feedList').innerHTML=sorted.map((t,i)=>
     '<div class="row'+(i<3?' top3':'')+'"><span class="t">'+(i<3?['🥇','🥈','🥉'][i]+' ':'')+(i+1)+'. '+esc(t.team)+'</span>'+
-    '<span class="acc">'+t.score+' pts'+(t.asked?' · '+(t.accuracy||0)+'%':'')+'</span></div>').join('');
+    '<span class="acc">'+(t.level?t.level+' · ':'')+t.score+' pts'+(t.asked?' · '+(t.accuracy||0)+'%':'')+'</span></div>').join('');
 }
 
 /* ============================================================

@@ -70,6 +70,7 @@
   h1{font-family:'Fraunces',serif;font-weight:900;font-size:29px;line-height:.98;margin-top:4px;color:var(--text)}
   h1 em{font-style:italic;color:var(--gold-deep)}
   .bar-deco{height:5px;width:60px;background:var(--gold);margin:12px auto 0;border-radius:3px}
+  .tagline{font-size:10.5px;letter-spacing:.1em;color:var(--text-soft);margin-top:9px}
   .themeBtn{position:absolute;top:0;right:0;background:transparent;border:2px solid var(--card-line);
             color:var(--text);border-radius:8px;width:34px;height:34px;font-size:15px;cursor:pointer;line-height:1}
 
@@ -140,6 +141,18 @@
   .slot .slab{display:block;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px;font-weight:700}
 
 
+
+  /* ---- level selector ---- */
+  .levelPick{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .lvl{font-family:'Space Mono',monospace;text-align:left;cursor:pointer;padding:11px 12px;
+       border:2px solid var(--card-line);border-radius:10px;background:var(--input-bg);color:var(--text);
+       display:flex;flex-direction:column;gap:2px;transition:border-color .12s, box-shadow .12s}
+  .lvl .lname{font-family:'Fraunces',serif;font-weight:900;font-size:17px;line-height:1.1}
+  .lvl .lband{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);font-weight:700}
+  .lvl .ldesc{font-size:10.5px;line-height:1.4;color:var(--text-soft);margin-top:3px}
+  .lvl.on{border-color:var(--gold);box-shadow:3px 3px 0 var(--gold)}
+  .lvl.on .lname{color:var(--gold-deep)}
+  .levelPill{background:var(--gold);color:#1a1410}
   /* ---- variable definition card ---- */
   .def{border:2px solid var(--card-line);border-radius:10px;padding:9px 11px;margin-bottom:10px;background:var(--slot-bg)}
   .defrow{display:flex;gap:8px;align-items:flex-start;font-size:11.5px;line-height:1.5;color:var(--text)}
@@ -215,12 +228,25 @@
     <div class="kicker">Satriwithaya · English Program</div>
     <h1>The 11-Variable <em>Matrix</em></h1>
     <div class="bar-deco"></div>
+    <div class="tagline" id="tagline"></div>
   </header>
 
   <!-- ============ JOIN / MODE SELECT ============ -->
   <section id="join" class="card">
     <label for="teamName">Team Name <span style="text-transform:none;letter-spacing:0;font-weight:400">(required for Live Arena, optional for Solo)</span></label>
     <input type="text" id="teamName" placeholder="e.g. The Thesis Statements" maxlength="28" autocomplete="off" />
+
+    <label style="margin-top:16px">Level</label>
+    <div class="levelPick" id="levelPick">
+      <button type="button" class="lvl" data-level="b2">
+        <span class="lname">CEFR B2</span><span class="lband">IELTS Band 7</span>
+        <span class="ldesc">Clear, everyday academic English</span>
+      </button>
+      <button type="button" class="lvl on" data-level="c1">
+        <span class="lname">CEFR C1</span><span class="lband">IELTS Band 8</span>
+        <span class="ldesc">Dense, formal academic English</span>
+      </button>
+    </div>
 
     <div class="row" style="margin-top:14px">
       <div>
@@ -254,6 +280,7 @@
   <section id="game" class="card hide">
     <div class="meta">
       <span class="pill" id="teamPill">—</span>
+      <span class="pill levelPill" id="levelPill">C1</span>
       <span class="pill streakpill" id="streakPill">🔥 0</span>
       <span class="pill scorepill" id="scorePill">0 pts</span>
     </div>
@@ -268,7 +295,7 @@
       <span class="dots" id="dots"></span>
     </div>
 
-    <button class="matrixToggle hide" id="matrixToggle" type="button">▸ Your matrix so far <span id="matrixCount">0</span>/11</button>
+    <button class="matrixToggle hide" id="matrixToggle" type="button">▸ <span id="matrixCount">0</span>/11</button>
     <div class="matrix hide" id="matrixBox"></div>
 
     <div class="speed-track" id="speedTrack"><div class="speed-fill" id="speedFill"></div></div>
@@ -294,7 +321,7 @@
   <!-- ============ DONE ============ -->
   <section id="done" class="card hide">
     <div class="done">
-      <h2>Round Complete!</h2>
+      <h2 id="doneTitle">Round Complete!</h2>
       <div class="big" id="finalScore">0</div>
       <div class="breakdown" id="breakdown"></div>
       <p class="sub" id="finalSummary"></p>
@@ -314,8 +341,7 @@
 /* Deployed Google Apps Script Web App URL (same as leaderboard.html) */
 const API_URL = "https://script.google.com/macros/s/AKfycbzGABREt_p3nYJfFeiMg03yXKQr6G4tWYM8fhe9M5Af23NwhAitTfxCoOmmwi7hT6Ji/exec";
 
-/* External question bank (11-variable schema) */
-const PROMPTS_URL = "prompts.json";
+/* The question banks live beside this file: prompts.json (C1) and prompts-b2.json (B2). */
 
 /* Scoring constants */
 const BASE_POINTS   = 10;
@@ -323,53 +349,163 @@ const SPEED_BONUS   = 5;   // first attempt only, answered while bar > 50%
 const SECOND_TRY_POINTS = 5;   // exactly half of BASE_POINTS
 const PHASES_PER_PROMPT = 11;
 
-/* The 11 variables: label, the question asked, and the template sentence slot */
-const VARIABLES = [
-  {q:"Which option best identifies the CORE TOPIC — the overarching phenomenon, as a nominalised noun phrase?",
-   is:"The whole phenomenon under debate, written as a nominalised noun phrase.",
-   not:"Not one side of the argument, and not a sub-issue the prompt only touches.",
-   slot:"The ongoing discourse surrounding <b>[Core Topic]</b> frequently highlights its multifaceted implications."},
-  {q:"Which option best states FACET A — the first major aspect, effect or argument?",
-   is:"The first major aspect, effect or argument.",
-   not:"Not how it works (that is the Mechanism) and not a concrete case (that is the Example).",
-   slot:"While significant attention is often directed toward <b>[Facet A]</b>, a comprehensive understanding requires equal examination of [Facet B]."},
-  {q:"Which option best describes MECHANISM A — how Facet A actually operates in the real world?",
-   is:"How Facet A actually operates or functions.",
-   not:"Not the aspect itself, and not a specific real-world case of it.",
-   slot:"This dynamic operates primarily by <b>[Mechanism A]</b>."},
-  {q:"Which option is the best EXAMPLE A — a specific, concrete instance of Facet A?",
-   is:"One specific, concrete instance of Facet A.",
-   not:"Not the general principle, and not an aim or a pledge — something that actually happens.",
-   slot:"Such a trajectory frequently manifests in real-world scenarios, such as <b>[Example A]</b>."},
-  {q:"Which option best states NUANCE A — the mitigating factor proving Facet A is not an absolute rule?",
-   is:"A mitigating factor showing Facet A is not an absolute rule.",
-   not:"It must limit FACET A. A limitation of Facet B belongs at variable 9.",
-   slot:"Yet, viewing this element in a vacuum overlooks critical context; indeed, <b>[Nuance A]</b>."},
-  {q:"Which option best states FACET B — the second major aspect, effect or argument?",
-   is:"The second major aspect, effect or argument.",
-   not:"Not a restatement of Facet A, and not the mechanism behind it.",
-   slot:"Equally significant is the phenomenon's relationship to <b>[Facet B]</b>."},
-  {q:"Which option best describes MECHANISM B — how Facet B operates or functions?",
-   is:"How Facet B actually operates or functions.",
-   not:"Not the aspect itself, and not a specific real-world case of it.",
-   slot:"This aspect is deeply tied to <b>[Mechanism B]</b>."},
-  {q:"Which option is the best EXAMPLE B — a specific, concrete instance of Facet B?",
-   is:"One specific, concrete instance of Facet B.",
-   not:"Not the general principle — something concrete enough to point at.",
-   slot:"…which ultimately leads to outcomes like <b>[Example B]</b>."},
-  {q:"Which option best states NUANCE B — the mitigating factor proving Facet B is not an absolute rule?",
-   is:"A mitigating factor showing Facet B is not an absolute rule.",
-   not:"It must limit FACET B. A limitation of Facet A belongs at variable 5.",
-   slot:"It must be weighed against the reality that <b>[Nuance B]</b>."},
-  {q:"Which option is the best SYNTHESIZED POSITION — the middle-ground reality combining the truths of both facets?",
-   is:"The middle-ground reality that holds the truth of both facets together.",
-   not:"Not a restatement of one side, and not a vague call for balance.",
-   slot:"A more accurate evaluation recognizes that <b>[Synthesized Position]</b>."},
-  {q:"Which option is the best RATIONALE — the foundational reason this synthesis is the most accurate path forward?",
-   is:"The underlying reason the synthesis is the most accurate path forward.",
-   not:"Not a repeat of the position itself — the reason it is right.",
-   slot:"This perspective is ultimately the most valid because <b>[Rationale]</b>."}
-];
+/* ============================================================
+   LEVELS
+   Two parallel banks over the same 23 IELTS prompts. Only the OPTIONS and the
+   on-screen English change with level; the prompt itself is a real exam question
+   and is never simplified.
+   ============================================================ */
+const LEVELS = {
+  b2: {
+    id:'b2', label:'CEFR B2 · Band 7', short:'B2 · Band 7',
+    file:'prompts-b2.json',
+    tagline:'Build the 11 parts of a Band 7 essay plan',
+    vars:[
+      {q:"Which option gives the CORE TOPIC — the whole subject the essay is about?",
+       is:"The whole subject under discussion, written as a noun phrase.",
+       not:"Not one side of the argument, and not a small detail from the prompt.",
+       slot:"People often discuss <b>[Core Topic]</b>."},
+      {q:"Which option gives FACET A — the first main idea or argument?",
+       is:"The first main idea, effect or argument.",
+       not:"Not how it works, and not a real example of it.",
+       slot:"One important side of this issue is <b>[Facet A]</b>."},
+      {q:"Which option gives MECHANISM A — how Facet A works in real life?",
+       is:"How Facet A actually works.",
+       not:"Not the idea itself, and not a real case of it.",
+       slot:"This works by <b>[Mechanism A]</b>."},
+      {q:"Which option gives EXAMPLE A — one real, specific case of Facet A?",
+       is:"One real, specific case of Facet A.",
+       not:"Not the general idea, and not a plan or a promise for the future.",
+       slot:"For example, <b>[Example A]</b>."},
+      {q:"Which option gives NUANCE A — a reason Facet A is not always true?",
+       is:"A reason why Facet A is not true in every case.",
+       not:"It must limit FACET A. A limit on Facet B belongs in box 9.",
+       slot:"However, <b>[Nuance A]</b>."},
+      {q:"Which option gives FACET B — the second main idea or argument?",
+       is:"The second main idea, effect or argument.",
+       not:"Not a repeat of Facet A, and not how it works.",
+       slot:"On the other side, there is <b>[Facet B]</b>."},
+      {q:"Which option gives MECHANISM B — how Facet B works in real life?",
+       is:"How Facet B actually works.",
+       not:"Not the idea itself, and not a real case of it.",
+       slot:"This side works by <b>[Mechanism B]</b>."},
+      {q:"Which option gives EXAMPLE B — one real, specific case of Facet B?",
+       is:"One real, specific case of Facet B.",
+       not:"Not the general idea — something you could point at.",
+       slot:"This can lead to <b>[Example B]</b>."},
+      {q:"Which option gives NUANCE B — a reason Facet B is not always true?",
+       is:"A reason why Facet B is not true in every case.",
+       not:"It must limit FACET B. A limit on Facet A belongs in box 5.",
+       slot:"Even so, <b>[Nuance B]</b>."},
+      {q:"Which option gives the BALANCED POSITION — the view that keeps what is true in both sides?",
+       is:"A balanced view that keeps what is true in both sides.",
+       not:"Not one side repeated, and not a vague 'both are important'.",
+       slot:"I believe that <b>[Balanced Position]</b>."},
+      {q:"Which option gives the REASON — why the balanced position is the best answer?",
+       is:"The reason the balanced position is the best answer.",
+       not:"Not the position again — the thinking behind it.",
+       slot:"This is the best approach because <b>[Reason]</b>."}
+    ],
+    ui:{
+      retryLead:   'Not right. ',
+      trapLead:    'Careful — that one is a trap. ',
+      wrongSlot:   (b,c)=>'That is the <strong>'+b+'</strong> of this prompt, not the <strong>'+c+
+                          '</strong>. The sentence is true, but it belongs in a different box.<br>',
+      noSlot:      'It looks reasonable, but it does not do the job this box needs.<br>',
+      retryTail:   (cut)=>'Try once more for <strong>half points</strong>'+
+                          (cut?' — one wrong option has been crossed out to help you.':' — check the IS / NOT box again.'),
+      good:        '✓ Correct!',
+      half:        '✓ Correct on your second try.',
+      halfTail:    ' points (half). No speed bonus this time.',
+      miss:        '✗ Not quite.',
+      answerLead:  'The answer was → ',
+      matrix:      'Your plan so far ',
+      speedOn:     '⚡ Speed bonus available',
+      speedLost:   'No speed bonus now',
+      speedOver:   'Time is up · answers still count',
+      noTimer:     'No time limit',
+      second:      'Second try · half points',
+      doneTitle:   'Round finished!',
+      bdFirst:'Right first time', bdSecond:'Right on second try', bdMiss:'Missed', bdSeen:'Boxes attempted'
+    }
+  },
+  c1: {
+    id:'c1', label:'CEFR C1 · Band 8', short:'C1 · Band 8',
+    file:'prompts.json',
+    tagline:'Deconstruct a prompt into the Band 8 matrix',
+    vars:[
+      {q:"Which option best identifies the CORE TOPIC — the overarching phenomenon, as a nominalised noun phrase?",
+       is:"The whole phenomenon under debate, written as a nominalised noun phrase.",
+       not:"Not one side of the argument, and not a sub-issue the prompt only touches.",
+       slot:"The ongoing discourse surrounding <b>[Core Topic]</b> frequently highlights its multifaceted implications."},
+      {q:"Which option best states FACET A — the first major aspect, effect or argument?",
+       is:"The first major aspect, effect or argument.",
+       not:"Not how it works (that is the Mechanism) and not a concrete case (that is the Example).",
+       slot:"While significant attention is often directed toward <b>[Facet A]</b>, a comprehensive understanding requires equal examination of [Facet B]."},
+      {q:"Which option best describes MECHANISM A — how Facet A actually operates in the real world?",
+       is:"How Facet A actually operates or functions.",
+       not:"Not the aspect itself, and not a specific real-world case of it.",
+       slot:"This dynamic operates primarily by <b>[Mechanism A]</b>."},
+      {q:"Which option is the best EXAMPLE A — a specific, concrete instance of Facet A?",
+       is:"One specific, concrete instance of Facet A.",
+       not:"Not the general principle, and not an aim or a pledge — something that actually happens.",
+       slot:"Such a trajectory frequently manifests in real-world scenarios, such as <b>[Example A]</b>."},
+      {q:"Which option best states NUANCE A — the mitigating factor proving Facet A is not an absolute rule?",
+       is:"A mitigating factor showing Facet A is not an absolute rule.",
+       not:"It must limit FACET A. A limitation of Facet B belongs at variable 9.",
+       slot:"Yet, viewing this element in a vacuum overlooks critical context; indeed, <b>[Nuance A]</b>."},
+      {q:"Which option best states FACET B — the second major aspect, effect or argument?",
+       is:"The second major aspect, effect or argument.",
+       not:"Not a restatement of Facet A, and not the mechanism behind it.",
+       slot:"Equally significant is the phenomenon's relationship to <b>[Facet B]</b>."},
+      {q:"Which option best describes MECHANISM B — how Facet B operates or functions?",
+       is:"How Facet B actually operates or functions.",
+       not:"Not the aspect itself, and not a specific real-world case of it.",
+       slot:"This aspect is deeply tied to <b>[Mechanism B]</b>."},
+      {q:"Which option is the best EXAMPLE B — a specific, concrete instance of Facet B?",
+       is:"One specific, concrete instance of Facet B.",
+       not:"Not the general principle — something concrete enough to point at.",
+       slot:"…which ultimately leads to outcomes like <b>[Example B]</b>."},
+      {q:"Which option best states NUANCE B — the mitigating factor proving Facet B is not an absolute rule?",
+       is:"A mitigating factor showing Facet B is not an absolute rule.",
+       not:"It must limit FACET B. A limitation of Facet A belongs at variable 5.",
+       slot:"It must be weighed against the reality that <b>[Nuance B]</b>."},
+      {q:"Which option is the best SYNTHESIZED POSITION — the middle-ground reality combining the truths of both facets?",
+       is:"The middle-ground reality that holds the truth of both facets together.",
+       not:"Not a restatement of one side, and not a vague call for balance.",
+       slot:"A more accurate evaluation recognizes that <b>[Synthesized Position]</b>."},
+      {q:"Which option is the best RATIONALE — the foundational reason this synthesis is the most accurate path forward?",
+       is:"The underlying reason the synthesis is the most accurate path forward.",
+       not:"Not a repeat of the position itself — the reason it is right.",
+       slot:"This perspective is ultimately the most valid because <b>[Rationale]</b>."}
+    ],
+    ui:{
+      retryLead:   'Incorrect. ',
+      trapLead:    '🚨 TRAP TRIGGERED! ',
+      wrongSlot:   (b,c)=>'That is the <strong>'+b+'</strong> of this prompt, not the <strong>'+c+
+                          '</strong>. The statement is true — it is in the wrong slot.<br>',
+      noSlot:      'That option is plausible, but it does not do the job this variable requires.<br>',
+      retryTail:   (cut)=>'One more try for <strong>half points</strong>'+
+                          (cut?' — and one more wrong option has been struck out for you.':' — re-read the IS / NOT test above.'),
+      good:        '✓ Correct!',
+      half:        '✓ Correct on the second try.',
+      halfTail:    ' points (half). No speed bonus, streak reset.',
+      miss:        '✗ Not quite.',
+      answerLead:  'Correct answer → ',
+      matrix:      'Your matrix so far ',
+      speedOn:     '⚡ Speed bonus active',
+      speedLost:   'Speed bonus lost',
+      speedOver:   'Time is up · answers still score, without the bonus',
+      noTimer:     'No time limit',
+      second:      'Second try — half points',
+      doneTitle:   'Round Complete!',
+      bdFirst:'First-try correct', bdSecond:'Second-try correct', bdMiss:'Missed', bdSeen:'Variables attempted'
+    }
+  }
+};
+let LEVEL = LEVELS.c1;               // set from the landing screen
+let VARIABLES = LEVEL.vars;
+let UI = LEVEL.ui;
 
 /* Offline fallback (one prompt) if prompts.json cannot be fetched */
 const FALLBACK_PROMPTS = [{
@@ -415,7 +551,7 @@ let phasesSeen=0, firstTryCorrect=0, secondTryCorrect=0, missed=0;
 let phaseResults=new Array(PHASES_PER_PROMPT).fill(null);   // 'full' | 'half' | 'miss'
 
 /* speed bar */
-let speedRAF=null, phaseStart=0, timeoutTimer=null;
+let speedRAF=null, phaseStart=0;
 
 const $ = id => document.getElementById(id);
 
@@ -432,6 +568,20 @@ $('themeBtn').onclick=()=>{
   try{ localStorage.setItem('m11_theme',next); }catch(e){}
 };
 
+
+/* ---- level selection ---- */
+function setLevel(id){
+  LEVEL = LEVELS[id] || LEVELS.c1;
+  VARIABLES = LEVEL.vars; UI = LEVEL.ui;
+  document.querySelectorAll('#levelPick .lvl').forEach(b=>b.classList.toggle('on', b.dataset.level===LEVEL.id));
+  $('levelPill').textContent = LEVEL.short;
+  $('tagline').textContent = LEVEL.tagline;
+  try{ localStorage.setItem('m11_level', LEVEL.id); }catch(e){}
+}
+document.querySelectorAll('#levelPick .lvl').forEach(b=>{
+  b.onclick=()=>{ setLevel(b.dataset.level); allPrompts=[]; };   // force a reload of the other bank
+});
+
 /* ==================== NETWORK ==================== */
 async function api(method, body, params){
   if(!API_URL || API_URL.indexOf("PASTE_")===0) throw new Error("no-api");
@@ -445,7 +595,7 @@ async function api(method, body, params){
 
 async function loadPrompts(){
   try{
-    const res = await fetch(PROMPTS_URL, {cache:"no-store"});
+    const res = await fetch(LEVEL.file, {cache:"no-store"});
     if(!res.ok) throw new Error("http "+res.status);
     const data = await res.json();
     if(!Array.isArray(data) || !data.length) throw new Error("empty");
@@ -453,6 +603,7 @@ async function loadPrompts(){
     if(!allPrompts.length) throw new Error("no valid prompts");
     return true;
   }catch(e){
+    /* Offline demo: the single fallback prompt is C1 wording, so only offer it at C1. */
     allPrompts = FALLBACK_PROMPTS.slice();
     return false;
   }
@@ -563,7 +714,7 @@ function renderMatrix(){
   }).join('');
   box.classList.toggle('hide', !matrixOpen);
   tog.textContent='';
-  tog.append(document.createTextNode((matrixOpen?'▾':'▸')+' Your matrix so far '));
+  tog.append(document.createTextNode((matrixOpen?'▾':'▸')+' '+UI.matrix));
   const c=document.createElement('span'); c.id='matrixCount'; c.textContent=phaseIdx+'/11';
   tog.appendChild(c);
 }
@@ -572,30 +723,31 @@ $('matrixToggle').onclick=()=>{ matrixOpen=!matrixOpen; renderMatrix(); };
 /* ==================== SPEED BAR ==================== */
 function startSpeedBar(){
   cancelAnimationFrame(speedRAF);
-  clearTimeout(timeoutTimer);
   const fill=$('speedFill'), sl=$('speedLabel');
   if(phaseSeconds<=0){                     // "No timer" mode
     $('speedTrack').classList.add('hide');
-    sl.textContent='No time limit'; sl.style.color='var(--text-soft)';
+    sl.textContent=UI.noTimer; sl.style.color='var(--text-soft)';
     phaseStart=performance.now();
     return;
   }
   $('speedTrack').classList.remove('hide');
   phaseStart = performance.now();
   fill.className='speed-fill'; fill.style.width='100%';
-  timeoutTimer = setTimeout(()=>{ if(!hasAnswered) selectAnswer(null,null); }, phaseSeconds*1000);
+  /* The clock governs the BONUS only. It never answers for the student and never
+     reveals the answer: when it reaches zero the phase stays open and a correct
+     answer still scores the base points. */
   const step = ()=>{
     const elapsed=(performance.now()-phaseStart)/1000;
     const pct=Math.max(0, 1 - elapsed/phaseSeconds);
     fill.style.width=(pct*100)+'%';
-    fill.className='speed-fill'+(pct<=0.25?' low':pct<=0.5?' mid':'');
+    fill.className='speed-fill'+(pct<=0?' low':pct<=0.25?' low':pct<=0.5?' mid':'');
     if(!hasAnswered){
-      if(isSecondTry){ sl.textContent='Second try — half points'; sl.style.color='var(--amber)'; }
-      else if(pct>0.5){ sl.textContent='⚡ Speed bonus active'; sl.style.color='var(--green)'; }
-      else if(pct>0){ sl.textContent='Speed bonus lost'; sl.style.color='var(--gold-deep)'; }
-      else { sl.textContent="Time's up!"; sl.style.color='var(--red)'; }
+      if(isSecondTry){ sl.textContent=UI.second; sl.style.color='var(--amber)'; }
+      else if(pct>0.5){ sl.textContent=UI.speedOn; sl.style.color='var(--green)'; }
+      else if(pct>0){ sl.textContent=UI.speedLost; sl.style.color='var(--gold-deep)'; }
+      else { sl.textContent=UI.speedOver; sl.style.color='var(--text-soft)'; }
     }
-    if(pct>0 && !hasAnswered) speedRAF=requestAnimationFrame(step);
+    if(!hasAnswered) speedRAF=requestAnimationFrame(step);   // keeps running past zero
   };
   step();
 }
@@ -629,17 +781,16 @@ function slotOf(choice){
 async function selectAnswer(choice, btn){
   /* --- guards: phase already resolved, input locked mid-await, or option already spent --- */
   if(hasAnswered || lockInput) return;
-  if(choice!==null && deadOptions.indexOf(choice)>-1) return;
+  if(deadOptions.indexOf(choice)>-1) return;
   lockInput=true;
 
-  const isTimeout = (choice===null);
   const isCorrect = (choice===correctText);
-  const isTrap    = (!isCorrect && !isTimeout && choice===trapText);
+  const isTrap    = (!isCorrect && choice===trapText);
   const stillFast = speedPct()>0.5;
   const fb=$('feedback');
 
   /* ---------- BRANCH 1: first attempt, WRONG, and a retry is still possible ---------- */
-  if(!isCorrect && !isTimeout && !isSecondTry){
+  if(!isCorrect && !isSecondTry){
     isSecondTry=true;
     currentStreak=0;
     updateStreakPill();
@@ -660,17 +811,11 @@ async function selectAnswer(choice, btn){
       if(optButtons[i]){ optButtons[i].classList.add('gone'); optButtons[i].disabled=true; }
     }
     const belongs = slotOf(choice);
+    const here = String(prompts[pIdx].phases[phaseIdx].phaseName).split(':').slice(1).join(':').trim();
     fb.className='feedback show '+(isTrap?'trap':'retry');
-    fb.innerHTML = (isTrap
-        ? '<strong>🚨 TRAP TRIGGERED!</strong> '
-        : '<strong>Incorrect.</strong> ')
-      + (belongs
-          ? 'That is the <strong>'+belongs+'</strong> of this prompt, not the <strong>'+
-            String(prompts[pIdx].phases[phaseIdx].phaseName).split(':').slice(1).join(':').trim()+
-            '</strong>. The statement is true — it is in the wrong slot.<br>'
-          : 'That option is plausible, but it does not do the job this variable requires.<br>')
-      + 'One more try for <strong>half points</strong>'
-      + (eliminated ? ' — and one more wrong option has been struck out for you.' : ' — re-read the IS / NOT test above.');
+    fb.innerHTML = '<strong>'+(isTrap ? UI.trapLead : UI.retryLead)+'</strong>'
+      + (belongs ? UI.wrongSlot(belongs, here) : UI.noSlot)
+      + UI.retryTail(!!eliminated);
     /* correct answer NOT revealed; Next NOT shown; remaining options stay live */
     lockInput=false;
     return;
@@ -679,7 +824,6 @@ async function selectAnswer(choice, btn){
   /* ---------- BRANCH 2: phase resolves now (correct, timeout, or second wrong) ---------- */
   hasAnswered=true;
   cancelAnimationFrame(speedRAF);
-  clearTimeout(timeoutTimer);
   phasesSeen++;
 
   let gained=0, streakBonus=0, speedBonus=0, result='miss';
@@ -698,11 +842,11 @@ async function selectAnswer(choice, btn){
     gained = SECOND_TRY_POINTS;
     currentStreak=0;
   } else {
-    /* second wrong, or timeout: nothing */
+    /* second wrong answer: nothing */
     result='miss'; missed++;
     gained = 0;
     currentStreak=0;
-    if(!isTimeout && choice) deadOptions.push(choice);
+    if(choice) deadOptions.push(choice);
   }
 
   phaseResults[phaseIdx]=result;
@@ -713,7 +857,8 @@ async function selectAnswer(choice, btn){
   /* send to backend (server authoritative when online) */
   if(!offline){
     try{
-      const r = await api('POST', {action:'score', team, promptId:prompts[pIdx].id, phase:phaseIdx,
+      const r = await api('POST', {action:'score', team, level:LEVEL.short,
+                                   promptId:prompts[pIdx].id, phase:phaseIdx,
                                    correct:(result!=='miss'), result, gained,
                                    streak:currentStreak, bestStreak});
       if(r && typeof r.score==='number') score=r.score; else score+=gained;
@@ -735,7 +880,7 @@ async function selectAnswer(choice, btn){
   /* feedback */
   if(result==='full'){
     fb.className='feedback show good';
-    let msg='<strong>✓ Correct!</strong> +'+BASE_POINTS+' points';
+    let msg='<strong>'+UI.good+'</strong> +'+BASE_POINTS+' points';
     if(speedBonus) msg+=' · +'+speedBonus+' speed';
     if(streakBonus) msg+=' · +'+streakBonus+' streak';
     fb.innerHTML=msg+'.';
@@ -743,16 +888,13 @@ async function selectAnswer(choice, btn){
     else if(speedBonus) toast('⚡ Speed bonus! +'+speedBonus,'speed');
   }else if(result==='half'){
     fb.className='feedback show half';
-    fb.innerHTML='<strong>✓ Correct on the second try.</strong> +'+SECOND_TRY_POINTS+' points (half). No speed bonus, streak reset.';
-  }else if(isTimeout){
-    fb.className='feedback show bad';
-    fb.innerHTML="<strong>⏱ Time's up!</strong> No answer given.<br>Correct answer → <span class=\"corr\">"+correctText+'</span>';
+    fb.innerHTML='<strong>'+UI.half+'</strong> +'+SECOND_TRY_POINTS+UI.halfTail;
   }else{
     const belongs2 = choice ? slotOf(choice) : null;
     fb.className='feedback show bad';
-    fb.innerHTML='<strong>✗ Not quite.</strong>'+
-      (belongs2 ? ' That belongs in the <strong>'+belongs2+'</strong> slot.' : ' Second try used.')+
-      '<br>Correct answer → <span class="corr">'+correctText+'</span>';
+    fb.innerHTML='<strong>'+UI.miss+'</strong>'+
+      (belongs2 ? ' That belongs in the <strong>'+belongs2+'</strong> box.' : '')+
+      '<br>'+UI.answerLead+'<span class="corr">'+correctText+'</span>';
   }
 
   renderDots();
@@ -775,14 +917,15 @@ function next(){
 }
 
 function finish(){
-  cancelAnimationFrame(speedRAF); clearTimeout(timeoutTimer);
+  cancelAnimationFrame(speedRAF);
   $('game').classList.add('hide'); $('done').classList.remove('hide');
   $('finalScore').textContent = score;
+  $('doneTitle').textContent = UI.doneTitle;
   $('breakdown').innerHTML =
-      'First-try correct <span>'+firstTryCorrect+'</span><br>'+
-      'Second-try correct <span>'+secondTryCorrect+'</span><br>'+
-      'Missed <span>'+missed+'</span><br>'+
-      'Variables attempted <span>'+phasesSeen+'</span>';
+      UI.bdFirst +' <span>'+firstTryCorrect+'</span><br>'+
+      UI.bdSecond+' <span>'+secondTryCorrect+'</span><br>'+
+      UI.bdMiss  +' <span>'+missed+'</span><br>'+
+      UI.bdSeen  +' <span>'+phasesSeen+'</span>';
   $('finalSummary').innerHTML = 'Best streak '+bestStreak+'.'+
       (soloMode ? '' : '<br>Watch the live leaderboard!');
   /* Solo Practice: persist personal best on this device */
@@ -835,7 +978,7 @@ async function startGame(solo){
   }else{
     offline = (!API_URL || API_URL.indexOf("PASTE_")===0);
     if(!offline){
-      try{ await api('POST',{action:'register',team}); $('connNote').textContent='Live · synced to leaderboard'; }
+      try{ await api('POST',{action:'register',team,level:LEVEL.short}); $('connNote').textContent='Live · synced to leaderboard'; }
       catch(e){ offline=true; $('connNote').textContent='Leaderboard unreachable · playing offline'; }
     }else{
       $('connNote').textContent='Leaderboard not linked (set API_URL)';
@@ -853,6 +996,9 @@ async function startGame(solo){
 
 /* ==================== EVENTS ==================== */
 try{
+  const lv=localStorage.getItem('m11_level'); if(lv && LEVELS[lv]) setLevel(lv); else setLevel('c1');
+}catch(e){ setLevel('c1'); }
+try{
   const last=localStorage.getItem('m11_team'); if(last) $('teamName').value=last;
   const cp=localStorage.getItem('m11_cfgP'); if(cp) $('cfgPrompts').value=cp;
   const cs=localStorage.getItem('m11_cfgS'); if(cs) $('cfgSeconds').value=cs;
@@ -868,7 +1014,7 @@ $('againBtn').onclick = async ()=>{
   prepareRound();
   $('done').classList.add('hide'); $('game').classList.remove('hide');
   resetRoundState();
-  if(!offline){ try{ await api('POST',{action:'register',team}); }catch(e){} }
+  if(!offline){ try{ await api('POST',{action:'register',team,level:LEVEL.short}); }catch(e){} }
   renderPhase();
 };
 $('menuBtn').onclick = ()=>{
