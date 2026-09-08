@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Professional Vocab Arena · Live Leaderboard</title>
+<title>The 11-Variable Matrix · Live Leaderboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -160,8 +160,8 @@
   <header>
     <div class="title">
       <div class="kicker">Satriwithaya · Live</div>
-      <h1>Professional Vocab <em>Arena</em></h1>
-      <div class="sub" id="joinHint">Law · Medicine · Engineering · Business · Languages · Political Science · Art — CEFR B2/C1</div>
+      <h1>The 11-Variable <em>Matrix</em></h1>
+      <div class="sub" id="joinHint">Core Topic · Facet A · Mechanism A · Example A · Nuance A · Facet B · Mechanism B · Example B · Nuance B · Synthesis · Rationale</div>
     </div>
     <div class="timerbox">
       <div class="lab">Time Remaining</div>
@@ -189,8 +189,7 @@
       <div class="panel">
         <h3>Class snapshot</h3>
         <div class="kv"><span>Teams playing</span><b id="kTeams">0</b></div>
-        <div class="kv"><span>Professions in play</span><b id="kProf">0</b></div>
-        <div class="kv"><span>Words attempted</span><b id="kQ">0</b></div>
+        <div class="kv"><span>Variables attempted</span><b id="kQ">0</b></div>
         <div class="kv"><span>Class first-try accuracy</span><b id="kAcc">—</b></div>
         <div class="kv"><span>Rescued on second try</span><b id="kSecond">—</b></div>
         <div class="kv"><span>Top score</span><b id="kTop">0</b></div>
@@ -218,7 +217,7 @@
 
 <div class="podium" id="podium">
   <h2>Final Standings</h2>
-  <div class="psub">Professional Vocab Mastery Arena · Live</div>
+  <div class="psub">The 11-Variable Matrix · Live Arena</div>
   <div class="plinks" id="plinks"></div>
   <div class="rest" id="rest"></div>
   <div class="podbtns">
@@ -228,8 +227,8 @@
 </div>
 
 <script>
-/* Apps Script Web App /exec URL — the same one index.html uses. */
-const API_URL = "https://script.google.com/macros/s/AKfycbyMeyqoXbAM-5Ao_x5EYrr3e5S18LbSVsTF95cMXoAsjWJYbxZasRgFVcTfVDmGvPwf/exec";
+/* Apps Script Web App /exec URL — same one the student app uses. */
+const API_URL = "https://script.google.com/macros/s/AKfycbzGABREt_p3nYJfFeiMg03yXKQr6G4tWYM8fhe9M5Af23NwhAitTfxCoOmmwi7hT6Ji/exec";
 const POLL_MS = 3000;
 const ROW_H = 46;          // px per team row in the chasing-pack chart
 
@@ -245,10 +244,9 @@ async function api(method, body, params){
 /* The backend may or may not report per-team stats; show only what actually arrives. */
 function metaLine(t){
   const bits=[];
-  if(t.profession) bits.push(t.profession);
   if(t.level)      bits.push(t.level);
   if(t.asked)      bits.push((t.accuracy||0)+'% first-try');
-  if(t.asked)      bits.push(t.asked+' words');
+  if(t.asked)      bits.push(t.asked+' of 11');
   if(t.bestStreak) bits.push('🔥'+t.bestStreak);
   return bits.length? bits.join(' · ') : 'in play';
 }
@@ -397,8 +395,6 @@ function renderBoard(teams){
   const first=teams.reduce((a,t)=>a+(t.firstTry||0),0);
   const second=teams.reduce((a,t)=>a+(t.secondTry||0),0);
   document.getElementById('kTeams').textContent=teams.length;
-  const profs={}; teams.forEach(t=>{ if(t.profession) profs[t.profession]=1; });
-  const kp=document.getElementById('kProf'); if(kp) kp.textContent=Object.keys(profs).length;
   document.getElementById('kQ').textContent=asked;
   document.getElementById('kAcc').textContent=asked?Math.round(first/asked*100)+'%':'—';
   document.getElementById('kSecond').textContent=asked?Math.round(second/asked*100)+'%':'—';
@@ -406,7 +402,7 @@ function renderBoard(teams){
 
   document.getElementById('feedList').innerHTML=sorted.map((t,i)=>
     '<div class="row'+(i<3?' top3':'')+'"><span class="t">'+(i<3?['🥇','🥈','🥉'][i]+' ':'')+(i+1)+'. '+esc(t.team)+'</span>'+
-    '<span class="acc">'+(t.profession?t.profession+' · ':'')+t.score+' pts'+(t.asked?' · '+(t.accuracy||0)+'%':'')+'</span></div>').join('');
+    '<span class="acc">'+(t.level?t.level+' · ':'')+t.score+' pts'+(t.asked?' · '+(t.accuracy||0)+'%':'')+'</span></div>').join('');
 }
 
 /* ============================================================
