@@ -6,101 +6,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "Stopping people from driving private cars in cities.",
+    "correct": "The restriction of private cars in cities.",
     "distractors": [
-     "Stopping all use of oil and gas in the world.",
-     "Comparing buses to private cars.",
-     "Fixing crowded cities to stop daily traffic jams."
+     "The complete stop of all oil and gas use everywhere in the whole world.",
+     "The comparison of public buses to private cars.",
+     "The repair of cities to stop daily traffic."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The need to stop dirty air caused by cars.",
+    "correct": "The necessity of air pollution reduction.",
     "distractors": [
-     "Stopping all types of pollution in cities.",
-     "Building bigger roads for heavy traffic.",
-     "Making safe places to walk and bike."
+     "The removal of all different types of pollution.",
+     "The massive construction of much bigger roads for heavy daily city traffic.",
+     "The creation of safe walking areas."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "stopping the bad air that people breathe in crowded cities",
+    "correct": "The prevention of bad air in crowded cities.",
     "distractors": [
-     "banning all gas cars inside the city limits",
-     "making it a crime to own a car in the city",
-     "forcing everyone to walk or bike to work"
+     "The ban on all gas cars inside the city.",
+     "The creation of laws against car ownership.",
+     "The strict requirement for absolutely everyone to walk or ride a bike to work every day."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Banning gas cars in the centre of towns.",
+    "correct": "City councils ban gas cars in the centre of busy towns to make sure the air stays very clean.",
     "distractors": [
-     "Rules to cut all pollution in half by 2040.",
-     "Removing city roads to build public parks.",
-     "Giving free bikes to everyone who lives in the city."
+     "New rules cut all pollution in half.",
+     "Workers remove roads to build parks.",
+     "Mayors give free bikes to residents."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "a total ban is hard for workers who do not have good buses or trains",
+    "correct": "A total ban hurts workers without good buses.",
     "distractors": [
-     "traffic just moves to the roads just outside the city",
-     "more delivery trucks will make the air dirty again",
-     "car smoke is still the biggest health problem in cities"
+     "Heavy traffic just moves to the smaller roads right outside the main city borders.",
+     "More delivery trucks make the air dirty again.",
+     "Car smoke remains the biggest health problem."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The freedom to travel however you want.",
+    "correct": "The freedom of personal travel.",
     "distractors": [
-     "The right to travel freely to other countries.",
-     "The money made by car companies.",
-     "Why a family with kids needs a car."
+     "The right to international travel.",
+     "The generation of huge profits by large international car manufacturing companies.",
+     "The utility of cars for families."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "protecting the right to drive across town without government rules",
+    "correct": "The protection of the right to drive across town without any strict government rules.",
     "distractors": [
-     "protecting the money of people who must drive to work",
-     "letting drivers break rules if they are in a hurry",
-     "giving every driver a free parking space"
+     "The protection of money for commuters.",
+     "The allowance for drivers to break rules.",
+     "The provision of free parking spaces."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Letting cars drive freely in the city centre.",
+    "correct": "Cities let cars drive freely in the centre.",
     "distractors": [
-     "Making drivers pay a fee to enter the city.",
-     "Building big car parks in all shopping areas.",
-     "Stopping buses so people have to drive."
+     "Cities make drivers pay a large fee every single time they want to enter the town.",
+     "Builders construct big car parks.",
+     "Towns stop buses so people drive more."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "unlimited driving causes bad traffic jams and dirty air",
+    "correct": "Unlimited driving causes bad traffic jams.",
     "distractors": [
-     "free driving always ruins life in the city",
-     "owning a car is already too expensive for most people",
-     "people who drive a lot can get sick later in life"
+     "Free driving always ruins the quality of daily life in every single major city.",
+     "Owning a car costs too much for most people.",
+     "People who drive a lot get sick later."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "governments should improve buses and slowly ban the dirtiest cars",
+    "correct": "Governments improve public buses and slowly ban the dirtiest cars from the city roads.",
     "distractors": [
-     "every country must completely ban cars for clean air",
-     "governments should ban cars and let people figure out how to travel",
-     "people should be allowed to drive if they pay a tax"
+     "Every country bans cars for clean air.",
+     "Governments ban cars and let people walk.",
+     "People drive freely if they pay a new tax."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "good rules must protect the earth but still let people travel easily",
+    "correct": "Good rules protect the earth but still let people travel easily.",
     "distractors": [
-     "clean air is the most important goal for all governments",
-     "buses are always much cheaper than driving a car",
-     "people will never give up their cars by choice"
+     "Clean air is the most important goal.",
+     "Public buses always cost much less money.",
+     "People never give up their own private cars by choice because they love the convenience."
     ]
    }
   ]
@@ -112,101 +112,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "How the government spends money on different university subjects.",
+    "correct": "The division of government funds.",
     "distractors": [
-     "The total money a government spends on all schools.",
-     "The high fees that university students have to pay today.",
-     "How hard it is to make students like science."
+     "The calculation of the total educational budget for all schools across the whole country.",
+     "The high fees of university students.",
+     "The difficulty of science education."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "Giving more money to science to help create new technology.",
+    "correct": "The allocation of money to science.",
     "distractors": [
-     "The belief that only science is important.",
-     "Giving all art money to the science departments.",
-     "The high cost of building science labs."
+     "The belief in the importance of science.",
+     "The transfer of all art funds to the brand new science departments across the entire university.",
+     "The high cost of science laboratories."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "giving money to subjects that help businesses make money",
+    "correct": "The support of useful business subjects.",
     "distractors": [
-     "paying the full cost of medical and computer degrees",
-     "making science students work for the government",
-     "making art students pay double for their classes"
+     "The full payment for medical degrees.",
+     "The employment of science students.",
+     "The requirement for all art students to pay double the normal fees for their classes."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Full government payment for medicine and computer degrees.",
+    "correct": "The government pays the full cost for university degrees in medicine and computer science.",
     "distractors": [
-     "Government ads trying to make kids like science.",
-     "Universities giving their best buildings to science classes.",
-     "Making maths required for every university student."
+     "Ads make kids like science.",
+     "Universities give buildings to science.",
+     "Schools make maths required."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "focusing only on science ignores the need for good morals in new technology",
+    "correct": "A pure science focus ignores morals.",
     "distractors": [
-     "a pure science course makes students forget right and wrong",
-     "science already gets enough money from private companies",
-     "science degrees lead straight to good jobs"
+     "A pure science course makes students completely forget the difference between right and wrong.",
+     "Science gets money from companies.",
+     "Science degrees lead to good jobs."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "Using government money for art, history, and language classes.",
+    "correct": "The funding of art and history.",
     "distractors": [
-     "Paying for orchestras and art galleries.",
-     "Making science students read poetry before they graduate.",
-     "Paying artists a regular salary."
+     "The support of orchestras and galleries.",
+     "The strict requirement for all science students to read poetry before they finish their studies.",
+     "The payment of artists by the state."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "protecting culture and teaching students how to understand society",
+    "correct": "The protection of culture and the education of students on the ways to understand society.",
     "distractors": [
-     "helping the national film and art businesses make money",
-     "making sure museums buy new art to attract visitors",
-     "letting students choose easy classes to avoid stress"
+     "The support of the national film industry.",
+     "The purchase of new art by museums.",
+     "The selection of easy classes by students."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Government money for history and language classes.",
+    "correct": "The government funds history classes.",
     "distractors": [
-     "Paying for any art project a person wants to do.",
-     "Free concert tickets for all university students.",
-     "Buying big art pieces for city centres."
+     "The government pays for any art project that a regular person wants to do in their free time.",
+     "Schools give free concert tickets.",
+     "Cities buy big art pieces."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "paying too much for the arts can create graduates with no jobs",
+    "correct": "High art funding creates jobless adults.",
     "distractors": [
-     "no art student will ever find a job",
-     "art classes are much cheaper to run than science classes",
-     "people read much less since the internet started"
+     "Graduate art students never find jobs.",
+     "People read much less than they did in the past because the internet takes up their time.",
+     "Art classes cost less than science."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "the government should pay for science but also keep some money for the arts",
+    "correct": "The government funds science heavily but also keeps some money aside for the arts.",
     "distractors": [
-     "governments must only pay for science and stop paying for art completely",
-     "governments should pay for science and let rich people pay for the arts",
-     "every subject should get the exact same amount of money"
+     "Governments only fund science classes.",
+     "Rich people pay for the art classes.",
+     "Every subject gets the exact same money."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "a strong country needs both the skill to invent and the wisdom to use inventions well",
+    "correct": "A strong country needs both skills.",
     "distractors": [
-     "a country's money depends mostly on its school budget",
-     "new technology is the only way for a country to get rich",
-     "universities should decide how to spend their own money"
+     "A country's money depends on schools.",
+     "New technology makes a country rich.",
+     "Universities always know exactly how to spend their own money much better than the government."
     ]
    }
   ]
@@ -218,101 +218,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "The main goal of prisons today.",
+    "correct": "The main purpose of modern prisons.",
     "distractors": [
-     "How society handles different types of crime.",
-     "Why normal people decide to do bad things.",
+     "The reaction of society to many different types of crimes in the modern justice system.",
+     "The reasons for normal people to do bad things.",
      "The high cost of keeping people in prison."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "Focusing on punishing people who break the law.",
+    "correct": "The focus on criminal punishment.",
     "distractors": [
-     "The belief that punishment alone stops all crime.",
-     "Choosing to make prison life very uncomfortable.",
-     "Bringing back the death penalty for bad crimes."
+     "The belief in punishment alone.",
+     "The intentional choice to make daily prison life very uncomfortable for all the inmates.",
+     "The return of the death penalty."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "taking away a criminal's freedom because of their bad choices",
+    "correct": "The removal of criminal freedom.",
     "distractors": [
-     "giving fixed prison times for bad crimes",
-     "making prisoners work for free to pay society back",
-     "telling everyone about the crime to shame the criminal"
+     "The assignment of fixed prison times.",
+     "The requirement for unpaid prison work.",
+     "The announcement of every single crime to the public to shame criminals into obeying the law."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Strict prison times for serious or repeated crimes.",
+    "correct": "Judges give strict prison times to criminals who commit serious or repeated crimes in the city.",
     "distractors": [
-     "Life in prison for any crime that involves fighting.",
-     "Keeping bad criminals completely alone in a room.",
-     "Stopping prisoners from seeing their families."
+     "Life in prison stops violent crime.",
+     "Guards keep bad criminals alone.",
+     "Prisons stop all family visits."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "punishing without helping leads to more crime when prisoners get out",
+    "correct": "Pure punishment increases future crime.",
     "distractors": [
-     "punishment can never change how a criminal acts",
-     "normal taxpayers pay the high cost of prisons",
-     "harsh prisons make criminals try harder to escape"
+     "Harsh punishment never actually changes the way a criminal thinks or acts after their release.",
+     "Normal taxpayers pay for prisons.",
+     "Harsh prisons make criminals escape."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "Focusing on helping criminals change how they think and act.",
+    "correct": "The focus on criminal rehabilitation.",
     "distractors": [
-     "Stopping crime by spending money in poor towns.",
-     "Giving every prisoner a nice, comfortable room.",
-     "Letting prisoners go free early if they are truly sorry."
+     "The prevention of crime in poor towns.",
+     "The provision of nice and comfortable rooms for every single person inside the prison.",
+     "The early release of sorry criminals."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "giving prisoners job skills and help to fix their deeper problems",
+    "correct": "The provision of job skills and the treatment of deeper mental problems for all prison inmates.",
     "distractors": [
-     "promising that helped criminals will never do bad things again",
-     "giving medicine to angry criminals to calm them down",
-     "keeping prisoners busy with sports so they stay out of trouble"
+     "The promise of a crime-free life.",
+     "The provision of medicine to angry criminals.",
+     "The engagement of prisoners in sports."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "School classes and drug help inside the prison.",
+    "correct": "Prisons provide school classes.",
     "distractors": [
-     "Job training that fixes the real causes of crime.",
-     "Letting good prisoners go home on the weekends.",
-     "Free university degrees for everyone in prison."
+     "Universities give free academic degrees to every single person who stays in the local prison.",
+     "Job training fixes the causes of crime.",
+     "Good prisoners go home on weekends."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "focusing only on helping can seem unfair to victims and make the law look weak",
+    "correct": "Pure rehabilitation ignores victim justice.",
     "distractors": [
-     "victims will never accept a punishment that only helps the criminal",
-     "punishing people without helping makes them do more crime",
-     "criminals who get job training do fewer crimes later"
+     "Victims of crime never accept a weak punishment that only helps the criminal feel much better.",
+     "Unpunished criminals do more crime.",
+     "Job training lowers future crime rates."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "prisons should combine losing freedom with required classes to change behaviour",
+    "correct": "Modern prisons combine the loss of freedom with required classes to change criminal behaviour.",
     "distractors": [
-     "prisons must stop punishing and only focus on helping criminals",
-     "prison time should be replaced by required therapy programmes",
-     "society should stop crime before it happens to keep prisons empty"
+     "Prisons stop all punishment today.",
+     "Therapy replaces all prison time.",
+     "Society stops crime before it happens."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "keeping the public safe means locking up dangerous people but also helping them change",
+    "correct": "Public safety requires both approaches.",
     "distractors": [
-     "a country is judged by how kind its prisons are",
-     "long prison times cost too much money for any country",
-     "every criminal can be fixed if they get enough time and help"
+     "A kind prison shows a good country.",
+     "Long prison times cost far too much money for any normal country to afford in the long run.",
+     "Time and help fix every criminal."
     ]
    }
   ]
@@ -324,101 +324,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "The choice to let staff work from home instead of the office.",
+    "correct": "The choice of remote work.",
     "distractors": [
-     "How computers changed jobs around the world.",
-     "Empty office buildings in big cities.",
-     "Tools that let teams work together online."
+     "The massive change that computers have brought to all the different jobs around the world.",
+     "The presence of empty office buildings.",
+     "The use of online team tools."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The good things about working from home for staff and bosses.",
+    "correct": "The benefit of remote work.",
     "distractors": [
-     "The way working from home helps every single company.",
-     "A better balance between work and family time.",
-     "The rule that companies must let staff work at home."
+     "The universal advantage of remote work.",
+     "The creation of a much better balance between work tasks and happy family time at home.",
+     "The rule for companies to let staff stay home."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "saving travel time and office costs, which helps people work faster",
+    "correct": "The reduction of travel time.",
     "distractors": [
-     "cutting office rent and keeping staff longer",
-     "letting staff work whenever they want with no boss checking on them",
-     "making staff pay for their own computers and power"
+     "The reduction of office rent costs.",
+     "The freedom for staff to work whenever they want with no boss checking on them at all.",
+     "The transfer of computer costs to staff."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Companies saving money on offices and keeping staff happy.",
+    "correct": "Companies save a lot of money on office rent and keep their staff very happy and relaxed.",
     "distractors": [
-     "Fewer companies needing big office buildings globally.",
-     "Companies moving to smaller, cheaper buildings.",
-     "Staff using video calls from home a few times a week."
+     "Fewer companies need big offices.",
+     "Companies move to smaller buildings.",
+     "Staff use video calls from home."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "working at home without set hours mixes work with free time, causing stress",
+    "correct": "Working from home causes stress.",
     "distractors": [
-     "workers at home without rules will always be lazy",
-     "working at home saves hours of unpaid travel time",
-     "working at home is only possible for computer jobs"
+     "Workers at home without strict rules from their boss always become very lazy and do nothing.",
+     "Remote work saves hours of travel.",
+     "Remote work only suits computer jobs."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The damage to teamwork and workers' mental health.",
+    "correct": "The damage to teamwork.",
     "distractors": [
-     "City cafes losing money because office workers stay home.",
-     "The fact that most jobs must be done in a real workplace.",
-     "The extra money companies pay for home office desks."
+     "The loss of money for city cafes.",
+     "The requirement for most important jobs to be done inside a real physical workplace.",
+     "The extra cost of home office desks."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "stopping friendly chats and breaking up the team spirit",
+    "correct": "The destruction of team spirit and the end of friendly chats between office workers.",
     "distractors": [
-     "slowing work down because messages take too long to answer",
-     "the risk of home internet breaking during the work day",
-     "allowing staff to ignore rules they would follow in the office"
+     "The delay in message replies.",
+     "The risk of broken home internet.",
+     "The ability for staff to ignore rules."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Work taking longer because staff are lonely and reply slowly.",
+    "correct": "Work takes longer without the team.",
     "distractors": [
-     "No new ideas because staff never see each other in person.",
-     "New workers quitting because they feel lost at home.",
-     "Staff cleaning their house instead of doing their jobs."
+     "New workers quit because they feel completely lost and lonely sitting at home every day.",
+     "Staff lack new ideas without meetings.",
+     "Staff clean their house instead of working."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "slow work is usually caused by bad bosses, not by working at home",
+    "correct": "Slow work comes from bad bosses.",
     "distractors": [
-     "people actually do just as much work at home",
-     "new staff learn less when they do not sit next to a boss",
-     "the problem is only for older workers and will pass soon"
+     "People actually do just as much work.",
+     "New staff learn much less when they do not sit right next to an experienced boss.",
+     "The problem only affects older workers."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "companies should mix working from home with important office meetings",
+    "correct": "Companies mix working from home with important office meetings to keep everyone working well.",
     "distractors": [
-     "no company can do well unless everyone works from home",
-     "bosses should force everyone back to the office to work faster",
-     "staff should choose every day if they want to go to the office"
+     "No company succeeds with remote work.",
+     "Bosses force everyone back to the office.",
+     "Staff choose their location every day."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "a mixed schedule helps work get done fast while keeping staff happy and creative",
+    "correct": "A mixed schedule helps work.",
     "distractors": [
-     "companies should combine home days with office days",
-     "staff will quit if forced to go to the office every single day",
-     "the traditional office is an old, expensive idea"
+     "Companies should combine their work days.",
+     "Staff will quit if they are forced to go to the office every single day of the week.",
+     "The traditional office is an old idea."
     ]
    }
   ]
@@ -430,101 +430,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "Controlling how much time children spend looking at screens.",
+    "correct": "The control of screen time.",
     "distractors": [
-     "How technology changes adults and society.",
-     "The best age to give a child their first smartphone.",
-     "How social media changes teenagers."
+     "The effect of modern digital technology on adults and the rest of society today.",
+     "The best age for a first smartphone.",
+     "The impact of social media on teens."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "Setting strong limits to protect children's health and growth.",
+    "correct": "The protection of children's health.",
     "distractors": [
-     "Taking all electronic screens out of the house completely.",
-     "The damage that screens do to a child's eyes.",
-     "Parents wanting children to read books instead of playing games."
+     "The complete removal of all screens.",
+     "The severe damage that long hours of screen use do to a young child's eyesight.",
+     "The preference for books over games."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "stopping lazy habits and helping children pay better attention",
+    "correct": "The prevention of lazy habits.",
     "distractors": [
-     "banning tablets on school days so kids play outside more",
-     "checking what kids watch on the internet when they are alone",
-     "making kids finish homework before using screens for fun"
+     "The ban on tablets on school days.",
+     "The monitoring of internet use.",
+     "The requirement for kids to finish all of their homework before using screens for fun."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Rules that ban screens on school days to force outdoor play.",
+    "correct": "Parents ban screens on school days to force their children to play outside with friends.",
     "distractors": [
-     "Government rules on screen time for people of all ages.",
-     "Removing all fun games from a child's phone.",
-     "Schools banning all computers in the classroom."
+     "Governments limit screen time.",
+     "Parents remove fun games from phones.",
+     "Schools ban computers in the classroom."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "strict limits can stop kids from learning technology and leave them feeling left out",
+    "correct": "Strict limits stop kids from learning.",
     "distractors": [
-     "kids without screens are always bullied by their friends",
-     "kids who cannot use screens at home will just borrow them",
-     "strict rules cause anger and fights between parents and kids"
+     "Kids who cannot use screens at home will just borrow them from their friends at school.",
+     "Kids without screens face bullying.",
+     "Strict rules cause family fights."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The need for screens and internet in modern learning.",
+    "correct": "The necessity of digital access.",
     "distractors": [
-     "How much modern jobs need computer skills.",
-     "Using screens to keep kids quiet while parents work.",
-     "The idea that computers will replace human teachers soon."
+     "The requirement of computer skills.",
+     "The use of screens to keep kids perfectly quiet while their parents try to work.",
+     "The replacement of human teachers."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "teaching kids computer skills and giving them access to global information",
+    "correct": "The provision of computer skills and the access to global information for all young people.",
     "distractors": [
-     "making sure kids can get good jobs in the future",
-     "letting kids learn alone without a teacher's help",
-     "teaching kids how to fix broken computers themselves"
+     "The preparation for future jobs.",
+     "The freedom for kids to learn alone.",
+     "The education on how to fix broken computers."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Computer games that teach maths or a new language.",
+    "correct": "Computer games teach maths.",
     "distractors": [
-     "Parental controls that only allow learning apps on a tablet.",
-     "Video websites where kids sometimes find educational videos.",
-     "Apps that do a child's maths homework for them."
+     "Parental controls only allow learning apps on a tablet to keep the child very safe.",
+     "Video websites provide educational clips.",
+     "Apps do a child's homework for them."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "too much screen time often leads to lazy watching instead of real learning",
+    "correct": "Unlimited time leads to laziness.",
     "distractors": [
-     "screens without limits always destroy a child's ability to focus",
-     "very few families can afford to buy a screen for every child",
-     "strict limits stop kids from doing their schoolwork"
+     "Screens without any limits always completely destroy a child's ability to focus on tasks.",
+     "Few families afford multiple screens.",
+     "Strict limits stop schoolwork."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "parents should guide what kids watch instead of just counting the minutes",
+    "correct": "Parents guide what their kids watch instead of just counting the minutes on a clock.",
     "distractors": [
-     "parents must remove all screens if they want their kids to grow up well",
-     "screens should be banned on weekdays and free on weekends",
-     "kids should only use computers at school, never at home"
+     "Parents completely remove all screens.",
+     "Parents ban screens on the weekdays.",
+     "Kids only use computers at the school."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "getting ready for the future means using technology without getting addicted to it",
+    "correct": "Technology prepares kids for life.",
     "distractors": [
-     "technology has changed almost all of modern life",
-     "computer skills are needed for almost every job today",
-     "kids will stop using screens if they are given fun toys to play with"
+     "Technology changes almost all of life.",
+     "Computer skills are required for jobs.",
+     "Kids will quickly stop using their screens if they are given fun toys to play with instead."
     ]
    }
   ]
@@ -536,101 +536,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "How foreign tourists affect local money and nature.",
+    "correct": "The impact of foreign tourists.",
     "distractors": [
-     "The growth of the travel business around the world.",
-     "Why rich people like to travel to other countries.",
-     "The damage that crowds do to famous old buildings."
+     "The huge global growth of the travel business around the world over the past fifty years.",
+     "The reasons for rich people to travel.",
+     "The damage of crowds to old buildings."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The new money that tourists bring to local towns.",
+    "correct": "The influx of new money.",
     "distractors": [
-     "The idea that tourism can fix all poor towns.",
-     "The hotel jobs created for local young people.",
-     "The tax money governments get from airplanes."
+     "The belief in tourism as a cure.",
+     "The creation of many new hotel jobs for the local young people in the area.",
+     "The collection of airplane taxes."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "bringing foreign money to local shops and paying for new roads",
+    "correct": "The contribution to local businesses.",
     "distractors": [
-     "opening big beach hotels that hire local workers",
-     "telling young people to move away and send money back",
-     "forcing governments to build new big airports"
+     "The opening of big beach hotels.",
+     "The encouragement for young people to move away and send their money back home.",
+     "The construction of new big airports."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Beach towns using a small tourist tax to build new schools.",
+    "correct": "Beach towns use a small tourist tax to build new schools and hospitals for the local people.",
     "distractors": [
-     "Governments paying for hospitals using airplane taxes.",
-     "Villages selling their land to big foreign hotel companies.",
-     "Airlines adding more flights during the summer."
+     "Governments pay for hospitals with taxes.",
+     "Villages sell land to hotel companies.",
+     "Airlines add flights during the summer."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "most of the money goes back to the foreign companies that own the hotels",
+    "correct": "Most money goes back abroad.",
     "distractors": [
-     "local towns never see any of the money tourists spend",
-     "tourist money is the biggest income for many towns",
-     "huge crowds kill ocean reefs and ruin old buildings"
+     "Local towns never see any of the money that the rich foreign tourists spend on their trips.",
+     "Tourist money acts as the biggest income.",
+     "Huge crowds kill the ocean reefs."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The damage tourists do to local traditions and nature.",
+    "correct": "The damage to local traditions.",
     "distractors": [
-     "The bad effect airplanes have on the global climate.",
-     "High house prices that push local families away.",
-     "Rude tourists being mean to local workers."
+     "The bad effect of airplanes on climate.",
+     "The rapid rise in house prices that pushes local families completely out of their towns.",
+     "The rude behavior of tourists."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "turning real culture into a fake show and using up all the water and land",
+    "correct": "The transformation of real culture into a fake show and the waste of all local water and land.",
     "distractors": [
-     "destroying all local customs and animals in the area",
-     "making young people learn English instead of their own language",
-     "building big hotels that sit empty most of the year"
+     "The destruction of all local customs.",
+     "The pressure to learn English instead.",
+     "The construction of empty hotels."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Dead ocean reefs and old streets turned into cheap gift shops.",
+    "correct": "Old streets become cheap gift shops.",
     "distractors": [
-     "Old buildings closed because tourists broke them.",
-     "Local families forced to move because rent is too high.",
-     "Airports getting too big for a small island."
+     "Local families are forced to move away because the rent near the beach is much too high.",
+     "Old buildings close because of damage.",
+     "Airports become too big for an island."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "tourist money often pays to protect the exact parks that are in danger",
+    "correct": "Tourist money protects parks.",
     "distractors": [
-     "tourism always saves more nature than it ruins",
-     "many famous places now limit how many people can visit",
-     "local culture was already changing before tourists came"
+     "Tourism always saves much more of the natural world than it ever ruins or destroys.",
+     "Famous places limit their visitors.",
+     "Local culture changes without tourists."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "governments should limit tourist numbers and use their money to protect nature",
+    "correct": "Governments limit tourist numbers and use their extra money to protect nature and local culture.",
     "distractors": [
-     "every country should close its famous places until they are fixed",
-     "tourism should grow freely because the money is most important",
-     "people should stay in their own country for holidays"
+     "Every country closes its famous places.",
+     "Tourism grows freely for the money.",
+     "People stay in their own country."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "a town that sells out its culture will lose what tourists want to see",
+    "correct": "A town loses its real charm.",
     "distractors": [
-     "protecting nature is more important than making money",
-     "tourist money is the only way a poor beach town can grow",
-     "local people should decide how many hotels get built"
+     "Protecting nature is more important.",
+     "Tourist money is the only way a poor beach town can grow into a rich city.",
+     "Local people should decide on hotels."
     ]
    }
   ]
@@ -642,101 +642,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "The value of spending public money on space travel.",
+    "correct": "The value of space exploration.",
     "distractors": [
-     "How much of the budget should go to science.",
-     "The race between countries to land on Mars.",
-     "The high cost of building new satellites."
+     "The argument over exactly how much of the national budget should go to science.",
+     "The race between countries to Mars.",
+     "The high cost of building satellites."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The idea of moving space money to help humans on Earth now.",
+    "correct": "The redirection of space funds.",
     "distractors": [
-     "Stopping all science until poverty is gone.",
-     "Saying hospitals and houses need the money more.",
-     "Taxpayers wanting money spent inside their own country."
+     "The halt of all science for poverty.",
+     "The strong demand from ordinary taxpayers to see their money spent inside their own country.",
+     "The need for more hospitals and houses."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "using public money for big problems like poverty and sickness",
+    "correct": "The application of public money.",
     "distractors": [
-     "closing space centres and giving the buildings to schools",
-     "asking rich companies to pay for space travel instead",
-     "taxing space companies to pay for new hospitals"
+     "The closure of all space centres.",
+     "The request for rich private companies to pay for space travel instead.",
+     "The heavy taxation of space companies to pay for new hospitals and schools on Earth."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Governments moving space money into housing and medicine.",
+    "correct": "Governments move space money into housing and medicine to help the poor people on Earth.",
     "distractors": [
-     "Global rules forcing countries to cut their science budgets.",
-     "Charities asking people for money for clean water.",
-     "Countries sharing the cost of a space station."
+     "Global rules cut science budgets.",
+     "Charities ask people for clean water.",
+     "Countries share the cost of a station."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "space budgets are very small, so taking the money would not fix Earth's problems",
+    "correct": "Small budgets mean little change.",
     "distractors": [
-     "no government has ever fixed a problem just by spending money",
-     "the cost of a Mars trip could buy clean water for many countries",
-     "voters prefer spending on the army rather than science"
+     "The cost of a single trip to Mars could buy clean water for many poor countries.",
+     "No government fixes problems just with money.",
+     "Voters prefer spending on the army."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The useful technology that space research creates.",
+    "correct": "The creation of useful technology.",
     "distractors": [
-     "The national pride a successful space trip brings.",
-     "The chance to find expensive metals on the Moon.",
-     "The money companies make by launching satellites."
+     "The national pride of a successful trip.",
+     "The amazing chance to find completely new and very expensive metals on the Moon.",
+     "The money from launching satellites."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "making new inventions for space that become useful in normal life",
+    "correct": "The invention of extreme tools for space that become useful in normal everyday human life.",
     "distractors": [
-     "creating every important invention of the last fifty years",
-     "training engineers who later work in normal jobs",
-     "getting rich people to invest in space hotels"
+     "The creation of every modern invention.",
+     "The training of regular engineers.",
+     "The attraction of rich space investors."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "GPS, water filters, and medical scanners that started as space tools.",
+    "correct": "GPS starts as space tech.",
     "distractors": [
-     "Rockets taking rich tourists on short space trips.",
-     "Telescopes finding new planets far away.",
-     "Photos of Earth that changed how we see our world."
+     "Rockets take rich tourists on short space trips above the earth for a lot of money.",
+     "Telescopes find new planets far away.",
+     "Photos of Earth change our world view."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "these inventions could have been made much cheaper by researching them directly on Earth",
+    "correct": "Earth research costs less.",
     "distractors": [
-     "no useful tool has ever come from space research",
-     "space travel has created more good things than people admit",
-     "most people do not know which tools came from space"
+     "No useful tool has ever come from space.",
+     "Space travel has created many more good things than most people admit today.",
+     "Most people ignore space tools."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "governments should keep a small space plan but spend most money on Earth",
+    "correct": "Governments keep small space plans but spend most of their money on important Earth problems.",
     "distractors": [
-     "all space travel should stop until every Earth problem is fixed",
-     "space travel should be left to rich private companies",
-     "governments should spend much more on space to save humanity"
+     "All space travel stops for Earth.",
+     "Rich companies take over space travel.",
+     "Governments spend much more on space."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "helping people today and building knowledge for tomorrow are both important",
+    "correct": "Helping people matters most.",
     "distractors": [
-     "science must always come before what ordinary voters want",
-     "a country that ignores science will fall behind the world",
-     "public money belongs to the people, so they should decide"
+     "Science must always come before voters.",
+     "A country that ignores science will easily fall behind the rest of the world.",
+     "Public money belongs to the people."
     ]
    }
   ]
@@ -748,101 +748,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "The right of the government to control what we eat using taxes.",
+    "correct": "The regulation of food choices.",
     "distractors": [
-     "The high cost of food shopping in rich countries.",
-     "Why fast food is so popular with young people.",
-     "The health problems caused by eating too much sugar."
+     "The very high cost of weekly food shopping in rich countries all around the world.",
+     "The popularity of fast food with youth.",
+     "The health problems of eating sugar."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "Using heavy taxes on bad food to make people healthier.",
+    "correct": "The taxation of unhealthy food.",
     "distractors": [
-     "Banning all fast-food shops in city centres.",
-     "The money hospitals spend on diet sickness.",
-     "Teaching cooking in every primary school."
+     "The ban on fast-food shops in cities.",
+     "The huge amount of money that hospitals spend on treating diet sickness every year.",
+     "The teaching of cooking in schools."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "making bad food cost more so that people buy less of it",
+    "correct": "The increase of food prices.",
     "distractors": [
-     "putting a tax on sugary drinks so companies use less sugar",
-     "using tax money to give free fruit to school children",
-     "warning shoppers that some food has too much fat"
+     "The tax on sugary drinks.",
+     "The use of tax money for free fruit.",
+     "The warning for shoppers that some cheap food has much too much fat inside it."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Sugar taxes on soda that make companies change their recipes.",
+    "correct": "Sugar taxes make companies change their recipes to use less sugar and keep prices low.",
     "distractors": [
-     "A world rule limiting how much sugar can be in food.",
-     "High taxes on cigarettes that made fewer people smoke.",
-     "Forcing restaurants to print calories on their menus."
+     "A world rule limits sugar in food.",
+     "High taxes make fewer people smoke.",
+     "Restaurants print calories on menus."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "these taxes hurt poor families the most because they have less money",
+    "correct": "These taxes hurt poor families.",
     "distractors": [
-     "a food tax never actually changes what people buy",
-     "sugar taxes have already worked well in some countries",
-     "fast food is now sold in every small town and city"
+     "A food tax never actually changes what ordinary people buy at the supermarket.",
+     "Sugar taxes work well in some countries.",
+     "Fast food is sold in every small town."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The freedom of people to decide what they want to eat.",
+    "correct": "The freedom of personal diet.",
     "distractors": [
-     "The right of people to live without government rules.",
-     "The freedom of restaurants to sell whatever they want.",
-     "The right of companies to show food ads to adults."
+     "The right to live without government rules.",
+     "The freedom of restaurants to sell whatever kind of food they want to their customers.",
+     "The right to show food ads to adults."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "letting the government teach people instead of forcing them, so they choose freely",
+    "correct": "The education of the public instead of forcing them, so they can choose their food freely.",
     "distractors": [
-     "removing every government rule about the food industry",
-     "trusting adults to know the risks if information is clear",
-     "letting the free market decide which foods are sold"
+     "The removal of all food industry rules.",
+     "The trust in adults to know the risks.",
+     "The freedom for the open market to decide."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Clear labels on food and health ads that help shoppers choose.",
+    "correct": "Clear labels help shoppers.",
     "distractors": [
-     "Scary warning pictures printed on bad food packages.",
-     "Free cooking lessons for parents at a community centre.",
-     "Doctors giving written diet advice during a check-up."
+     "Scary warning pictures printed on bad food packages scare people from eating.",
+     "Free cooking lessons help parents.",
+     "Doctors give written diet advice."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "real choice needs fair information, but food ads trick people from a young age",
+    "correct": "Food ads trick people.",
     "distractors": [
-     "nobody who grew up watching food ads can make a free choice",
-     "most people know bad food is unhealthy but eat it anyway",
-     "food companies spend lots of money to make packages look fun"
+     "Nobody who grew up watching food ads can make a free choice.",
+     "Most people know bad food is unhealthy but eat it anyway because it tastes good.",
+     "Food companies spend lots of money."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "governments should tax bad ingredients like sugar and make healthy food cheaper",
+    "correct": "Governments tax bad ingredients like sugar and make healthy food cheaper for everyone to buy.",
     "distractors": [
-     "governments should tax all bad food and let the market do the rest",
-     "the government should teach health and let people choose freely",
-     "heavy taxes should replace all other health rules"
+     "Governments tax all bad food always.",
+     "The government teaches health freely.",
+     "Heavy taxes replace all other rules."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "having a choice only matters if cheap, healthy food is easy to buy",
+    "correct": "A fair choice requires cheap food.",
     "distractors": [
-     "public health is always more important than personal choice",
-     "taxes are the fastest way to change how people act",
-     "people cannot be trusted to eat well without help"
+     "Public health is always more important.",
+     "Taxes are the fastest way to change acts.",
+     "People cannot be trusted to eat well without a lot of strict government help."
     ]
    }
   ]
@@ -854,101 +854,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "The future of printed newspapers in a digital world.",
+    "correct": "The future of printed newspapers.",
     "distractors": [
-     "How the internet changed all types of media.",
-     "The bad quality of news in today's big newspapers.",
-     "How fast news travels around the world today."
+     "The massive way that the internet has completely changed all types of media today.",
+     "The bad quality of news in big papers.",
+     "The speed of news travel around the world."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "Online news websites replacing printed newspapers.",
+    "correct": "The rise of online news.",
     "distractors": [
-     "The idea that nobody under thirty will ever read print again.",
-     "Readers and writers moving to news apps.",
-     "Social media becoming the main place for political news."
+     "The belief that nobody under thirty will read print.",
+     "The fast movement of all readers and writers to news applications on mobile phones.",
+     "The growth of social media news."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "saving money on printing and updating news all day long",
+    "correct": "The reduction of printing costs.",
     "distractors": [
-     "closing printing factories and emailing the news instead",
-     "letting readers talk and argue with each other online",
-     "giving readers a cheaper price for online news"
+     "The closure of printing factories.",
+     "The ability for readers to talk and argue.",
+     "The provision of a much cheaper price for online news readers across the country."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Famous newspapers stopping their print versions and going online.",
+    "correct": "Famous papers move online to save money and update their news stories all day long.",
     "distractors": [
-     "Bookshops and libraries closing down in many towns.",
-     "News websites that let you read everything for free.",
-     "Readers following writers on social media instead of reading papers."
+     "Bookshops and libraries close down.",
+     "News websites let you read for free.",
+     "Readers follow writers on social media."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "free online news destroyed the money needed to pay for good reporting",
+    "correct": "Free news destroys reporter income.",
     "distractors": [
-     "no news company has ever made money from its website",
-     "more people read news online today than in print",
-     "older readers hate small screens and prefer printed pages"
+     "No news company has ever made money from its website in the history of the internet.",
+     "More people read news online today.",
+     "Older readers hate small screens."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The lasting value of printed newspapers for society.",
+    "correct": "The endurance of printed papers.",
     "distractors": [
-     "The joy of reading a paper slowly with a cup of coffee.",
-     "The trust people have in famous national newspapers.",
-     "The value of a paper you can read without the internet."
+     "The joy of reading a paper with coffee.",
+     "The strong trust that older people still have in famous national newspaper brands.",
+     "The value of a paper without the internet."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "giving readers a carefully chosen set of the most important daily stories",
+    "correct": "The selection of daily stories to give readers a carefully chosen set of important news.",
     "distractors": [
-     "giving everyone in the country the exact same news",
-     "keeping the loyalty of older people who do not use computers",
-     "printing longer stories than any website would show"
+     "The delivery of the exact same news.",
+     "The loyalty of older people without computers.",
+     "The printing of very long stories."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "High-quality weekend papers and local papers that report on the town.",
+    "correct": "Local papers report town news.",
     "distractors": [
-     "Free newspapers handed out at busy train stations.",
-     "Local papers that report on court cases websites ignore.",
-     "Shiny magazines that make money from big photos and ads."
+     "Free newspapers handed out at busy train stations to people going to work in the city.",
+     "Local papers report on court cases.",
+     "Shiny magazines make money from ads."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "printed papers are losing money, and love for print cannot pay for the news",
+    "correct": "Love for print ignores money.",
     "distractors": [
-     "printed papers will completely disappear in ten years",
-     "printed papers still reach people who have no internet",
-     "printing daily papers wastes too much paper and gas"
+     "Printed papers will completely disappear in ten years.",
+     "Printing daily papers wastes far too much paper and gas to be good for the earth.",
+     "Printed papers still reach people."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "printed papers will survive for weekend reading, while websites handle daily news",
+    "correct": "Printed papers survive for weekends, while online websites handle fast daily news updates.",
     "distractors": [
-     "printed newspapers will vanish when older people pass away",
-     "governments should pay to keep national newspapers printing",
-     "people should put away their phones and read printed papers"
+     "Printed newspapers vanish completely.",
+     "Governments pay to keep papers printing.",
+     "People put away phones and read papers."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "paying for good reporting matters more than saving the paper it is printed on",
+    "correct": "Paying for news matters more.",
     "distractors": [
-     "the printed newspaper is the only news people truly trust",
-     "readers will pay for good news, no matter what format it is in",
-     "technology always replaces old media, so print will die"
+     "The printed newspaper is the only news people truly trust.",
+     "Readers will pay for good news, no matter what format it is in.",
+     "Technology always replaces old media, so the printed paper will definitely die soon."
     ]
    }
   ]
@@ -960,101 +960,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "The rights and wrongs of testing medicine on animals.",
+    "correct": "The morality of animal testing.",
     "distractors": [
-     "How animals are treated on farms and in zoos.",
-     "How fast new medicines reach sick patients.",
-     "The rules for testing new makeup on animals."
+     "The way that animals are treated on farms and in zoos around the whole world.",
+     "The speed of new medicines reaching patients.",
+     "The rules for testing new makeup."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The need for animal testing to make new medicine.",
+    "correct": "The necessity of animal tests.",
     "distractors": [
-     "The belief that no medicine can be made without hurting animals.",
-     "The duty of scientists to keep untested drugs away from people.",
-     "The money big drug companies save by using animals."
+     "The belief that no medicine is made without pain.",
+     "The strict duty of scientists to keep completely untested drugs away from sick people.",
+     "The money big drug companies save."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "seeing how a drug affects a living body before giving it to people",
+    "correct": "The observation of drug effects.",
     "distractors": [
-     "testing new vaccines on monkeys before testing humans",
-     "using animals because they cost less than paying human testers",
-     "letting scientists repeat tests exactly the same way"
+     "The testing of new vaccines on monkeys.",
+     "The use of animals because they cost less.",
+     "The ability for scientists to repeat tests exactly the same way every single time."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Vaccines and cancer drugs tested on animals before humans.",
+    "correct": "Scientists test drugs on animals to see how a living body reacts before testing on humans.",
     "distractors": [
-     "Testing new shampoo on rabbits before selling it.",
-     "Surgeons practicing hard operations on animals first.",
-     "Breeding mice to carry the exact diseases doctors want to cure."
+     "Shampoo companies test on rabbits.",
+     "Surgeons practice hard operations first.",
+     "Scientists breed mice to carry diseases."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "animals are not humans, so drugs safe for animals can still hurt people",
+    "correct": "Animal drugs still hurt humans.",
     "distractors": [
-     "animal test results are never useful for human patients",
-     "the number of lab animals has dropped a lot in twenty years",
-     "many patients would refuse a drug if an animal died for it"
+     "Animal test results are never useful for human patients in any hospital situation.",
+     "The number of lab animals has dropped.",
+     "Many patients refuse animal drugs."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The idea that animal tests are not needed because we have new options.",
+    "correct": "The availability of modern alternatives.",
     "distractors": [
-     "The cruelty of keeping smart animals in small cages.",
-     "The high cost of running a big animal testing lab.",
-     "The right of every animal to live completely free."
+     "The cruelty of keeping smart animals in cages.",
+     "The extremely high cost of running a big animal testing laboratory full of doctors.",
+     "The right of every animal to be free."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "replacing animals with human cells and smart computer models",
+    "correct": "The replacement of live animals with human cells and smart computer models for testing.",
     "distractors": [
-     "taking all animals out of every lab in the world very soon",
-     "paying healthy people a lot of money to test new drugs",
-     "studying people who already take a drug instead of testing first"
+     "The removal of animals from all labs.",
+     "The payment of healthy human testers.",
+     "The study of people who already take a drug."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Governments accepting human cell tests and computers instead of animals.",
+    "correct": "Governments accept cell tests.",
     "distractors": [
-     "Companies promising that their products are never tested on animals.",
-     "Universities closing their animal labs to save money.",
-     "Charities paying for research into new testing methods."
+     "Companies promise that their products are never tested on animals before being sold.",
+     "Universities close their animal labs.",
+     "Charities pay for research into new tests."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "computers cannot copy a whole body yet, so some animal tests are still needed",
+    "correct": "Computers cannot copy whole bodies.",
     "distractors": [
-     "computer models will never give useful facts about a new drug",
-     "human cell tests completely stop the pain of lab animals",
-     "many countries have already banned testing makeup on animals"
+     "Computer models will never give useful facts.",
+     "Human cell tests completely stop the terrible pain of laboratory animals forever.",
+     "Many countries ban makeup testing."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "the law should force scientists to use modern options first and only use animals if they must",
+    "correct": "Laws force scientists to use computers first and only test on animals if they truly must.",
     "distractors": [
-     "all animal testing should be banned right now because we have alternatives",
-     "scientists should choose for themselves when animal tests are needed",
-     "animal testing should continue because human lives are more important"
+     "All animal testing is banned right now.",
+     "Scientists choose when animal tests are needed.",
+     "Animal testing continues for human lives."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "we should only allow the exact tests that science truly needs, and try to stop the rest",
+    "correct": "We allow only necessary tests.",
     "distractors": [
-     "hurting an animal is never okay, even to save human lives",
-     "sick patients are much more important than laboratory animals",
-     "science will slowly stop using animals naturally, so we need no rules"
+     "Hurting an animal is never okay.",
+     "Sick patients are much more important.",
+     "Science will slowly stop using animals naturally, so we do not need any new rules."
     ]
    }
   ]
@@ -1066,101 +1066,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "The role of winning and losing in children's sports.",
+    "correct": "The role of competition.",
     "distractors": [
-     "The value of tough training for professional adult athletes.",
-     "How many hours children should play sports each week.",
-     "The lack of trained coaches for local kids' teams."
+     "The true value of tough physical training for professional adult athletes everywhere.",
+     "The number of sports hours for kids.",
+     "The lack of trained local coaches."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "How competition teaches kids discipline and how to recover from a loss.",
+    "correct": "The cultivation of discipline.",
     "distractors": [
-     "The belief that only sports can teach a child self-discipline.",
-     "The health benefits that regular school sports give.",
-     "The chance for good young players to join professional teams."
+     "The belief that only sports teach discipline.",
+     "The amazing health benefits that regular school sports give to all young students.",
+     "The chance for good young players."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "letting kids experience losing while adults are there to support them",
+    "correct": "The experience of loss.",
     "distractors": [
-     "putting kids under high pressure so only the strongest keep playing",
-     "doing extra fitness training so school teams can win their league",
-     "asking parents to attend every game so kids feel supported"
+     "The pressure on kids to keep playing.",
+     "The extra fitness training for school teams.",
+     "The request for parents to attend every game so kids feel fully supported by family."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "School leagues where a loss is followed by good coaching.",
+    "correct": "School leagues provide good coaching and support after a team loses a difficult match.",
     "distractors": [
-     "National teams that pick the best players at age nine.",
-     "Sports days where everyone plays and no scores are kept.",
-     "After-school clubs that teach basic rules of football."
+     "National teams pick the best players.",
+     "Sports days have no scores kept.",
+     "After-school clubs teach basic rules."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "kids only learn from losing if adults treat it as a chance to improve",
+    "correct": "Kids learn from supportive adults.",
     "distractors": [
-     "kids who never face failure give up when adults stop praising them",
-     "the discipline learned in sports also improves behaviour in class",
-     "most schools no longer have space to run a proper sports league"
+     "Kids who never face failure give up when adults stop praising them.",
+     "The discipline learned in sports also improves behaviour in class.",
+     "Most schools no longer have the required space to run a proper sports league."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The mental stress that early competition puts on very young kids.",
+    "correct": "The pressure of early competition.",
     "distractors": [
-     "The stress that professional athletes face during a long season.",
-     "The risk of injuries when kids train too hard for one sport.",
-     "The high cost to parents for travel, clothes, and club fees."
+     "The stress of professional athletes.",
+     "The high cost to parents for travel, clothes, and club fees for junior sports teams.",
+     "The risk of injuries from training too hard."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "making a child feel their value depends only on winning",
+    "correct": "The valuation of children based completely on whether they win or lose their games.",
     "distractors": [
-     "making every child believe they are worthless if they do not win",
-     "filling the week with training so there is no time for rest",
-     "encouraging parents to shout at referees from the sidelines"
+     "The belief in worthlessness without winning.",
+     "The lack of time for rest and homework.",
+     "The encouragement for angry parents."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Many teenagers quitting sports because of stress before games.",
+    "correct": "Teenagers quit sports.",
     "distractors": [
-     "Adults who stop going to the gym because they hate being compared.",
-     "Junior clubs charging high fees and blocking out poor kids.",
-     "Kids who play video games instead of joining a sports team."
+     "Adults stop going to the gym because they hate being compared to other people.",
+     "Junior clubs charge high fees.",
+     "Kids play video games instead of sports."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "most of this stress comes from how adults act, not from the game itself",
+    "correct": "Bad adult behavior causes stress.",
     "distractors": [
-     "young players who are afraid to fail often sleep badly before games",
-     "kids who feel stressed in sports usually feel stressed about exams too",
-     "team sports cause much more stress for kids than individual sports"
+     "Young players who are afraid to fail often sleep badly before games.",
+     "Team sports cause much more stress for kids than individual sports ever do in life.",
+     "Kids stressed in sports stress over exams."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "schools should keep competition but focus on personal improvement instead of winning",
+    "correct": "Schools keep fun competition but focus on personal improvement instead of just winning.",
     "distractors": [
-     "competitive sports should be banned until kids are sixteen years old",
-     "kids should compete freely because that is how the best players are found",
-     "sports should be organized so that scores are never kept"
+     "Competitive sports are banned until age sixteen.",
+     "Kids compete freely to find the best players.",
+     "Sports are organized with no scores kept."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "the value of sport depends on how adults teach competition",
+    "correct": "Adult guidance creates value.",
     "distractors": [
-     "competition is the only thing that prepares kids for adult life",
-     "kids who enjoy sports are more likely to stay active as adults",
-     "stress in childhood always causes permanent mental damage"
+     "Competition prepares kids for adult life.",
+     "Kids who enjoy sports stay active as adults.",
+     "Stress in childhood always causes permanent mental damage that ruins a person's life."
     ]
    }
   ]
@@ -1172,101 +1172,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "Government rules on showing ads to children.",
+    "correct": "The regulation of children's advertisements.",
     "distractors": [
-     "The amount of time kids spend watching TV and online videos.",
-     "The influence of famous sports stars on the clothes teens buy.",
-     "How schools teach kids to save their pocket money."
+     "The exact amount of time kids spend watching TV and online videos every single day.",
+     "The influence of famous sports stars.",
+     "The teaching of pocket money savings."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The argument for banning all ads aimed at young people.",
+    "correct": "The prohibition of youth marketing.",
     "distractors": [
-     "The argument for banning junk food ads shown to adults.",
-     "The demand for stricter rules on the price of kids' toys.",
-     "The wish of parents to control what their kids watch at home."
+     "The argument for banning junk food ads.",
+     "The wish of strict parents to easily control what their kids watch at home every day.",
+     "The demand for stricter rules on toy prices."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "keeping ads away from kids who are too young to know they are being tricked",
+    "correct": "The protection of young consumers.",
     "distractors": [
-     "protecting kids from any message that might change their choices",
-     "reducing the amount of junk food that supermarkets can sell",
-     "giving parents the power to block TV channels"
+     "The protection from any choice influence.",
+     "The reduction of junk food in supermarkets.",
+     "The ability for parents to block certain TV channels from showing ads to their kids."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Laws that ban ads during children's TV shows in Sweden.",
+    "correct": "Sweden bans TV ads during children's shows to keep young kids away from being tricked.",
     "distractors": [
-     "Rules that completely ban ads for alcohol at all times.",
-     "Warning labels printed on toys that have small pieces.",
-     "School lessons that teach how supermarkets trick shoppers."
+     "Rules completely ban ads for alcohol.",
+     "Warning labels print on small toys.",
+     "School lessons teach supermarket tricks."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "banning TV ads fails because companies just use internet influencers instead",
+    "correct": "Influencer ads bypass TV rules.",
     "distractors": [
-     "advertising to kids should be banned in every country immediately",
-     "kids who see fewer ads ask for fewer expensive toys",
-     "most parents already limit how many hours their kids watch TV"
+     "Advertising to kids should be banned in every country immediately.",
+     "Kids who see fewer ads ask for fewer expensive toys.",
+     "Most parents already limit how many hours their kids watch television during the week."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The value of ads in teaching kids how the real world works.",
+    "correct": "The value of market education.",
     "distractors": [
-     "The right of businesses to show ads to any group they choose.",
-     "The money that ads bring in to pay for free kids' TV shows.",
-     "The chance for kids to compare prices and learn the value of money."
+     "The right of businesses to show ads.",
+     "The money that ads bring in to pay for completely free kids' TV shows and websites.",
+     "The chance for kids to compare prices."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "letting kids see ads safely so parents can teach them how to ask questions",
+    "correct": "The introduction to real choices by letting kids see ads safely with their parents.",
     "distractors": [
-     "letting kids buy whatever they want so they learn from mistakes",
-     "showing kids which brands are the most popular among their friends",
-     "training shop workers to explain product labels to young kids"
+     "The freedom to buy anything and learn.",
+     "The display of popular brands among friends.",
+     "The training of shop workers to explain labels."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "School lessons that teach students how to spot tricks used in ads.",
+    "correct": "Schools teach media lessons.",
     "distractors": [
-     "University courses that teach students how to design good ads.",
-     "Parents talking about why a cereal box uses bright colours.",
-     "Rules forcing ads to show the full price of a product."
+     "University courses teach students how to design good ads.",
+     "Rules force ads to show the full price of a product.",
+     "Parents talk about why a cereal box uses very bright colours and a friendly cartoon."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "kids under eight cannot tell the difference between a TV show and an ad",
+    "correct": "Young kids believe all ads.",
     "distractors": [
-     "no child of any age is able to resist a well-made TV ad",
-     "advertising teaches kids to want things their families cannot afford",
-     "companies collect data about the videos that young viewers watch"
+     "No child of any age is able to resist a well-made TV ad.",
+     "Companies collect a huge amount of private data about the videos that young kids watch.",
+     "Advertising teaches kids to want expensive things."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "ads should be banned for young kids but allowed for older ones if they are taught about them",
+    "correct": "Governments ban ads for young kids but allow them for older kids if they are taught well.",
     "distractors": [
-     "all ads aimed at anyone under eighteen should be banned everywhere",
-     "companies should be free to advertise to kids if their claims are true",
-     "schools alone should decide which brands can speak to their students"
+     "All ads for kids are banned everywhere.",
+     "Companies advertise if their claims are true.",
+     "Schools alone decide which brands can speak."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "the rules should depend on the child's age, because older kids understand ads better",
+    "correct": "Age changes ad rules.",
     "distractors": [
-     "kids must be protected from every ad until they leave school",
-     "parents rather than governments should decide what kids can watch",
-     "advertising is the main reason why kids eat too much sugar"
+     "Kids must be protected from every ad.",
+     "Parents rather than governments should decide.",
+     "Advertising remains the absolute biggest reason why so many kids eat too much sugar."
     ]
    }
   ]
@@ -1278,101 +1278,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "What happens to small languages when everyone starts speaking a common one.",
+    "correct": "The disappearance of small languages.",
     "distractors": [
-     "The spread of English as the main language of global business.",
-     "The cost of translating government documents into every language.",
-     "The hard time immigrants face when learning a new language."
+     "The massive spread of English as the main language of global business around the world.",
+     "The cost of translating government documents.",
+     "The hard time immigrants face with languages."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "Accepting fewer languages so people can talk to each other more easily.",
+    "correct": "The acceptance of fewer languages.",
     "distractors": [
-     "The belief that one world language would stop all fights between countries.",
+     "The belief that one world language would stop all fights.",
      "The time and money companies save when workers share a language.",
-     "The wish of young people to learn languages to get good jobs."
+     "The wish of young people to learn specific languages to get the best jobs possible."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "saving the time and money spent on translations and misunderstandings",
+    "correct": "The reduction of translation costs.",
     "distractors": [
-     "removing the need for anyone to learn a second language",
-     "allowing scientists in different countries to read each other's work",
-     "helping companies trade without hiring translators for meetings"
+     "The removal of the need for anyone to learn a second language.",
+     "The ability for scientists to read work directly.",
+     "The help for companies to trade easily across borders without hiring translators for meetings."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Using one shared language in science papers and airplane control.",
+    "correct": "Scientists use one shared language in their papers to share ideas across the whole world.",
     "distractors": [
-     "Teaching English as a second language in almost every school.",
-     "The improvement of translation apps on mobile phones.",
-     "Several countries deciding to make English an official language."
+     "Schools teach English as a second language.",
+     "Mobile phone translation apps improve.",
+     "Countries make English an official language."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "losing a language is sad, because people often lose their culture too",
+    "correct": "Language loss ruins local culture.",
     "distractors": [
-     "small languages die out fastest in countries with bad schools",
-     "a common language allows workers to move to another country",
-     "young people stop using their home language because of jobs"
+     "Small languages die out fastest in countries with bad schools.",
+     "A common language allows workers to move to another country.",
+     "Young people stop using their native home language entirely because of a lack of jobs."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "Using public money to bring dying languages back into daily use.",
+    "correct": "The preservation of dying languages.",
     "distractors": [
-     "The duty of every citizen to learn the oldest language in their country.",
-     "Protecting traditional music and art through government money.",
-     "Recording dying languages before they completely disappear."
+     "The duty of every citizen to learn the oldest language.",
+     "The protection of traditional music and beautiful old art through government grant money.",
+     "The recording of dying languages before they disappear."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "helping parents teach the language to their children through schools and radio",
+    "correct": "The education of children in the local language through schools and special radio stations.",
     "distractors": [
-     "forcing every public worker to do business in the local language",
-     "paying experts to write a full dictionary for the language",
-     "encouraging tourists to visit so they hear the local language"
+     "The rule for every public worker to do business.",
+     "The payment for experts to write a full dictionary.",
+     "The encouragement for tourists to visit the area."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Special schools and radio stations that brought Welsh back into use.",
+    "correct": "Radio stations bring Welsh back.",
     "distractors": [
-     "Museums that show old books written in dead languages.",
-     "Government offices that must serve the public in two languages.",
-     "Festivals that celebrate traditional songs in an old language."
+     "Museums show old books written in dead languages.",
+     "Festivals celebrate traditional songs in an old language.",
+     "Government offices must serve the public in two totally different languages every day."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "a language can only be saved if people still find it useful in their daily lives",
+    "correct": "A language needs daily use.",
     "distractors": [
-     "a language can only be saved if the government makes it required",
-     "money spent on small languages could be used for maths teachers",
-     "some communities argue over which spelling should be taught"
+     "A language can only be saved if the government makes it required.",
+     "Money spent on small languages could be used to hire a lot of new maths teachers instead.",
+     "Some communities argue over which spelling is better."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "governments should spend money to protect languages if people want them, and encourage bilingualism",
+    "correct": "Governments protect wanted languages and encourage people to learn two different languages.",
     "distractors": [
-     "every government must spend whatever it takes to save every language",
-     "languages should survive or die based on how useful people find them",
-     "schools should teach only the national language so everyone understands each other"
+     "Every government must spend whatever it takes.",
+     "Languages survive or die based on usefulness.",
+     "Schools teach only the national language for unity."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "diversity and global communication can work together because one person can speak two languages",
+    "correct": "Bilingual speakers connect the world.",
     "distractors": [
-     "no language anywhere should ever be allowed to disappear",
-     "a country with many languages will struggle to build a shared identity",
-     "children who speak two languages usually get better grades at school"
+     "No language anywhere should ever be allowed to disappear.",
+     "Children who speak two languages usually get better grades.",
+     "A country with many languages will always deeply struggle to build a shared identity."
     ]
    }
   ]
@@ -1384,101 +1384,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "Which type of history schools should teach.",
+    "correct": "The selection of history topics.",
     "distractors": [
-     "How history teachers are trained and tested.",
-     "The amount of time given to history in a busy school schedule.",
-     "Whether history classes should be required after age fourteen."
+     "The way that history teachers are trained and tested in state secondary schools today.",
+     "The amount of time given to history classes.",
+     "The debate on requiring history after age fourteen."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "Limiting history lessons to only the student's own country.",
+    "correct": "The restriction to national history.",
     "distractors": [
-     "Teaching history by focusing on famous leaders.",
-     "Parents demanding more lessons about military victories.",
-     "Teaching local history using town records."
+     "The teaching of history by focusing on famous leaders.",
+     "The demand from angry parents for many more lessons about the country's military victories.",
+     "The teaching of local history using town records."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "building a shared story that connects a student to their home country",
+    "correct": "The connection to national identity.",
     "distractors": [
-     "teaching students that their own country is better than its neighbours",
-     "making sure students can name the main dates of their own country",
-     "showing students how the laws of their town developed"
+     "The teaching that one's own country is better than its neighbours.",
+     "The requirement for students to name the main dates.",
+     "The demonstration of how the very old laws of the town developed slowly over many centuries."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "School courses based on the political growth of the home nation.",
+    "correct": "Schools teach national growth by showing students how their own country formed its laws.",
     "distractors": [
-     "Lessons on the founding documents of a major world power.",
-     "School trips to castles and museums within the student's region.",
-     "Exams that test knowledge of national dates."
+     "Lessons explain the founding of a world power.",
+     "School trips visit local castles and museums.",
+     "Exams test knowledge of important national dates."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "teaching only national history can hide the bad things a country has done",
+    "correct": "Pure national history hides facts.",
     "distractors": [
-     "national history is always written by the winners",
-     "many students say that lessons about their own country are fun",
-     "national history gives students a sense of belonging"
+     "National history is always written by the winners of the wars.",
+     "Many students say that lessons about their own country are fun.",
+     "National history gives students a very strong sense of belonging to their local community."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "Giving priority to world history rather than just the student's own country.",
+    "correct": "The prioritization of world history.",
     "distractors": [
-     "Teaching foreign languages alongside history.",
-     "Studying ancient societies like Egypt, Greece, and Rome.",
-     "Comparing how different countries experienced war and trade."
+     "The teaching of foreign languages alongside history.",
+     "The deep comparison of how different countries completely experienced war and global trade.",
+     "The study of ancient societies like Egypt and Rome."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "giving students a way to compare countries so they understand modern conflicts",
+    "correct": "The comparison of different countries to help students understand modern global conflicts.",
     "distractors": [
-     "teaching students that all countries have contributed equally",
-     "asking students to memorize the main events of every continent",
-     "introducing students to historians who write about many countries"
+     "The teaching that all countries have contributed equally.",
+     "The requirement for students to memorize the main events.",
+     "The introduction to historians who write about many countries."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Lessons on empires and industry that explain today's global relationships.",
+    "correct": "Lessons explain global empires.",
     "distractors": [
-     "Lessons about the world wars taught from one nation's perspective.",
-     "Projects where students research their own family's migration.",
-     "Exchange visits that let students study history abroad."
+     "Lessons about the world wars are taught from one nation's perspective.",
+     "Projects ask students to research their own family's migration.",
+     "Exchange visits let students study history in a totally different partner school abroad."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "teaching all of world history can be too shallow and leave students confused",
+    "correct": "Deep world history confuses students.",
     "distractors": [
-     "world history is too difficult for students to understand",
-     "there are not enough teachers trained to teach other continents",
-     "students who study world history lose interest in their own country"
+     "World history is too difficult for students to understand.",
+     "There are not enough well trained teachers to teach the history of other continents today.",
+     "Students who study world history lose interest in their own country."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "schools should teach national history as one part of a bigger global story",
+    "correct": "Schools teach a mixed history by putting the national story inside a bigger global picture.",
     "distractors": [
-     "schools should drop national history completely and teach only global themes",
-     "students should study their own country first and learn world history later",
-     "each school should be free to choose whichever version of history it prefers"
+     "Schools drop national history completely for global themes.",
+     "Students study their own country first and learn world history later.",
+     "Each school is completely free to choose whichever version of history it prefers to teach."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "history connects many nations, so teaching only one country's story is not accurate",
+    "correct": "History connects many different nations.",
     "distractors": [
-     "national pride is the main reason that governments pay for history teaching",
-     "students remember more when a lesson links the past to today's news",
-     "world history is more important than national history in a connected world"
+     "National pride is the main reason governments pay.",
+     "Students remember more when a lesson links the past to today's news.",
+     "World history is much more important than national history in a highly connected modern world."
     ]
    }
   ]
@@ -1490,101 +1490,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "Who should pay and care for older people.",
+    "correct": "The responsibility for elderly care.",
     "distractors": [
-     "The rising cost of medical treatment for hospital patients.",
+     "The rapidly rising cost of medical treatment for all the different hospital patients today.",
      "The shortage of trained nurses working in care homes.",
      "The question of when older workers should retire."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "Treating the care of older people as a duty of the whole society.",
+    "correct": "The treatment of care as a public duty.",
     "distractors": [
      "The duty of the government to provide free medical treatment.",
-     "Paying a state pension to everyone who retires.",
-     "Building more care homes in areas with old populations."
+     "The payment of a state pension to everyone who retires.",
+     "The construction of many more care homes in areas with very old populations in the country."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "sharing the cost across society so families do not lose all their money during an illness",
+    "correct": "The sharing of social costs.",
     "distractors": [
-     "removing the need for relatives to care for older family members",
-     "paying trained staff to give the medical care that relatives cannot provide",
-     "allowing older people to stay in their own homes with regular nurse visits"
+     "The removal of the need for relatives to care for older family members.",
+     "The payment of trained staff to give the medical care that relatives cannot provide.",
+     "The allowance for older people to stay in their own homes with regular visiting nurses."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "National care insurance paid for by everyone, like in Japan.",
+    "correct": "Japan uses national care insurance paid for by everyone to help older people stay healthy.",
     "distractors": [
-     "Free hospital treatment for any citizen who becomes seriously ill.",
-     "Government grants that help a family fix a bathroom for an older relative.",
-     "Care homes run by local councils and paid for using taxpayer money."
+     "Free hospital treatment cures any seriously ill citizen.",
+     "Government grants help a family fix a bathroom.",
+     "Care homes run on local taxpayer money."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "care homes provide safety but can leave older people feeling very lonely",
+    "correct": "Care homes make people lonely.",
     "distractors": [
-     "government care can never match the care given by a loving family",
-     "relatives who care for an older parent often have to quit their jobs",
-     "many older people prefer to stay in the house where they raised their kids"
+     "Government care can never match the care given by a loving family.",
+     "Many older people prefer to stay in the house where they raised their kids.",
+     "Relatives who care for an older parent at home very often have to quit their paid jobs."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "Placing the duty of care completely on the older person's family.",
+    "correct": "The placement of duty on families.",
     "distractors": [
      "The duty of adult children to support their parents with money.",
-     "The tradition of several generations living in the same house.",
-     "The wish of many older people to be looked after by people they know."
+     "The tradition of several generations living in the exact same house together for many years.",
+     "The wish of older people to be looked after by familiar people."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "keeping families close and building a sense of duty between generations",
+    "correct": "The maintenance of family bonds and the building of a strong sense of duty between ages.",
     "distractors": [
-     "saving the government the entire cost of looking after its older citizens",
-     "making sure that grandchildren learn respect by helping to care",
-     "keeping an older relative at home where familiar rooms reduce confusion"
+     "The savings for the government looking after older citizens.",
+     "The education of grandchildren to learn respect by helping to care.",
+     "The retention of an older relative at home where familiar rooms reduce confusion."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Households where adult children provide daily care while also working.",
+    "correct": "Adult children provide daily care.",
     "distractors": [
-     "Adults who quit their jobs for several years to nurse a parent.",
-     "Families who pay a private nurse to visit an older relative.",
-     "Neighbours and friends who take turns checking on an older person."
+     "Adults quit their jobs for several years to nurse a parent.",
+     "Families pay a private nurse to visit an older relative.",
+     "Neighbours and friends take turns checking on an older person who lives completely alone."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "leaving care entirely to families puts too much pressure on women",
+    "correct": "Pure family care burdens women.",
     "distractors": [
-     "family care always works better than any care the government organizes",
-     "older people cared for at home by relatives usually feel much happier",
-     "the cost of professional home care has risen faster than family incomes"
+     "Family care always works better than any care the government organizes.",
+     "The cost of professional home care has risen much faster than the average family incomes.",
+     "Older people cared for at home by relatives usually feel much happier."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "the government should provide basic medical care, while families give emotional support",
+    "correct": "The government provides basic care, while families give emotional support to older people.",
     "distractors": [
-     "families must take full responsibility for their older relatives without state help",
-     "the government should pay for everything so families are never involved",
-     "older people should save enough money to pay for their own care"
+     "Families take full responsibility without state help.",
+     "The government pays for everything to exclude families.",
+     "Older people save enough money to pay for their own care."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "growing old comfortably needs both the safety of government money and family love",
+    "correct": "Good aging needs both supports.",
     "distractors": [
-     "no government has enough money to care for all its older citizens",
-     "family care costs the taxpayer much less than a state-run care home",
-     "older people should be free to choose who will look after them"
+     "No government has enough money to care for all its older citizens.",
+     "Family care costs the taxpayer much less than a state-run care home.",
+     "Older people should be completely free to choose who will look after them in their final years."
     ]
    }
   ]
@@ -1596,101 +1596,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "Using science to change crops to feed the world.",
+    "correct": "The modification of farm crops.",
     "distractors": [
-     "The role of chemical sprays in raising farm food production.",
+     "The huge role of chemical sprays in raising the total food production on all modern farms.",
      "The effect of a changing climate on the food farmers can grow.",
      "The power that a few large companies have over farm seeds."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The claim that modified crops are needed to feed a growing world population.",
+    "correct": "The necessity of modified crops.",
     "distractors": [
      "The claim that modern farming can end hunger everywhere by 2050.",
-     "The need to turn more forests into farmland for food production.",
+     "The need to turn more forests into farmland for massive food production across the world.",
      "The value of new farming machines in growing more food."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "making plants stronger against dry weather and insects so farmers grow more food",
+    "correct": "The improvement of plant strength.",
     "distractors": [
-     "removing the need for farmers to use any chemical sprays",
-     "allowing farmers to grow two full harvests each year",
-     "reducing the price of food in shops across the poorest areas"
+     "The removal of the need for farmers to use any chemical sprays.",
+     "The ability for farmers to grow two full harvests each year.",
+     "The reduction of the price of food in shops across the poorest areas of the entire world."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Vitamin-rich and tough food crops grown on land where normal plants fail.",
+    "correct": "Tough crops grow in deserts and feed people where normal plants fail because of bad weather.",
     "distractors": [
-     "Greenhouses that grow vegetables all year long in cold countries.",
-     "Rice types bred by old methods to produce a slightly larger grain.",
-     "Fertilizer programmes that have increased wheat harvests in Asia."
+     "Greenhouses grow vegetables in cold countries.",
+     "Traditional breeding creates a slightly larger grain.",
+     "Fertilizer programmes increase wheat harvests in Asia."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "hunger is mostly caused by poverty and bad food delivery, not a lack of food",
+    "correct": "Bad delivery causes most hunger.",
     "distractors": [
-     "tough seeds already feed families on land where older crops fail",
-     "modified crops have already increased harvests in India and Brazil",
-     "the world population is expected to keep growing for a long time"
+     "Tough seeds already feed families on land where older crops completely fail to grow well.",
+     "Modified crops have already increased harvests in India and Brazil.",
+     "The world population is expected to keep growing for a long time."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The unknown risks that these crops might pose to human health and nature.",
+    "correct": "The risk to human health.",
     "distractors": [
      "The known danger of farm chemicals to bees and helpful insects.",
-     "The loss of old farming skills in towns that use new modern seeds.",
+     "The complete loss of old farming skills in towns that use the new modern seeds every year.",
      "The harm to wild plants and animals living near large crop fields."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "putting artificial plants into nature where their long-term effects are unknown",
+    "correct": "The release of artificial plants into nature where their long term effects remain unknown.",
     "distractors": [
-     "putting chemicals into food that no scientific study has proven safe",
-     "spreading pollen from modified fields onto nearby natural organic farms",
-     "giving a few big companies complete control over the seeds farmers use"
+     "The insertion of chemicals into food that no scientific study has proven safe.",
+     "The spread of pollen from modified fields onto nearby natural organic farms.",
+     "The provision of complete control over seeds to a few big companies."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Modified crops that survive strong weedkillers, creating tough weeds.",
+    "correct": "Modified crops create tough weeds.",
     "distractors": [
-     "Insects that have become immune to the chemical sprays used on farms.",
-     "Farms that now grow a single plant type across thousands of acres.",
-     "Weedkillers that are used in much larger amounts on modified crops."
+     "Insects become immune to the chemical sprays used heavily on most of the normal farms.",
+     "Farms now grow a single plant type across thousands of acres.",
+     "Weedkillers are used in much larger amounts on modified crops."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "farmers have already been changing plant genes through old farming for thousands of years",
+    "correct": "Traditional farmers change genes too.",
     "distractors": [
-     "no modified crop has ever been proven to harm a human being",
-     "the countries that grow the most modified crops report no increase in illness",
-     "modified crops grown across huge fields leave wildlife with less food"
+     "No modified crop has ever been proven to harm a human being.",
+     "The countries that grow the most modified crops report no increase in strange human illnesses.",
+     "Modified crops grown across huge fields leave wildlife with less food."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "governments should allow modified crops only after strict safety tests",
+    "correct": "Governments test crops strictly and only allow safe modified seeds to help feed the world.",
     "distractors": [
-     "modified crops should be banned until every possible risk is ruled out",
-     "modified crops should be planted everywhere as fast as possible to end hunger",
-     "farmers alone should decide which seeds to plant without government rules"
+     "Modified crops are banned until risks vanish.",
+     "Modified crops are planted everywhere fast.",
+     "Farmers choose seeds without government rules."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "the real danger is how these crops are controlled by big companies, not the science itself",
+    "correct": "Big companies pose the real danger.",
     "distractors": [
-     "no new technology should be used until every scientist agrees it is safe",
-     "hunger will only end when poor countries are able to buy food",
-     "farmers in poor countries deserve the same modern tools that richer farmers use"
+     "No new technology should be used until every scientist agrees it is safe.",
+     "Hunger will only end when poor countries are able to buy food.",
+     "Farmers in poor countries deserve the very same modern tools that richer farmers use today."
     ]
    }
   ]
@@ -1702,101 +1702,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "The purpose of public libraries in the internet age.",
+    "correct": "The purpose of public libraries.",
     "distractors": [
-     "The place of printed books in a world where most reading is on a screen.",
-     "Comparing reading a printed book to reading a text online.",
+     "The place of printed books in a modern world where most reading is done on a computer screen.",
+     "The comparison of reading a printed book to reading a text online.",
      "The cost of running local community services during budget cuts."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The idea that library buildings are no longer needed now that information is online.",
+    "correct": "The obsolescence of library buildings.",
     "distractors": [
      "The idea that nobody needs to enter a library building for any reason.",
-     "The growth of online bookstores that deliver printed books in one day.",
+     "The massive growth of online bookstores that deliver printed books to your house in one day.",
      "The falling number of trained librarians employed by local councils."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "letting people find information easily from home without needing to travel",
+    "correct": "The convenience of home searches.",
     "distractors": [
-     "using free websites that researchers read without entering a library",
-     "replacing every printed reference book with a free digital copy",
-     "training local people to search online so they stop asking library staff"
+     "The use of free websites that researchers read without entering a library.",
+     "The replacement of every printed reference book with a free digital copy.",
+     "The training of local people to search online so they stop asking library staff for help."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Free online collections that researchers use without ever going to a library.",
+    "correct": "Researchers use free online websites to find facts quickly without going to a library.",
     "distractors": [
-     "Online news websites that people read instead of buying a printed paper.",
-     "University libraries that now stay open for much longer hours.",
-     "Bookshops that offer coffee and comfortable seating to attract customers."
+     "People read online news instead of papers.",
+     "University libraries stay open for longer hours.",
+     "Bookshops offer coffee to attract customers."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "finding information online only helps people who have a good computer and internet",
+    "correct": "Online searches require good computers.",
     "distractors": [
-     "many older readers still prefer the physical feel of a printed book",
-     "no country has ever managed to put all of its books onto the internet",
-     "library buildings are very expensive to heat during the winter"
+     "Many older readers still greatly prefer the physical feel of a printed book over a digital screen.",
+     "No country has ever managed to put all of its books onto the internet.",
+     "Library buildings are very expensive to heat during the winter."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The library as a shared public space that stays open to everyone.",
+    "correct": "The provision of a public space.",
     "distractors": [
      "The library as a quiet place where students can study for exams.",
-     "The value of printed books that people can borrow for free.",
-     "The duty of local councils to provide free entertainment for families."
+     "The strict duty of local councils to provide free entertainment for families on the weekends.",
+     "The value of printed books that people can borrow for free."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "providing a free public space with helpful staff and computers for everyone",
+    "correct": "The supply of free computers and a public space with helpful staff for everyone to use.",
     "distractors": [
-     "giving every citizen a place to go where they do not have to buy anything",
-     "lending printed books to readers who cannot afford to buy new ones",
-     "employing local people so that the council supports jobs in the area"
+     "The provision of a place where people do not have to buy anything.",
+     "The loan of printed books to readers who cannot afford to buy new ones.",
+     "The employment of local people so that the council supports jobs in the area."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Library branches used for job searches, language classes, and free internet.",
+    "correct": "Libraries offer free language classes.",
     "distractors": [
-     "Library branches that hold author talks and reading groups.",
-     "Cafes and community halls that offer people a warm place to sit in winter.",
-     "Museums and art galleries that open for free to school groups."
+     "Library branches hold author talks and reading groups for retired people in the local town.",
+     "Cafes offer people a warm place to sit in winter.",
+     "Museums open for free to school groups."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "this shows that the community service is important, even if old buildings are not",
+    "correct": "Community spaces matter to people.",
     "distractors": [
-     "a shared public space can never be replaced by a private company",
-     "many people visit libraries just for the free heating in winter",
-     "online information is often false and needs a trained person to check it"
+     "A shared public space can never be replaced by a private company.",
+     "Online information is often false and needs a trained person to check it very carefully.",
+     "Many people visit libraries just for the free heating in winter."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "libraries should be funded as a mix of digital help and community space",
+    "correct": "Libraries combine digital and physical help to give the community exactly what it needs.",
     "distractors": [
-     "libraries should be funded because lending physical books is their main purpose",
-     "councils should close small branches and put the money into one large library",
-     "libraries should be run by private companies that charge members a small fee"
+     "Libraries are funded because lending books is main.",
+     "Councils close small branches for a large library.",
+     "Private companies run libraries for a small fee."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "having information is only useful if people also have the right space and help to understand it",
+    "correct": "Information needs a helpful space.",
     "distractors": [
-     "information is worth nothing unless a trained librarian explains it first",
-     "printed books will always be easier to read carefully than text on a screen",
-     "councils have a duty to provide local families with somewhere warm to relax"
+     "Information is worth nothing unless a trained librarian explains it first.",
+     "Printed books will always be easier to read carefully than text on a screen.",
+     "Councils have a strict duty to provide local families with somewhere warm and safe to relax."
     ]
    }
   ]
@@ -1808,101 +1808,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "The best way to fight climate change.",
+    "correct": "The method of climate action.",
     "distractors": [
-     "Whether climate change is caused by human actions or natural weather.",
+     "The debate on whether climate change is caused by human actions or natural weather cycles.",
      "The best way for governments to help people who lose their homes to floods.",
      "The huge cost of replacing all gas cars with electric cars."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The importance of changing personal habits to cut carbon pollution.",
+    "correct": "The importance of personal habits.",
     "distractors": [
      "The importance of teaching school children about global warming.",
-     "The growing number of homes that sort and recycle their daily waste.",
+     "The growing number of homes that sort and recycle their daily waste very carefully every week.",
      "The refusal of many people to believe that the climate is changing."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "combining millions of personal choices to force companies to change what they make",
+    "correct": "The combination of personal choices.",
     "distractors": [
-     "buying plant-based foods and putting solar panels on the family home",
-     "asking every single family in the country to stop flying and driving",
-     "making people feel guilty about their carbon footprint when they fly"
+     "The purchase of plant-based foods and solar panels.",
+     "The request for every single family in the country to stop flying and driving long distances.",
+     "The shaming of people about their carbon footprint when they fly."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Shopper demand that has made plant-based foods and home solar panels popular.",
+    "correct": "Shopper demand makes solar popular because people choose to buy green energy for their homes.",
     "distractors": [
-     "Government money that helps homes install solar panels on roofs.",
-     "Supermarkets removing plastic packaging from fruits and vegetables.",
-     "Charities planting new forests on empty land bought from farmers."
+     "Government money helps homes install solar panels.",
+     "Supermarkets remove plastic packaging.",
+     "Charities plant new forests on empty land."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "personal pollution depends mostly on public transport and energy that people cannot control",
+    "correct": "Personal pollution depends on public energy.",
     "distractors": [
-     "people are never willing to give up a comfortable life to help the earth",
-     "shoppers in rich countries still buy cheap goods flown in from faraway",
-     "recycling rules change so much that very few people know which bin to use"
+     "People are never willing to give up a comfortable life just to help the earth stay slightly clean.",
+     "Shoppers in rich countries still buy cheap goods flown in from faraway.",
+     "Recycling rules change so much that very few people know which bin to use."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The need for strong government laws and major changes to national systems.",
+    "correct": "The necessity of strict government laws.",
     "distractors": [
      "The need for global climate agreements that every country must sign.",
-     "The duty of large businesses to publish honest reports about their pollution.",
-     "The pressure voters put on politicians to act on the environment."
+     "The intense pressure that angry voters put on politicians to act on the environment quickly.",
+     "The duty of large businesses to publish honest reports about their pollution."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "making pollution very expensive and changing national energy to green power",
+    "correct": "The taxation of pollution.",
     "distractors": [
-     "taxing gas so heavily that normal drivers cannot afford to use cars",
-     "banning all oil and gas companies from doing business inside the country",
-     "paying farmers to leave parts of their land empty of buildings and roads"
+     "The taxation of gas to stop normal drivers.",
+     "The ban on all oil and gas companies.",
+     "The payment of large amounts of money to farmers to leave their land completely empty of buildings and roads."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Carbon taxes and clean power stations that cut national pollution.",
+    "correct": "Carbon taxes cut national pollution.",
     "distractors": [
-     "Company promises to reach zero carbon emissions before the year 2050.",
-     "Local city councils that plant more trees along the main busy roads.",
-     "Fines for homes that fail to sort their rubbish into the correct recycling bins."
+     "Company promises to reach zero carbon emissions before the year 2050 are rarely kept.",
+     "Local city councils plant more trees along the main busy roads.",
+     "Fines punish homes that fail to sort their rubbish into the correct recycling bins."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "big government rules will fail without public support, which starts with personal habits",
+    "correct": "Big rules fail without public support.",
     "distractors": [
-     "governments never keep the environmental promises they make during elections",
-     "national rules on power stations cut pollution faster than personal choices",
-     "most ordinary voters know very little about how the power grid works"
+     "Governments never keep the environmental promises they make during elections.",
+     "National rules on power stations cut pollution much faster than personal choices ever could.",
+     "Most ordinary voters know very little about how the power grid works."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "governments must do the heavy lifting with laws, while personal actions build public support",
+    "correct": "Governments make the main laws, while personal actions build public support for green rules.",
     "distractors": [
-     "government rules alone will fix the problem, so personal habits do not matter",
-     "citizens should change their own habits first and then ask their governments to act",
-     "the free market should be left alone to decide which clean technologies win"
+     "Government rules alone fix the problem, so personal habits do not matter.",
+     "Citizens change their own habits first and then ask their governments to act.",
+     "The free market decides which clean technologies win."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "pollution levels are decided by large national systems, not just by people trying to do their best",
+    "correct": "Large systems decide pollution levels.",
     "distractors": [
-     "individual people can never make any real difference to a massive problem",
-     "governments have far more money available to spend on climate change",
-     "climate change is a global issue and can only be solved through world agreements"
+     "Individual people can never make any real difference to a massive problem.",
+     "Governments have far more money available to spend on climate change.",
+     "Climate change is a massive global issue and can only be solved through strict world agreements."
     ]
    }
   ]
@@ -1914,101 +1914,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "The rules for designing new buildings in old city areas.",
+    "correct": "The design of new buildings.",
     "distractors": [
-     "The best way to repair old historic buildings that are falling apart.",
+     "The very best way to repair old historic buildings that are falling apart in the city centre.",
      "The shortage of new homes in cities where land is very expensive.",
      "The choice between building tall towers and spreading outwards."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The duty of new buildings to fit in with the older streets around them.",
+    "correct": "The mimicry of old styles.",
     "distractors": [
      "The duty of architects to perfectly copy the oldest building on the street.",
-     "The need to protect historic buildings from damage during nearby construction.",
-     "The wish of local people to be asked for their opinion before plans are approved."
+     "The wish of local people to be carefully asked for their opinion before plans are ever approved.",
+     "The need to protect historic buildings from damage during nearby construction."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "matching the materials, height, and spacing of older streets so the area still looks natural",
+    "correct": "The alignment of street materials.",
     "distractors": [
-     "following strict rules that control height, front design, and materials",
-     "using local stone and brick so new buildings age like their older neighbours",
-     "hiding modern buildings behind old walls so tourists cannot see them"
+     "The obedience to strict rules that control height, front design, and materials.",
+     "The use of local stone and brick so new buildings age like their older neighbours.",
+     "The clever hiding of modern buildings behind old brick walls so tourists cannot see them at all."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Local rules that control the height, front design, and outside materials.",
+    "correct": "Local rules control building height and outside materials to keep the old street looking nice.",
     "distractors": [
-     "Building rules that set the minimum size of rooms in brand new apartments.",
-     "Grants that help the owners of historic houses repair their original windows.",
-     "Planning decisions that refuse to allow tall modern towers inside the old city walls."
+     "Building rules set the minimum size of rooms in brand new apartments.",
+     "Grants help the owners of historic houses repair their original windows.",
+     "Planning decisions refuse to allow tall modern towers inside the old city walls."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "copying old styles exactly can look fake, because real historic areas grew naturally",
+    "correct": "Fake old styles look unnatural.",
     "distractors": [
-     "no new building should ever be allowed to copy the style of a past century",
-     "old buildings are often dark inside and difficult to change into modern offices",
-     "historic districts attract far more tourists than modern business districts do"
+     "No new building should ever be allowed to copy the style of a past century.",
+     "Old buildings are often dark inside and difficult to change into modern offices.",
+     "Historic districts attract far more tourists than modern business districts do."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "Encouraging clearly modern designs for important new public buildings.",
+    "correct": "The encouragement of modern designs.",
     "distractors": [
      "Encouraging cheaper building methods that speed up construction work.",
-     "The freedom of rich builders to construct whatever will earn the most money.",
+     "The freedom of rich builders to easily construct whatever will earn the most money for them.",
      "The use of modern glass and steel because these materials last longer than stone."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "letting each new generation show its own skills and style in the buildings it creates",
+    "correct": "The expression of new skills.",
     "distractors": [
-     "letting architects design whatever they like without rules from city planners",
-     "using modern engineering so tall towers can be built on very small spaces",
-     "attracting attention to a city through one amazing building on a postcard"
+     "The allowance for architects to design whatever they like without rules from city planners.",
+     "The use of modern engineering so tall towers can be built on very small spaces.",
+     "The attraction of global attention to a city through one completely amazing building on a postcard."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Bold and modern public buildings built directly inside historic city centres.",
+    "correct": "Bold buildings sit in old cities.",
     "distractors": [
-     "New business areas full of glass towers built outside the historic centre.",
+     "New business areas full of glass towers are built far outside the historic centre.",
      "Old empty factories changed into modern apartments with brick walls left in place.",
-     "New shopping centres that are carefully designed to look like old market halls."
+     "New shopping centres are carefully designed to look like old market halls."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "modern buildings that ignore their surroundings might look cool alone, but they ruin the street",
+    "correct": "Strange buildings ruin the street.",
     "distractors": [
-     "modern architecture is almost always disliked by the ordinary people who live nearby",
-     "flat roofs and large windows suit hot countries much better than cold cities",
-     "tall towers made of steel and glass are very expensive to heat and cool"
+     "Modern architecture is almost always disliked by the ordinary people who live nearby.",
+     "Flat roofs and large windows suit hot countries much better than cold cities.",
+     "Tall towers made of steel and glass are very expensive to heat and cool."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "planners should control the size and materials, but let the architect choose the modern style",
+    "correct": "Planners control the building size, but architects choose a modern style that fits the space.",
     "distractors": [
-     "planners should control every part of a design so new work matches the old exactly",
-     "architects should be completely free to design as they wish in any part of the city",
-     "historic centres should be left unchanged and all new buildings moved to the edge of town"
+     "Planners control every part of a design so new work matches the old exactly.",
+     "Architects design freely in any part of the city.",
+     "Historic centres are left unchanged and all new buildings move to the edge of town."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "a city is interesting because people can see the different historical periods in its buildings",
+    "correct": "A city shows different times.",
     "distractors": [
-     "old historic buildings are the only part of a city that tourists really want to see",
-     "modern designs will always be cheaper and much faster to build than traditional ones",
-     "local people should be the ones to decide what every new building in their area looks like"
+     "Old historic buildings are the only part of a city that tourists really want to see.",
+     "Modern designs will always be cheaper and much faster to build than traditional ones.",
+     "Local people should always be the ones to finally decide what every new building in their area looks like."
     ]
    }
   ]
@@ -2020,101 +2020,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "What happens to the economy when the minimum wage goes up.",
+    "correct": "The impact of wage increases.",
     "distractors": [
-     "The large gap between the pay of company bosses and their lowest paid workers.",
+     "The surprisingly large gap between the pay of company bosses and their lowest paid workers.",
      "The reasons why some workers earn much less than others doing the same job.",
      "The amount of tax that governments should collect from the largest companies."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The reduction of poverty and the boost to spending that higher pay brings.",
+    "correct": "The reduction of poverty.",
     "distractors": [
      "The reduction of poverty through monthly benefit payments for poor families.",
-     "The improvement in the health of workers who no longer worry about paying rent.",
+     "The improvement in the general health of workers who no longer worry about paying rent.",
      "The chance for workers to join a union and fight for better working conditions."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "giving more money to poor workers who will spend it locally and need less government help",
+    "correct": "The distribution of money to workers.",
     "distractors": [
-     "giving workers more money so they can afford to save up for their retirement",
-     "forcing companies to share their yearly profits equally among all employees",
-     "raising the pay of every single worker in the country by the exact same percentage"
+     "The provision of money to workers so they can afford to save up for their retirement.",
+     "The requirement for companies to share their yearly profits equally among all employees.",
+     "The adjustment of the pay of every single worker in the country by the exact same percentage."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Places where slow pay increases raised family incomes without a clear loss of jobs.",
+    "correct": "Slow pay increases help families buy food without causing local shops to fire their workers.",
     "distractors": [
-     "Countries where wages rose very quickly and unemployment increased as a result.",
-     "Companies that choose to pay above the legal minimum wage to keep good staff.",
-     "Cities where rent prices fell after several large new blocks of apartments were built."
+     "Countries where wages rose very quickly saw unemployment increase as a result.",
+     "Companies choose to pay above the legal minimum wage to keep good staff.",
+     "Cities saw rent prices fall after several large new blocks of apartments were built."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "higher pay only helps if it matches what local businesses can actually afford",
+    "correct": "Higher pay needs successful businesses.",
     "distractors": [
-     "the gain disappears completely as soon as prices in the local shops begin to rise",
-     "higher pay allows families to spend much more money in their local shops",
-     "workers in poorer areas often move to richer cities in search of better wages"
+     "The gain disappears completely as soon as prices in the local shops begin to rise.",
+     "Higher pay allows families to spend much more money in their local shops.",
+     "Workers in poorer areas often move to richer cities in search of better wages."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The rise in prices and the loss of jobs that forced pay increases cause.",
+    "correct": "The loss of local jobs.",
     "distractors": [
      "The extra paperwork and legal costs that small companies face when rules change.",
-     "The unfair advantage gained by companies that move factories to cheaper countries.",
+     "The unfair advantage gained by large companies that move their factories to cheaper countries.",
      "The difficulty of measuring how much useful work each employee actually does."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "making workers too expensive to hire, which forces bosses to cut staff hours",
+    "correct": "The escalation of business costs.",
     "distractors": [
-     "making every small business in the country close down completely within a few years",
-     "requiring bosses to prove to the government that every worker is paid the right amount",
-     "reducing the taxes that companies pay so they can afford to pay higher wages"
+     "The forced closure of every small business in the country completely within a few short years.",
+     "The requirement for bosses to prove to the government that every worker is paid the right amount.",
+     "The reduction of the taxes that companies pay so they can afford to pay higher wages."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Restaurants and shops cutting staff hours and putting in self-service machines.",
+    "correct": "Shops replace staff with machines.",
     "distractors": [
-     "Factories that replace human workers with robots as the machines become cheaper.",
-     "Small local cafes that are forced to raise the price of a cup of coffee slightly.",
-     "Large supermarkets that open new stores in towns where local shops have closed."
+     "Factories replace human workers with robots as the machines become cheaper.",
+     "Small local cafes are forced to raise the price of a cup of coffee slightly.",
+     "Large supermarkets open new stores in towns where local shops have closed."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "if a small pay rise is forced by law, large powerful companies can afford it without cutting jobs",
+    "correct": "Big companies afford small pay raises.",
     "distractors": [
-     "no business anywhere has ever been forced to close because the minimum wage went up",
-     "many companies raise their prices a long time before any change to wage rules happens",
-     "young workers without any experience are the hardest group for companies to train"
+     "No business anywhere has ever been forced to close because the minimum wage went up.",
+     "Many companies raise their prices a long time before any change to wage rules happens.",
+     "Young workers without any experience are the hardest group for companies to train."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "the minimum wage should be carefully set by experts who study the needs of each local area",
+    "correct": "Experts set the minimum wage carefully so that it matches what the local businesses can afford.",
     "distractors": [
-     "the minimum wage should be raised sharply everywhere because poverty is the biggest danger",
-     "governments should let bosses decide pay and support poor families through benefits",
-     "the exact same minimum wage should apply in every part of the country without exception"
+     "The minimum wage rises sharply everywhere because poverty is the biggest danger.",
+     "Governments let bosses decide pay and support poor families through benefits.",
+     "The exact same minimum wage applies in every part of the country without exception."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "the success of a minimum wage depends on setting the right amount for local businesses",
+    "correct": "A minimum wage needs local balance.",
     "distractors": [
-     "raising pay is always the fairest answer no matter what the local economy looks like",
-     "company bosses understand their own costs much better than any government department",
-     "a strong economy needs workers who earn enough to spend freely in their local shops"
+     "Raising pay is always the fairest answer no matter what the local economy looks like.",
+     "Company bosses understand their own costs much better than any government department.",
+     "A strong economy requires workers who always earn enough money to spend freely in their local shops."
     ]
    }
   ]
@@ -2126,101 +2126,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "Teaching a foreign language to very young school children.",
+    "correct": "The introduction of foreign languages.",
     "distractors": [
-     "Teaching English as a second language to adult learners in evening classes.",
+     "The teaching of English as a second language to older adult learners in special evening classes.",
      "The benefit of learning about other countries and cultures at primary school.",
      "The number of hours that primary schools spend teaching reading and writing."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The need to protect children's basic skills in their own first language.",
+    "correct": "The protection of first language skills.",
     "distractors": [
      "The need to protect small local languages that fewer people speak today.",
-     "The shortage of trained teachers able to teach foreign languages to young children.",
+     "The very severe shortage of well trained teachers able to teach foreign languages to young children.",
      "The pressure that tests and homework already put on children in primary school."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "letting young children build strong skills in their first language before adding a second one",
+    "correct": "The consolidation of basic native skills.",
     "distractors": [
-     "waiting to teach foreign languages until children reach the normal reading level for their age",
-     "teaching grammar rules carefully so that children never make mistakes when they write",
-     "giving primary schools more time for reading and writing instead of adding new subjects"
+     "The delay of foreign languages until children reach the normal reading level for their age.",
+     "The careful teaching of grammar rules so that children never make mistakes when they write.",
+     "The provision of much more time for reading and writing instead of adding completely new subjects."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "School systems that wait to teach foreign languages until basic reading targets are met.",
+    "correct": "Schools wait for basic reading skills before they add a completely new language to the class.",
     "distractors": [
-     "School systems that teach every lesson in a foreign language from the very first year.",
-     "Schools that offer extra reading help to students who fall behind the rest of the class.",
-     "Countries where children do not start normal schooling until they are seven years old."
+     "School systems teach every lesson in a foreign language from the very first year.",
+     "Schools offer extra reading help to students who fall behind the rest of the class.",
+     "Countries delay normal schooling until children are seven years old."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "waiting until children are older means missing the best years for learning new sounds",
+    "correct": "Late language learning misses the best years.",
     "distractors": [
-     "children who study only one language never learn to respect people from other cultures",
-     "older students learn grammar faster because they already know how a language works",
-     "many parents speak a language at home that is different from the one used at school"
+     "Children who study only one language never truly learn to respect people from other different cultures.",
+     "Older students learn grammar faster because they already know how a language works.",
+     "Many parents speak a language at home that is different from the one used at school."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "Using the early years when young minds learn new languages most easily.",
+    "correct": "The utilization of early childhood years.",
     "distractors": [
-     "Using fun games and songs to make language lessons enjoyable for young children.",
-     "The value of speaking a second language when looking for a good job as an adult.",
+     "The use of fun games and songs to make language lessons enjoyable for young children.",
+     "The immense value of speaking a second language when looking for a very good job as an adult.",
      "The wish of many parents to send their children to expensive international schools."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "using the young brain's natural ability to absorb sounds and grammar easily",
+    "correct": "The absorption of sounds.",
     "distractors": [
-     "starting lessons early so that students have many more total years to study the language",
-     "teaching children a second language through play, songs, and normal classroom activities",
-     "making students repeat foreign words until they sound exactly like a native speaker"
+     "The early start of lessons so that students have many more total years to study the language.",
+     "The teaching of children through play, songs, and normal classroom activities.",
+     "The strict requirement for young students to repeat foreign words until they sound perfectly like a native speaker."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Classes where young children pick up a foreign language naturally through play.",
+    "correct": "Young kids learn through play.",
     "distractors": [
-     "Language courses where teenagers spend their summer living with a family abroad.",
-     "Online apps that let young children practice new vocabulary for a few minutes each day.",
-     "Private schools that offer an extra language to students whose parents pay a higher fee."
+     "Language courses let teenagers spend their summer living with a family abroad.",
+     "Online apps let young children practice new vocabulary for a few minutes each day.",
+     "Private schools offer an extra language to students whose parents pay a higher fee."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "badly planned language classes can stress young children and make them weak in both languages",
+    "correct": "Bad classes stress young kids.",
     "distractors": [
-     "no child has ever learned a foreign language well without actually living in the country",
-     "young children forget new words very quickly unless they practice them every single week",
-     "company bosses value a second language much less than they value good maths skills"
+     "No child has ever learned a foreign language well without actually living in the country.",
+     "Young children forget new words very quickly unless they practice them every single week of the year.",
+     "Company bosses value a second language much less than they value good maths skills."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "schools should teach languages early through fun games while still focusing on reading skills",
+    "correct": "Schools teach languages through games while still focusing heavily on basic reading skills.",
     "distractors": [
-     "schools should start languages early because young children learn much faster than adults do",
-     "schools should wait until students can read and write well before teaching a foreign language",
-     "parents rather than schools should be the ones to decide when children learn a new language"
+     "Schools start languages early because young children learn much faster than adults do.",
+     "Schools wait until students can read and write well before teaching a foreign language.",
+     "Parents rather than schools decide when children learn a new language."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "children learn best when they start early but also build strong skills in their home language",
+    "correct": "Kids need a strong native language.",
     "distractors": [
-     "children who learn two languages early always get better grades than those who learn one",
-     "language teaching is the single most valuable subject in the entire primary school schedule",
-     "modern companies expect young people to speak at least one foreign language fluently"
+     "Children who learn two languages early always get better grades than those who learn one.",
+     "Language teaching is the single most valuable subject in the entire primary school schedule.",
+     "Modern companies expect all young people to speak at least one foreign language perfectly fluently."
     ]
    }
   ]
@@ -2232,101 +2232,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "The growing amount of time children spend watching TV.",
+    "correct": "The consumption of television.",
     "distractors": [
-     "The growing number of hours adults spend watching TV each evening.",
+     "The constantly growing number of hours that busy adults spend watching TV each evening at home.",
      "The falling quality of the TV shows that companies make for children.",
      "The rising cost of paying for TV channels and internet video services."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The educational value of well-made TV shows for young viewers.",
+    "correct": "The educational value of TV.",
     "distractors": [
      "The educational value of computer games designed to teach kids maths.",
-     "The chance for families to sit down together and talk about what they watched.",
+     "The wonderful chance for families to sit down together and talk about what they just watched.",
      "The relaxation that watching TV offers children after a long day at school."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "showing the world to children and teaching them about many different topics",
+    "correct": "The expansion of children's knowledge.",
     "distractors": [
-     "showing children documentaries about science, history, and the animal world",
-     "replacing the hard work of teachers with educational shows made by TV companies",
-     "keeping young viewers quiet for an hour so their parents can finish the housework"
+     "The presentation of documentaries about science, history, and the animal world.",
+     "The replacement of the hard work of teachers with educational shows made by TV companies.",
+     "The trick of keeping young viewers perfectly quiet for an hour so their parents can finish the housework."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Science and history shows that make young minds think.",
+    "correct": "Science shows make kids think about how the entire world works in new and interesting ways.",
     "distractors": [
-     "Serious news programmes that explain world events clearly to viewers of all ages.",
-     "Advertisements that appear during the television shows made for very young children.",
-     "Sports shows that encourage children to go outside and take up a game at a local club."
+     "Serious news programmes explain world events clearly to viewers of all ages.",
+     "Advertisements appear during the television shows made for very young children.",
+     "Sports shows encourage children to go outside and take up a game at a local club."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "watching TV is a lazy activity and leaves less time for outdoor play and problem-solving",
+    "correct": "TV watching causes lazy habits.",
     "distractors": [
-     "television shows made for children are never as accurate as school textbooks",
-     "children who watch documentaries often ask their teachers questions about what they saw",
-     "parents rarely want to watch the same television programmes that their children choose"
+     "Television shows made specifically for children are never as accurate as school textbooks.",
+     "Children who watch documentaries often ask their teachers questions about what they saw.",
+     "Parents rarely want to watch the same television programmes that their children choose."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The harm to children's physical health and their social skills.",
+    "correct": "The detriment to physical health.",
     "distractors": [
      "The harm caused by violent action scenes shown on television before bed.",
-     "The influence of advertising on the unhealthy food that kids ask parents to buy.",
+     "The strong influence of advertising on the unhealthy food that young kids ask their parents to buy.",
      "The difficulty that teachers face when students arrive at school tired from late TV."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "encouraging children to sit for hours and talk less to their friends and family",
+    "correct": "The reduction of social interaction.",
     "distractors": [
-     "encouraging children to want the toys and snacks they see advertised between shows",
-     "showing children a version of the world that is far more violent than real life",
-     "keeping the whole family sitting in one room instead of sending them outside to play"
+     "The encouragement for children to want the toys and snacks they see advertised between shows.",
+     "The display of a version of the world that is far more violent than real life.",
+     "The trick of keeping the whole family sitting in one single room instead of sending them outside to play."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "More overweight children and weaker social skills in homes that watch too much TV.",
+    "correct": "Too much TV creates overweight kids.",
     "distractors": [
-     "More children needing glasses because they read books in poor light during the evening.",
-     "Falling reading scores among students who watch television for several hours every night.",
-     "Loud arguments between parents and children about what time the television is turned off."
+     "More children need glasses because they read books in poor light during the evening.",
+     "Falling reading scores affect students who watch television for several hours every night.",
+     "Loud arguments happen between parents and children about what time the television is turned off."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "TV is just a machine, and most problems happen when parents do not set viewing limits",
+    "correct": "Bad parents ignore viewing limits.",
     "distractors": [
-     "long hours sitting in front of a screen leave children with weaker legs and bad sleep",
-     "children who watch too much television fall behind the rest of the class in every subject",
-     "most parents are far too busy in the evening to sit and watch TV with their children"
+     "Long hours sitting in front of a screen leave children with weaker legs and bad sleep.",
+     "Children who watch too much television always completely fall behind the rest of the class in every single subject.",
+     "Most parents are far too busy in the evening to sit and watch TV with their children."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "TV can teach children a lot, but parents must set strict limits on how much they watch",
+    "correct": "Parents set strict TV limits so that their kids still learn from shows but play outside too.",
     "distractors": [
-     "television offers children real benefits and does not need any control from parents at all",
-     "children under the age of ten should not be allowed to watch any television whatsoever",
-     "television stations should be forced by law to show only educational shows to children"
+     "Television offers children real benefits and does not need any control from parents at all.",
+     "Children under the age of ten are not allowed to watch any television whatsoever.",
+     "Television stations are forced by law to show only educational shows to children."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "children grow up best when TV time is balanced with exercise and playing with others",
+    "correct": "Kids need balance in life.",
     "distractors": [
-     "children learn far more from reading books and playing outside than they ever learn from screens",
-     "parents know their own children much better than television companies or the government do",
-     "modern children need to understand screens because so many adult jobs now depend on them"
+     "Children learn far more from reading books and playing outside than they ever learn from screens.",
+     "Parents know their own children much better than television companies or the government do.",
+     "Modern children desperately need to deeply understand screens because so many adult jobs now depend on them entirely."
     ]
    }
   ]
@@ -2338,101 +2338,101 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "Letting students of all skill levels go to university.",
+    "correct": "The admission of all students.",
     "distractors": [
-     "The rising cost of tuition fees for students at public universities.",
+     "The rapidly rising cost of tuition fees for young students at public universities today.",
      "The choice between academic degrees and practical job training after school.",
      "The number of university graduates that the job market can actually hire."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The need to keep high standards on the hardest university degree courses.",
+    "correct": "The maintenance of high standards.",
     "distractors": [
      "The need to save every university place for the absolute best students in the country.",
-     "The pressure on universities to publish more academic research than they did before.",
+     "The immense pressure on all universities to publish much more academic research than they did before.",
      "The competition between countries to attract wealthy fee-paying students from abroad."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
-    "correct": "making sure difficult university courses are taken by students who can handle the hard work",
+    "correct": "The restriction of difficult courses.",
     "distractors": [
-     "making sure that university places only go to students with the highest school exam grades",
-     "charging much higher fees so that only the most serious students apply for a university place",
-     "limiting the total number of places so that every university class size stays comfortably small"
+     "The check to make sure that university places only go to students with the highest school exam grades.",
+     "The demand for much higher fees so that only the most serious students apply for a university place.",
+     "The strict limitation of the total number of places so that every university class size stays comfortably small."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Strict entry rules set by the top research universities.",
+    "correct": "Top universities set strict rules so that only the smartest students take the hardest classes.",
     "distractors": [
-     "Entrance interviews used by elite schools to select the smartest pupils at the age of eleven.",
-     "Medical and engineering degrees that require very high grades in mathematics before joining.",
-     "Special scholarships offered to a small number of outstanding students every single year."
+     "Entrance interviews select the smartest pupils at age eleven.",
+     "Medical degrees require very high grades in mathematics.",
+     "Special scholarships go to a small number of students every year."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "strict entry rules keep society unequal, because school grades often depend on a family's wealth",
+    "correct": "Strict rules keep society unequal.",
     "distractors": [
-     "school exam results never truly show what a young person is actually capable of achieving",
-     "some highly intelligent students prefer to start working rather than continue studying",
-     "top universities spend much more money on research than they spend on teaching students"
+     "School exam results never truly show what a young person is actually capable of achieving.",
+     "Some highly intelligent students prefer to start working rather than continue studying.",
+     "Top universities spend much more money on research than they spend on teaching students."
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "Removing the money and background barriers that stop people from studying.",
+    "correct": "The removal of entry barriers.",
     "distractors": [
-     "Ending all tuition fees so that no student ever has to borrow money in order to study.",
+     "The complete end of all tuition fees so that no student ever has to borrow money in order to study.",
      "The right of every adult to return to school or college at any point during their life.",
      "The duty of all universities to accept more students from poor countries around the world."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "helping people from poorer families go to university and improve their chances in life",
+    "correct": "The provision of social mobility.",
     "distractors": [
-     "giving every single person who applies a place, whether they can do the hard work or not",
-     "offering evening and part-time classes so that people who already have jobs can study",
-     "reducing the number of years it takes to get a degree so students start working sooner"
+     "The grant of a place to every single person who applies, whether they can do the hard work or not.",
+     "The offer of evening and part-time classes so that people who already have jobs can study.",
+     "The massive reduction of the number of years it takes to get a university degree so students start working much sooner."
     ]
    },
    {
     "phaseName": "8: Example B",
-    "correct": "The success of open-entry local colleges in towns across North America.",
+    "correct": "Open colleges help many people.",
     "distractors": [
-     "The success of free online courses that anyone in the world can join from their home.",
-     "The growth of apprenticeships that mix paid on-the-job training with part-time college study.",
-     "The rise in the number of older students who return to college many years after leaving school."
+     "Free online courses let anyone in the world join from home.",
+     "Apprenticeships mix paid on-the-job training with part-time college study.",
+     "Older students return to college many years after leaving school."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "letting everyone into university can lower teaching standards and cost too much money",
+    "correct": "Open access lowers teaching standards.",
     "distractors": [
-     "no university anywhere has ever taught a very large class as well as a small group",
-     "students from poorer families often have to work long hours alongside their university studies",
-     "many young people choose to study a subject that does not really suit their skills at all"
+     "No university anywhere has ever taught a very large class as well as a small group.",
+     "Students from poorer families often have to work long hours alongside their university studies.",
+     "Many young people choose to study a subject that does not really suit their skills at all."
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "entry should be open for basic college courses, but strict for advanced university degrees",
+    "correct": "Universities keep strict rules for advanced degrees, but let anyone take basic classes.",
     "distractors": [
-     "entry should be open to everyone because education is a basic right rather than a prize to win",
-     "governments should expand practical training colleges instead of sending more people to university",
-     "universities themselves should decide who to accept without any government rules getting in the way"
+     "Entry is open to everyone because education is a basic right rather than a prize to win.",
+     "Governments expand practical training colleges instead of sending more people to university.",
+     "Universities themselves decide who to accept without any government rules getting in the way."
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "a fair system must give everyone a chance to learn while keeping standards high for top research",
+    "correct": "A fair system balances both goals.",
     "distractors": [
-     "wider access to education is always more valuable than protecting strict academic standards",
-     "young people should be completely free to choose whichever university course interests them",
-     "a country needs both a smart workforce and top universities that can compete with the best abroad"
+     "Wider access to education is always more valuable than protecting strict academic standards.",
+     "Young people should be completely free to choose whichever university course interests them.",
+     "A country desperately needs both a highly educated smart workforce and top universities that can easily compete with the best abroad."
     ]
    }
   ]
