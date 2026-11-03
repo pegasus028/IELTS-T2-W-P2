@@ -17,9 +17,9 @@
     "phaseName": "2: Facet A",
     "correct": "The urgent necessity of mitigating vehicle-induced environmental degradation.",
     "distractors": [
-     "The complete eradication of every source of pollution from all cities.",
-     "The construction of wider arterial roads to relieve chronic congestion.",
-     "The provision of safer routes for pedestrians and cyclists downtown."
+     "The complete eradication of every conceivable source of pollution from all urban areas.",
+     "The construction of wider arterial roads to relieve chronic congestion in city centres.",
+     "The provision of safer and more extensive routes for pedestrians and cyclists downtown."
     ]
    },
    {
@@ -27,8 +27,8 @@
     "correct": "sharply reducing localised tailpipe emissions in densely populated districts",
     "distractors": [
      "prohibiting combustion engines outright within designated urban districts",
-     "criminalising vehicle ownership for anyone residing in a city centre",
-     "obliging every commuter to walk or cycle to their place of employment"
+     "generating revenue from congestion charges levied upon every vehicle entering the centre",
+     "safeguarding the freedom of residents to traverse the city without state interference"
     ]
    },
    {
@@ -44,9 +44,9 @@
     "phaseName": "5: Nuance A",
     "correct": "an outright ban abandons commuters for whom no transit alternative exists",
     "distractors": [
-     "no city has ever reduced its pollution without banning private vehicles outright",
-     "the resulting fall in emissions would be offset within a decade by rising freight traffic",
-     "vehicle emissions remain the gravest single threat to public health in cities"
+     "no city has ever cut its pollution without banning private cars outright",
+     "unchecked vehicular freedom generates gridlock and toxic air",
+     "vehicle emissions remain the gravest threat to public health in cities"
     ]
    },
    {
@@ -82,7 +82,7 @@
     "distractors": [
      "unrestricted driving invariably destroys the liveability of every city",
      "private motoring is already beyond the means of most urban households",
-     "commuters who drive everywhere tend to suffer poorer cardiovascular health over time"
+     "commuters who drive everywhere tend to suffer poorer health over time"
     ]
    },
    {
@@ -91,7 +91,7 @@
     "distractors": [
      "every nation must prohibit the private motor car entirely if urban air quality is to improve",
      "governments ought to ban private cars and allow citizens to make their own arrangements",
-     "the right to drive should be absolute provided motorists pay an environmental levy"
+     "the right to drive should remain absolute provided that motorists pay an environmental levy"
     ]
    },
    {
@@ -116,7 +116,7 @@
     "distractors": [
      "The overall level of government expenditure on national education systems.",
      "The escalating tuition fees confronting contemporary undergraduates.",
-     "The difficulty of persuading school leavers to enter technical fields."
+     "The shortage of school leavers entering technical fields."
     ]
    },
    {
@@ -124,7 +124,7 @@
     "correct": "The prioritisation of STEM disciplines to drive technological advancement.",
     "distractors": [
      "The conviction that only scientific study yields any value to society.",
-     "The redirection of all humanities funding towards laboratory-based departments.",
+     "The redirection of humanities funding towards laboratory departments.",
      "The expense of maintaining well-equipped research laboratories."
     ]
    },
@@ -132,8 +132,8 @@
     "phaseName": "3: Mechanism A",
     "correct": "channelling resources into disciplines that yield measurable industrial return",
     "distractors": [
-     "subsidising degrees in medicine, engineering and applied physics in full",
-     "obliging science graduates to work for the state that financed them",
+     "subsidising degrees in medicine, engineering and applied physics in full at public expense",
+     "obliging science graduates to work for a period for the state that financed their studies",
      "doubling the tuition fees payable by students of the creative arts and humanities"
     ]
    },
@@ -142,7 +142,7 @@
     "correct": "Full subsidy for degrees in medical research, software engineering and applied physics.",
     "distractors": [
      "Government campaigns urging schoolchildren to take an interest in science.",
-     "Universities allocating their newest buildings exclusively to the sciences.",
+     "Universities allocating their newest buildings and laboratories exclusively to the sciences.",
      "Mathematics being made a compulsory subject for every undergraduate."
     ]
    },
@@ -151,7 +151,7 @@
     "correct": "an exclusive focus on technical skill neglects the ethical judgement required to govern innovation",
     "distractors": [
      "a purely scientific curriculum leaves graduates incapable of any ethical reasoning",
-     "laboratory disciplines already attract the greater share of private investment",
+     "unrestricted funding of the arts can produce a graduate workforce poorly aligned with the demands of the economy",
      "many science graduates ultimately pursue careers outside their field of study"
     ]
    },
@@ -170,16 +170,16 @@
     "distractors": [
      "sustaining the export earnings generated by national film, design and publishing industries",
      "ensuring that national museums acquire sufficient works to attract visitors",
-     "allowing students to select subjects that place them under less pressure"
+     "allowing students to select subjects that place them under considerably less pressure"
     ]
    },
    {
     "phaseName": "8: Example B",
     "correct": "Public grants for academic programmes in history and literature.",
     "distractors": [
-     "State support for every artistic project proposed by any citizen.",
-     "Free concert and theatre tickets distributed to all enrolled undergraduates.",
-     "Monumental public sculpture commissioned for every major city centre."
+     "State support for every artistic project proposed by a citizen.",
+     "Free concert and theatre tickets distributed to enrolled undergraduates.",
+     "Monumental public sculpture commissioned for provincial city centres."
     ]
    },
    {
@@ -195,7 +195,7 @@
     "phaseName": "10: Synthesized Position",
     "correct": "the state must chiefly subsidise high-yield STEM sectors while preserving targeted arts funding",
     "distractors": [
-     "governments must fund every scientific discipline without exception and withdraw all support from the arts",
+     "governments must fund every scientific discipline and withdraw all support from the arts",
      "governments ought to fund science generously and leave the arts to private philanthropy",
      "every degree should be funded equally because all knowledge is of comparable worth"
     ]
@@ -204,9 +204,9 @@
     "phaseName": "11: Rationale",
     "correct": "a resilient society needs both the capacity to innovate and the wisdom to govern innovation",
     "distractors": [
-     "a nation's prosperity depends chiefly on the size of its overall education budget",
+     "a nation's prosperity depends chiefly on the overall size of its education budget rather than its distribution",
      "technological advance is the only reliable route to sustained national prosperity and influence",
-     "universities are best placed to determine how their own funding is distributed"
+     "universities themselves are best placed to determine how their own funding should be distributed among faculties"
     ]
    }
   ]
@@ -222,7 +222,7 @@
     "distractors": [
      "The response of society to crime in all its various forms.",
      "The social conditions that give rise to criminality.",
-     "The escalating cost of housing convicted offenders."
+     "The rising cost of housing convicted offenders."
     ]
    },
    {
@@ -231,7 +231,7 @@
     "distractors": [
      "The conviction that punishment alone can deter all criminality.",
      "The deliberate maintenance of austere conditions within prisons.",
-     "The restoration of capital punishment for grave offences."
+     "The restoration of capital punishment for murder."
     ]
    },
    {
@@ -239,8 +239,8 @@
     "correct": "depriving offenders of liberty as the direct consequence of their own conduct",
     "distractors": [
      "imposing mandatory custodial terms upon severe and repeated offenders",
-     "compelling inmates to perform unpaid labour in repayment of their debt to society",
-     "publicising convictions widely so that potential offenders are shamed into compliance"
+     "compelling inmates to perform unpaid labour in repayment to society",
+     "publicising convictions widely so that would-be offenders are deterred"
     ]
    },
    {
@@ -249,7 +249,7 @@
     "distractors": [
      "Life imprisonment imposed for every offence involving violence of any kind.",
      "Extended periods of solitary confinement for the most serious criminals.",
-     "The permanent withdrawal of family visiting rights from all inmates."
+     "The permanent withdrawal of all family visiting rights from every inmate."
     ]
    },
    {
@@ -257,7 +257,7 @@
     "correct": "a strictly punitive model yields high reoffending among those eventually released",
     "distractors": [
      "punishment can never produce any change in an offender's future conduct",
-     "the expense of prolonged imprisonment falls ultimately upon the law-abiding taxpayer",
+     "an exclusively rehabilitative approach denies victims justice and weakens the deterrent force of the law",
      "offenders subjected to harsh regimes become more determined to escape them"
     ]
    },
@@ -283,9 +283,9 @@
     "phaseName": "8: Example B",
     "correct": "In-prison education programmes and substance-abuse counselling services.",
     "distractors": [
-     "Vocational training that addresses the underlying causes of offending.",
-     "Weekend home leave granted to prisoners of good behaviour.",
-     "Fully funded university degrees awarded to every serving inmate."
+     "Vocational training and therapy that address the underlying causes of offending.",
+     "Weekend home leave granted to prisoners who have shown consistently good behaviour.",
+     "Fully funded university degrees awarded to every serving inmate on request."
     ]
    },
    {
@@ -293,7 +293,7 @@
     "correct": "an exclusively rehabilitative approach denies victims justice and erodes the deterrent force of law",
     "distractors": [
      "no victim will ever accept a sentence that concentrates solely on reforming the offender",
-     "therapeutic provision requires staff and funding that prison services rarely possess",
+     "a strictly punitive regime produces high rates of reoffending among those prisoners who are eventually released",
      "offenders who complete vocational training reoffend at considerably lower rates"
     ]
    },
@@ -311,7 +311,7 @@
     "correct": "protecting society demands both the containment of danger and a fall in reoffending",
     "distractors": [
      "a nation is judged ultimately by the humanity of its social institutions",
-     "indefinite imprisonment imposes a cost no national treasury can realistically sustain",
+     "indefinite imprisonment imposes a cost no treasury can realistically sustain",
      "every offender can be restored to society given sufficient counselling and time"
     ]
    }
@@ -326,9 +326,9 @@
     "phaseName": "1: Core Topic",
     "correct": "The organisational shift toward decentralised, remote working models.",
     "distractors": [
-     "The reshaping of the global labour market by digital technology.",
-     "The falling commercial demand for office space in major cities.",
-     "The technologies that permit dispersed teams to collaborate."
+     "The reshaping of the global labour market by advances in digital technology.",
+     "The falling commercial demand for office space in major cities worldwide.",
+     "The collaborative technologies that permit dispersed teams to work together."
     ]
    },
    {
@@ -344,7 +344,7 @@
     "phaseName": "3: Mechanism A",
     "correct": "eliminating commuting time and overhead cost, thus raising autonomy and efficiency",
     "distractors": [
-     "reducing the property costs that employers carry and improving staff retention",
+     "producing the fall in demand for commercial office space observed since 2020",
      "permitting staff to determine their own working hours without any managerial oversight",
      "transferring the cost of equipment and utilities from employer to employee"
     ]
@@ -355,7 +355,7 @@
     "distractors": [
      "The nationwide fall in demand for commercial office space since 2020.",
      "Companies relocating their headquarters to smaller and cheaper premises.",
-     "Staff attending departmental meetings by video from home several times each week."
+     "Staff attending departmental meetings by video from home each week."
     ]
    },
    {
@@ -363,8 +363,8 @@
     "correct": "unstructured remote work dissolves the work-life boundary and invites burnout",
     "distractors": [
      "employees left to work at home without structure will invariably abandon their duties",
-     "remote arrangements return several unpaid commuting hours to the employee",
-     "home working suits only those roles that can be performed on a computer"
+     "remote arrangements return several hours of unpaid commuting time to the employee each week",
+     "falling output usually reflects poor digital management rather than remote work itself"
     ]
    },
    {
@@ -389,7 +389,7 @@
     "phaseName": "8: Example B",
     "correct": "Delayed projects arising from asynchronous communication and staff isolation.",
     "distractors": [
-     "The complete collapse of innovation in any firm whose staff never meet in person.",
+     "The total collapse of innovation in any firm whose staff never meet.",
      "New recruits resigning within months of joining a dispersed organisation.",
      "Employees attending to domestic responsibilities during working hours."
     ]
@@ -398,9 +398,9 @@
     "phaseName": "9: Nuance B",
     "correct": "falling output usually reflects poor digital management rather than remote work itself",
     "distractors": [
-     "productivity across the whole national economy has not fallen since remote work spread",
+     "productivity across the national economy as a whole has not fallen since remote work became widespread",
      "office environments impose constant interruptions that depress concentration just as severely",
-     "the difficulty is generational and will resolve itself as the workforce changes"
+     "the difficulty is largely generational and will resolve itself as the composition of the workforce changes"
     ]
    },
    {
@@ -408,7 +408,7 @@
     "correct": "firms should adopt hybrid models pairing remote flexibility with purposeful in-person collaboration",
     "distractors": [
      "no organisation can function effectively unless all of its employees work remotely",
-     "employers ought to require attendance at the office in order to protect productivity",
+     "employers ought to require full-time attendance at the office in order to protect productivity and cohesion",
      "staff should be free to decide each morning whether or not to attend the workplace"
     ]
    },
@@ -417,7 +417,7 @@
     "correct": "a hybrid arrangement maximises efficiency while protecting the wellbeing and creativity of staff",
     "distractors": [
      "employers should combine home working with scheduled days of collaboration in the office",
-     "employees will resign in numbers if compelled to attend an office five days each week",
+     "employees will resign in large numbers if compelled to attend an office for five days in every week",
      "the office has become an expensive relic of an earlier and more industrial era"
     ]
    }
@@ -432,7 +432,7 @@
     "phaseName": "1: Core Topic",
     "correct": "The regulation of children's exposure to digital technology.",
     "distractors": [
-     "The influence of digital technology upon the population as a whole.",
+     "The influence of digital technology upon society at large.",
      "The age at which a child should be given a smartphone.",
      "The influence of social media upon adolescent behaviour."
     ]
@@ -441,9 +441,9 @@
     "phaseName": "2: Facet A",
     "correct": "The imposition of firm limits to safeguard physiological and cognitive growth.",
     "distractors": [
-     "The removal of every electronic device from the family home entirely.",
-     "The damage that extended screen use inflicts upon developing eyesight.",
-     "The preference of many parents for books over electronic entertainment."
+     "The complete removal of every electronic device from the family home without exception.",
+     "The damage that extended screen use inflicts upon developing eyesight and posture.",
+     "The preference of many parents for printed books over electronic entertainment."
     ]
    },
    {
@@ -451,7 +451,7 @@
     "correct": "preventing sedentary habit and limiting the effect of overstimulation on developing attention",
     "distractors": [
      "barring the use of tablets on school days in favour of outdoor recreation and play",
-     "supervising the material a child encounters when using the internet unattended at home",
+     "supervising the material a child encounters when using the internet unattended in the family home",
      "ensuring that homework is fully completed before any recreational device is permitted"
     ]
    },
@@ -460,7 +460,7 @@
     "correct": "Household rules barring all tablet use on school days in favour of outdoor play.",
     "distractors": [
      "National guidelines limiting screen exposure for citizens of every age.",
-     "The removal of every entertainment application from a child's telephone.",
+     "The removal of every entertainment application from a child's telephone or tablet.",
      "Schools prohibiting computers from the classroom in all circumstances."
     ]
    },
@@ -469,16 +469,16 @@
     "correct": "draconian restriction breeds digital illiteracy and social exclusion among peers",
     "distractors": [
      "children raised without devices are invariably excluded by their classmates",
-     "children denied devices at home will simply borrow them from classmates and neighbours",
-     "rules of this kind provoke resentment and damage the parental relationship"
+     "children denied devices at home will simply borrow them from classmates",
+     "unmediated access commonly degenerates into passive consumption"
     ]
    },
    {
     "phaseName": "6: Facet B",
     "correct": "The integration of unrestricted digital access into contemporary education.",
     "distractors": [
-     "The dependence of the modern workplace upon digital communication tools.",
-     "The role of the tablet in occupying a child during a parent's working day.",
+     "The dependence of the contemporary workplace upon digital communication tools.",
+     "The role of the tablet in occupying a young child during a parent's working day.",
      "The belief that educational software will eventually replace the classroom teacher."
     ]
    },
@@ -506,7 +506,7 @@
     "distractors": [
      "unsupervised devices invariably ruin a child's capacity to concentrate at all",
      "few families can afford a separate device for every child in the household",
-     "devices persistently distract pupils from the lessons their teachers are attempting to deliver"
+     "draconian restriction breeds digital illiteracy and social exclusion"
     ]
    },
    {
@@ -514,16 +514,16 @@
     "correct": "caregivers must move from limiting screen time to curating its content and purpose",
     "distractors": [
      "parents must remove screens from childhood altogether if development is to proceed normally",
-     "screen time ought to be forbidden on weekdays and allowed freely at weekends",
-     "children should use computers under supervision at school but never at home"
+     "screen time ought to be forbidden entirely on weekdays and permitted freely at weekends",
+     "children should use computers under supervision at school but never in the family home"
     ]
    },
    {
     "phaseName": "11: Rationale",
     "correct": "preparing the young for a digitised future means harnessing utility without dependency",
     "distractors": [
-     "digital technology has reshaped every aspect of contemporary economic life",
-     "technological competence is now a prerequisite for almost every occupation and profession",
+     "digital technology has reshaped most aspects of contemporary economic life",
+     "technological competence is now a prerequisite for the majority of occupations and professions",
      "children invariably lose interest in screens once other pursuits are offered"
     ]
    }
@@ -539,7 +539,7 @@
     "correct": "The socioeconomic and ecological consequences of international tourism.",
     "distractors": [
      "The socioeconomic and ecological consequences of global commerce in all its forms.",
-     "The environmental damage inflicted by mass air travel across the globe.",
+     "The environmental damage inflicted by mass air travel.",
      "The declining affordability of overseas holidays for ordinary households."
     ]
    },
@@ -548,16 +548,16 @@
     "correct": "The economic revitalisation generated by foreign visitor expenditure.",
     "distractors": [
      "The complete dependence of every host economy upon visitor spending.",
-     "The construction of airports and motorways to accommodate rising arrivals.",
-     "The seasonal fluctuation of income within tourism-dependent economies."
+     "The construction of airports and motorways to serve rising arrivals.",
+     "The seasonal fluctuation of income in tourism-dependent economies."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
     "correct": "channelling external capital into local service industries and public infrastructure",
     "distractors": [
-     "building the clinics and schools that visitor levies in these regions have financed",
-     "attracting multinational hotel chains that displace locally owned businesses",
+     "building the clinics and schools that visitor levies in coastal regions have directly financed",
+     "attracting multinational hotel chains that displace locally owned businesses from the market",
      "compelling national governments to liberalise their visa regimes for foreign arrivals"
     ]
    },
@@ -567,7 +567,7 @@
     "distractors": [
      "Entire national economies across the globe restructured around inbound visitor spending.",
      "Airlines expanding their long-haul networks to serve emerging destinations.",
-     "Resort developments purchased outright by overseas investment consortia."
+     "Resorts purchased outright by overseas investment consortia."
     ]
    },
    {
@@ -575,7 +575,7 @@
     "correct": "much tourist revenue is repatriated by foreign-owned operators, leaving host communities a fraction of the declared profit",
     "distractors": [
      "the global tourism industry now generates more revenue for the world than any other service sector",
-     "visitor spending sustains the restaurants, guides and transport operators upon which an entire coastal region depends",
+     "visitor spending sustains the restaurants, guides and transport operators upon which an entire coastal region and its workforce depend",
      "no destination anywhere has ever derived a lasting economic advantage from the arrival of foreign visitors"
     ]
    },
@@ -592,9 +592,9 @@
     "phaseName": "7: Mechanism B",
     "correct": "commodifying authentic tradition into staged performance while overburdening finite natural resources",
     "distractors": [
-     "eroding traditional ways of life throughout the developed and developing world alike",
-     "displacing residential housing stock with short-term lettings priced for visitors",
-     "exposing younger residents to consumer habits imported from wealthier societies"
+     "eroding traditional ways of life throughout the developed and developing world alike as globalisation advances",
+     "displacing residential housing stock with short-term holiday lettings priced for visitors rather than residents",
+     "channelling external capital into local service industries, public infrastructure and municipal budgets"
     ]
    },
    {
@@ -602,8 +602,8 @@
     "correct": "Bleached reef systems and heritage quarters converted into souvenir arcades.",
     "distractors": [
      "Coastal clinics and schools financed from levies paid by arriving visitors.",
-     "Historic city centres whose residents have been displaced by holiday lettings.",
-     "Coastal footpaths eroded by the passage of guided walking parties."
+     "Pledges by tour operators to protect the heritage of every destination they sell.",
+     "The gradual disappearance of traditional ways of life across the world."
     ]
    },
    {
@@ -612,14 +612,14 @@
     "distractors": [
      "no conservation programme anywhere has ever succeeded without revenue drawn from visitors",
      "heritage quarters emptied of their permanent residents survive only as arcades of souvenir shops",
-     "the ecological damage attributed to tourism is modest beside that of intensive agriculture and heavy industry"
+     "much tourist revenue is repatriated by foreign-owned operators, leaving host communities only a fraction of the profit"
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
     "correct": "states should pursue capacity-limited tourism that reinvests visitor revenue in cultural and habitat protection",
     "distractors": [
-     "host states should close every site of heritage or ecological value to visitors, whatever the cost to local livelihoods",
+     "host states should close every site of heritage or ecological value to visitors, whatever the cost",
      "tourism should be encouraged without restriction provided operators contribute to a conservation fund",
      "the industry is best placed to regulate its own impact upon the destinations that it sells to travellers"
     ]
@@ -628,9 +628,9 @@
     "phaseName": "11: Rationale",
     "correct": "prosperity drawn from a destination's distinctiveness is self-defeating unless that distinctiveness is protected",
     "distractors": [
-     "no economy has ever been enriched by visitors without surrendering the culture that attracted them",
+     "no economy anywhere has ever been enriched by foreign visitors without surrendering the very culture that attracted them",
      "communities cannot be expected to surrender their inherited way of life merely to secure foreign currency earnings",
-     "unregulated growth in any industry eventually exhausts the very resource upon which it depends"
+     "visitor revenue should be reinvested in protecting the culture and habitat upon which the destination depends for its appeal"
     ]
    }
   ]
@@ -655,7 +655,7 @@
     "distractors": [
      "The reallocation of every category of state expenditure to social welfare.",
      "The permanent closure of every national space agency in the developed world.",
-     "The persistent cost overruns typical of large orbital programmes."
+     "The persistent cost overruns of large orbital programmes."
     ]
    },
    {
@@ -664,7 +664,7 @@
     "distractors": [
      "diverting the budget of a cancelled lunar mission into housing and vaccination",
      "prioritising expenditure whose benefits accrue to the present generation",
-     "transferring engineering expertise from orbital projects into domestic infrastructure work"
+     "redeploying aerospace engineers into domestic infrastructure projects"
     ]
    },
    {
@@ -672,8 +672,8 @@
     "correct": "National budgets diverting orbital funding into housing and disease eradication.",
     "distractors": [
      "Wealthy states redirecting all scientific research funding into welfare and healthcare.",
-     "Charitable foundations financing vaccination campaigns in low-income states.",
-     "Legislatures capping the annual budgets of national aerospace agencies."
+     "Charitable foundations financing mass vaccination campaigns across low-income states.",
+     "Legislatures imposing a strict cap on the annual budgets of national aerospace agencies."
     ]
    },
    {
@@ -682,7 +682,7 @@
     "distractors": [
      "no orbital programme has ever produced a technology that could not have been developed on Earth",
      "a single year of orbital funding would finance vaccination programmes across several low-income nations",
-     "much orbital expenditure returns to the domestic economy as skilled employment and contracts"
+     "comparable innovations might have been achieved through terrestrial research at far lower cost"
     ]
    },
    {
@@ -698,7 +698,7 @@
     "phaseName": "7: Mechanism B",
     "correct": "compelling innovation under extreme constraint, yielding technologies that migrate into civilian use",
     "distractors": [
-     "supplying the navigation, forecasting and imaging systems that ordinary civilian life now depends upon",
+     "supplying the navigation, forecasting and imaging systems that civilian life now depends upon",
      "attracting talented graduates into engineering disciplines that serve the wider economy",
      "justifying levels of research funding that no civilian programme could readily secure"
     ]
@@ -707,9 +707,9 @@
     "phaseName": "8: Example B",
     "correct": "Satellite navigation, water purification and medical imaging derived from orbital research.",
     "distractors": [
-     "Military aviation research yielding materials later adopted by civilian industry.",
-     "Materials science advanced through experiments conducted in microgravity.",
-     "Telecommunications networks maintained by commercially operated satellites."
+     "Military aviation research yielding advanced materials later adopted by civilian manufacturing industry.",
+     "Agency pledges that future lunar missions will yield technologies of benefit to civilian industry.",
+     "Telecommunications networks operated by private companies without recourse to public research funding."
     ]
    },
    {
@@ -717,7 +717,7 @@
     "correct": "comparable innovations might plausibly have been achieved through targeted terrestrial research at far lower cost",
     "distractors": [
      "every significant technology of the past century originated in a publicly funded space programme",
-     "orbital research has produced navigation and imaging technologies now embedded in ordinary life",
+     "orbital research has produced the navigation and imaging technologies that are now embedded in everyday civilian life",
      "the commercial sector now supplies much of this innovation without recourse to public subsidy"
     ]
    },
@@ -725,7 +725,7 @@
     "phaseName": "10: Synthesized Position",
     "correct": "governments should sustain a modest, outcome-driven space programme while the bulk of public funds addresses immediate social need",
     "distractors": [
-     "governments should fund every space programme that promises a technological return, whatever the immediate social cost",
+     "governments should fund every space programme that promises any technological return, whatever the immediate social cost of doing so",
      "space exploration should be surrendered entirely to private enterprise, with the state confining itself to regulation",
      "public money should follow whichever programmes deliver the most immediate and measurable return on investment"
     ]
@@ -735,7 +735,7 @@
     "correct": "long-horizon scientific capacity and immediate humanitarian obligation are complementary rather than competing claims",
     "distractors": [
      "public investment in scientific research of every kind ultimately repays itself many times over in national wealth",
-     "a state that neglects fundamental research forfeits the industrial advantage upon which its future prosperity ultimately rests",
+     "a state that neglects fundamental research forfeits the industrial advantage upon which its prosperity rests",
      "no government can justify expenditure beyond the atmosphere while poverty persists within its own borders"
     ]
    }
@@ -750,9 +750,9 @@
     "phaseName": "1: Core Topic",
     "correct": "The legitimacy of state fiscal intervention in individual dietary choice.",
     "distractors": [
-     "The taxation of alcohol and tobacco as an instrument of public health.",
-     "The rising prevalence of diet-related chronic disease in adults.",
-     "The regulation of advertising by the processed food industry."
+     "The taxation of alcohol and tobacco as an established instrument of public health policy.",
+     "The rising prevalence of diet-related chronic disease among the adult population.",
+     "The regulation of advertising by the processed food and beverage industry."
     ]
    },
    {
@@ -760,7 +760,7 @@
     "correct": "The imposition of punitive duties in order to improve population health.",
     "distractors": [
      "The elevation of retail prices until purchasing habits alter.",
-     "The recovery of healthcare costs from the industry responsible.",
+     "The recovery of healthcare costs from the industry held responsible for them.",
      "The exclusion of fast-food outlets from areas near schools."
     ]
    },
@@ -778,7 +778,7 @@
     "correct": "Sugar levies on carbonated drinks that have prompted industrial reformulation.",
     "distractors": [
      "Punitive duties on tobacco that have driven a sustained fall in smoking.",
-     "Municipal duties levied on takeaway outlets in districts with high rates of obesity.",
+     "Ministerial pledges to halve childhood obesity through fiscal measures.",
      "Subsidies withdrawn from the producers of refined sugar and palm oil."
     ]
    },
@@ -804,8 +804,8 @@
     "phaseName": "7: Mechanism B",
     "correct": "leaving the state to inform rather than compel, so that authority over the body remains with the individual",
     "distractors": [
-     "leaving all commercial activity free of fiscal interference so that markets may allocate as they will",
-     "trusting consumers to weigh published nutritional information against their own preferences and circumstances",
+     "leaving all commercial activity entirely free of fiscal interference so that markets may allocate resources as they will",
+     "raising the marginal cost of nutritionally deficient products until consumption measurably shifts",
      "confining public policy to the improvement of school meals and to nutritional education"
     ]
    },
@@ -814,8 +814,8 @@
     "correct": "Transparent nutritional labelling and public campaigns that inform choice.",
     "distractors": [
      "Sugar levies that have obliged manufacturers to reformulate their drinks.",
-     "Nutrition education embedded within the compulsory school curriculum.",
-     "Menu boards in restaurants displaying calorie counts beside the price of every item."
+     "Industry promises to cut the sugar content of its products voluntarily.",
+     "Statutory limits on the portion sizes that restaurants may serve."
     ]
    },
    {
@@ -823,8 +823,8 @@
     "correct": "genuine autonomy presupposes an informed chooser, yet preference is conditioned from childhood by marketing",
     "distractors": [
      "no competent adult in a free society requires the guidance of officials in determining what he or she may eat",
-     "few consumers possess the time or the means to prepare fresh food after a long working day",
-     "a competent adult is entitled to weigh the risks of a diet without the interference of officials"
+     "such levies are regressive, extracting a disproportionate share of income from the poorest households in society",
+     "a competent adult is entitled to weigh the risks of his or her diet without the interference of state officials"
     ]
    },
    {
@@ -842,7 +842,7 @@
     "distractors": [
      "taxation is justified wherever any private behaviour imposes a measurable cost upon the public purse",
      "the state possesses no legitimate authority over what a competent adult chooses to place on the table",
-     "diet-related illness now consumes a share of public spending that no government can responsibly ignore"
+     "diet-related illness now consumes a share of public health expenditure that no responsible government can afford to ignore any longer"
     ]
    }
   ]
@@ -856,7 +856,7 @@
     "phaseName": "1: Core Topic",
     "correct": "The viability of print journalism within a digitised information ecology.",
     "distractors": [
-     "The wholesale displacement of every traditional medium by digital platforms.",
+     "The wholesale displacement of traditional media by digital platforms.",
      "The declining trust of the public in established news organisations.",
      "The funding of serious journalism in an era of free content."
     ]
@@ -865,16 +865,16 @@
     "phaseName": "2: Facet A",
     "correct": "The supersession of the physical newspaper by digital distribution.",
     "distractors": [
-     "The near-total collapse of the cost of distributing a newspaper.",
+     "The near-total collapse of the cost of distributing a daily newspaper.",
      "The migration of advertising revenue from newsprint to online platforms.",
-     "The preference of younger readers for news delivered by telephone."
+     "The preference of younger readers for news delivered to their telephones."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
     "correct": "collapsing distribution costs to almost nothing while enabling continuous, personalised updating",
     "distractors": [
-     "displacing print, broadcast and radio alike as the public's primary source of news",
+     "displacing print, broadcast and radio alike as the public's primary and most trusted source of news",
      "allowing readers to select the subjects and the outlets that already suit them",
      "permitting publishers to measure precisely which articles attract attention"
     ]
@@ -884,8 +884,8 @@
     "correct": "Established mastheads abandoning weekday print runs for subscription platforms.",
     "distractors": [
      "Broadcasters closing their regional studios in favour of online services.",
-     "Regional titles closing after the loss of classified advertising.",
-     "News aggregators overtaking newspapers as the primary source of headlines."
+     "Weekend long-form editions that continue to sustain accountability reporting.",
+     "Publishers' pledges to make every one of their titles available online within the decade."
     ]
    },
    {
@@ -911,7 +911,7 @@
     "correct": "imposing editorial finitude, offering a curated edition that establishes shared civic priorities",
     "distractors": [
      "affording the reader a considered editorial judgement that no algorithmically sorted feed can ever supply",
-     "insulating the reader from the algorithmic sorting that governs digital attention",
+     "collapsing distribution costs while enabling continuous, personalised updating",
      "sustaining the local advertising market upon which regional reporting still depends"
     ]
    },
@@ -930,7 +930,7 @@
     "distractors": [
      "the funding that once paid for investigative reporting vanished with print advertising",
      "the printed edition still commands a civic authority that digital platforms have not acquired",
-     "the environmental cost of printing and distributing millions of copies is increasingly difficult to defend"
+     "the printed edition retains a loyal and relatively affluent readership that advertisers still value"
     ]
    },
    {
@@ -938,8 +938,8 @@
     "correct": "print will persist as a curated, premium and local format while digital assumes immediate reporting",
     "distractors": [
      "the printed newspaper will disappear entirely within a generation, whatever value readers still attach to it",
-     "publishers should abandon print entirely and reinvest the savings in digital reporting",
-     "governments ought to subsidise printed newspapers as a matter of democratic necessity"
+     "publishers should abandon print entirely and reinvest every saving in digital reporting and distribution",
+     "national governments ought to subsidise printed newspapers indefinitely as a matter of democratic necessity"
     ]
    },
    {
@@ -947,7 +947,7 @@
     "correct": "what must be preserved is the funded practice of journalism, not the medium that happened to carry it",
     "distractors": [
      "no digital platform has ever earned the civic authority that a printed newspaper commands",
-     "a democracy depends less upon the format of its newspapers than upon the independence of those who write them",
+     "print should survive as a premium, curated and local format while digital carries the immediate news of the day",
      "technological change has always displaced older media, and print is no exception to that pattern"
     ]
    }
@@ -971,17 +971,17 @@
     "phaseName": "2: Facet A",
     "correct": "The indispensability of animal models to therapeutic advancement.",
     "distractors": [
-     "The study of a compound's behaviour inside an entire living organism.",
-     "The legal obligation to demonstrate a compound's safety before any human trial.",
-     "The relatively low cost of conducting preclinical animal studies."
+     "The study of a compound's behaviour inside a living organism.",
+     "The legal duty to prove a compound safe before any human trial.",
+     "The relatively low cost of preclinical animal studies."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
     "correct": "permitting observation of a compound's effect within a complete living system before human exposure",
     "distractors": [
-     "screening agricultural pesticides and industrial chemicals for toxicity before their release",
-     "revealing interactions between organ systems that isolated cell cultures cannot display",
+     "screening agricultural pesticides and industrial chemicals for toxicity before their commercial release",
+     "substituting human tissue cultures and computational models that mirror human physiology for live subjects",
      "satisfying the regulatory authorities that a compound may safely proceed to trial in human volunteers"
     ]
    },
@@ -990,8 +990,8 @@
     "correct": "Vaccine and oncology programmes validated in mammalian models before clinical trial.",
     "distractors": [
      "Shampoos and cosmetics assessed upon laboratory animals before their commercial release.",
-     "Surgical techniques rehearsed upon animals before their use on human patients.",
-     "Insulin therapies developed through experimentation with laboratory dogs."
+     "Pledges by pharmaceutical firms to phase out animal use within a decade.",
+     "Organ-on-chip devices reproducing the response of human liver tissue."
     ]
    },
    {
@@ -1000,7 +1000,7 @@
     "distractors": [
      "no medicine now in use anywhere reached the patient without first being tested upon animals",
      "regulators across the world still require animal data before any compound may be given to human volunteers",
-     "the suffering imposed is difficult to justify by results that remain irreducibly probabilistic"
+     "these technologies cannot yet model systemic interaction across a whole organism"
     ]
    },
    {
@@ -1016,9 +1016,9 @@
     "phaseName": "7: Mechanism B",
     "correct": "substituting human tissue cultures, organ-on-chip systems and computational models that mirror human physiology",
     "distractors": [
-     "replicating every result that animal experimentation has ever produced, at lower cost and in less time",
-     "removing an ethical liability that increasingly deters public funding of biomedical research",
-     "accelerating approval by allowing many thousands of compounds to be screened simultaneously"
+     "replicating every result that animal experimentation has ever produced, at lower cost, in less time and with no suffering",
+     "removing an ethical liability that increasingly deters public and philanthropic funding of biomedical research programmes",
+     "permitting observation of a compound's effect within a complete living system before any human exposure takes place"
     ]
    },
    {
@@ -1026,8 +1026,8 @@
     "correct": "Regulatory acceptance of human cell assays and computational toxicology in place of animal batteries.",
     "distractors": [
      "Insulin and vaccine therapies developed through decades of laboratory animal work.",
-     "Organ-on-chip devices reproducing the response of human liver and lung tissue.",
-     "Computer models predicting the toxicity of previously untested chemical compounds."
+     "Commitments by pharmaceutical firms to end animal testing once alternatives are fully validated.",
+     "The gradual decline in the number of animals used across every field of scientific enquiry over recent decades."
     ]
    },
    {
@@ -1035,7 +1035,7 @@
     "correct": "these technologies cannot yet model systemic interaction across an organism, so full substitution is unavailable",
     "distractors": [
      "no computational model has ever predicted the behaviour of a compound as reliably as a living animal",
-     "validating a new method to regulatory standards is itself a slow and notably expensive undertaking",
+     "physiological divergence between species means compounds proven safe in animals later harm humans",
      "organ-on-chip systems now reproduce the response of human liver and lung tissue at appreciably lower cost than animal work"
     ]
    },
@@ -1043,18 +1043,18 @@
     "phaseName": "10: Synthesized Position",
     "correct": "regulators should mandate validated alternatives where they exist and confine animal use to questions no technology can answer",
     "distractors": [
-     "animal experimentation ought to be prohibited outright in every laboratory, since no purpose whatever can justify the suffering it causes",
+     "animal experimentation ought to be prohibited outright, since no purpose can justify the suffering it causes",
      "researchers themselves should be trusted to select whichever method yields the most reliable evidence available",
      "animal testing should continue wherever human lives are demonstrably at stake and be restricted everywhere else"
     ]
    },
    {
     "phaseName": "11: Rationale",
-    "correct": "an ethical framework minimises suffering to the least quantity current science requires, revising that threshold as science advances",
+    "correct": "a defensible ethics reduces suffering to the minimum current science requires and revises that minimum as science advances",
     "distractors": [
-     "the saving of even a single human life justifies any quantity of suffering inflicted upon laboratory animals",
+     "the saving of even a single human life justifies whatever quantity of suffering must be inflicted upon animals in the laboratory",
      "no defensible ethics permits the infliction of avoidable suffering once a reliable alternative has been demonstrated to work in practice",
-     "the moral claim of a human patient awaiting treatment must take precedence over that of a laboratory animal"
+     "the moral claim of a human patient awaiting treatment must always take precedence over that of any laboratory animal, however sentient"
     ]
    }
   ]
@@ -1086,9 +1086,9 @@
     "phaseName": "3: Mechanism A",
     "correct": "exposing children to consequential failure within a supervised environment",
     "distractors": [
-     "ranking children publicly against one another before their identities have settled",
+     "ranking children publicly against one another before identity has settled",
      "rewarding the most gifted competitors with places in representative teams",
-     "instilling obedience to the coach through the discipline of daily training routines"
+     "instilling obedience to the coach through daily training routines"
     ]
    },
    {
@@ -1096,17 +1096,17 @@
     "correct": "School leagues in which regular defeats are followed by coaching and measurable improvement.",
     "distractors": [
      "Adult amateur leagues in which weekly defeats are followed by coaching and measurable improvement.",
-     "Physical education lessons in which every pupil receives an identical participation award.",
-     "Weekend athletics clubs organised entirely by parents rather than by qualified coaches."
+     "Physical education lessons in which every pupil receives an identical award for participation.",
+     "Weekend athletics clubs organised entirely by enthusiastic parents rather than by qualified coaches."
     ]
    },
    {
     "phaseName": "5: Nuance A",
     "correct": "resilience develops only where failure is reframed constructively rather than punished",
     "distractors": [
-     "no child has ever developed genuine resilience without experiencing competitive defeat",
+     "no child has ever developed resilience without experiencing competitive defeat",
      "children who lose repeatedly will in time abandon the sport however sensitively they are coached",
-     "competitive sport delivers its benefits only to those children who possess natural ability"
+     "the distress is traceable to adult conduct and selection design rather than to competition"
     ]
    },
    {
@@ -1122,7 +1122,7 @@
     "phaseName": "7: Mechanism B",
     "correct": "tethering a child's self-worth to comparative ranking while identity is still forming",
     "distractors": [
-     "guaranteeing that every child placed under competitive pressure suffers lasting psychological harm",
+     "guaranteeing that every child placed under competitive pressure suffers lasting harm",
      "obliging young athletes to train at hours that encroach upon sleep and study",
      "concentrating coaching resources upon the few children already deemed talented"
     ]
@@ -1131,9 +1131,9 @@
     "phaseName": "8: Example B",
     "correct": "High dropout rates among adolescents in early-selection systems, linked to performance anxiety.",
     "distractors": [
-     "Professional footballers released by their clubs in the closing years of their careers.",
+     "Professional footballers released by their clubs without warning in the closing years of their careers.",
      "Adolescent athletes presenting with disordered eating and chronic overuse injuries in weight-graded sports.",
-     "Parents pursuing coaches and clubs through the courts over disputed selection decisions."
+     "Parents pursuing coaches and governing bodies through the courts over disputed team selection decisions."
     ]
    },
    {
@@ -1141,7 +1141,7 @@
     "correct": "the distress is traceable to adult conduct and selection design rather than to competition itself",
     "distractors": [
      "competitive sport invariably damages the wellbeing of every child who takes part in it",
-     "many adolescents leave sport because of academic workload rather than because of pressure",
+     "many adolescents leave sport because of academic workload rather than because of competitive pressure",
      "non-competitive programmes struggle to retain the interest of older adolescents"
     ]
    },
@@ -1151,7 +1151,7 @@
     "distractors": [
      "every school should abolish competitive fixtures entirely so that no child is ever ranked against another",
      "schools should abolish league tables and trophies so that participation alone is recognised and rewarded",
-     "children should be free to choose between competitive squads and purely recreational sessions at school"
+     "children should be entirely free to choose for themselves between competitive squads and purely recreational sessions at school"
     ]
    },
    {
@@ -1174,16 +1174,16 @@
     "phaseName": "1: Core Topic",
     "correct": "The statutory regulation of commercial persuasion directed at children and adolescents.",
     "distractors": [
-     "The statutory regulation of commercial persuasion directed at consumers of every age.",
-     "The commercial exploitation of young consumers by the food and toy industries.",
-     "The influence of screen-based media upon the development of the young."
+     "The statutory regulation of commercial persuasion directed at consumers of every age group.",
+     "The commercial exploitation of young consumers by the food, soft drink and toy industries.",
+     "The influence of screen-based media upon the social and cognitive development of the young."
     ]
    },
    {
     "phaseName": "2: Facet A",
     "correct": "The case for prohibiting outright every form of commercial messaging aimed at the young.",
     "distractors": [
-     "The claim that no child is capable of resisting any form of commercial appeal.",
+     "The claim that no child is capable of resisting any form of commercial appeal whatsoever.",
      "The restriction of advertising for confectionery and other unhealthy foods.",
      "The regulation of the hours during which commercials may be broadcast."
     ]
@@ -1193,7 +1193,7 @@
     "correct": "removing persuasive material from an audience that cannot yet recognise persuasive intent",
     "distractors": [
      "granting the young supervised exposure to persuasion that a parent may later unpack",
-     "relieving parents of the commercial pressure their children exert upon them",
+     "relieving parents of the persistent commercial pressure that their children exert upon them at home",
      "curbing the consumption of the products most heavily promoted to the young"
     ]
    },
@@ -1201,7 +1201,7 @@
     "phaseName": "4: Example A",
     "correct": "Statutory bans on commercial broadcasting during children's programming in Nordic states.",
     "distractors": [
-     "Statutory prohibitions on commercial broadcasting throughout the schedule in Nordic states.",
+     "Statutory bans on commercial broadcasting across the whole schedule in Nordic states.",
      "Restrictions on the advertising of confectionery before the evening broadcast watershed.",
      "School policies forbidding branded merchandise and sponsored teaching materials."
     ]
@@ -1210,9 +1210,9 @@
     "phaseName": "5: Nuance A",
     "correct": "a ban confined to broadcast media is readily circumvented by influencer and in-game promotion",
     "distractors": [
-     "no child below the age of eight has ever distinguished an advertisement from a programme",
+     "no child below the age of eight has ever distinguished a paid advertisement from the programme itself",
      "children exposed to televised advertising press their parents for the promoted goods with striking persistence",
-     "advertising revenue sustains the children's programming that a ban would leave unfunded"
+     "children below roughly eight cannot separate advertising from content, so the instructive case fails"
     ]
    },
    {
@@ -1221,7 +1221,7 @@
     "distractors": [
      "The instructive function of advertising in the commercial education of adult consumers.",
      "The revenue that advertising provides to broadcasters of children's content.",
-     "The preparation of the young for a marketplace in which persuasive appeals are unavoidable."
+     "The furnishing of low-stakes encounters with persuasion that a mediating adult can turn into scepticism."
     ]
    },
    {
@@ -1230,25 +1230,25 @@
     "distractors": [
      "ensuring that any child exposed to advertising becomes a sceptical consumer for the rest of their life",
      "familiarising children with the range of goods and services available to their households",
-     "teaching young consumers to compare price and quality before committing their money"
+     "removing persuasive material from an audience that cannot recognise persuasive intent"
     ]
    },
    {
     "phaseName": "8: Example B",
     "correct": "Media-literacy lessons that dissect real campaigns so pupils identify persuasive technique.",
     "distractors": [
-     "Media-literacy modules taught to undergraduates that dissect the techniques of national campaigns.",
-     "Advertising-industry workshops delivered in schools by practitioners who explain how campaigns are built.",
-     "Household conversations in which parents explain to a child why a televised claim is exaggerated."
+     "Media-literacy modules for undergraduates dissecting the techniques of national campaigns.",
+     "Industry workshops in schools at which practitioners explain how campaigns are built.",
+     "Industry pledges to make every advertisement aimed at children truthful and clear."
     ]
    },
    {
     "phaseName": "9: Nuance B",
     "correct": "children below roughly eight cannot separate advertising from content, so the instructive case fails",
     "distractors": [
-     "advertising can never teach a young person anything of value about the operation of the marketplace",
-     "the critical scepticism supposedly taught by exposure is acquired far more reliably at school",
-     "commercial literacy is transmitted by parents and teachers, not by the advertisements a child happens to see"
+     "advertising can never teach a young person anything whatever of value about the operation of the marketplace",
+     "a ban confined to broadcast media is readily circumvented by influencer marketing and in-game promotion",
+     "commercial literacy is acquired most reliably through repeated encounters with persuasive appeals from childhood"
     ]
    },
    {
@@ -1280,7 +1280,7 @@
     "phaseName": "1: Core Topic",
     "correct": "The preservation of endangered languages under pressure from global convergence.",
     "distractors": [
-     "The preservation of every regional dialect and local accent spoken within a modern state.",
+     "The preservation of every regional dialect and accent within a modern state.",
      "The public cost of sustaining tongues spoken by very small communities.",
      "The relationship between a community's language and its cultural identity."
     ]
@@ -1289,18 +1289,18 @@
     "phaseName": "2: Facet A",
     "correct": "The acceptance of linguistic consolidation in the interest of communicative efficiency.",
     "distractors": [
-     "The insistence that no language should ever be sustained at the public expense.",
-     "The practical advantages that a shared international language confers upon trade and research.",
-     "The natural attrition of languages as an unremarkable feature of historical change."
+     "The insistence that no language whatsoever should ever be sustained at the public expense.",
+     "The lower translation costs that a shared international language confers upon trade and research.",
+     "The natural attrition of minority languages as an unremarkable feature of historical change."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
     "correct": "lowering the transactional costs that translation and mutual incomprehension impose",
     "distractors": [
-     "reviving the daily use of a threatened tongue through schooling and official status",
-     "permitting researchers throughout the world to read one another's findings directly",
-     "sparing developing states the expense of maintaining administration in several languages"
+     "reviving the everyday use of a threatened tongue through schooling, broadcasting and official status",
+     "permitting researchers worldwide to read one another's findings directly",
+     "binding a community's sense of identity to the language in which it was raised"
     ]
    },
    {
@@ -1308,7 +1308,7 @@
     "correct": "The adoption of a single working language in international scientific publishing and aviation control.",
     "distractors": [
      "The use of one shared working language in every workplace and household worldwide.",
-     "Multilingual institutions that translate every document into all their official languages.",
+     "Multilingual institutions obliged to translate every document into each of their several official languages.",
      "The spread of a single language across the internet and international broadcasting."
     ]
    },
@@ -1318,16 +1318,16 @@
     "distractors": [
      "linguistic loss invariably destroys the culture of the community that suffers it, without exception",
      "a shared working language has never prevented speakers from retaining their mother tongue",
-     "translation technology will shortly render the choice of a working language immaterial"
+     "state funding has often sustained a language in the classroom without restoring it to the home"
     ]
    },
    {
     "phaseName": "6: Facet B",
     "correct": "The commitment of public expenditure to the revitalisation of languages facing extinction.",
     "distractors": [
-     "The commitment of public funds to the teaching of major world languages in schools.",
-     "The obligation of the state to protect the cultural inheritance of its minorities.",
-     "The provision of interpreting services for speakers of minority languages."
+     "The commitment of public funds to the teaching of major world languages in secondary schools.",
+     "The obligation of the state to provide schooling in the mother tongue of every minority community.",
+     "The provision of free interpreting services for speakers of minority languages in public offices."
     ]
    },
    {
@@ -1335,8 +1335,8 @@
     "correct": "restoring intergenerational transmission through education, broadcasting and official status",
     "distractors": [
      "guaranteeing that no language will ever disappear once the state has granted it official status",
-     "conferring prestige upon a minority tongue so that parents choose to raise children in it",
-     "subsidising publishing and the performing arts in languages that lack a commercial market"
+     "funding a Welsh-language television channel and bilingual road signs across Wales",
+     "concentrating all official business in a single shared language to lower administrative costs"
     ]
    },
    {
@@ -1344,8 +1344,8 @@
     "correct": "Immersion schooling and broadcasting quotas that returned Welsh and Māori to daily use.",
     "distractors": [
      "Compulsory foreign-language instruction in the secondary schools of wealthy states.",
-     "Statutory language commissions empowered to require bilingual signage, services and documentation.",
-     "Adult evening classes offered without charge to lapsed speakers of a regional tongue."
+     "Government pledges to make every citizen bilingual in the national and a regional language within a decade.",
+     "Evening classes in English offered without charge to migrants settling in a new country."
     ]
    },
    {
@@ -1353,17 +1353,17 @@
     "correct": "revitalisation succeeds only where the language retains genuine economic and social utility",
     "distractors": [
      "no minority language has ever been revived once its last fluent speakers have died",
-     "official status secures a language on paper while its everyday use continues to contract",
-     "public money spent on revival is money withheld from schooling and healthcare for the same community"
+     "official recognition is the first demand any minority community makes of its government",
+     "a language that disappears takes with it an oral literature that no archive can recover"
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
     "correct": "states should fund revitalisation where a community seeks it, while promoting bilingualism rather than rivalry",
     "distractors": [
-     "every endangered language must be restored to everyday use, whatever the cost and whatever its community wishes",
-     "public money should support documentation and archiving rather than attempts to restore everyday use",
-     "communities wishing to preserve their language should finance that effort from their own resources"
+     "endangered languages must be restored to everyday use, whatever the cost and regardless of their own community's wishes",
+     "public money should support the documentation and archiving of a language rather than any attempt to restore its everyday use",
+     "communities that wish to preserve their own language should finance that effort entirely from their own resources alone"
     ]
    },
    {
@@ -1371,7 +1371,7 @@
     "correct": "diversity and communicative reach are not exclusive, since individual bilingualism secures both at once",
     "distractors": [
      "cultural heritage of every kind deserves protection from the pressures of the global market",
-     "language policy should follow the wishes of the speech community rather than the preferences of the state",
+     "governments should pay for revitalisation while also encouraging citizens to acquire a language of wider communication",
      "a language carries knowledge and habits of thought that no translation can fully reproduce"
     ]
    }
@@ -1388,15 +1388,15 @@
     "distractors": [
      "The proper scope of the history syllabus in universities and in adult education.",
      "The place of the humanities within an increasingly vocational curriculum.",
-     "The teaching of contested episodes in a nation's history to the young."
+     "The teaching of contested episodes in a nation's past."
     ]
    },
    {
     "phaseName": "2: Facet A",
     "correct": "The restriction of historical study to the past of the pupil's own nation.",
     "distractors": [
-     "The claim that no foreign history has any bearing upon a pupil's education.",
-     "The transmission of a shared civic inheritance to the coming generation of citizens.",
+     "The claim that foreign history has no bearing on a pupil's education.",
+     "The anchoring of identity within a shared civic narrative.",
      "The reduction of curriculum content to what can be examined reliably."
     ]
    },
@@ -1404,9 +1404,9 @@
     "phaseName": "3: Mechanism A",
     "correct": "constructing a shared civic narrative that anchors identity within familiar institutions",
     "distractors": [
-     "supplying the comparative frameworks that make foreign conflict intelligible",
-     "concentrating limited teaching time upon the material pupils will most readily grasp",
-     "grounding pupils in the constitutional history of the institutions under which they will vote"
+     "supplying the comparative frameworks that render foreign conflict and migration intelligible",
+     "concentrating limited teaching time upon the material that pupils will most readily grasp and retain",
+     "devoting an entire school year to the founding documents and constitutional history of the nation"
     ]
    },
    {
@@ -1414,8 +1414,8 @@
     "correct": "Curricula organised around the constitutional and social development of the home nation.",
     "distractors": [
      "University degree programmes tracing the constitutional and social development of the home nation.",
-     "Commemorative lessons constructed around national anniversaries and founding documents.",
-     "Local history projects in which pupils research the surviving records of their own town."
+     "Ministerial pledges that every school-leaver will know the principal dates of the national story.",
+     "Local history projects in which pupils research the records of their own town."
     ]
    },
    {
@@ -1423,7 +1423,7 @@
     "correct": "a purely national syllabus tends toward the celebratory, leaving pupils unable to judge conduct abroad",
     "distractors": [
      "a syllabus confined to the national past invariably produces uncritical patriots, without exception",
-     "national curricula are rewritten by each incoming government, so the account pupils receive shifts with politics",
+     "a global survey leaves pupils with scattered impressions and no secure chronological framework of their own",
      "pupils seldom retain much historical detail beyond the examination for which it was originally learned"
     ]
    },
@@ -1431,18 +1431,18 @@
     "phaseName": "6: Facet B",
     "correct": "The prioritisation of global historical literacy over the national past.",
     "distractors": [
-     "The conviction that the national past has nothing whatever to teach the young.",
+     "The conviction that the national past has nothing to teach the young.",
      "The cultivation of tolerance through exposure to unfamiliar cultures.",
-     "The preparation of pupils for employment in an interconnected international economy."
+     "The preparation of pupils for an interconnected global economy."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "equipping pupils with comparative frameworks that render contemporary conflict, migration and trade intelligible",
+    "correct": "equipping pupils with comparative frameworks that render conflict, migration and trade intelligible",
     "distractors": [
-     "acquainting university students with the civilisations that school curricula pass over entirely",
-     "exposing the young to civilisations whose achievements the national curriculum tends to ignore",
-     "demonstrating that no nation's history can be understood in isolation from its neighbours"
+     "acquainting university undergraduates with the civilisations that school curricula habitually pass over entirely",
+     "fostering in the young an admiration for foreign civilisations in preference to their own national inheritance",
+     "demonstrating that the national past is of no consequence beside the great movements of world history"
     ]
    },
    {
@@ -1450,7 +1450,7 @@
     "correct": "Thematic units on empire, decolonisation and industrialisation that explain present geopolitical alignments.",
     "distractors": [
      "Surveys covering the entire recorded history of every continent within a single school year.",
-     "Modules on the history of migration and its long-term effects upon receiving societies.",
+     "Ministerial pledges that every pupil will leave school understanding the origins of the present international order.",
      "Wide-ranging surveys of the ancient civilisations of several continents and periods."
     ]
    },
@@ -1459,16 +1459,16 @@
     "correct": "a sweeping global survey risks superficiality, leaving pupils with fragmentary impressions and no grounding",
     "distractors": [
      "no pupil can ever retain anything useful from a survey that ranges across the whole world",
-     "world history is difficult to examine fairly because its content resists any settled canon",
-     "teachers trained in the national past are seldom equipped to teach global themes convincingly"
+     "a syllabus confined to the national past leaves pupils unable to judge the conduct of their own country against others",
+     "pupils who study other civilisations become markedly more tolerant of the unfamiliar"
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
     "correct": "schools should teach the national past as a case study embedded within wider global processes",
     "distractors": [
-     "schools should teach world history alone, since no national narrative can ever be taught without distortion",
-     "the national past should be taught first and the wider world introduced only in the final years",
+     "world history alone should be taught, since national narratives cannot escape distortion",
+     "the national past should come first, with the wider world introduced only in the final years",
      "curricula should be determined by teachers rather than prescribed centrally by government"
     ]
    },
@@ -1476,9 +1476,9 @@
     "phaseName": "11: Rationale",
     "correct": "historical causation crosses borders, so a curriculum divided by geography misrepresents the past",
     "distractors": [
-     "an educated adult should be familiar with the history of every major world civilisation",
+     "an educated adult should be familiar with the history of every major world civilisation and its achievements",
      "an education system exists to produce informed citizens rather than to cultivate patriotic sentiment",
-     "global affairs are now so entangled that a national perspective alone explains very little"
+     "pupils should study the national past as one case study within the broader sweep of global developments"
     ]
    }
   ]
@@ -1492,7 +1492,7 @@
     "phaseName": "1: Core Topic",
     "correct": "The distribution of responsibility for the care of an ageing population between state and family.",
     "distractors": [
-     "The distribution of responsibility for the care of disabled citizens of every age.",
+     "The distribution of responsibility between state and family for the care of disabled citizens of every age.",
      "The standard of care available to elderly people in residential institutions.",
      "The decline of the multigenerational household in industrialised societies."
     ]
@@ -1503,25 +1503,25 @@
     "distractors": [
      "The treatment of every aspect of elderly life as the sole obligation of the state.",
      "The professional standard of care that trained institutions are able to provide.",
-     "The relief of ordinary families from the financial burden of long-term care."
+     "The pooling of longevity risk across the taxpaying population."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
     "correct": "pooling longevity risk so that no household is bankrupted by a long illness",
     "distractors": [
-     "maintaining the bonds of obligation that hold successive generations together",
-     "financing trained staff, equipment and premises that no individual family could procure alone",
-     "guaranteeing a uniform standard of provision irrespective of a family's income"
+     "maintaining the bonds of obligation between successive generations",
+     "building a residential home in every district of the country",
+     "treating the care of the old as an obligation the state owes"
     ]
    },
    {
     "phaseName": "4: Example A",
     "correct": "Universal long-term care insurance funded through general contribution, as in Japan.",
     "distractors": [
-     "Universal health insurance covering the medical treatment of citizens of every age.",
-     "Publicly funded residential homes admitting all applicants without regard to means.",
-     "Statutory entitlements to nursing, respite and domiciliary support administered by local authorities."
+     "Universal health insurance covering the medical treatment of citizens of every age and income.",
+     "Election manifestos pledging that no older person will ever have to sell a home to fund care.",
+     "Tax relief granted to adult children who house and care for an elderly parent at home."
     ]
    },
    {
@@ -1530,7 +1530,7 @@
     "distractors": [
      "institutional provision invariably deprives an elderly person of every meaningful relationship they still possess",
      "public provision spares families the ruinous expense that a prolonged final illness would impose",
-     "elderly people generally prefer to remain in their own homes rather than enter an institution"
+     "trained staff can manage conditions such as dementia that exhaust untrained relatives within months"
     ]
    },
    {
@@ -1539,7 +1539,7 @@
     "distractors": [
      "The insistence that the state owes an older citizen nothing whatsoever.",
      "The moral duty owed by adult children to reciprocate the care they themselves received.",
-     "The familiarity and comfort of care delivered in a person's own home."
+     "The comfort of care delivered in a person's own home."
     ]
    },
    {
@@ -1547,8 +1547,8 @@
     "correct": "preserving continuity of relationship and reciprocal obligation across the generations",
     "distractors": [
      "sparing the public purse the expense of welfare provision of every description",
-     "keeping older people within familiar surroundings and among the people they know best",
-     "transmitting an expectation of care downward, so that each generation learns the obligation in turn"
+     "ensuring that no older person ever spends a day in an institution",
+     "having a grandparent move into the spare room of an adult child's home"
     ]
    },
    {
@@ -1556,8 +1556,8 @@
     "correct": "Multigenerational households in which adult children provide daily care alongside employment.",
     "distractors": [
      "Working-age relatives who abandon employment entirely to nurse a sick partner or child at home.",
-     "Rotating arrangements under which siblings share the care of a parent by turns.",
-     "Remittances sent home by children working abroad to pay for a parent's daily care."
+     "Neighbourhood volunteer schemes in which unrelated residents visit housebound pensioners each week.",
+     "Private residential homes selected and paid for by adult children living too far away to provide care."
     ]
    },
    {
@@ -1574,7 +1574,7 @@
     "correct": "the state should guarantee the clinical and financial floor of care while supporting families to sustain the relational element",
     "distractors": [
      "the state should bear the entire cost of care in every case, since no family can be expected to contribute",
-     "families should provide daily care, with public provision reserved for those who have no relatives",
+     "families should provide all daily care themselves, with public provision reserved solely for those older people who have no living relatives",
      "the cost of elderly care should be apportioned between the state and the family in fixed proportion"
     ]
    },
@@ -1609,7 +1609,7 @@
     "distractors": [
      "The impossibility of feeding any population without engineered crops.",
      "The profitability of engineered seed for the agricultural export sector.",
-     "The reduction in pesticide application achieved across engineered farmland."
+     "The reduction in pesticide application achieved across engineered farmland worldwide."
     ]
    },
    {
@@ -1617,7 +1617,7 @@
     "correct": "conferring drought tolerance and pest resistance that lift yields on land already farmed",
     "distractors": [
      "growing fortified and salt-tolerant staples where conventional varieties fail",
-     "removing the need for irrigation and fertiliser throughout the developing world",
+     "removing altogether the need for irrigation and fertiliser throughout the whole of the developing world",
      "shortening the growing season so that several harvests may be taken annually"
     ]
    },
@@ -1634,9 +1634,9 @@
     "phaseName": "5: Nuance A",
     "correct": "hunger arises chiefly from distribution failure and poverty rather than from scarcity",
     "distractors": [
-     "hunger has never in any country been the result of an actual shortage of food",
+     "hunger has never in any country or period been the result of an actual shortage of food",
      "engineered varieties have already raised the yields of staple cereals across several continents",
-     "yields obtained by conventional breeding continue to rise at a comparable rate"
+     "engineered varieties now occupy the greater part of the arable land of several major exporters"
     ]
    },
    {
@@ -1653,7 +1653,7 @@
     "correct": "releasing novel genetic material into open systems whose effects cannot be recalled",
     "distractors": [
      "introducing genetic material that will inevitably prove harmful to every ecosystem it reaches",
-     "exposing consumers to proteins never previously present in the human diet",
+     "exposing consumers to residues of the industrial pesticides sprayed upon conventional crops",
      "obliging cultivators to purchase fresh seed and licensed chemicals every season"
     ]
    },
@@ -1661,8 +1661,8 @@
     "phaseName": "8: Example B",
     "correct": "Herbicide-tolerant varieties that have bred resistant weeds and narrowed diversity.",
     "distractors": [
-     "Industrial pesticides that have destroyed pollinator populations across whole regions.",
-     "Contamination suits brought against growers whose fields were pollinated by patented seed.",
+     "Industrial pesticides that have destroyed pollinators across whole regions.",
+     "Lawsuits against growers whose fields were pollinated by patented seed.",
      "Import prohibitions imposed by states unwilling to accept engineered commodities."
     ]
    },
@@ -1670,8 +1670,8 @@
     "phaseName": "9: Nuance B",
     "correct": "selective breeding has reshaped crop genomes for millennia, so the principle is not new",
     "distractors": [
-     "no engineered crop has ever been shown to cause harm of any kind to anyone",
-     "novel proteins entering the food supply were never present in the human diet before",
+     "no engineered crop anywhere has ever been shown to cause harm of any description to any person",
+     "the novel proteins now entering the food supply were never previously present in the human diet",
      "the risks commonly cited are hazards of industrial agriculture rather than of modification"
     ]
    },
@@ -1690,7 +1690,7 @@
     "distractors": [
      "the safety of any new technology depends upon the honesty of the firms that sell it",
      "a growing population cannot be fed without every available improvement in agricultural yield",
-     "public suspicion of engineered food is unlikely to be dispelled by further evidence"
+     "public suspicion of engineered food is unlikely to yield to further evidence"
     ]
    }
   ]
@@ -1704,16 +1704,16 @@
     "phaseName": "1: Core Topic",
     "correct": "The continuing function of public libraries in a networked society.",
     "distractors": [
-     "The obsolescence of every printed and broadcast medium in the internet age.",
-     "The public funding of cultural institutions in a period of austerity.",
-     "The reading habits of citizens who enjoy unlimited internet access."
+     "The obsolescence of every printed medium in the internet age.",
+     "The public funding of cultural institutions under austerity.",
+     "The reading habits of citizens with unlimited internet access."
     ]
    },
    {
     "phaseName": "2: Facet A",
     "correct": "The redundancy of the physical library given universal digital access.",
     "distractors": [
-     "The complete obsolescence of every printed source now held anywhere.",
+     "The complete obsolescence of every printed source held anywhere in the world.",
      "The declining number of visitors recorded by municipal branches each year.",
      "The expense of maintaining premises that comparatively few citizens use."
     ]
@@ -1723,8 +1723,8 @@
     "correct": "making catalogues and reference works retrievable without premises or opening hours",
     "distractors": [
      "eliminating the premises, staff and opening hours that a physical branch requires",
-     "sparing readers the cost and inconvenience of travelling to a municipal building",
-     "allowing an unlimited number of readers to consult one text at once rather than await its return"
+     "sparing readers the inconvenience of travel, since every household now possesses a fast connection",
+     "digitising the entire holdings of a national library and placing them online"
     ]
    },
    {
@@ -1732,8 +1732,8 @@
     "correct": "Open-access repositories consulted by researchers who never enter a reading room.",
     "distractors": [
      "Catalogues and reference works retrievable at any hour without a visit to a building.",
-     "Encyclopaedias maintained collaboratively and revised continually by their readers.",
-     "University reading lists delivered to students entirely in electronic form."
+     "Reference desks staffed by librarians who answer enquiries by telephone.",
+     "Ministerial pledges that every citizen will enjoy fast broadband by the end of the decade."
     ]
    },
    {
@@ -1741,7 +1741,7 @@
     "correct": "digital sufficiency presupposes connectivity, devices and search literacy, none evenly distributed",
     "distractors": [
      "no library has ever survived the arrival of a freely searchable digital alternative",
-     "much scholarly material remains behind paywalls that private individuals cannot afford",
+     "the catalogue of any national library may now be searched from a telephone in seconds",
      "a reader with a connection may consult more titles online than any branch could ever hold"
     ]
    },
@@ -1749,9 +1749,9 @@
     "phaseName": "6: Facet B",
     "correct": "The library's role as shared civic infrastructure and guaranteed public space.",
     "distractors": [
-     "The provision of subsidised broadband to every household in the country.",
-     "The preservation of printed collections that exist in no digital form.",
-     "The professional guidance offered to readers by trained reference staff."
+     "The provision of subsidised broadband to every household in the country at public expense.",
+     "The lending of physical volumes to those readers who still prefer print to the screen.",
+     "The professional guidance offered to individual readers by trained reference staff."
     ]
    },
    {
@@ -1759,8 +1759,8 @@
     "correct": "supplying a non-commercial space with expert help and equipment few can afford privately",
     "distractors": [
      "hosting job-search sessions and language classes for residents of the neighbourhood",
-     "offering a heated, quiet and cost-free place to study to those whose own homes afford none",
-     "lending physical volumes to readers who prefer print to the illuminated screen"
+     "making catalogues and reference works retrievable at any hour without a visit to a municipal building",
+     "ensuring that every resident reads at least one printed book each month"
     ]
    },
    {
@@ -1768,16 +1768,16 @@
     "correct": "Branches serving as job-search centres, language classrooms and sole internet access.",
     "distractors": [
      "National museums admitting visitors without charge on every day of the year.",
-     "Local history collections curated with the assistance of neighbourhood volunteers.",
-     "Council services relocated into library buildings so that residents may transact in person."
+     "National archives that digitise their holdings so that researchers need never visit.",
+     "Municipal pledges that no resident will ever live more than a mile from a public branch."
     ]
    },
    {
     "phaseName": "9: Nuance B",
     "correct": "the civic case justifies the institution rather than its inherited nineteenth-century form",
     "distractors": [
-     "no municipality has ever closed a public branch without a measurable loss of civic participation",
-     "community provision of this kind might be delivered more cheaply by other bodies",
+     "no municipality has ever closed a branch without a measurable loss of civic participation",
+     "a reader without a device or connection cannot reach material that is nominally free",
      "branch closures fall hardest upon the districts with the least private provision"
     ]
    },
@@ -1785,9 +1785,9 @@
     "phaseName": "10: Synthesized Position",
     "correct": "libraries should be funded as civic and digital infrastructure, with lending one service among many",
     "distractors": [
-     "every neighbourhood should retain its own branch regardless of how few readers now use it",
+     "every neighbourhood should retain its own branch regardless of how few readers now make any use of it at all",
      "municipalities should concentrate provision in fewer, larger branches offering a fuller range of services",
-     "public reading provision should be transferred to schools and to community associations"
+     "public reading provision should be transferred entirely to schools and to voluntary community associations"
     ]
    },
    {
@@ -1796,7 +1796,7 @@
     "distractors": [
      "the state should meet the cost of every cultural institution that the market neglects",
      "no digital service has yet replicated what a shared public building provides",
-     "a public good that the market will not supply must be maintained at collective expense"
+     "libraries ought to be maintained as civic infrastructure offering far more than the lending of books"
     ]
    }
   ]
@@ -1811,7 +1811,7 @@
     "correct": "The level at which intervention against climate change is most effective.",
     "distractors": [
      "The most effective means of reducing every form of environmental harm worldwide.",
-     "The reluctance of governments to impose costs upon their own electorates.",
+     "The reluctance of governments to impose costs on their electorates.",
      "The moral responsibility of the individual consumer for environmental harm."
     ]
    },
@@ -1819,8 +1819,8 @@
     "phaseName": "2: Facet A",
     "correct": "The primacy of individual behavioural change in the reduction of emissions.",
     "distractors": [
-     "The sufficiency of voluntary household action in eliminating national emissions.",
-     "The measurement of the emissions for which each individual household is responsible.",
+     "The sufficiency of voluntary household action alone against emissions.",
+     "The measurement of the emissions attributable to each household.",
      "The speed with which private habits may be altered without legislation."
     ]
    },
@@ -1828,9 +1828,9 @@
     "phaseName": "3: Mechanism A",
     "correct": "aggregating household demand signals that redirect supply and normalise low-carbon behaviour",
     "distractors": [
-     "making plant-based ranges and domestic solar installations ordinary consumer choices",
-     "reducing the emissions attributable to domestic heating, diet and private travel",
-     "establishing social norms within a community that render conspicuous consumption disreputable"
+     "making plant-based ranges and domestic solar installations ordinary consumer choices in the shops",
+     "eliminating entirely the emissions attributable to domestic heating, diet and private travel within a decade",
+     "compelling the largest corporate emitters to reduce their output through statutory limits and carbon pricing"
     ]
    },
    {
@@ -1838,8 +1838,8 @@
     "correct": "Consumer demand that has made plant-based ranges and domestic solar mainstream.",
     "distractors": [
      "Consumer boycotts that have eliminated fossil fuels from several national economies.",
-     "Households recycling, composting and declining single-use plastic packaging.",
-     "Passengers forgoing air travel in favour of overland routes across Europe."
+     "Household pledges to halve their own emissions by the end of the decade.",
+     "Municipal bans on the sale of new petrol vehicles after a fixed date."
     ]
    },
    {
@@ -1848,16 +1848,16 @@
     "distractors": [
      "voluntary restraint has never reduced emissions in any country that has attempted it",
      "households that adopt low-carbon habits visibly encourage the neighbours who observe them to follow",
-     "voluntary restraint is practised mainly by those whose emissions are already modest"
+     "regulation imposed without public consent is swiftly reversed at the next election"
     ]
    },
    {
     "phaseName": "6: Facet B",
     "correct": "The necessity of statutory regulation and of structural reform.",
     "distractors": [
-     "The imposition of a levy so that the polluting option costs more.",
-     "The capacity of the state to compel compliance from major emitters.",
-     "The scale of investment required to rebuild energy and transport systems."
+     "The imposition of a levy on the polluting option.",
+     "The capacity of the state to compel major emitters.",
+     "The scale of investment needed to rebuild energy systems."
     ]
    },
    {
@@ -1865,8 +1865,8 @@
     "correct": "repricing emissions and rebuilding energy systems, thereby altering the default option",
     "distractors": [
      "compelling every corporation on the planet to cease emitting within a single legislative term",
-     "prohibiting the sale of the most polluting appliances, boilers and vehicles",
-     "directing public revenue towards technologies not yet commercially viable"
+     "prohibiting outright the sale of every appliance, boiler and vehicle that burns any fossil fuel",
+     "funding a national high-speed rail network so that short-haul flights lose their custom"
     ]
    },
    {
@@ -1874,15 +1874,15 @@
     "correct": "Carbon pricing, grid decarbonisation and efficiency standards that cut national emissions.",
     "distractors": [
      "Municipal recycling schemes adopted by councils across the industrialised world.",
-     "Public investment in rail networks that displaces short-haul domestic flights.",
-     "Statutory prohibition of the sale of new petrol vehicles after a fixed date."
+     "Government pledges to reach net-zero emissions by the middle of the century without a published plan.",
+     "Households installing rooftop solar panels and switching to a plant-based diet."
     ]
    },
    {
     "phaseName": "9: Nuance B",
     "correct": "regulation of this magnitude is unsustainable without the public consent that visible commitment generates",
     "distractors": [
-     "no government has ever legislated on emissions without first securing the consent of its electorate",
+     "no government anywhere has ever legislated on emissions without first securing the explicit consent of its whole electorate",
      "governments legislate only once an issue has become electorally profitable to them",
      "only statutory limits can compel the largest corporate emitters to cut what they release"
     ]
@@ -1892,7 +1892,7 @@
     "correct": "structural regulation must carry the decisive share, with individual action supplying its mandate",
     "distractors": [
      "personal restraint alone will deliver the entire reduction that the climate now requires",
-     "governments should regulate corporate emissions while leaving household consumption wholly unlegislated",
+     "governments should regulate corporate emissions while leaving household consumption unlegislated",
      "climate policy should rely upon incentive rather than prohibition so that consent is preserved"
     ]
    },
@@ -1900,7 +1900,7 @@
     "phaseName": "11: Rationale",
     "correct": "emissions are governed by the systems within which choices are made, not by intention",
     "distractors": [
-     "consumer choice determines the fortunes of every industry in a market economy",
+     "consumer choice alone determines the fortunes of every industry in a modern market economy",
      "the scale of the problem exceeds anything that voluntary action could plausibly achieve",
      "responsibility should rest with those whose decisions determine what the majority may choose"
     ]
@@ -1916,7 +1916,7 @@
     "phaseName": "1: Core Topic",
     "correct": "The principles that should govern new construction in historic urban settings.",
     "distractors": [
-     "The protection of ancient monuments and archaeological sites across Europe.",
+     "The protection of ancient monuments and archaeological sites across the continent of Europe.",
      "The public reception of contemporary architecture in older neighbourhoods.",
      "The influence of planning authorities upon the appearance of a city."
     ]
@@ -1935,17 +1935,17 @@
     "correct": "maintaining the material, scale and rhythm of a street so its coherence is not fractured",
     "distractors": [
      "enforcing conservation-area codes that govern height, frontage and external materials",
-     "restricting the height of new buildings so that established rooflines and sightlines survive",
-     "obliging developers to employ the stone and brick quarried in the surrounding region"
+     "capping every new building in the city at four storeys regardless of its location",
+     "exploiting glass and steel structural methods unavailable to earlier builders"
     ]
    },
    {
     "phaseName": "4: Example A",
     "correct": "Conservation-area codes regulating height, frontage and external materials.",
     "distractors": [
-     "Entire historic city centres closed to all new construction of any kind.",
-     "Restrictions upon advertising and shopfronts in protected historic streets.",
-     "New quarters designed wholly in the vernacular idiom of the surrounding region."
+     "Entire historic city centres closed to all new construction of any kind whatsoever.",
+     "Glass and steel extensions added to nineteenth-century museums in several European capitals.",
+     "Planning pledges that every new quarter will respect the character of its surroundings."
     ]
    },
    {
@@ -1954,7 +1954,7 @@
     "distractors": [
      "no modern building has ever been accepted by the residents of the historic quarter it was placed in",
      "a coherent historic street loses its character the moment an alien facade interrupts it",
-     "traditional construction is now prohibitively expensive and is rarely executed well"
+     "a landmark admired in isolation may still fracture the street in which it is placed"
     ]
    },
    {
@@ -1971,8 +1971,8 @@
     "correct": "allowing each generation to register its technical capacity and priorities in the city",
     "distractors": [
      "inserting assertively modern civic buildings into the centres of historic cities",
-     "exploiting materials and structural methods unavailable to earlier builders",
-     "permitting buildings to be planned around the way that people actually live and work today"
+     "repeating the proportions and materials of the surrounding street in each new facade",
+     "ensuring that every new building astonishes the visitor who first encounters it"
     ]
    },
    {
@@ -1980,8 +1980,8 @@
     "correct": "Assertively modern civic buildings inserted into historic city centres.",
     "distractors": [
      "Cities in which every new structure is required to be uncompromisingly modern.",
-     "Museums and concert halls that have become emblems of their cities.",
-     "Transport termini rebuilt in a frankly industrial contemporary idiom."
+     "Civic promises that a new landmark will transform the fortunes of a declining city.",
+     "Replica Georgian terraces built on the cleared sites of demolished factories."
     ]
    },
    {
@@ -1989,8 +1989,8 @@
     "correct": "novelty indifferent to context yields buildings admired singly yet corrosive together",
     "distractors": [
      "the majority of the world's cities possess no historic fabric worth protecting at all",
-     "much celebrated modern work has aged poorly and is demolished within a single generation",
-     "residents are rarely consulted before a landmark is imposed upon their district"
+     "strict imitation of older styles produces pastiche that convinces nobody who looks closely",
+     "the most admired quarters of many cities were once denounced as brutal intrusions"
     ]
    },
    {
@@ -1998,7 +1998,7 @@
     "correct": "planning should govern scale and material while leaving stylistic expression free",
     "distractors": [
      "every new building should be required to match the style of those already standing beside it",
-     "each district should decide by consultation whether it wishes traditional or modern work",
+     "each district should decide by consultation between traditional and modern work",
      "conservation rules should bind within designated historic quarters and nowhere else in the city"
     ]
    },
@@ -2033,7 +2033,7 @@
     "distractors": [
      "The elimination of household poverty through a single statutory measure.",
      "The reduction of public expenditure on benefits paid to low-earning workers.",
-     "The improvement in morale and retention reported by better-paying firms."
+     "The improvement in morale and retention at better-paying firms."
     ]
    },
    {
@@ -2041,7 +2041,7 @@
     "correct": "transferring income to households that spend it locally, reducing reliance on state subsidy",
     "distractors": [
      "reducing the public expenditure devoted to benefits paid to low-earning workers",
-     "compelling profitable employers to distribute a larger share of their revenue",
+     "compelling profitable employers to distribute a larger share of their revenue to their lowest-paid staff",
      "narrowing the gap between the lowest and the median earnings in a country"
     ]
    },
@@ -2050,7 +2050,7 @@
     "correct": "Jurisdictions where phased increases raised incomes without measurable job loss.",
     "distractors": [
      "Countries that abolished poverty entirely after legislating a wage floor.",
-     "Cities reporting reduced staff turnover after adopting a living wage.",
+     "Cities that pledged a living wage for all municipal staff within the decade.",
      "Firms that raised pay voluntarily and recorded higher productivity."
     ]
    },
@@ -2058,9 +2058,9 @@
     "phaseName": "5: Nuance A",
     "correct": "the gain holds only while the increase remains proportionate to local productivity",
     "distractors": [
-     "a statutory rise has never cost a single job in any economy that has attempted it",
+     "a statutory rise has never cost a single job in any economy that has ever attempted one",
      "additional earnings are spent locally, sustaining the very businesses that pay them out",
-     "much of the increase is recovered by the state through withdrawn benefits and higher tax"
+     "the public purse gains twice, through higher tax receipts and through lower benefit payments"
     ]
    },
    {
@@ -2069,7 +2069,7 @@
     "distractors": [
      "The inevitability of redundancies wherever any wage floor is imposed at all.",
      "The vulnerability of small firms operating upon very narrow margins.",
-     "The acceleration of automation in routine and low-paid occupations."
+     "The acceleration of automation in low-paid occupations."
     ]
    },
    {
@@ -2077,17 +2077,17 @@
     "correct": "raising the cost of labour above its productive value, prompting cuts to hours",
     "distractors": [
      "confronting small firms operating upon very narrow margins with an unaffordable bill",
-     "making investment in self-service equipment cheaper than the retention of staff members",
-     "discouraging firms from recruiting inexperienced workers with no established record"
+     "transferring income to households that spend it in local shops and services",
+     "replacing the counter staff of a high-street cafe with a self-service screen"
     ]
    },
    {
     "phaseName": "8: Example B",
     "correct": "Labour-intensive sectors cutting rostered hours and adopting self-service.",
     "distractors": [
-     "Firms replacing counter staff with self-service equipment once labour costs rise.",
-     "Restaurants raising menu prices immediately after a statutory increase.",
-     "Small retailers in low-wage regions closing where margins could not absorb the rise."
+     "Firms swapping counter staff for self-service tills as wage costs rise.",
+     "Trade bodies warning that any increase will force every member to shut.",
+     "Small retailers closing where margins could not absorb the rise."
     ]
    },
    {
@@ -2095,8 +2095,8 @@
     "correct": "employers in concentrated markets set wages, so moderate floors need not displace labour",
     "distractors": [
      "no employer anywhere has ever absorbed a statutory increase without reducing the hours it rosters",
-     "labour-intensive firms answer a higher wage bill by reducing the hours they roster",
-     "firms recover much of the cost through lower turnover and reduced recruitment"
+     "labour-intensive firms habitually answer a higher wage bill by reducing the hours that they roster",
+     "the gain to households evaporates where prices rise faster than the statutory floor itself"
     ]
    },
    {
@@ -2104,8 +2104,8 @@
     "correct": "the floor should be set by independent assessment of regional productivity",
     "distractors": [
      "the wage floor should be raised continuously until poverty has been eliminated altogether",
-     "distinct statutory minima should apply by region and by sector according to local conditions",
-     "the state should supplement low pay through tax credits rather than legislate the wage"
+     "the floor should be frozen at its present level until the economy has fully recovered",
+     "the state should top up low pay through tax credits rather than legislate"
     ]
    },
    {
@@ -2114,7 +2114,7 @@
     "distractors": [
      "the state should determine the pay of every worker rather than leave it to the market",
      "poverty among working households cannot be relieved by higher wages alone",
-     "policy that ignores the productive capacity of a region will damage the workers it protects"
+     "the minimum wage should be set by an independent body with reference to regional productivity"
     ]
    }
   ]
@@ -2128,8 +2128,8 @@
     "phaseName": "1: Core Topic",
     "correct": "The mandating of foreign language acquisition in early childhood education.",
     "distractors": [
-     "The place of foreign language instruction throughout adult and vocational education.",
-     "The pedagogical techniques best suited to teaching vocabulary to young children.",
+     "The place of foreign language teaching in adult and vocational education.",
+     "The techniques best suited to teaching vocabulary to young children.",
      "The ascendancy of English as the world's principal language of exchange."
     ]
    },
@@ -2139,7 +2139,7 @@
     "distractors": [
      "The impossibility of acquiring two languages at once in early childhood.",
      "The comparative difficulty of mastering two grammatical systems simultaneously.",
-     "The pressure exerted upon an already crowded primary school timetable."
+     "The single weekly period allotted to a foreign language in many primary schools."
     ]
    },
    {
@@ -2147,7 +2147,7 @@
     "correct": "ensuring young learners establish robust cognitive frameworks in a single language before additional systems are layered upon them",
     "distractors": [
      "consolidating mother-tongue literacy completely before any second grammatical system is introduced into the classroom",
-     "granting pupils substantially more classroom time in which to consolidate their reading, spelling and handwriting",
+     "ensuring that every pupil leaves primary school reading and writing the mother tongue to a flawless standard",
      "allowing class teachers to devote the entire language timetable to a single subject rather than dividing it between two competing ones"
     ]
    },
@@ -2157,32 +2157,32 @@
     "distractors": [
      "Adult education institutes that require candidates to demonstrate full literacy before enrolling upon a language course.",
      "Primary schools that allocate no more than one short weekly period to foreign language study.",
-     "Jurisdictions in which formal foreign language lessons commence only upon entry to secondary school."
+     "Kindergartens in which songs, stories and games are conducted entirely in a second language."
     ]
    },
    {
     "phaseName": "5: Nuance A",
-    "correct": "postponing bilingualism actively guarantees missing the period of highest natural phonetic absorption",
+    "correct": "postponing bilingualism forfeits the period of highest natural phonetic absorption, which cannot be recovered later",
     "distractors": [
-     "adults who study a foreign language after retirement show measurable protection against cognitive decline",
-     "adolescents confront a curriculum already saturated with examination subjects, leaving scant room for a new language",
-     "older pupils tend to approach an unfamiliar language with self-consciousness rather than curiosity"
+     "adults who study a language after retirement show some protection against cognitive decline",
+     "early programmes taught by non-specialists can leave pupils with poor pronunciation to unlearn",
+     "children who read fluently in one language transfer that skill readily to any later one"
     ]
    },
    {
     "phaseName": "6: Facet B",
     "correct": "The exploitation of the critical window of childhood neuroplasticity.",
     "distractors": [
-     "The effortlessness with which any child masters any language at all.",
-     "The labour-market advantage conferred by early bilingualism.",
-     "The cultural curiosity awakened by contact with another language."
+     "The effortlessness with which any child whatsoever masters any language at all.",
+     "The labour-market advantage conferred upon adults by early bilingualism.",
+     "The cultural curiosity awakened in a child by contact with another language."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "capitalising on the brain's innate capacity for effortless phonological and grammatical acquisition before that faculty diminishes",
+    "correct": "capitalising on the brain's innate capacity for effortless phonological and grammatical acquisition before it diminishes",
     "distractors": [
-     "conducting kindergarten songs, stories and games entirely in the target language so that exposure is constant",
+     "conducting kindergarten songs, stories and games entirely in the target language so that exposure is constant throughout the day",
      "awakening in young pupils an enduring interest in foreign countries and unfamiliar cultural practices",
      "placing trained native speakers in primary classrooms so that pronunciation is modelled from the outset"
     ]
@@ -2192,7 +2192,7 @@
     "correct": "Bilingual immersion programmes in which infants acquire a second language through ordinary play and instruction.",
     "distractors": [
      "Primary classrooms in which trained native speakers model pronunciation from the very first year of study.",
-     "Primary schools introducing a weekly lesson in French or Mandarin from the first year of study.",
+     "Ministerial promises that every primary pupil will study a second language within five years.",
      "Expatriate families whose children acquire complete fluency merely by attending an ordinary neighbourhood school."
     ]
    },
@@ -2200,14 +2200,14 @@
     "phaseName": "9: Nuance B",
     "correct": "poorly designed early language programmes can induce academic anxiety and produce superficial competence in both languages",
     "distractors": [
-     "no primary school anywhere possesses staff with a command of the target language sufficient to teach it to a native standard",
-     "the primary timetable cannot absorb an additional subject without displacing mathematics or science",
-     "some families regard early foreign language study as an unwelcome intrusion upon their cultural heritage"
+     "no primary school anywhere possesses staff able to teach the target language to a native standard",
+     "young children acquire the sounds of a new language with an accuracy that adults rarely match",
+     "pupils who begin a language only at secondary school seldom reach comfortable fluency"
     ]
    },
    {
     "phaseName": "10: Synthesized Position",
-    "correct": "policymakers must introduce foreign languages in the earliest grades through play-based immersion while safeguarding intensive native-language literacy",
+    "correct": "early play-based immersion should begin in the first grades while intensive native literacy is safeguarded",
     "distractors": [
      "every child in the world should begin a second language in the first year of school regardless of the resources available",
      "children ought to secure complete literacy in the mother tongue first, with a second language introduced systematically only upon entry to secondary school",
@@ -2232,19 +2232,19 @@
   "phases": [
    {
     "phaseName": "1: Core Topic",
-    "correct": "The escalating consumption of broadcast media by adolescents.",
+    "correct": "The effects of increased television viewing upon children.",
     "distractors": [
      "The rising consumption of streaming and social media by adult audiences.",
      "The techniques broadcasters use to retain a young viewer's attention.",
-     "The steady decline in the time children now devote to reading books."
+     "The decline in the time children devote to reading."
     ]
    },
    {
     "phaseName": "2: Facet A",
-    "correct": "The educational potential of high-quality programming.",
+    "correct": "The educational potential of high-quality programming for young viewers.",
     "distractors": [
      "The capacity of television to replace formal schooling entirely.",
-     "The capacity of broadcasting to reinforce formal classroom teaching.",
+     "The reinforcement of classroom lessons through repetition.",
      "The suitability of programmes designed for a young audience."
     ]
    },
@@ -2254,15 +2254,15 @@
     "distractors": [
      "reinforcing through repetition the formal teaching children receive in the classroom",
      "sustaining a child's attention for long stretches without adult supervision",
-     "strengthening listening comprehension and expanding vocabulary through sustained exposure"
+     "guaranteeing that every young viewer leaves the screen measurably better informed"
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Exposing developing minds to advanced scientific documentaries and historical broadcasts.",
+    "correct": "Natural history and science documentaries watched by children at home each evening.",
     "distractors": [
      "Televised lecture courses that universities broadcast to adult learners in remote regions.",
-     "Animated educational series that teach the alphabet to pre-school viewers.",
+     "Broadcasters' promises that every children's programme will carry educational value.",
      "Classroom screenings of documentary films at the end of the school week."
     ]
    },
@@ -2270,14 +2270,14 @@
     "phaseName": "5: Nuance A",
     "correct": "this passive consumption inherently limits active physical engagement and real-world problem-solving",
     "distractors": [
-     "no child has ever acquired from a broadcast any knowledge that endures beyond the programme itself",
-     "the factual content retained from a broadcast is rarely reinforced by any subsequent classroom activity",
+     "no child has ever acquired from any broadcast a single piece of knowledge that endures beyond the programme itself",
+     "the harm attributed to the screen depends largely on how long and how late a child watches",
      "the most demanding documentaries far exceed the comprehension of very young viewers"
     ]
    },
    {
     "phaseName": "6: Facet B",
-    "correct": "The detrimental impact on physical and social development.",
+    "correct": "The detrimental impact of prolonged viewing on physical and social development.",
     "distractors": [
      "The hours of vigorous outdoor play that the screen has replaced.",
      "The reliance of parents upon the screen as a substitute carer.",
@@ -2288,9 +2288,9 @@
     "phaseName": "7: Mechanism B",
     "correct": "catalysing sedentary behaviours and reducing organic interpersonal communication",
     "distractors": [
-     "rendering every child who watches television inactive, uncommunicative and physically unfit",
-     "exposing impressionable viewers to violence and to commercial persuasion",
-     "supplanting the conversation that formerly accompanied the family meal"
+     "rendering children who watch television inactive, uncommunicative and physically unfit",
+     "exposing young viewers to advertising for toys and sugary foods during each break",
+     "abolishing conversation of any kind from the household in which a set is switched on"
     ]
    },
    {
@@ -2298,17 +2298,17 @@
     "correct": "Rising rates of childhood obesity and delayed social skills in highly digitised households.",
     "distractors": [
      "Children confined indoors for the hours that an earlier generation spent in vigorous play.",
-     "Pupils arriving at school exhausted after watching late-night broadcasts in their own bedrooms.",
-     "Young viewers reproducing the aggressive behaviour they observe on screen."
+     "Pupils arriving at school able to recount in detail a documentary they watched the previous evening.",
+     "Parental resolutions to limit viewing that are abandoned within a week."
     ]
    },
    {
     "phaseName": "9: Nuance B",
-    "correct": "television is merely a tool, and these negative impacts are largely determined by a lack of parental mediation rather than the medium itself",
+    "correct": "television is merely a tool, and these harms stem largely from absent parental mediation rather than from the medium itself",
     "distractors": [
      "a child raised without any television at all will invariably develop stronger social and physical capacities",
      "the hours a child spends before a screen are hours withheld from the vigorous play that a growing body requires",
-     "contemporary children's programming is markedly better researched and better regulated than that of previous generations"
+     "contemporary children's programming is so saturated with advertising that no single episode passes without some form of commercial persuasion"
     ]
    },
    {
@@ -2324,9 +2324,9 @@
     "phaseName": "11: Rationale",
     "correct": "optimal human development requires a balance between rapid digital cognitive stimulation and essential physical and social maturation",
     "distractors": [
-     "the influence of any medium upon the population at large is determined by the regulation imposed upon its broadcasters",
-     "responsibility for a child's daily habits rests ultimately with the parents rather than with the broadcasters",
-     "no medium is intrinsically harmful, and the outcome for any individual child depends entirely upon the manner and the moderation of its use"
+     "the influence of any medium upon the population at large is determined entirely by the regulation that the state imposes upon its broadcasters",
+     "no programme, however carefully it is made, can offer a child anything that an afternoon of active outdoor play does not offer far better",
+     "parents should permit high-quality educational viewing while enforcing firm daily limits upon the total hours a child spends before the screen"
     ]
    }
   ]
@@ -2340,7 +2340,7 @@
     "phaseName": "1: Core Topic",
     "correct": "The democratisation of admission to tertiary education programmes.",
     "distractors": [
-     "The widening of access to schooling at every educational level.",
+     "The widening of access to schooling at every level of the education system.",
      "The value of a degree in an increasingly crowded labour market.",
      "The expansion of university places in developing nations."
     ]
@@ -2351,14 +2351,14 @@
     "distractors": [
      "The impossibility of teaching any degree to an unselected cohort.",
      "The fairness of competitive examination as a selection device.",
-     "The limited number of places available on specialised courses."
+     "The limited number of places available on specialised and expensive courses."
     ]
    },
    {
     "phaseName": "3: Mechanism A",
     "correct": "ensuring that specialised programmes are populated exclusively by cohorts capable of handling rigorous, advanced-level coursework",
     "distractors": [
-     "reserving every place in the education system, from secondary school upwards, for those who have obtained the highest examination results",
+     "reserving every place in the education system from secondary school upwards for those with the highest results",
      "restricting cohort numbers so that teaching staff are able to supervise the progress of each student individually",
      "obliging every candidate to sit a standardised national entrance examination before any offer of a place is issued"
     ]
@@ -2369,7 +2369,7 @@
     "distractors": [
      "Programmes populated exclusively by cohorts able to manage advanced coursework.",
      "Faculties that admit only those applicants holding the very highest secondary grades.",
-     "Medical schools that reject the great majority of their applicants."
+     "University pledges to admit only the most able applicants from every school in the country."
     ]
    },
    {
@@ -2378,7 +2378,7 @@
     "distractors": [
      "no examination taken at eighteen has ever predicted anything whatever about a candidate's capacity for sustained degree study",
      "competitive admission ensures that demanding degree programmes are populated by candidates genuinely able to complete them",
-     "a considerable number of applicants rejected on the basis of school results would have flourished had any institution been willing to admit them at all"
+     "an institution that admits every applicant regardless of preparation will see a substantial proportion of them withdraw before the end of the first year"
     ]
    },
    {
@@ -2395,7 +2395,7 @@
     "correct": "facilitating upward social mobility and equitable access to specialised knowledge",
     "distractors": [
      "admitting mature applicants who hold no formal qualification of any kind",
-     "extending to students of modest means the same opportunities long enjoyed by the affluent",
+     "ensuring that every citizen eventually holds a university degree",
      "enlarging the pool of qualified graduates upon which an economy can draw"
     ]
    },
@@ -2403,9 +2403,9 @@
     "phaseName": "8: Example B",
     "correct": "The widespread success of open-enrolment community college systems in North America.",
     "distractors": [
-     "Secondary schools that accept every child in their catchment without any selection.",
-     "State scholarships awarded to undergraduates drawn from low-income households.",
-     "Quotas reserving a fixed proportion of undergraduate places for pupils from disadvantaged schools."
+     "Secondary schools that accept every child in their catchment area without any selection.",
+     "State scholarships awarded to undergraduates drawn from the lowest-income households in the country.",
+     "Government targets for the proportion of undergraduates drawn from disadvantaged schools within a decade."
     ]
    },
    {
@@ -2414,7 +2414,7 @@
     "distractors": [
      "an institution that admits students without any selection will invariably see its academic standards collapse within a single generation",
      "open enrolment offers a second opportunity to those applicants whose secondary schooling had failed them at eighteen",
-     "a substantial proportion of those admitted without qualifications would withdraw before the end of the first year"
+     "school results at eighteen reflect the quality of the school attended as much as the ability of the pupil"
     ]
    },
    {
@@ -2432,7 +2432,7 @@
     "distractors": [
      "a nation's prosperity depends upon the proportion of its whole population that has completed some form of schooling",
      "a modern economy depends upon producing the largest possible number of well-qualified and adaptable graduates each year",
-     "opportunity that is denied at eighteen is rarely recovered later, and the social cost of that exclusion is ultimately borne by the whole community"
+     "opportunity denied at eighteen is rarely recovered, and the cost of that exclusion falls upon the whole community"
     ]
    }
   ]

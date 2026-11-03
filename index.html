@@ -351,15 +351,18 @@ const PHASES_PER_PROMPT = 11;
 
 /* ============================================================
    LEVELS
-   Two parallel banks over the same 23 IELTS prompts. Only the OPTIONS and the
-   on-screen English change with level; the prompt itself is a real exam question
-   and is never simplified.
+   Two parallel banks over the same 23 IELTS topics. The C1 bank uses the prompt
+   in exam wording; the B2 bank restates the same prompt in B2 English and uses
+   B2-level options.
    ============================================================ */
 const LEVELS = {
   b2: {
     id:'b2', label:'CEFR B2 · Band 7', short:'B2 · Band 7',
     file:'prompts-b2.json',
     tagline:'Build the 11 parts of a Band 7 essay plan',
+    /* On-screen names for the 11 boxes at this level (the bank's phaseName stays "10: Synthesized Position"
+       for the leaderboard and the Sheet; only the label the student reads changes). */
+    labels:['Core Topic','Facet A','Mechanism A','Example A','Nuance A','Facet B','Mechanism B','Example B','Nuance B','Balanced Position','Reason'],
     vars:[
       {q:"Which option gives the CORE TOPIC — the whole subject the essay is about?",
        is:"The whole subject under discussion, written as a noun phrase.",
@@ -624,6 +627,14 @@ function resetRoundState(){
 }
 
 /* ==================== RENDER ==================== */
+/* Name of box i as this level's student reads it: LEVEL.labels when the level defines them,
+   otherwise the bank's own phaseName with its "n:" prefix removed. */
+function phaseLabel(i){
+  if(LEVEL.labels && LEVEL.labels[i]) return LEVEL.labels[i];
+  const name=String(prompts[pIdx].phases[i].phaseName);
+  const parts=name.split(':');
+  return parts.length>1 ? parts.slice(1).join(':').trim() : name;
+}
 function renderPhase(){
   /* --- ANTI-CHEAT: every per-phase flag is re-initialised here, nowhere else --- */
   hasAnswered=false;
@@ -639,8 +650,7 @@ function renderPhase(){
   $('promptType').textContent = p.type || '';
   $('promptBox').scrollTop = 0;
 
-  const parts = String(ph.phaseName).split(':');
-  $('phaseTag').textContent  = parts.length>1 ? parts.slice(1).join(':').trim() : ph.phaseName;
+  $('phaseTag').textContent  = phaseLabel(phaseIdx);
   $('phaseCount').textContent = 'Variable '+(phaseIdx+1)+' / '+PHASES_PER_PROMPT;
   $('phaseQ').textContent = v.q;
   $('defIs').textContent  = v.is;
@@ -707,8 +717,8 @@ function renderMatrix(){
   if(phaseIdx===0){ box.classList.add('hide'); tog.classList.add('hide'); return; }
   tog.classList.remove('hide');
   $('matrixCount').textContent = phaseIdx+'/11';
-  box.innerHTML = p.phases.slice(0,phaseIdx).map(ph=>{
-    const label=String(ph.phaseName).split(':').slice(1).join(':').trim();
+  box.innerHTML = p.phases.slice(0,phaseIdx).map((ph,i)=>{
+    const label=phaseLabel(i);
     return '<div class="mrow"><span class="mk">'+label+'</span><span class="mv">'+
            ph.correct.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))+'</span></div>';
   }).join('');
@@ -774,7 +784,7 @@ function slotOf(choice){
     const s=dice(t, toks(p.phases[i].correct));
     if(s>score){ score=s; best=i; }
   }
-  return score>=0.55 ? String(p.phases[best].phaseName).split(':').slice(1).join(':').trim() : null;
+  return score>=0.55 ? phaseLabel(best) : null;
 }
 
 /* ==================== ANSWER / SECOND-TRY STATE MACHINE ==================== */
@@ -811,7 +821,7 @@ async function selectAnswer(choice, btn){
       if(optButtons[i]){ optButtons[i].classList.add('gone'); optButtons[i].disabled=true; }
     }
     const belongs = slotOf(choice);
-    const here = String(prompts[pIdx].phases[phaseIdx].phaseName).split(':').slice(1).join(':').trim();
+    const here = phaseLabel(phaseIdx);
     fb.className='feedback show '+(isTrap?'trap':'retry');
     fb.innerHTML = '<strong>'+(isTrap ? UI.trapLead : UI.retryLead)+'</strong>'
       + (belongs ? UI.wrongSlot(belongs, here) : UI.noSlot)
