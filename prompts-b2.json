@@ -81,7 +81,7 @@
     "correct": "Unlimited driving fills the city centre with traffic jams.",
     "distractors": [
      "A total ban harms workers without good buses.",
-     "Owning a car costs too much for many people.",
+     "Cars have become cheaper over recent years.",
      "Most drivers enjoy the comfort of their own car."
     ]
    },
@@ -239,7 +239,7 @@
     "correct": "The removal of freedom and comfort for a fixed time.",
     "distractors": [
      "The belief that criminals deserve to suffer.",
-     "The requirement for unpaid prison work.",
+     "The uniform worn by every prison officer.",
      "The example of a thief given five years in prison."
     ]
    },
@@ -281,7 +281,7 @@
    },
    {
     "phaseName": "8: Example B",
-    "correct": "Prisons offering school classes to inmates.",
+    "correct": "Prisons offering school classes to prisoners.",
     "distractors": [
      "Universities giving free degrees to every prisoner.",
      "Judges giving long sentences to repeat criminals.",
@@ -346,7 +346,7 @@
     "distractors": [
      "The savings for staff and businesses.",
      "The freedom for staff to work at any hour they like.",
-     "The transfer of computer and internet costs to staff."
+     "The use of video calls for every weekly team meeting."
     ]
    },
    {
@@ -354,7 +354,7 @@
     "correct": "A firm closes two floors of its office and uses the rent money to raise salaries.",
     "distractors": [
      "Managers promise that every worker will soon enjoy a better life.",
-     "Companies move to smaller buildings outside the city.",
+     "Managers send a weekly email to every member of staff.",
      "Staff join meetings by video call from their kitchens."
     ]
    },
@@ -484,7 +484,7 @@
    },
    {
     "phaseName": "7: Mechanism B",
-    "correct": "The access to lessons, videos and information from any place.",
+    "correct": "The provision of lessons, videos and information anywhere.",
     "distractors": [
      "The general need for digital access today.",
      "The example of a girl who learned English from free online video lessons.",
@@ -497,7 +497,7 @@
     "distractors": [
      "Parents allowing only learning apps on a tablet.",
      "Apps doing a child's homework for them.",
-     "Teachers posting video lessons online for students to watch."
+     "Children watching cartoons for hours every evening at home."
     ]
    },
    {
@@ -612,7 +612,7 @@
     "distractors": [
      "Tourism always saves far more of the natural world than it ruins.",
      "Much of the money goes to foreign hotel owners.",
-     "Famous places now limit visitor numbers."
+     "Foreign visitors spend more than locals."
     ]
    },
    {
@@ -770,7 +770,7 @@
     "distractors": [
      "The example of a tax on sugary fizzy drinks.",
      "The warning to shoppers that cheap food contains too much fat.",
-     "The use of tax money to give out free fruit."
+     "The use of tax money to repair old roads."
     ]
    },
    {
@@ -823,7 +823,7 @@
     "correct": "Clever advertising limits real free choice.",
     "distractors": [
      "Nobody who grew up with food adverts can choose freely.",
-     "Most people know junk food is unhealthy but eat it anyway.",
+     "Adults who are told the facts usually choose sensible food.",
      "Food companies spend huge sums on advertising."
     ]
    },
@@ -867,7 +867,7 @@
     "distractors": [
      "The idea that nobody young reads print.",
      "The lasting value of printed papers.",
-     "The move of readers to phone apps."
+     "The quality of writing in big papers."
     ]
    },
    {
@@ -876,7 +876,7 @@
     "distractors": [
      "The steady rise of online news sites.",
      "The example of a famous paper that closed its printing works.",
-     "The chance for readers to comment and argue."
+     "The habit of checking the weather online."
     ]
    },
    {
@@ -919,7 +919,7 @@
     "phaseName": "8: Example B",
     "correct": "Local papers reporting on town meetings and school events.",
     "distractors": [
-     "Free papers being handed out at busy railway stations.",
+     "Editors promising that print will never close down.",
      "Glossy magazines earning money from expensive fashion adverts.",
      "News websites updating stories all day."
     ]
@@ -1007,7 +1007,7 @@
     "phaseName": "6: Facet B",
     "correct": "The availability of modern alternatives to animals.",
     "distractors": [
-     "The cruelty of keeping animals in cages.",
+     "The long wait for new medicines to arrive.",
      "The high cost of running an animal laboratory.",
      "The need for animal tests to protect lives."
     ]
@@ -1468,7 +1468,7 @@
     "correct": "Schools place the national story inside the wider story of the world.",
     "distractors": [
      "Schools drop national history completely for global themes.",
-     "Pupils study their own country first and the world later.",
+     "Pupils study only their own country so that pride grows.",
      "Each school chooses freely which history it teaches."
     ]
    },
@@ -1511,13 +1511,13 @@
     "correct": "The spreading of care costs across the whole of society.",
     "distractors": [
      "The removal of any need for relatives to help.",
-     "Japan's national care insurance scheme.",
+     "The example of Japan's care insurance.",
      "The care of parents by their adult children."
     ]
    },
    {
     "phaseName": "4: Example A",
-    "correct": "Japan runs a national care insurance scheme that everyone pays into.",
+    "correct": "Japan runs a national care insurance scheme that adults pay into.",
     "distractors": [
      "Free hospitals promise to cure every seriously ill citizen in the country.",
      "Private insurance companies sell expensive care plans to wealthy retired people.",
@@ -1547,7 +1547,7 @@
     "correct": "The strengthening of family bonds and a sense of duty between generations.",
     "distractors": [
      "The saving of government money on older citizens.",
-     "Adult children in Thailand caring for parents at home.",
+     "The example of Thai families caring for parents at home.",
      "The payment of trained nurses with public money."
     ]
    },
@@ -1618,7 +1618,7 @@
     "distractors": [
      "The removal of any need for chemical sprays.",
      "The growing of two full harvests every year.",
-     "The lowering of food prices in the poorest parts of the world."
+     "The promise that no family anywhere will ever go hungry again."
     ]
    },
    {
@@ -1671,7 +1671,7 @@
     "correct": "Farmers have altered plant genes by breeding for centuries.",
     "distractors": [
      "No modified crop has ever been shown to harm a single human being.",
-     "Countries that grow the most modified crops report no new illnesses.",
+     "Many countries still refuse to allow modified crops on their farms.",
      "Modified crops planted across huge fields leave wildlife less food."
     ]
    },
@@ -1722,7 +1722,7 @@
     "phaseName": "3: Mechanism A",
     "correct": "The instant access to facts from any phone or computer.",
     "distractors": [
-     "Students using Wikipedia for homework instead of encyclopaedias.",
+     "The example of students checking Wikipedia instead of old books.",
      "The saving of council money by closing branches.",
      "The sale of cheap second-hand books online."
     ]
@@ -1742,7 +1742,7 @@
     "distractors": [
      "Older readers prefer the feel of a printed book.",
      "Library buildings are expensive to heat in winter.",
-     "A library offers a free space for the whole community."
+     "Library buildings are often the oldest in the town."
     ]
    },
    {
@@ -1848,7 +1848,7 @@
     "distractors": [
      "People are never willing to give up comfort to help the planet.",
      "Strict laws fail when the public does not support them.",
-     "Governments have far more money to spend on the climate than any individual does."
+     "Many families have already cut their household waste by changing what they buy."
     ]
    },
    {
@@ -1892,7 +1892,7 @@
     "correct": "Governments pass the main laws while personal choices build support for them.",
     "distractors": [
      "Government laws alone solve the problem, so habits do not matter.",
-     "Citizens change their own habits first and then ask governments to act.",
+     "Citizens change their own habits and governments stay out of the matter.",
      "The free market decides which clean technologies win."
     ]
    },
@@ -1934,7 +1934,7 @@
     "phaseName": "3: Mechanism A",
     "correct": "The use of the same materials and heights as the street around.",
     "distractors": [
-     "The following of strict rules on height and materials.",
+     "The belief that old streets should never change at all.",
      "The hiding of modern buildings behind old walls.",
      "The choice of a modern style that fits the space."
     ]
@@ -2095,7 +2095,7 @@
     "correct": "Large companies can easily afford a small rise in the minimum wage.",
     "distractors": [
      "No business anywhere has ever been forced to close because the minimum wage rose.",
-     "Many companies raise prices long before any change to wage rules happens.",
+     "Small shops with only a few staff feel every rise in wage costs at once.",
      "Young workers without experience are the hardest group for firms to train."
     ]
    },
@@ -2182,7 +2182,7 @@
     "phaseName": "7: Mechanism B",
     "correct": "The easy absorption of new sounds and accents by young children.",
     "distractors": [
-     "The early start so pupils have more years to study the language.",
+     "The belief that every young child can become fluent in a year.",
      "The strict repetition of words until pupils sound like natives.",
      "The strengthening of reading and writing in the mother tongue first."
     ]
@@ -2244,8 +2244,8 @@
     "correct": "The educational value of television.",
     "distractors": [
      "The learning value of video games.",
-     "The chance for families to talk.",
-     "The relaxation television offers."
+     "The case of one girl who loves TV.",
+     "The number of channels available."
     ]
    },
    {
@@ -2279,16 +2279,16 @@
     "phaseName": "6: Facet B",
     "correct": "The damage to children's physical health.",
     "distractors": [
-     "The harm of violent scenes before bed.",
-     "The power of adverts for junk food.",
-     "The tiredness of pupils after late TV."
+     "The case of a child who gained weight.",
+     "The hours of sitting still on a sofa.",
+     "The educational value of television."
     ]
    },
    {
     "phaseName": "7: Mechanism B",
     "correct": "The replacement of active play with hours of sitting still.",
     "distractors": [
-     "The encouragement of children to want the snacks they see advertised.",
+     "The promise by broadcasters that every programme keeps children healthy.",
      "The display of a world that is far more violent than real life.",
      "The keeping of the whole family in one room rather than sending them outside."
     ]
@@ -2367,7 +2367,7 @@
     "phaseName": "4: Example A",
     "correct": "Medical schools demand top grades in chemistry and biology.",
     "distractors": [
-     "Entrance interviews pick the cleverest pupils for grammar schools at eleven.",
+     "Entrance exams pick the cleverest pupils for selective schools at eleven.",
      "Scholarships go to a small number of outstanding students each year.",
      "A university promises that its graduates will be the best in the country."
     ]
@@ -2395,7 +2395,7 @@
     "correct": "The chance for people from poor families to rise through education.",
     "distractors": [
      "The giving of a place to anyone who applies, able or not.",
-     "The offer of evening classes so that workers can study.",
+     "The example of a worker who studied at night for a degree.",
      "The shortening of degrees so that students start work sooner."
     ]
    },
@@ -2403,7 +2403,7 @@
     "phaseName": "8: Example B",
     "correct": "The Open University accepting students without any entry grades.",
     "distractors": [
-     "Free online courses that let anyone anywhere in the world join from home.",
+     "Teenagers spending a gap year travelling before they start university.",
      "Apprenticeships mixing paid training with part-time college study.",
      "A government promise that half of all young people will get a degree."
     ]
