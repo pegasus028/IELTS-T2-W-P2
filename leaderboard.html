@@ -264,7 +264,7 @@ let lastOrder = [];
 function renderTop3(sorted){
   const top = sorted.slice(0,3);
   const names = top.map(t=>t.team).join('|');
-  const orderChanged = names !== lastOrder.join('|');
+  const orderChanged = names !== lastOrder.join('|') || !podStrip.children.length;
 
   if(orderChanged){
     podStrip.innerHTML='';
@@ -312,6 +312,7 @@ function countUp(el, from, to){
     el.textContent=Math.round(from+(to-from)*(1-Math.pow(1-p,3)));
     if(p<1) requestAnimationFrame(step);
   })(t0);
+  el._to=to; setTimeout(()=>{ el.textContent=el._to; }, dur+150);   // rAF pauses in a background tab
 }
 
 /* ============================================================
@@ -643,7 +644,10 @@ on('stopBtn', async()=>{
 });
 on('resetBtn', async()=>{
   if(!confirm('Reset ALL scores, teams and the timer?')) return;
-  try{ await api('POST',{action:'reset'}); lastOrder=[]; cardState={}; poll(); }
+  /* clear the board at once, then again after the backend answers: an empty board used to keep the old top-three cards */
+  const wipe=()=>{ lastOrder=[]; cardState={}; podStrip.innerHTML=''; hidePodium(); autoPodiumDone=false; running=false; expirationMs=0; latest=[]; renderBoard([]); renderClock(); };
+  wipe(); document.getElementById('status').textContent='Resetting…';
+  try{ await api('POST',{action:'reset'}); wipe(); await poll(); }
   catch(e){ alert('Could not reach the backend. Check API_URL / deployment.'); }
 });
 on('fsBtn', ()=>{
